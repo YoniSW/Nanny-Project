@@ -240,7 +240,7 @@ namespace DAL
                 if (Predicate == null)
                     return DataSource.motherList.AsEnumerable();
 
-                return DataSource.motherList.Where(Predicate);
+            return DataSource.motherList.Where(Predicate);
             }
 
 
