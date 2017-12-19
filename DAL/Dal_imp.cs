@@ -219,12 +219,12 @@ namespace DAL
             Child thisKid = getChild(thisContract._childID);
             Mother thisMom = getMom(thisKid._momID);
             thisMom._isLookingForNanny = true;
-            
+
             // 3. update nanny & mom and then remove thisContract
             updateNany(thisNanny);
             updateMother(thisMom);
             DataSource.contractList.RemoveAt(index);
-
+        }
 
             // get IEnumerable functions =================================================================
 
@@ -259,7 +259,7 @@ namespace DAL
                 return DataSource.contractList.Where(Predicate);
             }
 
-        }
+        
 
 
     }

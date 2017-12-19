@@ -16,11 +16,7 @@ namespace BL
         //    dal = DAL.factoryDal.getDal(); ---> ask 
         //}
 
-        // metods,  
-        // before values are sent to functions at Dal_imp,
-        // check next logics:
-
-        // =============================================================================================
+        // sent function to Idal only if method allowes =========================
 
         // 1. nanny sould be older that 18
         public void addNanny(Nanny thisNanny)
@@ -50,7 +46,87 @@ namespace BL
             dal.addContract(thisCon);
         }
 
+        // send rest of the function to Idal without any method =============================
 
+        public void addMother(Mother thisMom)
+        {
+            dal.addMother(thisMom);
+        }
+
+        void addChild(Child thisKid)
+        {
+            dal.addChild(thisKid);
+        }
+
+        void deleteNanny(Nanny thisNany)
+        {
+            dal.deleteNanny(thisNany);
+        }
+
+        void updateNany(Nanny thisNany)
+        {
+            dal.updateNany(thisNany);
+        }
+
+        void deleteMother(Mother thisMom)
+        {
+            dal.deleteMother(thisMom);
+        }
+
+        void updateMother(Mother thisMom)
+        {
+            dal.updateMother(thisMom);
+        }
+
+        void deleteChild(Child thisKid)
+        {
+            dal.deleteChild(thisKid);
+        }
+
+        void updateChild(Child thisChild)
+        {
+            dal.updateChild(thisChild);
+        }
+
+        void updateContract(Contract thisContract)
+        {
+            dal.updateContract(thisContract);
+        }
+
+        void deleteContract(Contract thisContract)
+        {
+            dal.deleteContract(thisContract);
+        }
+
+        // send IEnumerables to Idal ==================================================
+
+        public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
+        {
+            if (Predicate == null)
+                return dal.getAllNanny();
+            return dal.getAllNanny(Predicate);
+        }
+
+        public IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null)
+        {
+            if (Predicate == null)
+                return dal.getKidsByMom();
+            return dal.getKidsByMom(Predicate);
+        }
+
+        public IEnumerable<Contract> getContracts(Func<Contract, bool> Predicate = null)
+        {
+            if (Predicate == null)
+                return dal.getContracts();
+            return dal.getContracts(Predicate);
+        }
+
+        public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
+        {
+            if (Predicate == null)
+                return dal.getAllMothers();
+            return dal.getAllMothers(Predicate);
+        }
 
     }
 }
