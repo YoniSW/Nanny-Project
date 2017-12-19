@@ -69,7 +69,7 @@ namespace DAL
             if( index == -1 )
                 throw new Exception("Mother doesn't exist in the system");
 
-
+            // delete all children of thisMom
             var deleteAllKids = DataSource.childList.Where(c => c._momID == thisMom._momID);
 
             foreach (var child in deleteAllKids)
