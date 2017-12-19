@@ -1,0 +1,9 @@
+﻿<Application x:Class="dotNet5778_Project01_8948_3070.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:dotNet5778_Project01_8948_3070"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
