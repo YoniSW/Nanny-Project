@@ -8,10 +8,10 @@ namespace BE
 {
     public class Nanny
     {
-        //private long _nannyID { get; set; } // cannot change this proparty
+        public long _nannyID { get; set; } 
 
-        //public string _nannyLname { get; set; }
-        //public string _nannyFname { get; set; }
+        public string _nannyLname { get; set; }
+        public string _nannyFname { get; set; }
 
         public DateTime _nannyBirth { get; set; }
         public long _nannyPhone { get; set; }

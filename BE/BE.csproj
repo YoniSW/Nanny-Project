@@ -45,7 +45,6 @@
     <Compile Include="Mother.cs" />
     <Compile Include="myBE.cs" />
     <Compile Include="Nanny.cs" />
-    <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Dynamic;
 using System.Threading.Tasks;
 
 namespace BE
 {
     public class Mother
     {
-        private long _momID { get; set; }
+        public long _momID { get; set; }
 
         public string _momLname { get; set; }
         public string _momFname { get; set; }
