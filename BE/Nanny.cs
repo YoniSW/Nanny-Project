@@ -13,6 +13,7 @@ namespace BE
         public string _nannyLname { get; set; }
         public string _nannyFname { get; set; }
 
+        public int _amountChildren { get; set; }
         public DateTime _nannyBirth { get; set; }
         public long _nannyPhone { get; set; }
         public string _nannyAdress { get; set; }

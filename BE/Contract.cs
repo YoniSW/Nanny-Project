@@ -8,7 +8,7 @@ namespace BE
 {
     public class Contract
     {
-        private long  _contractID { get; set; }
+        public long _contractID { get; set; }
         public long _nannyID { get; set; }
         public long _childID { get; set; }
         public bool _didMeet { get; set; }
