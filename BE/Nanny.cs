@@ -20,7 +20,7 @@ namespace BE
         public bool _isElevator { get; set; }
         public int _floor { get; set; }
         public double _yearsOfExp { get; set; }
-        public int _maxKidsAmount { get; set; }
+        public int _maxamountChildren { get; set; }
         public int _minMonthAge { get; set; }
         public int _maxMonthAge { get; set; }
         public bool _acceptByHour { get; set; }

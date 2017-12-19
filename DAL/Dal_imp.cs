@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class Dal_imp: Idal
+     public class Dal_imp : Idal
     {
         public static int uniqueContractID = 1;
         public Dal_imp() => new DataSource(); //CTOR
