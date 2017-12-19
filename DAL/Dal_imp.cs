@@ -82,7 +82,6 @@ namespace DAL
 
             // now we can remove the thisMom
             DataSource.motherList.RemoveAt(index);
-
         }
 
 
