@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BL
 {
-    interface IBL
+    public interface IBL
     {
         // nany function declarations
         void addNanny(Nanny nanny);

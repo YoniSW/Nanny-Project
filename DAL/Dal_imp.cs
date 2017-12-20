@@ -11,10 +11,11 @@ using System.Threading.Tasks;
 
 
 namespace DAL
-{
-     public class Dal_imp : Idal
+{ 
+    class Dal_imp : Idal 
     {
         public static int uniqueContractID = 1;
+
         public Dal_imp() => new DataSource(); //CTOR
 
         // Nanny functions ================================================================================
@@ -35,7 +36,7 @@ namespace DAL
 
         }
 
-        void deleteNanny(Nanny thisNany)
+        public void deleteNanny(Nanny thisNany)
         {
             var index = DataSource.nannyList.FindIndex(n => n._nannyID == thisNany._nannyID);
             if (index == -1)
@@ -48,7 +49,7 @@ namespace DAL
             DataSource.nannyList.RemoveAt(index);
         }
 
-        void updateNany(Nanny thisNany)
+        public void updateNany(Nanny thisNany)
         {
             var index = DataSource.nannyList.FindIndex(n => n._nannyID == thisNany._nannyID);
             if (index == -1)
@@ -73,7 +74,7 @@ namespace DAL
             DataSource.motherList.Add(thisMom);
         }
 
-        void deleteMother(Mother thisMom)
+        public void deleteMother(Mother thisMom)
         {
             var index = DataSource.motherList.FindIndex(m => m._momID == thisMom._momID);
             if( index == -1 )
@@ -97,7 +98,7 @@ namespace DAL
 
         }
 
-        void updateMother(Mother thisMom)
+        public void updateMother(Mother thisMom)
         {
             var index = DataSource.motherList.FindIndex(m => m._momID == thisMom._momID);
             if (index == -1)
@@ -114,7 +115,7 @@ namespace DAL
             return DataSource.childList.FirstOrDefault(c => c._childID == thisID);
         }
 
-        void addChild(Child thisKid)
+        public void addChild(Child thisKid)
         {
             var index = DataSource.childList.FindIndex(c => c._childID == thisKid._childID);
             if (index != -1)
@@ -123,7 +124,7 @@ namespace DAL
             DataSource.childList.Add(thisKid);
         }
 
-        void deleteChild(Child thisKid)
+        public void deleteChild(Child thisKid)
         {
             var index = DataSource.childList.FindIndex(c => c._childID == thisKid._childID);
             if (index == -1)
@@ -138,7 +139,7 @@ namespace DAL
 
         }
 
-        void updateChild(Child thisChild)
+        public void updateChild(Child thisChild)
         {
 
             var index = DataSource.childList.FindIndex(c => c._childID == thisChild._childID);
@@ -158,7 +159,7 @@ namespace DAL
             return DataSource.contractList.FirstOrDefault(c => c._contractID == id);
         }
 
-        void addContract(Contract thisContract)
+        public void addContract(Contract thisContract)
         {
 
             var index = DataSource.contractList.FindIndex(c => c._childID == thisContract._childID && 
@@ -194,7 +195,7 @@ namespace DAL
             DataSource.contractList.Add(thisContract);
         }
 
-        void updateContract (Contract thisContract)
+        public void updateContract (Contract thisContract)
         {
             var index = DataSource.contractList.FindIndex(c => c._contractID == thisContract._contractID);
             if (index == -1)
@@ -203,7 +204,7 @@ namespace DAL
             DataSource.contractList[index] = thisContract;
         }
 
-        void deleteContract(Contract thisContract)
+        public void deleteContract(Contract thisContract)
         {
             var index = DataSource.contractList.FindIndex(c => c._contractID == thisContract._contractID);
             if (index == -1)
@@ -226,16 +227,16 @@ namespace DAL
             DataSource.contractList.RemoveAt(index);
         }
 
-            // get IEnumerable functions =================================================================
+        // get IEnumerable functions =================================================================
 
-            IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
+        public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
             {
                 if (Predicate == null)
                     return DataSource.nannyList.AsEnumerable();
                 return DataSource.nannyList.Where(Predicate); 
             }
 
-            IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
+            public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
             {
                 if (Predicate == null)
                     return DataSource.motherList.AsEnumerable();
@@ -244,14 +245,14 @@ namespace DAL
             }
 
 
-            IEnumerable<Child> getKidsByMoms(Func<Child, bool> Predicate = null)
+            public IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null)
             {
                 if (Predicate == null)
                     throw new Exception("Please send mother ID");
                 return DataSource.childList.Where(Predicate);
             }
 
-            IEnumerable<Contract> getContracts(Func<Contract, bool> Predicate = null)
+            public IEnumerable<Contract> getContracts(Func<Contract, bool> Predicate = null)
             {
                 if (Predicate == null)
                     return DataSource.contractList.AsEnumerable();

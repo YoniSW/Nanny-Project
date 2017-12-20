@@ -1,22 +1,23 @@
 ﻿using BE;
-using DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web;
 using System.Threading.Tasks;
 
 namespace BL
 {
-    public class Bl_imp : IBL
+    class Bl_imp : IBL
     {
         DAL.Idal dal;
-        //public Bl_imp()
-        //{
-        //    dal = DAL.factoryDal.getDal(); ---> ask 
-        //}
+        public Bl_imp()
+        {
+            dal = DAL.factoryDal.getDal();
+        }
 
-        // sent function to Idal only if method allowes =========================
+        // sent function to Idal by those methods =========================
+
 
         // 1. nanny sould be older that 18
         public void addNanny(Nanny thisNanny)
@@ -53,47 +54,47 @@ namespace BL
             dal.addMother(thisMom);
         }
 
-        void addChild(Child thisKid)
+        public void addChild(Child thisKid)
         {
             dal.addChild(thisKid);
         }
 
-        void deleteNanny(Nanny thisNany)
+        public void deleteNanny(Nanny thisNany)
         {
             dal.deleteNanny(thisNany);
         }
 
-        void updateNany(Nanny thisNany)
+        public void updateNany(Nanny thisNany)
         {
             dal.updateNany(thisNany);
         }
 
-        void deleteMother(Mother thisMom)
+        public void deleteMother(Mother thisMom)
         {
             dal.deleteMother(thisMom);
         }
 
-        void updateMother(Mother thisMom)
+        public void updateMother(Mother thisMom)
         {
             dal.updateMother(thisMom);
         }
 
-        void deleteChild(Child thisKid)
+        public void deleteChild(Child thisKid)
         {
             dal.deleteChild(thisKid);
         }
 
-        void updateChild(Child thisChild)
+        public void updateChild(Child thisChild)
         {
             dal.updateChild(thisChild);
         }
 
-        void updateContract(Contract thisContract)
+        public void updateContract(Contract thisContract)
         {
             dal.updateContract(thisContract);
         }
 
-        void deleteContract(Contract thisContract)
+        public void deleteContract(Contract thisContract)
         {
             dal.deleteContract(thisContract);
         }
