@@ -11,7 +11,8 @@ namespace BE
         public long _momID { get; set; }
         public long _childID { get; set; }
         public string _childFname { get; set; }
-        public DateTime _birthdayKid { get; set; }
+        public DateTime _birthday { get; set; }
+        public Schedule[] _schedule { get; set; }
         public bool _isSpecialNeed { get; set; }
         public string _specialNeeds { get; set; }
 

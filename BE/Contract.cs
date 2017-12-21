@@ -15,7 +15,7 @@ namespace BE
         public bool _didSign { get; set; }
         public double _ratePerHour { get; set; }
         public double _ratePerMonth { get; set; }
-        public bool _isHour { get; set; }
+        public bool _isByHour { get; set; }
         public DateTime _beginWork { get; set; }
         public DateTime _endWork { get; set; }
 

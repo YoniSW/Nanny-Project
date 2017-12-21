@@ -32,19 +32,56 @@ namespace BL
         // 2. child should be older than 3 months
         public void addContract(Contract thisCon)
         {
+            // get rest of feilds from dal
             Child thisKid = dal.getChild(thisCon._childID);
-            DateTime now = DateTime.Now;
-            if (now.Month - thisKid._birthdayKid.Month < 3)
+            Mother thisMom = dal.getMom(thisKid._momID);
+            Nanny thisNannay = dal.getNanny(thisCon._nannyID);
+
+            double discount = 1;
+            for (int i = 0; i < amountOfKidsForMomAndNanny(thisKid, thisNannay); i++)
+                discount -= 0.02; 
+
+            if(thisNannay._amountChildren == thisNannay._maxamountChildren)
+                throw new Exception("This nanny reached the maximum children");
+
+            DateTime now = DateTime.Today;
+            if(now.Year - thisKid._birthday.Year < 1 && now.Month - thisKid._birthday.Month < 3)
                 throw new Exception("Child is under 3 months");
 
-            // 2a. add only an available Nanny
-            Nanny thisNanny = dal.getNanny(thisCon._nannyID);
-            if (thisNanny._amountChildren == thisNanny._maxamountChildren)
-                throw new Exception("This nanny reached the limit of children");
-            /////////////////////////
-            // add salary function
-            /////////////////////////
+            if (thisCon._isByHour)
+                thisCon._ratePerMonth = getChildHours(thisKid) * 4 * thisNannay._rateByHour * discount;
+
+            else
+                thisCon._ratePerMonth = thisNannay._rateByMonth * discount;
+
             dal.addContract(thisCon);
+
+        }
+
+        public double getChildHours(Child thisKid)
+        {
+            double totalWeeklyHours = 0;
+
+            for (int i = 0; i < 6; i++)
+            {
+                totalWeeklyHours += thisKid._schedule[i].end.Hour - thisKid._schedule[i].begin.Hour;
+            }
+
+            return totalWeeklyHours;
+        }
+
+        // the function returns number of kids from SAME contract and SAME mother 
+        public int amountOfKidsForMomAndNanny(Child thisKid, Nanny thisNanny)
+        {
+            var kidsOfMom = dal.getKidsByMom(m => m._momID == thisKid._momID);
+            var thisNannyContract = dal.getContracts(c => c._nannyID == thisNanny._nannyID);
+
+            var howMuch = from k1 in kidsOfMom
+                          from k2 in thisNannyContract
+                          where k1._childID == k2._childID
+                          select k2;
+
+            return howMuch.Count();
         }
 
         // send rest of the function to Idal without any method =============================

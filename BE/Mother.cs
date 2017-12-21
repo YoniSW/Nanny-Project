@@ -17,7 +17,6 @@ namespace BE
         public string _momAdress { get; set; }
         public bool _isLookingForNanny { get; set; }
         public bool[] _daysRequestMom { get; set; }
-        public DateTime[,] _hoursRequestMom { get; set; }
 
         public override string ToString()
         {
