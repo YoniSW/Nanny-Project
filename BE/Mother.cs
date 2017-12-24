@@ -10,13 +10,28 @@ namespace BE
     public class Mother
     {
         public long _momID { get; set; }
-
         public string _momLname { get; set; }
         public string _momFname { get; set; }
         public long _momPhone { get; set; }
         public string _momAdress { get; set; }
         public bool _isLookingForNanny { get; set; }
         public bool[] _daysRequestMom { get; set; }
+        public Schedule[] _schedule { get; set; }
+
+        public Mother duplicate()
+        {
+            Mother dupMom = new Mother();
+
+            dupMom._momID = this._momID;
+            dupMom._momLname = this._momLname;
+            dupMom._momFname = this._momFname;
+            dupMom._momPhone = this._momPhone;
+            dupMom._momAdress = this._momAdress;
+            dupMom._isLookingForNanny = this._isLookingForNanny;
+            dupMom._daysRequestMom = this._daysRequestMom;
+            dupMom._schedule = this._schedule;
+            return dupMom;
+        }
 
         public override string ToString()
         {

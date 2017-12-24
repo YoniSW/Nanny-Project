@@ -19,6 +19,24 @@ namespace BE
         public DateTime _beginWork { get; set; }
         public DateTime _endWork { get; set; }
 
+        public Contract duplicate()
+        {
+            Contract dupContract = new Contract();
+
+            dupContract._contractID = this._contractID;
+            dupContract._nannyID = this._nannyID;
+            dupContract._childID = this._childID;
+            dupContract._didMeet = this._didMeet;
+            dupContract._didSign = this._didSign;
+            dupContract._ratePerHour = this._ratePerHour;
+            dupContract._ratePerMonth = this._ratePerMonth;
+            dupContract._isByHour = this._isByHour;
+            dupContract._beginWork = this._beginWork;
+            dupContract._endWork = this._endWork;
+
+            return dupContract;
+        }
+
         public override string ToString()
         {
             return base.ToString();

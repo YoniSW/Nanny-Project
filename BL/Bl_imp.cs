@@ -16,10 +16,9 @@ namespace BL
             dal = DAL.factoryDal.getDal();
         }
 
-        // sent function to Idal by those methods =========================
+        // sent function to Idal by certian methods =========================
 
 
-        // 1. nanny sould be older that 18
         public void addNanny(Nanny thisNanny)
         {
             DateTime now = DateTime.Now;
@@ -29,7 +28,7 @@ namespace BL
             dal.addNanny(thisNanny);
         }
 
-        // 2. child should be older than 3 months
+        
         public void addContract(Contract thisCon)
         {
             // get rest of feilds from dal
@@ -49,7 +48,7 @@ namespace BL
                 throw new Exception("Child is under 3 months");
 
             if (thisCon._isByHour)
-                thisCon._ratePerMonth = getChildHours(thisKid) * 4 * thisNannay._rateByHour * discount;
+                thisCon._ratePerMonth = getMotherHours(thisMom) * 4 * thisNannay._rateByHour * discount;
 
             else
                 thisCon._ratePerMonth = thisNannay._rateByMonth * discount;
@@ -58,13 +57,13 @@ namespace BL
 
         }
 
-        public double getChildHours(Child thisKid)
+        public double getMotherHours(Mother thisMom)
         {
             double totalWeeklyHours = 0;
 
             for (int i = 0; i < 6; i++)
             {
-                totalWeeklyHours += thisKid._schedule[i].end.Hour - thisKid._schedule[i].begin.Hour;
+                totalWeeklyHours += thisMom._schedule[i].end.Hour - thisMom._schedule[i].begin.Hour;
             }
 
             return totalWeeklyHours;
