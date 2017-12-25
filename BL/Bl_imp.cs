@@ -5,6 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Web;
 using System.Threading.Tasks;
+using GoogleMapsApi;
+using GoogleMapsApi.Entities.Directions.Request;
+using GoogleMapsApi.Entities.Directions.Response;
 
 namespace BL
 {
@@ -62,9 +65,7 @@ namespace BL
             double totalWeeklyHours = 0;
 
             for (int i = 0; i < 6; i++)
-            {
                 totalWeeklyHours += thisMom._schedule[i].end.Hour - thisMom._schedule[i].begin.Hour;
-            }
 
             return totalWeeklyHours;
         }
@@ -163,6 +164,21 @@ namespace BL
             if (Predicate == null)
                 return dal.getAllMothers();
             return dal.getAllMothers(Predicate);
+        }
+
+        // google maps 
+        public static int distanceAlgorithm(string source/*mother*/, string dest/*nanny*/)
+        {
+            var drivingDirectionRequest = new DirectionsRequest
+            {
+                TravelMode = TravelMode.Walking,
+                Origin = source,
+                Destination = dest,
+            };
+            DirectionsResponse drivingDirections = GoogleMaps.Directions.Query(drivingDirectionRequest);
+            Route route = drivingDirections.Routes.First();
+            Leg leg = route.Legs.First();
+            return leg.Distance.Value;
         }
 
     }

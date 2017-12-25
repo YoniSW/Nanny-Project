@@ -25,10 +25,10 @@ namespace BE
         public double _rateByHour { get; set; }
         public double _rateByMonth { get; set; }
         public bool[] _workDays { get; set; }
-        public DateTime[,] _workTime {get; set;}
-        bool _isTamatNanny { get; set; }
-        string _recommendation { get; set; }
-
+        public Schedule[] _workTime {get; set;}
+        public bool _isTamatNanny { get; set; }
+        public string _recommendation { get; set; }
+        public double diff { get; set; }
 
         public Nanny duplicae()
         {
@@ -62,8 +62,5 @@ namespace BE
         {
             return base.ToString();
         }
-
-
-
     }
 }
