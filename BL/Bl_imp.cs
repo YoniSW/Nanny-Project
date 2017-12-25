@@ -249,7 +249,7 @@ namespace BL
 
         public IEnumerable<Nanny> getTamatNanny()
         {
-            return dal.getAllNanny(a => a.isTamatNanny);
+            return dal.getAllNanny(a => a._isTamatNanny);
         }
 
         public IEnumerable<Contract> contractByTerm(Func<Contract, bool> Predicate = null)
@@ -281,12 +281,31 @@ namespace BL
         }
 
 
+        public IEnumerable<IGrouping<int, Nanny>> getChildByAgeRange(bool minimumAge, bool isSort)
+        {
+            if (isSort)
+                if (minimumAge)
+                    return from a in dal.getAllNanny()
+                           orderby a._minMonthAge
+                           group a by a._minMonthAge / 3; // sort list by min age
+                else
+                    return from a in dal.getAllNanny()
+                           orderby a._maxMonthAge
+                           group a by a._minMonthAge / 3; // sort list by max age
+            else
+                    if (minimumAge)
+                return from a in dal.getAllNanny()
+                       group a by a._minMonthAge / 3;
+            else
+                return from a in dal.getAllNanny()
+                       group a by a._minMonthAge / 3;
+        }
 
-
-
-
-
-
-
+        public IEnumerable<IGrouping<bool, Nanny>> getNannyByDistance(string addressMom, string addressNanny, double rangeMeter)
+        {
+            return from a in dal.getAllNanny()
+                       // select all nannies that are maximum 10 km distance away
+                   group a by caculateDistance(addressNanny, addressMom) < rangeMeter * 10000;
+        }
     }
 }
