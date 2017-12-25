@@ -65,7 +65,7 @@ namespace BL
             double totalWeeklyHours = 0;
 
             for (int i = 0; i < 6; i++)
-                totalWeeklyHours += thisMom._schedule[i].end.Hour - thisMom._schedule[i].begin.Hour;
+                totalWeeklyHours += thisMom._scheduleMom[i].end.Hour - thisMom._scheduleMom[i].begin.Hour;
 
             return totalWeeklyHours;
         }
@@ -167,19 +167,126 @@ namespace BL
         }
 
         // google maps 
-        public static int distanceAlgorithm(string source/*mother*/, string dest/*nanny*/)
+        public static int caculateDistance(string mom, string nanny)
         {
-            var drivingDirectionRequest = new DirectionsRequest
+            var drivingDirectionRequest = new DirectionsRequest()
             {
                 TravelMode = TravelMode.Walking,
-                Origin = source,
-                Destination = dest,
+                Origin = mom,
+                Destination = nanny,
             };
             DirectionsResponse drivingDirections = GoogleMaps.Directions.Query(drivingDirectionRequest);
             Route route = drivingDirections.Routes.First();
             Leg leg = route.Legs.First();
             return leg.Distance.Value;
         }
+
+        // add all nannies via IEnumerable<list>
+        public IEnumerable<Nanny> getAllCompatibleNanny(Mother thisMom)
+        {
+            var nannyList = dal.getAllNanny();
+            // check if there are suitible nannies for thisMom schdule
+            var compatibleNanny = from a in nannyList
+                                  where checkSchedule(a, thisMom)
+                                  select a;
+            // if we didn't find any suitable nanny
+            if (!compatibleNanny.Any()) 
+                return fiveNearestNanny(thisMom);
+            
+            return compatibleNanny;
+        }
+
+        private IEnumerable<Nanny> fiveNearestNanny(Mother thisMom)
+        {
+            // copy the list into new one
+            var nannyList = from a in dal.getAllNanny()
+                            select a.duplicate();
+
+            foreach (var a in nannyList)
+               schduleDifference(a, thisMom);
+            
+
+            return nannyList.OrderBy(a => a._diff).Take(5);
+        }
+
+        public void schduleDifference(Nanny nanny, Mother mom)
+        {
+            nanny._diff = 0;
+            for (int i = 0; i < 6; i++)
+            {
+                if (nanny._scheduleNan[i].begin > mom._scheduleMom[i].begin)
+                {
+                    TimeSpan sum = new TimeSpan();
+                    sum = nanny._scheduleNan[i].begin - mom._scheduleMom[i].begin;
+                    nanny._diff += ((sum.Days - 1) * 24 + sum.Hours + sum.Minutes / 60.0);
+                }
+                if (nanny._scheduleNan[i].end < mom._scheduleMom[i].end)
+                {
+                    TimeSpan sum = new TimeSpan();
+                    sum = mom._scheduleMom[i].end - nanny._scheduleNan[i].end;
+                    nanny._diff += ((sum.Days - 1) * 24 + sum.Hours + sum.Minutes / 60.0);
+                }
+            }
+        }
+        public bool checkSchedule(Nanny nanny, Mother mom)
+        {
+          for (int i = 0; i < 6; i++) {
+          if (nanny._scheduleNan[i].begin > mom._scheduleMom[i].begin ||
+                nanny._scheduleNan[i].end < mom._scheduleMom[i].end)
+                return false;
+          }
+          return true;
+        }
+
+        public IEnumerable<Child> getAllChildWithoutNanny()
+        {
+        return from a in dal.getKidsByMom()
+                   let idChild = a._childID
+                   from b in dal.getContracts()
+                   where idChild != b._childID
+                   select a;
+        }
+
+        public IEnumerable<Nanny> getTamatNanny()
+        {
+            return dal.getAllNanny(a => a.isTamatNanny);
+        }
+
+        public IEnumerable<Contract> contractByTerm(Func<Contract, bool> Predicate = null)
+        {
+            return dal.getContracts(Predicate);
+        }
+
+        public int numContractByTerm(Func<Contract, bool> Predicate = null)
+        {
+            return contractByTerm(Predicate).Count();
+        }
+
+        public IEnumerable<Nanny> getNannyByDistance(Mother mom, double distance)
+        {
+            int distanceMeter = (int)(distance * 1000);
+
+            // copy this list into new one
+            var nannyList = from a in dal.getAllNanny()
+                            select a.duplicate();
+
+            foreach (var a in nannyList)
+            {
+                a._distance = caculateDistance(mom._momAdress, a._nannyAdress);
+            }
+
+            return from a in nannyList
+                   where a._distance < distanceMeter
+                   select a;
+        }
+
+
+
+
+
+
+
+
 
     }
 }

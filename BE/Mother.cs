@@ -16,7 +16,7 @@ namespace BE
         public string _momAdress { get; set; }
         public bool _isLookingForNanny { get; set; }
         public bool[] _daysRequestMom { get; set; }
-        public Schedule[] _schedule { get; set; }
+        public Schedule[] _scheduleMom { get; set; }
 
         public Mother duplicate()
         {
@@ -29,7 +29,7 @@ namespace BE
             dupMom._momAdress = this._momAdress;
             dupMom._isLookingForNanny = this._isLookingForNanny;
             dupMom._daysRequestMom = this._daysRequestMom;
-            dupMom._schedule = this._schedule;
+            dupMom._scheduleMom = this._scheduleMom;
             return dupMom;
         }
 

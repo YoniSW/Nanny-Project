@@ -25,12 +25,13 @@ namespace BE
         public double _rateByHour { get; set; }
         public double _rateByMonth { get; set; }
         public bool[] _workDays { get; set; }
-        public Schedule[] _workTime {get; set;}
+        public Schedule[] _scheduleNan { get; set;}
         public bool _isTamatNanny { get; set; }
         public string _recommendation { get; set; }
-        public double diff { get; set; }
+        public double _diff { get; set; }
+        public double _distance { get; set; }
 
-        public Nanny duplicae()
+        public Nanny duplicate()
         {
             Nanny dupNanny = new Nanny();
 
@@ -51,9 +52,10 @@ namespace BE
             dupNanny._rateByHour = this._rateByHour;
             dupNanny._rateByMonth = this._rateByMonth;
             dupNanny._workDays = this._workDays;
-            dupNanny._workTime = this._workTime;
+            //dupNanny._schedule = this._schedule;
             dupNanny._isTamatNanny = this._isTamatNanny;
             dupNanny._recommendation = this._recommendation;
+
 
             return dupNanny;
         }
