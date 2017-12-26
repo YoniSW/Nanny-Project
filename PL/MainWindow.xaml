@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="PL test" Height="310" Width="310">
+
     <Grid>
-        
+
+        <TabControl>
+            <TabItem Header="Nanny" FontWeight="Bold">
+                <Label Content="List of functions:" />
+            </TabItem>
+            <TabItem Header="Mother" FontWeight="Bold">
+                <Label Content="List of functions:"/>
+            </TabItem>
+            <TabItem Header="Child" FontWeight="Bold">
+                <Label Content="List of functions:" />
+            </TabItem>
+
+            <TabItem Header="Contract" FontWeight="Bold">
+                <Label Content="List of functions:"/>
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Window>
