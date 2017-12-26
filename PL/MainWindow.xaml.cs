@@ -24,5 +24,19 @@ namespace PL
         {
             InitializeComponent();
         }
+
+       public void click_addNanny(object sender, RoutedEventArgs e)
+        {
+            addNanny add = new addNanny();
+            add.show();
+        }
+
+        public void click_deleteNanny(object sender, RoutedEventArgs e)
+        {
+            deleteNanny add = new deleteNanny();
+            add.Show();
+        }
+
+
     }
 }

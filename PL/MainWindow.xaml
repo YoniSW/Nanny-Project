@@ -5,25 +5,109 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL"
         mc:Ignorable="d"
-        Title="PL test" Height="310" Width="310">
+        Title="PL test" Height="250" Width="310">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="75*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="49*"/>
+        </Grid.RowDefinitions>
 
-        <TabControl>
+        <TabControl Grid.RowSpan="4" Grid.ColumnSpan="2">
             <TabItem Header="Nanny" FontWeight="Bold">
-                <Label Content="List of functions:" />
+                <Label >
+                    <Grid Height="179" Width="289">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="144*"/>
+                            <ColumnDefinition Width="145*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.ColumnSpan="2" Content="Nanny functions:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="289"/>
+                        <Button x:Name="addNanny" Content="Add Nanny" HorizontalAlignment="Left" Height="45" Grid.Row="1" 
+                                VerticalAlignment="Top" Width="134" Margin="10,0,0,0" Click="addNanny_Click"/>
+                        <Button x:Name="deleteNanny" Content="Delete Nanny" Grid.Column="1" HorizontalAlignment="Left" 
+                                Height="45" Grid.Row="1" VerticalAlignment="Top" Width="135" Click="click_deleteNanny"/>
+                        <Button x:Name="updateNanny" Content="Update Nanny" HorizontalAlignment="Left" Height="44" Grid.Row="2" VerticalAlignment="Top" Width="134" Margin="10,0,0,0"/>
+                        <Button x:Name="getAllNanny" Content="Get all Nannies" Grid.Column="1" HorizontalAlignment="Left" Height="44" Grid.Row="2" VerticalAlignment="Top" Width="135"/>
+
+                    </Grid>
+                </Label>
             </TabItem>
             <TabItem Header="Mother" FontWeight="Bold">
-                <Label Content="List of functions:"/>
+                <Label >
+                    <Grid Height="179" Width="289">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="144*"/>
+                            <ColumnDefinition Width="145*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.ColumnSpan="2" Content="Mother functions:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="289"/>
+                        <Button x:Name="addMother" Content="Add Mother" HorizontalAlignment="Left" Height="45" Grid.Row="1" VerticalAlignment="Top" Width="134" Margin="10,0,0,0"/>
+                        <Button x:Name="deleteMother" Content="Delete Mother" Grid.Column="1" HorizontalAlignment="Left" Height="45" Grid.Row="1" VerticalAlignment="Top" Width="135"/>
+                        <Button x:Name="updateMother" Content="Update Mother" HorizontalAlignment="Left" Height="44" Grid.Row="2" VerticalAlignment="Top" Width="134" Margin="10,0,0,0"/>
+                        <Button x:Name="getAllMothers" Content="Get all Mothers" Grid.Column="1" HorizontalAlignment="Left" Height="44" Grid.Row="2" VerticalAlignment="Top" Width="135"/>
+                    </Grid>
+                </Label>
             </TabItem>
             <TabItem Header="Child" FontWeight="Bold">
-                <Label Content="List of functions:" />
+                <Label >
+                    <Grid Height="179" Width="289">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="144*"/>
+                            <ColumnDefinition Width="145*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.ColumnSpan="2" Content="Child functions:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="289"/>
+                        <Button x:Name="addChild" Content="Add Child" HorizontalAlignment="Left" Height="45" Grid.Row="1" VerticalAlignment="Top" Width="134" Margin="10,0,0,0"/>
+                        <Button x:Name="deleteChild" Content="Delete Child " Grid.Column="1" HorizontalAlignment="Left" Height="45" Grid.Row="1" VerticalAlignment="Top" Width="135"/>
+                        <Button x:Name="updateChild" Content="Update Chuld" HorizontalAlignment="Left" Height="44" Grid.Row="2" VerticalAlignment="Top" Width="134" Margin="10,0,0,0"/>
+                        <Button x:Name="getKidsByMom" Content="Get kids by mom" Grid.Column="1" HorizontalAlignment="Left" Height="44" Grid.Row="2" VerticalAlignment="Top" Width="135"/>
+                    </Grid>
+                </Label>
             </TabItem>
 
             <TabItem Header="Contract" FontWeight="Bold">
-                <Label Content="List of functions:"/>
+                <Label >
+                    <Grid Height="179" Width="289">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="144*"/>
+                            <ColumnDefinition Width="145*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.ColumnSpan="2" Content="Contract functions:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="289"/>
+                        <Button  x:Name="addContract" Content="Add Contract" HorizontalAlignment="Left" Height="45" Grid.Row="1" VerticalAlignment="Top" Width="134" Margin="10,0,0,0"/>
+                        <Button  x:Name="deleteContract" Content="Delete Contract" Grid.Column="1" HorizontalAlignment="Left" Height="45" Grid.Row="1" VerticalAlignment="Top" Width="135"/>
+                        <Button  x:Name="updateContract" Content="Update Contract" HorizontalAlignment="Left" Height="44" Grid.Row="2" VerticalAlignment="Top" Width="134" Margin="10,0,0,0"/>
+                        <Button  x:Name="getContracts" Content="Get Contracs" Grid.Column="1" HorizontalAlignment="Left" Height="44" Grid.Row="2" VerticalAlignment="Top" Width="135"/>
+                    </Grid>
+                </Label>
             </TabItem>
         </TabControl>
-
     </Grid>
 </Window>
