@@ -18,6 +18,7 @@ namespace BE /// test123
         public bool[] _daysRequestMom { get; set; }
         public Schedule[] _scheduleMom { get; set; }
 
+        // we will use the dublicate function
         public Mother duplicate()
         {
             Mother dupMom = new Mother();
