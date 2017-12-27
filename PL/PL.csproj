@@ -54,18 +54,102 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="addChild.xaml.cs">
+      <DependentUpon>addChild.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="addMother.xaml.cs">
+      <DependentUpon>addMother.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="deleteChild.xaml.cs">
+      <DependentUpon>deleteChild.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="deleteMother.xaml.cs">
+      <DependentUpon>deleteMother.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="getAllChild.xaml.cs">
+      <DependentUpon>getAllChild.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="getAllMothers.xaml.cs">
+      <DependentUpon>getAllMothers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="getAllNannies.xaml.cs">
+      <DependentUpon>getAllNannies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="updateChild.xaml.cs">
+      <DependentUpon>updateChild.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="updateMother.xaml.cs">
+      <DependentUpon>updateMother.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="updateNanny.xaml.cs">
+      <DependentUpon>updateNanny.xaml</DependentUpon>
+    </Compile>
+    <Page Include="addChild.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="addMother.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="addNanny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deleteChild.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deleteMother.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deleteNanny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="getAllChild.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="getAllMothers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="getAllNannies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="addNanny.xaml.cs">
+      <DependentUpon>addNanny.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="deleteNanny.xaml.cs">
+      <DependentUpon>deleteNanny.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="updateChild.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="updateMother.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="updateNanny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -85,6 +169,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\BE.Child.datasource" />
+    <None Include="Properties\DataSources\BE.Contract.datasource" />
+    <None Include="Properties\DataSources\BE.Mother.datasource" />
+    <None Include="Properties\DataSources\BE.Nanny.datasource" />
+    <None Include="Properties\DataSources\BE.Schedule.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,10 +190,6 @@
     <ProjectReference Include="..\BL\BL.csproj">
       <Project>{dc0e4f9d-2c17-4db0-af06-7a8ca4d37d87}</Project>
       <Name>BL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{373948dc-adb9-4716-ba5b-970c35d66f94}</Project>
-      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

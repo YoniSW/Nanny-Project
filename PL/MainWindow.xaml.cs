@@ -25,18 +25,82 @@ namespace PL
             InitializeComponent();
         }
 
-       public void click_addNanny(object sender, RoutedEventArgs e)
+        /// nanny
+
+        private void click_addNanny(object sender, RoutedEventArgs e)
         {
             addNanny add = new addNanny();
-            add.show();
+            add.Show();
         }
 
-        public void click_deleteNanny(object sender, RoutedEventArgs e)
+        private void click_deleteNanny(object sender, RoutedEventArgs e)
         {
             deleteNanny add = new deleteNanny();
             add.Show();
         }
 
+        private void click_updateNanny(object sender, RoutedEventArgs e)
+        {
+            updateNanny add = new updateNanny();
+            add.Show();
+        }
 
+        private void click_getAllNannies(object sender, RoutedEventArgs e)
+        {
+            getAllNannies add = new getAllNannies();
+            add.Show();
+        }
+
+        /// mother
+
+        private void click_addMother(object sender, RoutedEventArgs e)
+        {
+            addMother add = new addMother();
+            add.Show();
+        }
+
+        private void click_deleteMother(object sender, RoutedEventArgs e)
+        {
+            deleteMother add = new deleteMother();
+            add.Show();
+        }
+
+        private void click_updateMother(object sender, RoutedEventArgs e)
+        {
+            updateMother add = new updateMother();
+            add.Show();
+        }
+
+        private void click_getAllMothers(object sender, RoutedEventArgs e)
+        {
+            getAllMothers add = new getAllMothers();
+            add.Show();
+        }
+
+        /// mother
+
+        private void click_addChild(object sender, RoutedEventArgs e)
+        {
+            addChild add = new addChild();
+            add.Show();
+        }
+
+        private void click_deleteChild(object sender, RoutedEventArgs e)
+        {
+            deleteChild add = new deleteChild();
+            add.Show();
+        }
+
+        private void click_updateChild(object sender, RoutedEventArgs e)
+        {
+            updateChild add = new updateChild();
+            add.Show();
+        }
+
+        private void click_getKidsByMom(object sender, RoutedEventArgs e)
+        {
+            getAllChild add = new getAllChild();
+            add.Show();
+        }
     }
 }
