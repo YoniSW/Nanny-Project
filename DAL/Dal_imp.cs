@@ -16,7 +16,11 @@ namespace DAL
     {
         public static int uniqueContractID = 1;
 
-        public Dal_imp() => new DataSource(); //CTOR
+        //CTOR
+        public Dal_imp()
+        {
+            new DataSource();
+        } 
 
         // Nanny functions ================================================================================
 
