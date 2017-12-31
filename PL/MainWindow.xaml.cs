@@ -102,5 +102,34 @@ namespace PL
             getAllChild add = new getAllChild();
             add.Show();
         }
+
+        private void click_getContracs(object sender, RoutedEventArgs e)
+        {
+            getContracts add = new getContracts();
+            add.Show();
+        }
+
+        
+        private void click_addContract(object sender, RoutedEventArgs e)
+        {
+            addContract add = new addContract();
+            add.Show();
+        }
+
+        
+        private void click_updateContract(object sender, RoutedEventArgs e)
+        {
+            updateContract add = new updateContract();
+            add.Show();
+        }
+
+        
+        private void click_deleteContract(object sender, RoutedEventArgs e)
+        {
+            deleteContract add = new deleteContract();
+            add.Show();
+        }
     }
+
+
 }

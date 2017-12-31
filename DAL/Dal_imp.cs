@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 { 
-    class Dal_imp : Idal 
+    internal class Dal_imp : Idal 
     {
         public static int uniqueContractID = 1;
 

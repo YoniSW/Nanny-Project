@@ -23,18 +23,14 @@ namespace PL
         {
             InitializeComponent();
         }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
 
-            //System.Windows.Data.CollectionViewSource childViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("childViewSource")));
-            //Load data by setting the CollectionViewSource.Source property:
-            // childViewSource.Source = [generic data source]
+            System.Windows.Data.CollectionViewSource motherViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("motherViewSource")));
+            // Load data by setting the CollectionViewSource.Source property:
+            // motherViewSource.Source = [generic data source]
         }
+
+
     }
 }

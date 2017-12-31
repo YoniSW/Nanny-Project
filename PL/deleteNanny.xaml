@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="deleteNanny" Height="300" Width="300">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Content="Please enter Nannies ID you wish to delete" HorizontalAlignment="Left" Height="43" 
+               Margin="22,21,0,10" VerticalAlignment="Center" Width="243" FontSize="12"/>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="22,20,0,0" Grid.Row="1"
+                 TextWrapping="Wrap" Text="valid ID number only." VerticalAlignment="Top" Width="243" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Delete!" HorizontalAlignment="Left" Height="44" Margin="22,10,0,0" Grid.Row="2" VerticalAlignment="Center" Width="243"/>
+
     </Grid>
 </Window>

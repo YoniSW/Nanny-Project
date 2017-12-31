@@ -15,18 +15,21 @@ using System.Windows.Shapes;
 namespace PL
 {
     /// <summary>
-    /// Interaction logic for deleteMother.xaml
+    /// Interaction logic for addContract.xaml
     /// </summary>
-    public partial class deleteMother : Window
+    public partial class addContract : Window
     {
-        public deleteMother()
+        public addContract()
         {
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
+            System.Windows.Data.CollectionViewSource contractViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("contractViewSource")));
+            // Load data by setting the CollectionViewSource.Source property:
+            // contractViewSource.Source = [generic data source]
         }
     }
 }

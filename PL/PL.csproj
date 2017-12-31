@@ -57,11 +57,17 @@
     <Compile Include="addChild.xaml.cs">
       <DependentUpon>addChild.xaml</DependentUpon>
     </Compile>
+    <Compile Include="addContract.xaml.cs">
+      <DependentUpon>addContract.xaml</DependentUpon>
+    </Compile>
     <Compile Include="addMother.xaml.cs">
       <DependentUpon>addMother.xaml</DependentUpon>
     </Compile>
     <Compile Include="deleteChild.xaml.cs">
       <DependentUpon>deleteChild.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="deleteContract.xaml.cs">
+      <DependentUpon>deleteContract.xaml</DependentUpon>
     </Compile>
     <Compile Include="deleteMother.xaml.cs">
       <DependentUpon>deleteMother.xaml</DependentUpon>
@@ -75,8 +81,14 @@
     <Compile Include="getAllNannies.xaml.cs">
       <DependentUpon>getAllNannies.xaml</DependentUpon>
     </Compile>
+    <Compile Include="getContracts.xaml.cs">
+      <DependentUpon>getContracts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="updateChild.xaml.cs">
       <DependentUpon>updateChild.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="updateContract.xaml.cs">
+      <DependentUpon>updateContract.xaml</DependentUpon>
     </Compile>
     <Compile Include="updateMother.xaml.cs">
       <DependentUpon>updateMother.xaml</DependentUpon>
@@ -85,6 +97,10 @@
       <DependentUpon>updateNanny.xaml</DependentUpon>
     </Compile>
     <Page Include="addChild.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="addContract.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -97,6 +113,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="deleteChild.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deleteContract.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -120,6 +140,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="getContracts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -139,6 +163,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="updateChild.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="updateContract.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

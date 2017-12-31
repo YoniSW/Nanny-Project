@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace PL
 {
     /// <summary>
-    /// Interaction logic for deleteMother.xaml
+    /// Interaction logic for deleteContract.xaml
     /// </summary>
-    public partial class deleteMother : Window
+    public partial class deleteContract : Window
     {
-        public deleteMother()
+        public deleteContract()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

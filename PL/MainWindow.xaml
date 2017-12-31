@@ -111,10 +111,14 @@
                             <RowDefinition Height="1*"/>
                         </Grid.RowDefinitions>
                         <Label Grid.ColumnSpan="2" Content="Contract functions:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="289"/>
-                        <Button  x:Name="addContract" Content="Add Contract" HorizontalAlignment="Left" Height="45" Grid.Row="1" VerticalAlignment="Top" Width="134" Margin="10,0,0,0"/>
-                        <Button  x:Name="deleteContract" Content="Delete Contract" Grid.Column="1" HorizontalAlignment="Left" Height="45" Grid.Row="1" VerticalAlignment="Top" Width="135"/>
-                        <Button  x:Name="updateContract" Content="Update Contract" HorizontalAlignment="Left" Height="44" Grid.Row="2" VerticalAlignment="Top" Width="134" Margin="10,0,0,0"/>
-                        <Button  x:Name="getContracts" Content="Get Contracs" Grid.Column="1" HorizontalAlignment="Left" Height="44" Grid.Row="2" VerticalAlignment="Top" Width="135"/>
+                        <Button  x:Name="addContract" Content="Add Contract" HorizontalAlignment="Left" Height="45" Grid.Row="1" 
+                                 VerticalAlignment="Top" Width="134" Margin="10,0,0,0" Click="click_addContract"/>
+                        <Button  x:Name="deleteContract" Content="Delete Contract" Grid.Column="1" HorizontalAlignment="Left" 
+                                 Height="45" Grid.Row="1" VerticalAlignment="Top" Width="135" Click="click_deleteContract"/>
+                        <Button  x:Name="updateContract" Content="Update Contract" HorizontalAlignment="Left" Height="44" 
+                                 Grid.Row="2" VerticalAlignment="Top" Width="134" Margin="10,0,0,0" Click="click_updateContract"/>
+                        <Button  x:Name="getContracts" Content="Get Contracs" Grid.Column="1" HorizontalAlignment="Left" Height="44"
+                                 Grid.Row="2" VerticalAlignment="Top" Width="135" Click="click_getContracts"/>
                     </Grid>
                 </Label>
             </TabItem>

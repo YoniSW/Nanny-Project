@@ -17,8 +17,9 @@ namespace BL
         public Bl_imp()
         {
             dal = DAL.factoryDal.getDal();
+            //init();
         }
-
+      
         // sent function to Idal by certian methods =========================
 
 
