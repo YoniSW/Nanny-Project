@@ -19,9 +19,22 @@ namespace PL
     /// </summary>
     public partial class deleteChild : Window
     {
+        public BL.IBL bl;
         public deleteChild()
         {
             InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
+        }
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                bl.deleteChild(long.Parse(textBox.Text));
+            }
+            catch (Exception Exeption)
+            {
+                MessageBox.Show(Exeption.Message);
+            }
         }
     }
 }

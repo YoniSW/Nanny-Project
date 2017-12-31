@@ -11,23 +11,23 @@ namespace BL
     {
         // nany function declarations
         void addNanny(Nanny nanny);
-        void deleteNanny(Nanny nanny);
+        void deleteNanny(long ID);
         void updateNany(Nanny nanny);
 
         // mother function declarations
         void addMother(Mother mom);
-        void deleteMother(Mother mom);
+        void deleteMother(long ID);
         void updateMother(Mother mom);
 
         // child function declarations
         void addChild(Child kid);
-        void deleteChild(Child kid);
+        void deleteChild(long ID);
         void updateChild(Child kid);
 
         // contract function declarations
         void addContract(Contract con);
         void updateContract(Contract con);
-        void deleteContract(Contract con);
+        void deleteContract(long ID);
 
         IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null);
         IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null);

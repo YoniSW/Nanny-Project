@@ -19,14 +19,23 @@ namespace PL
     /// </summary>
     public partial class deleteNanny : Window
     {
+        public BL.IBL bl;
         public deleteNanny()
         {
             InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                bl.deleteNanny(int.Parse(textBox.Text));
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
     }
 }

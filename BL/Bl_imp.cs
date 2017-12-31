@@ -97,7 +97,7 @@ namespace BL
             dal.addChild(thisKid);
         }
 
-        public void deleteNanny(Nanny thisNany)
+        public void deleteNanny(long thisNany)
         {
             dal.deleteNanny(thisNany);
         }
@@ -107,7 +107,7 @@ namespace BL
             dal.updateNany(thisNany);
         }
 
-        public void deleteMother(Mother thisMom)
+        public void deleteMother(long thisMom)
         {
             dal.deleteMother(thisMom);
         }
@@ -117,7 +117,7 @@ namespace BL
             dal.updateMother(thisMom);
         }
 
-        public void deleteChild(Child thisKid)
+        public void deleteChild(long thisKid)
         {
             dal.deleteChild(thisKid);
         }
@@ -132,7 +132,7 @@ namespace BL
             dal.updateContract(thisContract);
         }
 
-        public void deleteContract(Contract thisContract)
+        public void deleteContract(long thisContract)
         {
             dal.deleteContract(thisContract);
         }
