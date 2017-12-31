@@ -19,9 +19,11 @@ namespace PL
     /// </summary>
     public partial class deleteContract : Window
     {
+        public BL.IBL bl;
         public deleteContract()
         {
             InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
         }
     }
 }

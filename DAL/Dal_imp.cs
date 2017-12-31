@@ -36,14 +36,14 @@ namespace DAL
 
         }
 
-        public void deleteNanny(Nanny thisNany)
+        public void deleteNanny(long thisNany)
         {
-            var index = DataSource.nannyList.FindIndex(n => n._nannyID == thisNany._nannyID);
+            var index = DataSource.nannyList.FindIndex(n => n._nannyID == thisNany);
             if (index == -1)
                 throw new Exception("Nanny doesn't exist in the system");
 
             // delete contractList that refers to thisNany
-            DataSource.contractList.RemoveAll(c => c._nannyID == thisNany._nannyID);
+            DataSource.contractList.RemoveAll(c => c._nannyID == thisNany);
 
             // now we can delete thisNany
             DataSource.nannyList.RemoveAt(index);
@@ -74,16 +74,16 @@ namespace DAL
             DataSource.motherList.Add(thisMom);
         }
 
-        public void deleteMother(Mother thisMom)
+        public void deleteMother(long thisMom)
         {
-            var index = DataSource.motherList.FindIndex(m => m._momID == thisMom._momID);
+            var index = DataSource.motherList.FindIndex(m => m._momID == thisMom);
             if( index == -1 )
                 throw new Exception("Mother doesn't exist in the system");
 
             //else
 
             // 1. delete all children of thisMom
-            var deleteAllKids = DataSource.childList.Where(c => c._momID == thisMom._momID);
+            var deleteAllKids = DataSource.childList.Where(c => c._momID == thisMom);
 
             foreach (var child in deleteAllKids)
             {
@@ -91,7 +91,7 @@ namespace DAL
             }
 
             // 2. delete contractList that refers to thisMom (by her kids)
-            DataSource.contractList.RemoveAll(c => c._childID == thisMom._momID);
+            DataSource.contractList.RemoveAll(c => c._childID == thisMom);
 
             // 3. now we can remove the thisMom
             DataSource.motherList.RemoveAt(index);
@@ -124,15 +124,15 @@ namespace DAL
             DataSource.childList.Add(thisKid);
         }
 
-        public void deleteChild(Child thisKid)
+        public void deleteChild(long thisKid)
         {
-            var index = DataSource.childList.FindIndex(c => c._childID == thisKid._childID);
+            var index = DataSource.childList.FindIndex(c => c._childID == thisKid);
             if (index == -1)
                 throw new Exception("Child  doesn't exist in the system");
             // else
 
             // 1. delete all contracts with thisKid
-            DataSource.contractList.RemoveAll(c => c._childID == thisKid._childID);
+            DataSource.contractList.RemoveAll(c => c._childID == thisKid);
 
             // 2. remove thisKid
             DataSource.childList.RemoveAt(index);
@@ -204,20 +204,20 @@ namespace DAL
             DataSource.contractList[index] = thisContract;
         }
 
-        public void deleteContract(Contract thisContract)
+        public void deleteContract(long thisContract)
         {
-            var index = DataSource.contractList.FindIndex(c => c._contractID == thisContract._contractID);
+            var index = DataSource.contractList.FindIndex(c => c._contractID == thisContract);
             if (index == -1)
                 throw new Exception("Contract doesn't exist in the system");
 
             // contract exists
 
             // 1. nanny has one extra place
-            Nanny thisNanny = getNanny(thisContract._nannyID);
+            Nanny thisNanny = getNanny(thisContract);
             thisNanny._amountChildren--;
 
             // 2. mom is now looking for a nanny
-            Child thisKid = getChild(thisContract._childID);
+            Child thisKid = getChild(thisContract);
             Mother thisMom = getMom(thisKid._momID);
             thisMom._isLookingForNanny = true;
 

@@ -13,7 +13,5 @@ namespace DS
         public static List<Mother> motherList = new List<Mother>();
         public static List<Child> childList = new List<Child>();
         public static List<Contract> contractList = new List<Contract>();
-
-
     }
 }
