@@ -99,7 +99,7 @@ namespace PL
             new getContracts().ShowDialog();
         }
 
-        
+
         private void click_addContract(object sender, RoutedEventArgs e)
         {
             new addContract().Show();

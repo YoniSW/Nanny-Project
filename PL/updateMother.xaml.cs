@@ -21,7 +21,7 @@ namespace PL
     {
         public updateMother()
         {
-            InitializeComponent();
+         //   InitializeComponent();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

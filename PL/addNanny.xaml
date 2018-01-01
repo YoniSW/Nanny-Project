@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PL"
         xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PL.addNanny"
         mc:Ignorable="d"
-        Title="addNanny" Height="340" Width="400" Loaded="Window_Loaded">
+        Title="addNanny" Height="340" Width="400">
     <Window.Resources>
         <CollectionViewSource x:Key="nannyViewSource" d:DesignSource="{d:DesignInstance {x:Type BE:Nanny}, CreateList=True}"/>
     </Window.Resources>

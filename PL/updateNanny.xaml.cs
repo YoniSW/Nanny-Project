@@ -24,5 +24,10 @@ namespace PL
             InitializeComponent();
         }
 
+        private void click_search(object sender, RoutedEventArgs e)
+        {
+            new getAllNannies().Show();
+        }
+
     }
 }

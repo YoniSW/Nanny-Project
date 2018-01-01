@@ -6,10 +6,7 @@
         xmlns:local="clr-namespace:PL"
         xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PL.addChild"
         mc:Ignorable="d"
-        Title="Add Child" Height="400" Width="250" Loaded="Window_Loaded_1">
-    <Window.Resources>
-        <CollectionViewSource x:Key="childViewSource" d:DesignSource="{d:DesignInstance {x:Type BE:Child}, CreateList=True}"/>
-    </Window.Resources>
+        Title="Add Child" Height="400" Width="250">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

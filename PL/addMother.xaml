@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL"
         xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PL.addMother"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="Add mother" Height="380" Width="255" Loaded="Window_Loaded">
+        Title="Add mother" Height="380" Width="255">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -99,7 +100,7 @@
         <CheckBox x:Name="Checkwed" HorizontalAlignment="Left" Height="19" Margin="162,17,0,0" Grid.Row="2" VerticalAlignment="Top" Width="16"/>
         <CheckBox x:Name="Checkthu" HorizontalAlignment="Left" Height="19" Margin="192,17,0,0" Grid.Row="2" VerticalAlignment="Top" Width="16"/>
         <CheckBox x:Name="Checkfri" HorizontalAlignment="Left" Height="19" Margin="220,17,0,0" Grid.Row="2" VerticalAlignment="Top" Width="16"/>
-        <TextBox x:Name="sunstart" HorizontalAlignment="Left" Height="11" Margin="68,5,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="26"/>
+        <xctk:TimePicker x:Name="sunstart" Format="ShortTime" Value="00:00" HorizontalAlignment="Left" FontSize="8"  Grid.Row="2" VerticalAlignment="Top" Height="18" Width="83" Grid.RowSpan="2" Margin="30,34,0,0"/>
         <TextBox x:Name="monstart" HorizontalAlignment="Left" Height="11" Margin="98,5,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="26"/>
         <TextBox x:Name="tuestart" HorizontalAlignment="Left" Height="11" Margin="128,5,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="26"/>
         <TextBox x:Name="wedstart" HorizontalAlignment="Left" Height="11" Margin="158,5,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="26"/>

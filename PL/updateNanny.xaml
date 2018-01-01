@@ -20,7 +20,8 @@
             <Label VerticalAlignment="Center" Grid.Row="0" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="nanny ID:"/>
             <TextBox x:Name="_nannyIDTextBox" Width="120" VerticalAlignment="Center" Text="{Binding _nannyID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="0" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
         </Grid>
-        <Button x:Name="button1" Content="search" HorizontalAlignment="Left" Height="19" Margin="208,16,0,0" VerticalAlignment="Top" Width="66" Click="click_serach"/>
+        <Button x:Name="button1" Content="search" HorizontalAlignment="Left" Height="19" Margin="208,16,0,0" VerticalAlignment="Top" Width="66" 
+                Click="click_serach"/>
         <Grid x:Name="grid2"  HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
