@@ -9,6 +9,8 @@ using GoogleMapsApi;
 using GoogleMapsApi.Entities.Directions.Request;
 using GoogleMapsApi.Entities.Directions.Response;
 
+// LOGIC
+
 namespace BL
 {
     class Bl_imp : IBL
@@ -17,7 +19,6 @@ namespace BL
         public Bl_imp()
         {
             dal = DAL.factoryDal.getDal();
-            //init();
         }
       
         // sent function to Idal by certian methods =========================
@@ -141,6 +142,7 @@ namespace BL
         public void deleteChild(long thisKid)
         {
             dal.deleteChild(thisKid);
+            //dal.deleteContract(thisKid._contract);
         }
 
         public void updateChild(Child thisChild)
