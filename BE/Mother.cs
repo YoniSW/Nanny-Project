@@ -17,6 +17,8 @@ namespace BE /// test123
         public bool _isLookingForNanny { get; set; }
         public bool[] _daysRequestMom { get; set; }
         public Schedule[] _scheduleMom { get; set; }
+        public DateTime[] _startHour { get; set; }
+        public DateTime[] _endHour { get; set; }
 
         // we will use the dublicate function
         public Mother duplicate()
