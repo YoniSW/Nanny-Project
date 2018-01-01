@@ -19,14 +19,24 @@ namespace PL
     /// </summary>
     public partial class updateNanny : Window
     {
+
+        public BE.Nanny nannyToUpdate;
+        public BL.IBL bl;
+
         public updateNanny()
         {
             InitializeComponent();
+            nannyToUpdate = new BE.Nanny();
+            nannyToUpdate._startHour = new DateTime[6];
+            nannyToUpdate._endHour = new DateTime[6];
+            nannyToUpdate._workDays = new bool[6];
+            //updateNannyDeatails.DataContext = nannyToUpdate;  --> grid we wnat to update
+            bl = BL.FactoryBL.GetBL();
         }
 
         private void click_search(object sender, RoutedEventArgs e)
         {
-            new getAllNannies().Show();
+            nannyToUpdate = bl.getNanny(Convert.ToInt64(nannyIdTextBox.Text));
         }
 
     }

@@ -36,5 +36,10 @@ namespace PL
                 MessageBox.Show(Exeption.Message);
             }
         }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

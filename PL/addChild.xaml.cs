@@ -26,16 +26,24 @@ namespace PL
         {
             InitializeComponent();
             bl = BL.FactoryBL.GetBL();
+            childAdd = new BE.Child(); // create a new child
+            thisGrid.DataContext = childAdd;  // activate grid
+
+        }
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
 
             try
             {
                 bl.addChild(childAdd);
                 childAdd = new BE.Child();
-                this.DataContext = childAdd;
+                thisGrid.DataContext = childAdd;
+                MessageBox.Show("Child was added successfully!");
+                Close();
             }
             catch (FormatException)
             {
-                MessageBox.Show("check your input and try again");
+                MessageBox.Show("Check your input and try again");
             }
             catch (Exception ex)
             {

@@ -31,10 +31,77 @@ namespace PL
             addMom._startHour = new DateTime[6];
             addMom._endHour = new DateTime[6];
             addMom._daysRequestMom = new bool[6];
-            
+            thisGrid.DataContext = addMom;
             bl = BL.FactoryBL.GetBL();
         }
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if ((bool)(SunCheck.IsChecked == true))
+                {
+                    addMom._daysRequestMom[0] = true;
+                    var start = SunStart.Value;
+                    var end = SunEnd.Value;
+                    addMom._startHour[0] = Convert.ToDateTime(start);
+                    addMom._endHour[0] = Convert.ToDateTime(end);
+                }
+                if ((bool)(MonCheck.IsChecked == true))
+                {
+                    addMom._daysRequestMom[1] = true;
+                    var start = MonStart.Value;
+                    var end = MonEnd.Value;
+                    addMom._startHour[1] = Convert.ToDateTime(start);
+                    addMom._endHour[1] = Convert.ToDateTime(end);
+                }
+                if ((bool)(TueCheck.IsChecked == true))
+                {
+                    addMom._daysRequestMom[2] = true;
+                    var start = TueStart.Value;
+                    var end = TueEnd.Value;
+                    addMom._startHour[2] = Convert.ToDateTime(start);
+                    addMom._endHour[2] = Convert.ToDateTime(end);
+                }
+                if ((bool)(WedCheck.IsChecked == true))
+                {
+                    addMom._daysRequestMom[3] = true;
+                    var start = WedStart.Value;
+                    var end = WedEnd.Value;
+                    addMom._startHour[3] = Convert.ToDateTime(start);
+                    addMom._endHour[3] = Convert.ToDateTime(end);
+                }
+                if ((bool)(ThuCheck.IsChecked == true))
+                {
+                    addMom._daysRequestMom[4] = true;
+                    var start =ThuStart.Value;
+                    var end = ThuEnd.Value;
+                    addMom._startHour[4] = Convert.ToDateTime(start);
+                    addMom._endHour[4] = Convert.ToDateTime(end);
+                }
+                if ((bool)(FriCheck.IsChecked == true))
+                {
+                    addMom._daysRequestMom[5] = true;
+                    var start = FriStart.Value;
+                    var end = FriEnd.Value;
+                    addMom._startHour[5] = Convert.ToDateTime(start);
+                    addMom._endHour[5] = Convert.ToDateTime(end);
+                }
 
- 
+
+                bl.addMother(addMom);
+                addMom = new BE.Mother();
+                thisGrid.DataContext = addMom;
+                MessageBox.Show("Mother is added successfully!");
+                this.Close();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Check your input and try again");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
