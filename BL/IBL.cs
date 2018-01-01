@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace BL
 {
+    // logical abstract declerations
+    // the Bl.imp will inherit those declerations
     public interface IBL
     {
         // nany function declarations

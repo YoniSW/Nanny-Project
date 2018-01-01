@@ -9,6 +9,9 @@ using System.Net.Sockets;
 
 namespace DAL
 {
+    // logical abstract declerations
+    // the Dal.imp will inherit those declerations
+
     public interface Idal
     {
 

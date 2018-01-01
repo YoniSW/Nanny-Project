@@ -21,17 +21,6 @@ namespace BL
         }
       
         // sent function to Idal by certian methods =========================
-
-
-        public void addNanny(Nanny thisNanny)
-        {
-            DateTime now = DateTime.Now;
-            if (now.Year - 18 < thisNanny._nannyBirth.Year)
-                throw new Exception("Nanny is under 18");
-
-            dal.addNanny(thisNanny);
-        }
-
         
         public void addContract(Contract thisCon)
         {
@@ -61,16 +50,6 @@ namespace BL
 
         }
 
-        public double getMotherHours(Mother thisMom)
-        {
-            double totalWeeklyHours = 0;
-
-            for (int i = 0; i < 6; i++)
-                totalWeeklyHours += thisMom._scheduleMom[i].end.Hour - thisMom._scheduleMom[i].begin.Hour;
-
-            return totalWeeklyHours;
-        }
-
         // the function returns number of kids from SAME contract and SAME mother 
         public int amountOfKidsForMomAndNanny(Child thisKid, Nanny thisNanny)
         {
@@ -85,16 +64,47 @@ namespace BL
             return howMuch.Count();
         }
 
-        // send rest of the function to Idal without any method =============================
+        // ######## Mother ##########
 
         public void addMother(Mother thisMom)
         {
             dal.addMother(thisMom);
         }
 
-        public void addChild(Child thisKid)
+        public Mother getMother(long idMom)
         {
-            dal.addChild(thisKid);
+            Mother mom = new Mother();
+            mom = dal.getMom(idMom);
+
+
+            return mom;
+        }
+
+        public void updateMother(Mother thisMom)
+        {
+            dal.updateMother(thisMom);
+        }
+
+        public void deleteMother(long thisMom)
+        {
+            dal.deleteMother(thisMom);
+        }
+
+        public double getMotherHours(Mother thisMom)
+        {
+            double totalWeeklyHours = 0;
+
+            for (int i = 0; i < 6; i++)
+                totalWeeklyHours += thisMom._scheduleMom[i].end.Hour - thisMom._scheduleMom[i].begin.Hour;
+
+            return totalWeeklyHours;
+        }
+
+        // ######## Nanny ##########
+
+        public Nanny getNanny(long idNanny)
+        {
+            return dal.getNanny(idNanny);
         }
 
         public void deleteNanny(long thisNany)
@@ -107,14 +117,25 @@ namespace BL
             dal.updateNany(thisNany);
         }
 
-        public void deleteMother(long thisMom)
+        public void addNanny(Nanny thisNanny)
         {
-            dal.deleteMother(thisMom);
+            DateTime now = DateTime.Now;
+            if (now.Year - 18 < thisNanny._nannyBirth.Year)
+                throw new Exception("Nanny is under 18");
+
+            dal.addNanny(thisNanny);
         }
 
-        public void updateMother(Mother thisMom)
+        // ######## Child ##########
+
+        public Child getChild(long idChild)
         {
-            dal.updateMother(thisMom);
+            return dal.getChild(idChild);
+        }
+
+        public void addChild(Child thisKid)
+        {
+            dal.addChild(thisKid);
         }
 
         public void deleteChild(long thisKid)
@@ -127,6 +148,8 @@ namespace BL
             dal.updateChild(thisChild);
         }
 
+        // ######## Contract ##########
+
         public void updateContract(Contract thisContract)
         {
             dal.updateContract(thisContract);
@@ -135,6 +158,11 @@ namespace BL
         public void deleteContract(long thisContract)
         {
             dal.deleteContract(thisContract);
+        }
+
+        public Contract getContract(int idContract)
+        {
+            return dal.getContract(idContract);
         }
 
         // send IEnumerables to Idal ==================================================
@@ -281,18 +309,19 @@ namespace BL
                    select a;
         }
 
+        // IGrouping is an interface that that groups together a collection by a certian key
 
         public IEnumerable<IGrouping<int, Nanny>> getChildByAgeRange(bool minimumAge, bool isSort)
         {
             if (isSort)
                 if (minimumAge)
-                    return from a in dal.getAllNanny()
-                           orderby a._minMonthAge
-                           group a by a._minMonthAge / 3; // sort list by min age
+                    return from newList in dal.getAllNanny() // take data from all nannies
+                           orderby newList._minMonthAge
+                           group newList by newList._minMonthAge / 3; // group together a list 'newList' by min age
                 else
-                    return from a in dal.getAllNanny()
-                           orderby a._maxMonthAge
-                           group a by a._minMonthAge / 3; // sort list by max age
+                    return from newList in dal.getAllNanny()
+                           orderby newList._maxMonthAge
+                           group newList by newList._minMonthAge / 3; //group together a list 'newList' by max age
             else
                     if (minimumAge)
                 return from a in dal.getAllNanny()
@@ -302,11 +331,34 @@ namespace BL
                        group a by a._minMonthAge / 3;
         }
 
-        public IEnumerable<IGrouping<bool, Nanny>> getNannyByDistance(string addressMom, string addressNanny, double rangeMeter)
+        //public IEnumerable<IGrouping<bool, Nanny>> getNannyByDistance(string addressMom, string addressNanny, double rangeMeter)
+        //{
+        //    return from a in dal.getAllNanny()
+        //               // select all nannies that are maximum 10 km distance away
+        //           group a by caculateDistance(addressNanny, addressMom) < rangeMeter * 10000;
+        //}
+
+        public IEnumerable<IGrouping<int, Nanny>> getNannyByDistance(string addressMom, bool isSorted)
         {
+            if (isSorted)
+            {
+
+                // if list is sorted so get all nanny and caculate the distance will moms 
+                // and then return by grouping with order
+                var nannyList = from a in dal.getAllNanny()
+                                select a.duplicate();
+
+                foreach (var a in nannyList)
+                    a._distance = caculateDistance(addressMom, a._nannyAdress);
+
+
+                return from a in dal.getAllNanny()
+                       orderby a._distance
+                       group a by (int)(a._distance) / 5000;
+            }
+            // if not sorted
             return from a in dal.getAllNanny()
-                       // select all nannies that are maximum 10 km distance away
-                   group a by caculateDistance(addressNanny, addressMom) < rangeMeter * 10000;
+                   group a by caculateDistance(addressMom, a._nannyAdress) / 5000;
         }
     }
 }

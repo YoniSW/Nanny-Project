@@ -26,6 +26,8 @@ namespace BE
         public double _rateByMonth { get; set; }
         public bool[] _workDays { get; set; }
         public Schedule[] _scheduleNan { get; set;}
+        public DateTime[] _startHour { get; set; }
+        public DateTime[] _endHour { get; set; }
         public bool _isTamatNanny { get; set; }
         public string _recommendation { get; set; }
         public double _diff { get; set; }
