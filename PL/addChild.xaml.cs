@@ -19,17 +19,30 @@ namespace PL
     /// </summary>
     public partial class addChild : Window
     {
+        public BE.Child childAdd; // childAdd contians the child data
+        public BL.IBL bl; // connect to BL layer
+
         public addChild()
         {
             InitializeComponent();
-        }
-        private void Window_Loaded_1(object sender, RoutedEventArgs e)
-        {
+            bl = BL.FactoryBL.GetBL();
 
-            System.Windows.Data.CollectionViewSource motherViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("motherViewSource")));
-            // Load data by setting the CollectionViewSource.Source property:
-            // motherViewSource.Source = [generic data source]
+            try
+            {
+                bl.addChild(childAdd);
+                childAdd = new BE.Child();
+                this.DataContext = childAdd;
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("check your input and try again");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+
 
 
     }

@@ -21,8 +21,8 @@ namespace PL
     /// </summary>
     public partial class addMother : Window
     {
-        public BE.Mother addMom;
-        public BL.IBL bl;
+        public BE.Mother addMom; // addMom contians the moms data
+        public BL.IBL bl; // connect to BL layer
 
         public addMother()
         {

@@ -14,22 +14,32 @@ using System.Windows.Shapes;
 
 namespace PL
 {
-    /// <summary>
-    /// Interaction logic for addNanny.xaml
-    /// </summary>
     public partial class addNanny : Window
     {
+        public BE.Nanny nannyAdd; // nannydAdd contians the child data
+        public BL.IBL bl; // connect to BL layer
+
         public addNanny()
         {
             InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
+
+            try
+            {
+                bl.addNanny(nannyAdd);
+                nannyAdd = new BE.Nanny();
+                this.DataContext = nannyAdd;
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("check your input and try again");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
 
-            System.Windows.Data.CollectionViewSource motherViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("motherViewSource")));
-            // Load data by setting the CollectionViewSource.Source property:
-            // motherViewSource.Source = [generic data source]
-        }
     }
 }
