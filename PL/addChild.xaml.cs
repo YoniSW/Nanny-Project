@@ -26,9 +26,10 @@ namespace PL
         {
             InitializeComponent();
             bl = BL.FactoryBL.GetBL();
+            //_birthdayDatePicker.SelectedDate = DateTime.Today;
             childAdd = new BE.Child(); // create a new child
             thisGrid.DataContext = childAdd;  // activate grid
-
+           
         }
         private void button_Click(object sender, RoutedEventArgs e)
         {
@@ -51,12 +52,5 @@ namespace PL
             }
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-            System.Windows.Data.CollectionViewSource childViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("childViewSource")));
-            // Load data by setting the CollectionViewSource.Source property:
-            // childViewSource.Source = [generic data source]
-        }
     }
 }

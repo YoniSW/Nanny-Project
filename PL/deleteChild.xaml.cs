@@ -30,16 +30,17 @@ namespace PL
             try
             {
                 bl.deleteChild(long.Parse(textBox.Text));
+                MessageBox.Show("Child was deleted successfully!");
+                Close();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Check your input and try again");
             }
             catch (Exception Exeption)
             {
                 MessageBox.Show(Exeption.Message);
             }
-        }
-
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }
