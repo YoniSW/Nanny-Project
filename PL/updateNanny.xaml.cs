@@ -34,10 +34,11 @@ namespace PL
             bl = BL.FactoryBL.GetBL();
         }
 
-        private void click_search(object sender, RoutedEventArgs e)
-        {
-            nannyToUpdate = bl.getNanny(Convert.ToInt64(nannyIdTextBox.Text));
-        }
+     
 
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -23,7 +23,7 @@
                      Text="{Binding _nannyID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="0" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
         </Grid>
         <Button x:Name="button1" Content="search" HorizontalAlignment="Left" Height="19" Margin="208,16,0,0" VerticalAlignment="Top" Width="66" 
-                Click="click_serach"/>
+                />
         <Grid x:Name="grid2"  HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -192,7 +192,8 @@
                      Text="{Binding _recommendation, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
             
         </Grid>
-        <Button x:Name="button" Content="update" HorizontalAlignment="Left" Height="24" Margin="263,435,0,0" VerticalAlignment="Top" Width="62"/>
+        <Button x:Name="button" Content="update" HorizontalAlignment="Left" Height="24" Margin="263,435,0,0" VerticalAlignment="Top" 
+                Width="62" Click="button_Click"/>
 
     </Grid>
 </Window>

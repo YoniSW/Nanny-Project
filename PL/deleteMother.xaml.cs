@@ -31,6 +31,12 @@ namespace PL
             try
             {
                 bl.deleteMother(long.Parse(textBox.Text));
+                MessageBox.Show("Mother was deleted successfully!");
+                Close();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Check your input and try again");
             }
             catch (Exception Exeption)
             {
