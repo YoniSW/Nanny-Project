@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:local="clr-namespace:PL"
-        xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PL.addNanny"
+        xmlns:BE="clr-namespace:BE;assembly=BE" 
+        x:Class="PL.addNanny"
         mc:Ignorable="d"
         Title="addNanny" Height="500" Width="600">
     <Grid x:Name="thisGrid" Margin ="0,0,2,1">

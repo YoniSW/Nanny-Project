@@ -57,6 +57,8 @@ namespace BE
             dupNanny._workDays = this._workDays;
             dupNanny._isTamatNanny = this._isTamatNanny;
             dupNanny._recommendation = this._recommendation;
+            dupNanny._startHour = this._startHour;
+            dupNanny._endHour = this._endHour;
 
 
             return dupNanny;

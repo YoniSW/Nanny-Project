@@ -31,6 +31,12 @@ namespace PL
             try
             {
                 bl.deleteNanny(int.Parse(textBox.Text));
+                MessageBox.Show("Nanny was deleted successfully!");
+                Close();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Check your input and try again");
             }
             catch (Exception Ex)
             {
