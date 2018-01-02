@@ -22,6 +22,7 @@ namespace PL
         public addNanny()
         {
             InitializeComponent();
+            nannyAdd = new BE.Nanny();
             nannyAdd._startHour = new DateTime[6];
             nannyAdd._endHour = new DateTime[6];
             nannyAdd._workDays = new bool[6];
