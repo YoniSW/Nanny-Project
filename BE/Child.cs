@@ -14,6 +14,8 @@ namespace BE
         public DateTime _birthday { get; set; }
         public bool _isSpecialNeed { get; set; }
         public string _specialNeeds { get; set; }
+        public bool _isAlergic { get; set; }  // alergies
+        public string _alergies { get; set; }
 
         public Child duplicate()
         {
@@ -25,7 +27,8 @@ namespace BE
             dupChild._birthday = this._birthday;
             dupChild._isSpecialNeed = this._isSpecialNeed;
             dupChild._specialNeeds = this._specialNeeds;
-
+            dupChild._isAlergic = this._isAlergic; // alergies
+            dupChild._alergies = this._alergies;
             return dupChild;
         }
 

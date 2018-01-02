@@ -14,6 +14,7 @@ namespace BE /// test123
         public string _momFname { get; set; }
         public long _momPhone { get; set; }
         public string _momAdress { get; set; }
+        public string _locationOfNanny { get; set; } // where the nanny lives
         public bool _isLookingForNanny { get; set; }
         public bool[] _daysRequestMom { get; set; }
         public Schedule[] _scheduleMom { get; set; }
@@ -30,9 +31,11 @@ namespace BE /// test123
             dupMom._momFname = this._momFname;
             dupMom._momPhone = this._momPhone;
             dupMom._momAdress = this._momAdress;
+            dupMom._locationOfNanny = this._locationOfNanny; // location of nanny
             dupMom._isLookingForNanny = this._isLookingForNanny;
             dupMom._daysRequestMom = this._daysRequestMom;
             dupMom._scheduleMom = this._scheduleMom;
+
             return dupMom;
         }
 

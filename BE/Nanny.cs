@@ -30,8 +30,8 @@ namespace BE
         public DateTime[] _endHour { get; set; }
         public bool _isTamatNanny { get; set; }
         public string _recommendation { get; set; }
-        public double _diff { get; set; }
-        public double _distance { get; set; }
+        public double _diff { get; set; }  //whats the meaning?
+        public double _distance { get; set; } //distance from the mother to the nanny?
 
         public Nanny duplicate()
         {
