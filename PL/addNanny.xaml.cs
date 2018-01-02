@@ -22,24 +22,76 @@ namespace PL
         public addNanny()
         {
             InitializeComponent();
+            nannyAdd._startHour = new DateTime[6];
+            nannyAdd._endHour = new DateTime[6];
+            nannyAdd._workDays = new bool[6];
+            thisGrid.DataContext = nannyAdd;
             bl = BL.FactoryBL.GetBL();
+        }
 
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
             try
             {
+                if ((bool)(SunCheck.IsChecked == true))
+                {
+
+                    var start = SunStart.Value;
+                    var end = SunEnd.Value;
+                    nannyAdd._startHour[0] = Convert.ToDateTime(start);
+                    nannyAdd._endHour[0] = Convert.ToDateTime(end);
+                }
+                if ((bool)(MonCheck.IsChecked == true))
+                {
+
+                    var start = MonStart.Value;
+                    var end = MonEnd.Value;
+                    nannyAdd._startHour[1] = Convert.ToDateTime(start);
+                    nannyAdd._endHour[1] = Convert.ToDateTime(end);
+                }
+                if ((bool)(TueCheck.IsChecked == true))
+                {
+
+                    var start = TueStart.Value;
+                    var end = TueEnd.Value;
+                    nannyAdd._startHour[2] = Convert.ToDateTime(start);
+                    nannyAdd._endHour[2] = Convert.ToDateTime(end);
+                }
+                if ((bool)(WedCheck.IsChecked == true))
+                {
+
+                    var start = WedStart.Value;
+                    var end = WedEnd.Value;
+                    nannyAdd._startHour[3] = Convert.ToDateTime(start);
+                    nannyAdd._endHour[3] = Convert.ToDateTime(end);
+                }
+                if ((bool)(ThuCheck.IsChecked == true))
+                {
+
+                    var start = ThuStart.Value;
+                    var end = ThuEnd.Value;
+                    nannyAdd._startHour[4] = Convert.ToDateTime(start);
+                    nannyAdd._endHour[4] = Convert.ToDateTime(end);
+                }
+                if ((bool)(FriCheck.IsChecked == true))
+                {
+
+                    var start = FriStart.Value;
+                    var end = FriEnd.Value;
+                    nannyAdd._startHour[5] = Convert.ToDateTime(start);
+                    nannyAdd._endHour[5] = Convert.ToDateTime(end);
+                }
+
                 bl.addNanny(nannyAdd);
                 nannyAdd = new BE.Nanny();
                 this.DataContext = nannyAdd;
+                MessageBox.Show("Nanny is added successfully");
+                this.Close();
             }
-            catch (FormatException)
+            catch (Exception Ex)
             {
-                MessageBox.Show("check your input and try again");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(Ex.Message);
             }
         }
-
-
     }
 }

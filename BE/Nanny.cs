@@ -25,13 +25,14 @@ namespace BE
         public double _rateByHour { get; set; }
         public double _rateByMonth { get; set; }
         public bool[] _workDays { get; set; }
-        public Schedule[] _scheduleNan { get; set;}
         public DateTime[] _startHour { get; set; }
         public DateTime[] _endHour { get; set; }
         public bool _isTamatNanny { get; set; }
         public string _recommendation { get; set; }
-        public double _diff { get; set; }  //whats the meaning?
-        public double _distance { get; set; } //distance from the mother to the nanny?
+        public double _diff { get; set; }  /* this is the difference between the hours the nanny can take care if a mother's child
+                                             and the actual time she did, for example, nanny is open from 8:00 but child comes at 9:00
+                                             so diff == 1 */
+        public double _distance { get; set; } // yes, its a distance from a mother
 
         public Nanny duplicate()
         {
@@ -54,7 +55,6 @@ namespace BE
             dupNanny._rateByHour = this._rateByHour;
             dupNanny._rateByMonth = this._rateByMonth;
             dupNanny._workDays = this._workDays;
-            //dupNanny._schedule = this._schedule;
             dupNanny._isTamatNanny = this._isTamatNanny;
             dupNanny._recommendation = this._recommendation;
 

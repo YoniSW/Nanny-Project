@@ -245,16 +245,16 @@ namespace BL
             nanny._diff = 0;
             for (int i = 0; i < 6; i++)
             {
-                if (nanny._scheduleNan[i].begin > mom._scheduleMom[i].begin)
+                if (nanny._startHour[i] > mom._startHour[i])
                 {
                     TimeSpan sum = new TimeSpan();
-                    sum = nanny._scheduleNan[i].begin - mom._scheduleMom[i].begin;
+                    sum = nanny._startHour[i] - mom._startHour[i];
                     nanny._diff += ((sum.Days - 1) * 24 + sum.Hours + sum.Minutes / 60.0);
                 }
-                if (nanny._scheduleNan[i].end < mom._scheduleMom[i].end)
+                if (nanny._endHour[i] < mom._endHour[i])
                 {
                     TimeSpan sum = new TimeSpan();
-                    sum = mom._scheduleMom[i].end - nanny._scheduleNan[i].end;
+                    sum = mom._endHour[i] - nanny._endHour[i];
                     nanny._diff += ((sum.Days - 1) * 24 + sum.Hours + sum.Minutes / 60.0);
                 }
             }
@@ -262,8 +262,8 @@ namespace BL
         public bool checkSchedule(Nanny nanny, Mother mom)
         {
           for (int i = 0; i < 6; i++) {
-          if (nanny._scheduleNan[i].begin > mom._scheduleMom[i].begin ||
-                nanny._scheduleNan[i].end < mom._scheduleMom[i].end)
+          if (nanny._startHour[i] > mom._startHour[i] ||
+                nanny._endHour[i] < mom._endHour[i])
                 return false;
           }
           return true;
