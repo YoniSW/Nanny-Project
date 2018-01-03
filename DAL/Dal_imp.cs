@@ -21,10 +21,10 @@ namespace DAL
         public Dal_imp()
         {
             new DataSource();
-        } 
+        }
 
         // Nanny functions ================================================================================
-
+        #region Nanny functions
         public Nanny getNanny(long thisID)
         {
             var thisNanny = DataSource.nannyList.FirstOrDefault(n => n._nannyID == thisID);
@@ -65,10 +65,11 @@ namespace DAL
                 throw new Exception("Nanny doesn't exist in the system");
             DataSource.nannyList[index] = thisNany;
         }
-
+#endregion
 
         // Mother functions ================================================================================
-
+       
+        #region Mother functions
         public Mother getMom(long thisID)
         {
             var thisMom = DataSource.motherList.FirstOrDefault(m => m._momID == thisID);
@@ -120,9 +121,11 @@ namespace DAL
             DataSource.motherList[index] = thisMom;
 
         }
+#endregion
 
         // child functions ================================================================================
-
+      
+        #region child functions
         public Child getChild(long thisID)
         {
             var thisChild = DataSource.childList.FirstOrDefault(c => c._childID == thisID);
@@ -168,9 +171,11 @@ namespace DAL
             DataSource.childList[index] = thisChild;
 
         }
+        #endregion
 
-        // contract functions ================================================================================
+        // contract functions ============================================================================
 
+        #region contract functions
         public Contract getContract(long id)
         {
             var thisContract = DataSource.contractList.FirstOrDefault(c => c._contractID == id);
@@ -248,9 +253,11 @@ namespace DAL
             updateMother(thisMom);
             DataSource.contractList.RemoveAt(index);
         }
+        #endregion
 
         // get IEnumerable functions =================================================================
 
+        #region IEnumerable functions
         public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
             {
                 if (Predicate == null)
@@ -282,8 +289,8 @@ namespace DAL
                 return DataSource.contractList.Where(Predicate);
             }
 
-        
 
+#endregion
 
     }
 }

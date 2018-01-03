@@ -7,7 +7,8 @@
         xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PL.addContract"
         mc:Ignorable="d"
         Title="Add contract" Height="420" Width="250">
-    <Grid>
+    
+    <Grid x:Name="ContractGrid">
 
         <Grid x:Name="grid1" VerticalAlignment="Top" Margin="10,10,0,0" HorizontalAlignment="Left" >
             <Grid.RowDefinitions>
@@ -64,6 +65,7 @@
             <Label Content="did Meet:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
             <CheckBox x:Name="_didMeetCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding _didMeet, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
         </Grid>
+        
         <Grid x:Name="grid6" HorizontalAlignment="Left" Margin="10,195,0,0" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -119,6 +121,7 @@
             <Label Content="is By Hour:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
             <CheckBox x:Name="_isByHourCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding _isByHour, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
         </Grid>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="63,344,0,0" VerticalAlignment="Top" Width="132" Height="35" Click="Button_Click"/>
 
     </Grid>
 </Window>
