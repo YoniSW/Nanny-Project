@@ -147,7 +147,7 @@
             <Label Content="recommendation:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
             <TextBox x:Name="_recommendationTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding _recommendation, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
         </Grid>
-        <Grid x:Name="grid9"   HorizontalAlignment="Left" Margin="6,229,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="32" Width="187">
+        <Grid x:Name="grid9"   HorizontalAlignment="Left" Margin="6,229,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="32" Width="211">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
@@ -156,8 +156,8 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="nanny Birth:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-            <DatePicker x:Name="_nannyBirthDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="0" 
-                        SelectedDate="{Binding _nannyBirth, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center"/>
+            <DatePicker x:Name="_nannyBirthDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3,4,-13,4" Grid.Row="0" 
+                        SelectedDate="{Binding _nannyBirth, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="109"/>
         </Grid>
         <Grid x:Name="grid10" Grid.Column="1"   HorizontalAlignment="Left" Margin="5,5,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="32" Width="125">
             <Grid.ColumnDefinitions>

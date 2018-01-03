@@ -114,7 +114,8 @@ namespace DAL
 
         public void updateMother(Mother thisMom)
         {
-            var index = DataSource.motherList.FindIndex(m => m._momID == thisMom._momID);
+            var index = DataSource.motherList.FindIndex
+                (m => m._momID == thisMom._momID);
             if (index == -1)
                 throw new Exception("Mother doesn't exist in the system");
 
@@ -128,7 +129,8 @@ namespace DAL
         #region child functions
         public Child getChild(long thisID)
         {
-            var thisChild = DataSource.childList.FirstOrDefault(c => c._childID == thisID);
+            var thisChild = DataSource.childList.FirstOrDefault
+                (c => c._childID == thisID);
             if (thisChild == null)
                 throw new Exception("ID doesn't exist");
 
@@ -137,7 +139,8 @@ namespace DAL
 
         public void addChild(Child thisKid)
         {
-            var index = DataSource.childList.FindIndex(c => c._childID == thisKid._childID);
+            var index = DataSource.childList.FindIndex
+                (c => c._childID == thisKid._childID);
             if (index != -1)
                 throw new Exception("Child already exists in the system");
 
@@ -146,13 +149,15 @@ namespace DAL
 
         public void deleteChild(long thisKid)
         {
-            var index = DataSource.childList.FindIndex(c => c._childID == thisKid);
+            var index = DataSource.childList.FindIndex
+                (c => c._childID == thisKid);
             if (index == -1)
                 throw new Exception("Child  doesn't exist in the system");
             // else
 
             // 1. delete all contracts with thisKid
-            DataSource.contractList.RemoveAll(c => c._childID == thisKid);
+            DataSource.contractList.RemoveAll
+                (c => c._childID == thisKid);
 
             // 2. remove thisKid
             DataSource.childList.RemoveAt(index);
@@ -162,7 +167,8 @@ namespace DAL
         public void updateChild(Child thisChild)
         {
 
-            var index = DataSource.childList.FindIndex(c => c._childID == thisChild._childID);
+            var index = DataSource.childList.FindIndex
+                (c => c._childID == thisChild._childID);
             if (index == -1)
                 throw new Exception("Child doesn't exist in the system");
 
@@ -178,7 +184,8 @@ namespace DAL
         #region contract functions
         public Contract getContract(long id)
         {
-            var thisContract = DataSource.contractList.FirstOrDefault(c => c._contractID == id);
+            var thisContract = DataSource.contractList.FirstOrDefault
+                (c => c._contractID == id);
             if (thisContract == null)
                 throw new Exception("ID doesn't exist");
 
@@ -189,7 +196,8 @@ namespace DAL
         public void addContract(Contract thisContract)
         {
 
-            var index = DataSource.contractList.FindIndex(c => c._childID == thisContract._childID && 
+            var index = DataSource.contractList.FindIndex
+                (c => c._childID == thisContract._childID && 
             c._nannyID == thisContract._nannyID);
 
             if(index != -1)
@@ -203,7 +211,8 @@ namespace DAL
             Mother thisMom = getMom(thisChild._momID);
 
             // 3. check that mother exists
-            var index2 = DataSource.motherList.FindIndex(m => m._momID == thisMom._momID);
+            var index2 = DataSource.motherList.FindIndex
+                (m => m._momID == thisMom._momID);
             if (index2 == -1)
                 throw new Exception("Mother doesn't exist in the system");
 
@@ -211,7 +220,8 @@ namespace DAL
             Nanny thisNanny = getNanny(thisContract._nannyID);
 
             // 5. check nanny exists
-            var index3 = DataSource.nannyList.FindIndex(n => n._nannyID == thisNanny._nannyID);
+            var index3 = DataSource.nannyList.FindIndex
+                (n => n._nannyID == thisNanny._nannyID);
             if (index3 == -1)
                 throw new Exception("Nanny doesn't exist in the system");
 
