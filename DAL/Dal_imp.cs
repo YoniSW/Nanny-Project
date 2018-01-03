@@ -27,7 +27,11 @@ namespace DAL
 
         public Nanny getNanny(long thisID)
         {
-            return DataSource.nannyList.FirstOrDefault(n => n._nannyID == thisID);
+            var thisNanny = DataSource.nannyList.FirstOrDefault(n => n._nannyID == thisID);
+            if (thisNanny == null)
+                throw new Exception("ID doesn't exist");
+
+            return thisNanny.duplicate();
         }
 
         public void addNanny(Nanny thisNany)
@@ -35,7 +39,7 @@ namespace DAL
             var index = DataSource.nannyList.FindIndex(n => n._nannyID == thisNany._nannyID);
             // if FindIndex method returns -1 so thisNany doesn't exist
             if (index != -1) 
-                throw new Exception("Nanny already exist in the system");
+                throw new Exception("ID already exist in the system");
 
             DataSource.nannyList.Add(thisNany);
 
@@ -67,7 +71,11 @@ namespace DAL
 
         public Mother getMom(long thisID)
         {
-            return DataSource.motherList.FirstOrDefault(m => m._momID == thisID);
+            var thisMom = DataSource.motherList.FirstOrDefault(m => m._momID == thisID);
+            if(thisMom == null)
+                throw new Exception("ID doesn't exist");
+
+            return thisMom.duplicate();
         }
 
         public void addMother(Mother thisMom)
@@ -117,7 +125,11 @@ namespace DAL
 
         public Child getChild(long thisID)
         {
-            return DataSource.childList.FirstOrDefault(c => c._childID == thisID);
+            var thisChild = DataSource.childList.FirstOrDefault(c => c._childID == thisID);
+            if (thisChild == null)
+                throw new Exception("ID doesn't exist");
+
+            return thisChild.duplicate();
         }
 
         public void addChild(Child thisKid)
@@ -161,7 +173,12 @@ namespace DAL
 
         public Contract getContract(long id)
         {
-            return DataSource.contractList.FirstOrDefault(c => c._contractID == id);
+            var thisContract = DataSource.contractList.FirstOrDefault(c => c._contractID == id);
+            if (thisContract == null)
+                throw new Exception("ID doesn't exist");
+
+            return thisContract.duplicate();
+
         }
 
         public void addContract(Contract thisContract)
