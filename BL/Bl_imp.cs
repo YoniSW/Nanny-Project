@@ -162,7 +162,7 @@ namespace BL
             dal.deleteContract(thisContract);
         }
 
-        public Contract getContract(int idContract)
+        public Contract getContract(long idContract)
         {
             return dal.getContract(idContract);
         }
