@@ -40,25 +40,24 @@ namespace PL
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            bl.addContract(addContr);
+            try
+            {
+                bl.addContract(addContr);
             addCont = new BE.Contract();
             ContractGrid.DataContext = addCont;  // added a name to the grid
             MessageBox.Show("Contract is added successfully added!");
             this.Close();
+           
 
-            //try
-            //{
-
-            //}
-
-            //catch (FormatException)
-            //{
-            //    MessageBox.Show("Check your input and try again");
-            //}
-            //catch (Exception ex)
-            //{
-            MessageBox.Show("the contract was added");
-            //}
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Check your input and try again");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("the contract was added");
+            }
         }
     }
 }

@@ -8,17 +8,17 @@
         xmlns:BE="clr-namespace:BE;assembly=BE" 
         x:Class="PL.addNanny"
         mc:Ignorable="d"
-        Title="addNanny" Height="500" Width="600">
-    <Grid x:Name="thisGrid" Margin ="0,0,2,1">
+        Title="addNanny" Height="500" Width="632">
+    <Grid x:Name="thisGrid" Margin ="0,0,34,1">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="271*"/>
-            <ColumnDefinition Width="271*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
-            <RowDefinition Height="295*"/>
-            <RowDefinition Height="128*"/>
-            <RowDefinition Height="45*"/>
+            <RowDefinition Height="Auto" MinHeight="294"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="22*"/>
 
         </Grid.RowDefinitions>
         <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="26,10,0,0" Grid.Row="3" VerticalAlignment="Top" 
@@ -79,7 +79,9 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="nanny ID:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-            <TextBox x:Name="_nannyIDTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding _nannyID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+            <TextBox x:Name="_nannyIDTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" 
+                     Text="{Binding _nannyID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
+                     VerticalAlignment="Center" Width="120"/>
         </Grid>
         <Grid x:Name="grid2"   HorizontalAlignment="Left" Margin="5,37,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="32" Width="216">
             <Grid.ColumnDefinitions>
@@ -225,7 +227,7 @@
             <Label Content="is Tamat Nanny:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
             <CheckBox x:Name="_isTamatNannyCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding _isTamatNanny, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
         </Grid>
-        <Grid x:Name="grid16"   HorizontalAlignment="Left" Margin="6,261,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="32" Width="216">
+        <Grid x:Name="grid16"   HorizontalAlignment="Left" Margin="6,261,0,0" VerticalAlignment="Top" Height="32" Width="216" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
