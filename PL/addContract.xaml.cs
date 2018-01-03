@@ -35,9 +35,9 @@ namespace PL
 
             // theis nanny does not exist 
             // this child does not exist
-            // the end work is before the start work
-            // contract cannot be made without a signature
-            // you didnt rate the sallary            
+            // the end work is before the start work           //
+            // contract cannot be made without a signature    //
+            // you didnt rate the sallary                    //
 
         }
 
@@ -56,6 +56,9 @@ namespace PL
 
                 if ((bool)((_ratePerHourTextBox.IsEnabled == false)|| (_ratePerMonthTextBox.IsEnabled == false)))
                      MessageBox.Show("you didnt choose a pament method!");
+
+                if ((bool)((_endWorkDatePicker.SelectedDate <= _beginWorkDatePicker.SelectedDate))
+                    MessageBox.Show("the end work is before the start work!");
             }
 
             catch (FormatException)
