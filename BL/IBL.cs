@@ -37,7 +37,6 @@ namespace BL
         void deleteContract(long ID);
 
         IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null);
-        void addContract(object addContr);
         IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null);
         IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null);
         IEnumerable<Contract> getContracts(Func<Contract, bool> Predicate = null);

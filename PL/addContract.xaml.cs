@@ -38,7 +38,7 @@ namespace PL
 
         }
 
-            private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             bl.addContract(addContr);
             addCont = new BE.Contract();
@@ -57,7 +57,7 @@ namespace PL
             //}
             //catch (Exception ex)
             //{
-                MessageBox.Show("the contract was added");
+            MessageBox.Show("the contract was added");
             //}
         }
     }
