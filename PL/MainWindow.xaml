@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL"
         mc:Ignorable="d"
-        Title="PL test" Height="270" Width="320">
+        Title="PL test" Height="270" Width="320" >
 
     <Grid>
 
@@ -36,9 +36,25 @@
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
 
-                    <Label Grid.ColumnSpan="2" Content="Nanny functions:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="289"/>
+                    <Label Grid.ColumnSpan="2" Content="Nanny functions:" HorizontalAlignment="Left" Height="45"  VerticalAlignment="Top" Width="289"/>
                     <Button x:Name="addNanny" Content="Add Nanny" HorizontalAlignment="Left" Height="45" Grid.Row="1" 
-                                VerticalAlignment="Top" Width="134" Margin="10,-5,0,0" Click="click_addNanny" BorderThickness="2"/>
+                                VerticalAlignment="Top" Width="134" Margin="10,-5,0,0" Click="click_addNanny" BorderThickness="2">
+                        <Button.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF103008" Offset="0.003"/>
+                                <GradientStop Color="#FF68876B" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.BorderBrush>
+                        <Button.Foreground>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+                        </Button.Foreground>
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF3E8F36" Offset="0.003"/>
+                                <GradientStop Color="Gainsboro" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>     
 
                     <Button x:Name="deleteNanny" Content="Delete Nanny" Grid.Column="1" HorizontalAlignment="Left" 
                                 Height="45" Grid.Row="1" VerticalAlignment="Top" Width="135" Click="click_deleteNanny" BorderThickness="2"
