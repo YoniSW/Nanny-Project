@@ -20,25 +20,56 @@ namespace PL
     public partial class updateNanny : Window
     {
 
-        public BE.Nanny nannyToUpdate;
+        public BE.Nanny addA_Nanny;
         public BL.IBL bl;
 
         public updateNanny()
         {
             InitializeComponent();
-            nannyToUpdate = new BE.Nanny();
-            nannyToUpdate._startHour = new DateTime[6];
-            nannyToUpdate._endHour = new DateTime[6];
-            nannyToUpdate._workDays = new bool[6];
-            //updateNannyDeatails.DataContext = nannyToUpdate;  --> grid we wnat to update
+            addA_Nanny = new BE.Nanny();
+            addA_Nanny._startHour = new DateTime[6];
+            addA_Nanny._endHour = new DateTime[6];
+            addA_Nanny._workDays = new bool[6];
+            //updateNannyDeatails.DataContext = addA_Nanny;  --> grid we wnat to update
             bl = BL.FactoryBL.GetBL();
         }
 
-     
+        private void search_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                addA_Nanny = bl.getNanny(Convert.ToInt64(_nannyIDTextBox.Text));
+                thisGrid.DataContext = addA_Nanny;
+                MessageBox.Show("Nanny is found, you can continue updating...");
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Check your input and try again");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
 
+            try
+            {
+
+
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Check your input and try again");
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

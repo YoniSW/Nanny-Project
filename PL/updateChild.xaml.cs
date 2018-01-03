@@ -38,7 +38,7 @@ namespace PL
             {
                 updateKid = bl.getChild(Convert.ToInt64(_childIDTextBox.Text));
                 thisGrid.DataContext = updateKid;
-                MessageBox.Show("Child is found");
+                MessageBox.Show("Child is found, you can continue updating...");
             }
 
             catch (FormatException)
