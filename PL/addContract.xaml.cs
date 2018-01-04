@@ -57,7 +57,7 @@ namespace PL
             }
             catch (Exception ex)
             {
-                MessageBox.Show("the contract was added");
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -67,13 +67,13 @@ namespace PL
             try
             {
                 if ((bool)(_didSignCheckBox.IsChecked == false))
-                    MessageBox.Show("contract cannot be made without a signature!");
+                   throw new Exception("contract cannot be made without a signature!");
 
                 if ((bool)((_ratePerHourTextBox.IsEnabled == false)|| (_ratePerMonthTextBox.IsEnabled == false)))
-                     MessageBox.Show("you didnt choose a pament method!");
+                    throw new Exception("you didnt choose a pament method!");
 
                 if ((bool)((_endWorkDatePicker.SelectedDate <= _beginWorkDatePicker.SelectedDate)))
-                    MessageBox.Show("the end work is before the start work!");
+                    throw new Exception("the end work is before the start work!");
                 bl.addContract(addCont);
                 MessageBox.Show("Contract is successfully added!");
                 this.Close();
@@ -85,7 +85,7 @@ namespace PL
             }
             catch (Exception ex)
             {
-                MessageBox.Show("the contract was added");
+                MessageBox.Show(ex.Message);
             }
         }
 

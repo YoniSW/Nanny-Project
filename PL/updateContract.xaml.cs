@@ -19,9 +19,34 @@ namespace PL
     /// </summary>
     public partial class updateContract : Window
     {
+        public BL.IBL bl;
+        public BE.Mother mom;
+        public BE.Contract contract;
+        public BE.Child child;
+
         public updateContract()
         {
             InitializeComponent();
+            contract = new BE.Contract();
+            thisGrid.DataContext = contract;
+            bl = BL.FactoryBL.GetBL();
         }
+
+        private void search_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+
     }
 }

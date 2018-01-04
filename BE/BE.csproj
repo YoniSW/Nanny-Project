@@ -53,6 +53,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Child.datasource" />
+    <None Include="Properties\DataSources\Contract.datasource" />
+    <None Include="Properties\DataSources\Mother.datasource" />
+    <None Include="Properties\DataSources\Nanny.datasource" />
+    <None Include="Properties\DataSources\Schedule.datasource" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

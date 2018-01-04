@@ -25,5 +25,24 @@ namespace PL
             InitializeComponent();
             bl = BL.FactoryBL.GetBL();
         }
+
+        private void delete_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                bl.deleteContract(long.Parse(textBox.Text));
+                MessageBox.Show("Contract was deleted successfully!");
+                Close();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Check your input and try again");
+            }
+            catch (Exception Exeption)
+            {
+                MessageBox.Show(Exeption.Message);
+            }
+
+        }
     }
 }
