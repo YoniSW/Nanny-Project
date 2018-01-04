@@ -126,7 +126,7 @@
         </Grid>
         <Button Content="Add" HorizontalAlignment="Left" Margin="63,344,0,0" VerticalAlignment="Top" Width="132" Height="35" 
                 Click="Button_Click"/>
-        <RadioButton Content="Per Hour" HorizontalAlignment="Left" Margin="13,296,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Per Hour" HorizontalAlignment="Left" Margin="13,296,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="Per Month" HorizontalAlignment="Left" Margin="128,296,0,0" VerticalAlignment="Top"/>
 
     </Grid>

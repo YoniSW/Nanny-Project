@@ -40,7 +40,7 @@ namespace BE
 
             dupNanny._nannyID = this._nannyID;
             dupNanny._nannyFname = this._nannyFname;
-            dupNanny._nannyFname = this._nannyFname;
+            dupNanny._nannyLname = this._nannyLname; //changed from I to L
             dupNanny._amountChildren = this._amountChildren;
             dupNanny._nannyBirth = this._nannyBirth;
             dupNanny._nannyPhone = this._nannyPhone;

@@ -96,9 +96,9 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Label Content="is Looking For Nanny:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <Label Content="Looking For Nanny:" Grid.Column="0" HorizontalAlignment="Left" Margin="-71,6,0,0" Grid.Row="0" VerticalAlignment="Center"/>
             <CheckBox x:Name="_isLookingForNannyCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" 
-                      IsChecked="{Binding _isLookingForNanny, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+                      IsChecked="{Binding _isLookingForNanny, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="0,14,0,3" Grid.Row="0" VerticalAlignment="Center" RenderTransformOrigin="0.6,0.867"/>
         </Grid>
         <Grid x:Name="grid5" Grid.Column="1"  HorizontalAlignment="Left" Margin="0,46,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="32" Width="209">
             <Grid.ColumnDefinitions>
@@ -124,5 +124,8 @@
             <TextBox x:Name="_momAdressTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" 
                      Text="{Binding _momAdress, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
         </Grid>
+        <Label Content="Nanny Location " Grid.Column="1" HorizontalAlignment="Left" Margin="74,15,0,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+        <TextBox  x:Name="_locationOfNannyTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="165,19,0,0" Grid.RowSpan="2" TextWrapping="Wrap" 
+                  Text="{Binding _locationOfNanny ,Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true }" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
