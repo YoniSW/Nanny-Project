@@ -22,15 +22,21 @@ namespace PL
     public partial class addContract : Window
     {
 
+  
+        public BE.Mother mom;
         public BE.Contract addCont; // addCont contians the contracts data
+        public BE.Nanny nanny;
+        public BE.Child child;
+        public IEnumerable<BE.Child> child_list;
+        public IEnumerable<BE.Nanny> nanny_list;
         public BL.IBL bl; // connect to BL layer
-        private readonly Contract addContr;
 
         public addContract()
         {
             InitializeComponent();
             addCont = new BE.Contract();
-
+            this.DataContext = addCont;
+            nanny_list = bl.geta
 
             // adding all functions
 
@@ -38,7 +44,7 @@ namespace PL
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void add_Click(object sender, RoutedEventArgs e)
         {
             try
             {

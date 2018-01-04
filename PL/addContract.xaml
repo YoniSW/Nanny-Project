@@ -125,8 +125,8 @@
             <Label Content="is By Hour:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
             <CheckBox x:Name="_isByHourCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding _isByHour, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
         </Grid>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="63,344,0,0" VerticalAlignment="Top" Width="132" Height="35" 
-                Click="Button_Click"/>
+        <Button Content="Add contract" HorizontalAlignment="Left" Margin="63,344,0,0" VerticalAlignment="Top" Width="132" Height="35" 
+                Click="add_Click"/>
 
     </Grid>
 </Window>
