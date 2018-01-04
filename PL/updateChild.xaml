@@ -61,7 +61,8 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="Birthday:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-            <DatePicker x:Name="_birthdayDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="0" SelectedDate="{Binding _birthday, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center"/>
+            <DatePicker x:Name="_birthdayDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="0" 
+                        SelectedDate="{Binding _birthday, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center"/>
         </Grid>
         <Grid x:Name="grid5" HorizontalAlignment="Left" Margin="13,98,0,0" Grid.Row="2" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>

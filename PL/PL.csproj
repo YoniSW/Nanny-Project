@@ -240,5 +240,14 @@
       <Name>BL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\child.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\nanny.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\mother.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
