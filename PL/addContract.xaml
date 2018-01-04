@@ -122,11 +122,12 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Label Content="is By Hour:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-            <CheckBox x:Name="_isByHourCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding _isByHour, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+
         </Grid>
-        <Button Content="Add contract" HorizontalAlignment="Left" Margin="63,344,0,0" VerticalAlignment="Top" Width="132" Height="35" 
-                Click="add_Click"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="63,344,0,0" VerticalAlignment="Top" Width="132" Height="35" 
+                Click="Button_Click"/>
+        <RadioButton Content="Per Hour" HorizontalAlignment="Left" Margin="13,296,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Per Month" HorizontalAlignment="Left" Margin="128,296,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

@@ -35,27 +35,36 @@ namespace PL
         {
             InitializeComponent();
             addCont = new BE.Contract();
-            this.DataContext = addCont;
-            nanny_list = bl.geta
-
-            // adding all functions
 
 
+            // theis nanny does not exist 
+            // this child does not exist
+            // the end work is before the start work           //
+            // contract cannot be made without a signature    //
+            // you didnt rate the sallary                    //
 
         }
 
         private void add_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                bl.addContract(addContr);
+            bl.addContract(addContr);
             addCont = new BE.Contract();
             ContractGrid.DataContext = addCont;  // added a name to the grid
-            MessageBox.Show("Contract is added successfully added!");
+            MessageBox.Show("Contract is successfully added!");
             this.Close();
-           
 
+            try
+            {
+                if ((bool)(_didSignCheckBox.IsChecked == false))
+                    MessageBox.Show("contract cannot be made without a signature!");
+
+                if ((bool)((_ratePerHourTextBox.IsEnabled == false)|| (_ratePerMonthTextBox.IsEnabled == false))
+                     MessageBox.Show("you didnt choose a pament method!");
+
+                if ((bool)((_endWorkDatePicker.SelectedDate <= _beginWorkDatePicker.SelectedDate)))
+                    MessageBox.Show("the end work is before the start work!");
             }
+
             catch (FormatException)
             {
                 MessageBox.Show("Check your input and try again");
@@ -65,5 +74,10 @@ namespace PL
                 MessageBox.Show("the contract was added");
             }
         }
+
+        //private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        //{
+
+        //}
     }
 }
