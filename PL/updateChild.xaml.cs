@@ -28,7 +28,7 @@ namespace PL
         public updateChild()
         {
             InitializeComponent();
-            thisGrid.DataContext = updateKid;
+            this.DataContext = updateKid;
             bl = BL.FactoryBL.GetBL();
         }
 
@@ -37,7 +37,7 @@ namespace PL
             try
             {
                 updateKid = bl.getChild(Convert.ToInt64(_childIDTextBox.Text));
-                thisGrid.DataContext = updateKid;
+                this.DataContext = updateKid;
                 MessageBox.Show("Child is found, you can continue updating...");
             }
 
