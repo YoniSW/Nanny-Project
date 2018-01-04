@@ -118,7 +118,7 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Label Content="Rate Per Hour:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-                <TextBox x:Name="_ratePerHourTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,6,-2,3" Grid.Row="0" Text="{Binding _ratePerHour, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+                <TextBox x:Name="_ratePerHourTextBox" IsEnabled="{Binding IsChecked, ElementName= _isByHourCheckBox}" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,6,-2,3" Grid.Row="0" Text="{Binding _ratePerHour, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
             </Grid>
             <Grid x:Name="grid10"   HorizontalAlignment="Left" Margin="145,168,0,0" VerticalAlignment="Top">
                 <Grid.ColumnDefinitions>
