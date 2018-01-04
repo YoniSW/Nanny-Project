@@ -35,6 +35,8 @@ namespace BE /// test123
             dupMom._isLookingForNanny = this._isLookingForNanny;
             dupMom._daysRequestMom = this._daysRequestMom;
             dupMom._scheduleMom = this._scheduleMom;
+            dupMom._startHour = this._startHour;
+            dupMom._endHour = this._endHour;
 
             return dupMom;
         }

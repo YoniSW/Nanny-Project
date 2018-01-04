@@ -39,7 +39,7 @@ namespace PL
             try
             {
                 addA_Nanny = bl.getNanny(Convert.ToInt64(_nannyIDTextBox.Text));
-                thisGrid.DataContext = addA_Nanny;
+                this.DataContext = addA_Nanny;
                 MessageBox.Show("Nanny is found, you can continue updating...");
 
                 if (addA_Nanny._workDays[0] == true)

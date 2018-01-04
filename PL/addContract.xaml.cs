@@ -66,6 +66,14 @@ namespace PL
 
             try
             {
+                if ((bool)(_didSignCheckBox.IsChecked == false))
+                    MessageBox.Show("contract cannot be made without a signature!");
+
+                if ((bool)((_ratePerHourTextBox.IsEnabled == false)|| (_ratePerMonthTextBox.IsEnabled == false)))
+                     MessageBox.Show("you didnt choose a pament method!");
+
+                if ((bool)((_endWorkDatePicker.SelectedDate <= _beginWorkDatePicker.SelectedDate)))
+                    MessageBox.Show("the end work is before the start work!");
                 bl.addContract(addCont);
                 MessageBox.Show("Contract is successfully added!");
                 this.Close();
