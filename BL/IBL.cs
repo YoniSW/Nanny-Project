@@ -35,10 +35,19 @@ namespace BL
         void updateContract(Contract con);
         Contract getContract(long ID);
         void deleteContract(long ID);
+        double getUpdatedRate(long kidID, long nannyID, bool isHour);
 
+        // methods
+        int caculateDistance(string source, string destination);
         IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null);
         IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null);
         IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null);
         IEnumerable<Contract> getContracts(Func<Contract, bool> Predicate = null);
+        IEnumerable<Nanny> allCompatibleNannies(Mother mom);
+        IEnumerable<Child> allChildWithoutNannies();
+        IEnumerable<Nanny> tamatNannies();
+        IEnumerable<Contract> contractByTerm(Func<Contract, bool> Predicate = null);
+        int numOfContractByTerm(Func<Contract, bool> Predicate = null);
+
     }
 }

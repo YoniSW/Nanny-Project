@@ -27,42 +27,48 @@ namespace PL
         public BE.Contract addCont; // addCont contians the contracts data
         public BE.Nanny nanny;
         public BE.Child child;
+        // scan for relevant nanny's and kids 
         public IEnumerable<BE.Child> child_list;
         public IEnumerable<BE.Nanny> nanny_list;
+
         public BL.IBL bl; // connect to BL layer
 
         public addContract()
         {
             InitializeComponent();
             addCont = new BE.Contract();
+            thisGrid.DataContext = addCont;
+            bl = BL.FactoryBL.GetBL();
+        }
 
-
-            // theis nanny does not exist 
-            // this child does not exist
-            // the end work is before the start work           //
-            // contract cannot be made without a signature    //
-            // you didnt rate the sallary                    //
-
+        private void search_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                mom = bl.getMother(Convert.ToInt64(momID_textBox.Text)); // get thisMom's object
+                child_list = bl.getKidsByMom(a => a._momID == mom._momID); // refine children list to thisMoms kids
+                thisMomsKids_list.ItemsSource = child_list; // update UI window
+                nanny_list = bl.allCompatibleNannies(mom); // refine to relevant nanneis (suitble schedule or 5 nearest)
+                relevantNannies_list.ItemsSource = nanny_list; // update UI window
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Check your input and try again");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("the contract was added");
+            }
         }
 
         private void add_Click(object sender, RoutedEventArgs e)
         {
-            bl.addContract(addContr);
-            addCont = new BE.Contract();
-            ContractGrid.DataContext = addCont;  // added a name to the grid
-            MessageBox.Show("Contract is successfully added!");
-            this.Close();
 
             try
             {
-                if ((bool)(_didSignCheckBox.IsChecked == false))
-                    MessageBox.Show("contract cannot be made without a signature!");
-
-                if ((bool)((_ratePerHourTextBox.IsEnabled == false)|| (_ratePerMonthTextBox.IsEnabled == false))
-                     MessageBox.Show("you didnt choose a pament method!");
-
-                if ((bool)((_endWorkDatePicker.SelectedDate <= _beginWorkDatePicker.SelectedDate)))
-                    MessageBox.Show("the end work is before the start work!");
+                bl.addContract(addCont);
+                MessageBox.Show("Contract is successfully added!");
+                this.Close();
             }
 
             catch (FormatException)
@@ -75,9 +81,32 @@ namespace PL
             }
         }
 
-        //private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        //{
+        private void relevantNannies_list_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DataGrid helpDataGrid = sender as DataGrid;
+            if ( helpDataGrid.SelectedIndex > 0) // grid in not empty
+            {
+                nanny =  helpDataGrid.SelectedItem as BE.Nanny;
+                _nannyIDTextBox.Text = Convert.ToString(nanny._nannyID);
+                _isByHourCheckBox.IsChecked = nanny._acceptByHour;
+                if (nanny._acceptByHour)
+                    _ratePerHourTextBox.Text = Convert.ToString(bl.getUpdatedRate(child._childID, nanny._nannyID, true));
 
-        //}
+                _ratePerHourTextBox.Text = Convert.ToString(bl.getUpdatedRate(child._childID, nanny._nannyID, false));
+                addCont._nannyID = nanny._nannyID;
+            }
+        }
+
+        private void thisMomsKids_list_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DataGrid helpDataGrid = sender as DataGrid;
+            if (helpDataGrid.SelectedIndex > 0) // grid in not empty
+            {
+                child = helpDataGrid.SelectedItem as BE.Child;
+                _childIDTextBox.Text = Convert.ToString(child._childID);
+                addCont._childID = child._childID;
+            }
+
+        }
     }
 }

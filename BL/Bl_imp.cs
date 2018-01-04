@@ -20,53 +20,8 @@ namespace BL
         {
             dal = DAL.factoryDal.getDal();
         }
-      
-        // sent function to Idal by certian methods =========================
-        
-        public void addContract(Contract thisCon)
-        {
-            // get rest of feilds from dal
-            Child thisKid = dal.getChild(thisCon._childID);
-            Mother thisMom = dal.getMom(thisKid._momID);
-            Nanny thisNannay = dal.getNanny(thisCon._nannyID);
 
-            double discount = 1;
-            for (int i = 0; i < amountOfKidsForMomAndNanny(thisKid, thisNannay); i++)
-                discount -= 0.02; 
-
-            if(thisNannay._amountChildren == thisNannay._maxamountChildren)
-                throw new Exception("This nanny reached the maximum children");
-
-            DateTime now = DateTime.Today;
-            if(now.Year - thisKid._birthday.Year < 1 && now.Month - thisKid._birthday.Month < 3)
-                throw new Exception("Child is under 3 months");
-
-            if (thisCon._isByHour)
-                thisCon._ratePerMonth = getMotherHours(thisMom) * 4 * thisNannay._rateByHour * discount;
-
-            else
-                thisCon._ratePerMonth = thisNannay._rateByMonth * discount;
-
-            dal.addContract(thisCon);
-
-        }
-
-        // the function returns number of kids from SAME contract and SAME mother 
-        public int amountOfKidsForMomAndNanny(Child thisKid, Nanny thisNanny)
-        {
-            var kidsOfMom = dal.getKidsByMom(m => m._momID == thisKid._momID);
-            var thisNannyContract = dal.getContracts(c => c._nannyID == thisNanny._nannyID);
-
-            var howMuch = from k1 in kidsOfMom
-                          from k2 in thisNannyContract
-                          where k1._childID == k2._childID
-                          select k2;
-
-            return howMuch.Count();
-        }
-
-        // ######## Mother ##########
-
+        #region mother metods
         public void addMother(Mother thisMom)
         {
             dal.addMother(thisMom);
@@ -101,8 +56,28 @@ namespace BL
             return totalWeeklyHours;
         }
 
-        // ######## Nanny ##########
+        public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
+        {
+            if (Predicate == null)
+                return dal.getAllMothers();
+            return dal.getAllMothers(Predicate);
+        }
 
+        public int KidsByNanny(Child child, Nanny nanny)
+        {
+            var kidsMom = dal.getKidsByMom(a => a._momID == child._momID);
+            var nannycontract = dal.getContracts(a => a._nannyID == nanny._nannyID);
+
+            var finalList = from a in kidsMom
+                            from b in nannycontract
+                            where b._childID == a._childID
+                            select b;
+            return finalList.Count();
+        }
+
+        #endregion
+
+        #region nanny metods
         public Nanny getNanny(long idNanny)
         {
             return dal.getNanny(idNanny);
@@ -127,7 +102,21 @@ namespace BL
             dal.addNanny(thisNanny);
         }
 
-        // ######## Child ##########
+        public IEnumerable<Nanny> tamatNannies()
+        {
+            return dal.getAllNanny(a => a._isTamatNanny);
+        }
+
+        public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
+        {
+            if (Predicate == null)
+                return dal.getAllNanny();
+            return dal.getAllNanny(Predicate);
+        }
+
+        #endregion
+
+        #region child metods
 
         public Child getChild(long idChild)
         {
@@ -142,7 +131,7 @@ namespace BL
         public void deleteChild(long thisKid)
         {
             dal.deleteChild(thisKid);
-            //dal.deleteContract(thisKid._contract);
+
         }
 
         public void updateChild(Child thisChild)
@@ -150,7 +139,17 @@ namespace BL
             dal.updateChild(thisChild);
         }
 
-        // ######## Contract ##########
+        public IEnumerable<Child> allChildWithoutNannies()
+        {
+            return from a in dal.getKidsByMom()
+                   let potentialKid = a._childID // let == store in a viarable
+                   from b in dal.getContracts()
+                   where potentialKid != b._childID
+                   select a;
+        }
+        #endregion
+
+        #region contract metods
 
         public void updateContract(Contract thisContract)
         {
@@ -167,20 +166,14 @@ namespace BL
             return dal.getContract(idContract);
         }
 
-        // send IEnumerables to Idal ==================================================
-
-        public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
+        public IEnumerable<Contract> contractByTerm(Func<Contract, bool> Predicate = null)
         {
-            if (Predicate == null)
-                return dal.getAllNanny();
-            return dal.getAllNanny(Predicate);
+            return dal.getContracts(Predicate);
         }
 
-        public IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null)
+        public int numOfContractByTerm(Func<Contract, bool> Predicate = null)
         {
-            if (Predicate == null)
-                return dal.getKidsByMom();
-            return dal.getKidsByMom(Predicate);
+            return contractByTerm(Predicate).Count();
         }
 
         public IEnumerable<Contract> getContracts(Func<Contract, bool> Predicate = null)
@@ -190,15 +183,65 @@ namespace BL
             return dal.getContracts(Predicate);
         }
 
-        public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
+        public void addContract(Contract thisCon)
         {
-            if (Predicate == null)
-                return dal.getAllMothers();
-            return dal.getAllMothers(Predicate);
+            // get rest of feilds from dal
+            Child thisKid = dal.getChild(thisCon._childID);
+            Mother thisMom = dal.getMom(thisKid._momID);
+            Nanny thisNannay = dal.getNanny(thisCon._nannyID);
+
+            double discount = 1;
+            for (int i = 0; i < amountOfKidsForMomAndNanny(thisKid, thisNannay); i++)
+                discount -= 0.02;
+
+            if (thisNannay._amountChildren == thisNannay._maxamountChildren)
+                throw new Exception("This nanny reached the maximum children");
+
+            DateTime now = DateTime.Today;
+            if (now.Year - thisKid._birthday.Year < 1 && now.Month - thisKid._birthday.Month < 3)
+                throw new Exception("Child is under 3 months");
+
+            if (thisCon._isByHour)
+                thisCon._ratePerMonth = getMotherHours(thisMom) * 4 * thisNannay._rateByHour * discount;
+
+            else
+                thisCon._ratePerMonth = thisNannay._rateByMonth * discount;
+
+            dal.addContract(thisCon);
+
         }
 
+        public double getUpdatedRate(long idChild, long idNanny, bool isByHour)
+        {
+
+            Child contractChild = dal.getChild(idChild);
+            Nanny contractNanny = dal.getNanny(idNanny);
+            Mother contractMother = dal.getMom(contractChild._momID);
+            double discountRate = KidsByNanny(contractChild, contractNanny) * 0.02 * contractNanny._rateByMonth;
+            if(isByHour)
+                return (getMotherHours(contractMother) * 4 - getMotherHours(contractMother) * 4 * discountRate);
+
+            return (contractNanny._rateByMonth - contractNanny._rateByMonth * discountRate);
+        }
+
+        #endregion
+
+        #region general methods
+
+
+        public IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null)
+        {
+            if (Predicate == null)
+                return dal.getKidsByMom();
+            return dal.getKidsByMom(Predicate);
+        }
+
+
+
+
+
         // google maps 
-        public static int caculateDistance(string mom, string nanny)
+        public int caculateDistance(string mom, string nanny)
         {
             var drivingDirectionRequest = new DirectionsRequest()
             {
@@ -221,9 +264,9 @@ namespace BL
                                   where checkSchedule(a, thisMom)
                                   select a;
             // if we didn't find any suitable nanny
-            if (!compatibleNanny.Any()) 
+            if (!compatibleNanny.Any())
                 return fiveNearestNanny(thisMom);
-            
+
             return compatibleNanny;
         }
 
@@ -234,8 +277,8 @@ namespace BL
                             select a.duplicate();
 
             foreach (var a in nannyList)
-               schduleDifference(a, thisMom);
-            
+                schduleDifference(a, thisMom);
+
 
             return nannyList.OrderBy(a => a._diff).Take(5);
         }
@@ -259,19 +302,22 @@ namespace BL
                 }
             }
         }
+
+        // find nannies that work at ALL hours that the mom works
         public bool checkSchedule(Nanny nanny, Mother mom)
         {
-          for (int i = 0; i < 6; i++) {
-          if (nanny._startHour[i] > mom._startHour[i] ||
-                nanny._endHour[i] < mom._endHour[i])
-                return false;
-          }
-          return true;
+            for (int i = 0; i < 6; i++)
+            {
+                if (nanny._startHour[i] > mom._startHour[i] ||
+                      nanny._endHour[i] < mom._endHour[i])
+                    return false;
+            }
+            return true;
         }
 
         public IEnumerable<Child> getAllChildWithoutNanny()
         {
-        return from a in dal.getKidsByMom()
+            return from a in dal.getKidsByMom()
                    let idChild = a._childID
                    from b in dal.getContracts()
                    where idChild != b._childID
@@ -283,15 +329,6 @@ namespace BL
             return dal.getAllNanny(a => a._isTamatNanny);
         }
 
-        public IEnumerable<Contract> contractByTerm(Func<Contract, bool> Predicate = null)
-        {
-            return dal.getContracts(Predicate);
-        }
-
-        public int numContractByTerm(Func<Contract, bool> Predicate = null)
-        {
-            return contractByTerm(Predicate).Count();
-        }
 
         public IEnumerable<Nanny> getNannyByDistance(Mother mom, double distance)
         {
@@ -333,12 +370,6 @@ namespace BL
                        group a by a._minMonthAge / 3;
         }
 
-        //public IEnumerable<IGrouping<bool, Nanny>> getNannyByDistance(string addressMom, string addressNanny, double rangeMeter)
-        //{
-        //    return from a in dal.getAllNanny()
-        //               // select all nannies that are maximum 10 km distance away
-        //           group a by caculateDistance(addressNanny, addressMom) < rangeMeter * 10000;
-        //}
 
         public IEnumerable<IGrouping<int, Nanny>> getNannyByDistance(string addressMom, bool isSorted)
         {
@@ -362,5 +393,36 @@ namespace BL
             return from a in dal.getAllNanny()
                    group a by caculateDistance(addressMom, a._nannyAdress) / 5000;
         }
+
+
+        public IEnumerable<Nanny> allCompatibleNannies(Mother thismMom)
+        {
+            var nanny_list = dal.getAllNanny();
+
+            var compatibleNannies = from potentialNanny in nanny_list
+                                    where checkSchedule(potentialNanny, thismMom)
+                                    select potentialNanny;
+            if (!compatibleNannies.Any())
+            {
+                // no suitble nanny - choose the 5 nearest
+                return fiveNearestNanny(thismMom);
+            }
+            return compatibleNannies;
+        }
+
+        // the function returns number of kids from SAME contract and SAME mother 
+        public int amountOfKidsForMomAndNanny(Child thisKid, Nanny thisNanny)
+        {
+            var kidsOfMom = dal.getKidsByMom(m => m._momID == thisKid._momID);
+            var thisNannyContract = dal.getContracts(c => c._nannyID == thisNanny._nannyID);
+
+            var howMuch = from k1 in kidsOfMom
+                          from k2 in thisNannyContract
+                          where k1._childID == k2._childID
+                          select k2;
+
+            return howMuch.Count();
+        }
+        #endregion
     }
 }
