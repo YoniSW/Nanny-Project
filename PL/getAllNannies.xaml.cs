@@ -20,7 +20,7 @@ namespace PL
         public BE.Nanny nanny;
         public IEnumerable<BE.Nanny> nanny_list;
         public BL.IBL bl; // connect to BL layer
-
+        public bool popWindow = true;
         public getAllNannies()
         {
             InitializeComponent();
@@ -29,7 +29,14 @@ namespace PL
             {
                 allNanniesBox.ItemsSource = nanny_list;
                 nanny_list = bl.getAllNanny();
-                allNanniesBox.ItemsSource = nanny_list;
+                if (nanny_list != null && nanny_list.GetEnumerator().MoveNext())
+                    allNanniesBox.ItemsSource = nanny_list;
+
+                else
+                {
+                    throw new Exception("there is now nannies in database");
+                    popWindow = false;
+                }
             }
             catch (Exception ex)
             {
@@ -40,7 +47,6 @@ namespace PL
 
         private void allNanniesBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
         }
     }
 }
