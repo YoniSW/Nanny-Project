@@ -40,7 +40,7 @@ namespace PL
             {
                 addA_Nanny = bl.getNanny(Convert.ToInt64(_nannyIDTextBox.Text));
                 this.DataContext = addA_Nanny;
-                MessageBox.Show("Nanny is found, you can continue updating...");
+                MessageBox.Show("Nanny was found, you can continue updating...");
 
                 if (addA_Nanny._workDays[0] == true)
                 {
@@ -100,6 +100,10 @@ namespace PL
                     addA_Nanny._workDays[0] = true;
                     var start = SunStart.Value;
                     var end = SunEnd.Value;
+                    if (start > end)
+                    { throw new Exception("the times you declared are not possible!"); }
+                    if (start == end)
+                    { throw new Exception("you choosed the dayes, but not the houres!"); }
                     addA_Nanny._startHour[0] = Convert.ToDateTime(start);
                     addA_Nanny._endHour[0] = Convert.ToDateTime(end);
                 }
@@ -108,6 +112,10 @@ namespace PL
                     addA_Nanny._workDays[1] = true;
                     var start = MonStart.Value;
                     var end = MonEnd.Value;
+                    if (start > end)
+                    { throw new Exception("the times you declared are not possible!"); }
+                    if (start == end)
+                    { throw new Exception("you choosed the dayes, but not the houres!"); }
                     addA_Nanny._startHour[1] = Convert.ToDateTime(start);
                     addA_Nanny._endHour[1] = Convert.ToDateTime(end);
                 }
@@ -116,6 +124,10 @@ namespace PL
                     addA_Nanny._workDays[2] = true;
                     var start = TueStart.Value;
                     var end = TueEnd.Value;
+                    if (start > end)
+                    { throw new Exception("the times you declared are not possible!"); }
+                    if (start == end)
+                    { throw new Exception("you choosed the dayes, but not the houres!"); }
                     addA_Nanny._startHour[2] = Convert.ToDateTime(start);
                     addA_Nanny._endHour[2] = Convert.ToDateTime(end);
                 }
@@ -124,6 +136,10 @@ namespace PL
                     addA_Nanny._workDays[3] = true;
                     var start = WedStart.Value;
                     var end = WedEnd.Value;
+                    if (start > end)
+                    { throw new Exception("the times you declared are not possible!"); }
+                    if (start == end)
+                    { throw new Exception("you choosed the dayes, but not the houres!"); }
                     addA_Nanny._startHour[3] = Convert.ToDateTime(start);
                     addA_Nanny._endHour[3] = Convert.ToDateTime(end);
                 }
@@ -132,6 +148,10 @@ namespace PL
                     addA_Nanny._workDays[4] = true;
                     var start = ThuStart.Value;
                     var end = ThuEnd.Value;
+                    if (start > end)
+                    { throw new Exception("the times you declared are not possible!"); }
+                    if (start == end)
+                    { throw new Exception("you choosed the dayes, but not the houres!"); }
                     addA_Nanny._startHour[4] = Convert.ToDateTime(start);
                     addA_Nanny._endHour[4] = Convert.ToDateTime(end);
                 }
@@ -140,6 +160,10 @@ namespace PL
                     addA_Nanny._workDays[5] = true;
                     var start = FriStart.Value;
                     var end = FriEnd.Value;
+                    if (start > end)
+                    { throw new Exception("the times you declared are not possible!"); }
+                    if (start == end)
+                    { throw new Exception("you choosed the dayes, but not the houres!"); }
                     addA_Nanny._startHour[5] = Convert.ToDateTime(start);
                     addA_Nanny._endHour[5] = Convert.ToDateTime(end);
                 }
@@ -147,7 +171,7 @@ namespace PL
                 bl.updateNany(addA_Nanny);
                 addA_Nanny = new BE.Nanny();
                 this.DataContext = addA_Nanny;
-                MessageBox.Show("Nanny is updated successfully!");
+                MessageBox.Show("Nanny was updated successfully!");
                 this.Close();
             }
             catch (FormatException)

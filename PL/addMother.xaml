@@ -125,7 +125,7 @@
                      Text="{Binding _momAdress, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
         </Grid>
         <Label Content="Nanny Location " Grid.Column="1" HorizontalAlignment="Left" Margin="74,15,0,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
-        <TextBox  x:Name="_locationOfNannyTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="165,19,0,0" Grid.RowSpan="2" TextWrapping="Wrap" 
+        <TextBox  x:Name="_locationOfNannyTextBox" IsEnabled="{Binding IsChecked, ElementName= _isLookingForNannyCheckBox}" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="165,19,0,0" Grid.RowSpan="2" TextWrapping="Wrap" 
                   Text="{Binding _locationOfNanny ,Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true }" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

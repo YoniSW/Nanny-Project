@@ -26,8 +26,8 @@
         <Button Content="Add" HorizontalAlignment="Left" Margin="34,363,0,0" VerticalAlignment="Top" Width="132" Height="35" 
                 Click="add_Click" Background="LightSkyBlue"/>
         <Label Content="Enter mother's ID:" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" VerticalAlignment="Top" Width="105"/>
-        <TextBox x:Name="momID_textBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,45,0,0" TextWrapping="Wrap" Text="" 
-                 VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="momID_textBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,45,0,0" TextWrapping="Wrap"  
+                 Text="{Binding _nannyID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="120"/>
         <Button  FontSize="12" Background="LightSkyBlue" Content="Search for  &#xa;relevant &#xa;nannies" Grid.Column="1" HorizontalAlignment="Left" Height="58" Margin="140,10,0,0" VerticalAlignment="Top" 
                 Width="71" Click="search_Click"/>
         <Label Content="Relevant nannies" Grid.Column="1" HorizontalAlignment="Left" Margin="61,78,0,0" VerticalAlignment="Top" Width="102"/>
