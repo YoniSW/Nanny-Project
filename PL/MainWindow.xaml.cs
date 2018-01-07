@@ -20,14 +20,11 @@ namespace PL
     /// </summary>
     public partial class MainWindow : Window
     {
-        public BE.Nanny nanny;
-        public IEnumerable<BE.Nanny> nanny_list;
-        public BL.IBL bl; // connect to BL layer
 
+        
         public MainWindow()
         {
             InitializeComponent();
-            
         }
 
         /// nanny
@@ -49,11 +46,7 @@ namespace PL
 
         private void click_getAllNannies(object sender, RoutedEventArgs e)
         {
-            if (nanny_list != null && nanny_list.GetEnumerator().MoveNext())
-                new getAllNannies().Show();
-            else
-                MessageBox.Show("nanny list is empty!");
-
+            new getAllNannies().Show();
         }
 
         /// mother
@@ -128,6 +121,11 @@ namespace PL
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 

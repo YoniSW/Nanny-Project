@@ -19,9 +19,34 @@ namespace PL
     /// </summary>
     public partial class getAllChild : Window
     {
+        public BE.Child child;
+        public IEnumerable<BE.Child> child_list;
+        public BL.IBL bl; // connect to BL layer
+
         public getAllChild()
         {
+            
             InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
+            try
+            {
+                allNanniesBox.ItemsSource = child_list;
+                child_list = bl.getAllChildren();
+                if (child_list != null && child_list.GetEnumerator().MoveNext())
+                    allNanniesBox.ItemsSource = child_list;
+
+                else
+                    throw new Exception("there is now children in database");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void allNanniesBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -39,6 +39,7 @@ namespace BL
 
         // methods
         int caculateDistance(string source, string destination);
+        IEnumerable<Child> getAllChildren(Func<Child, bool> Predicate = null);
         IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null);
         IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null);
         IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null);

@@ -8,7 +8,7 @@
         Title="getAllNannies" Height="500" Width="1200">
     <Grid Margin="0,0,0,-1">
         <DataGrid x:Name ="allNanniesBox" HorizontalAlignment="Left" Height="252" Margin="10,66,0,0" VerticalAlignment="Top" Width="1172"
-                  SelectionChanged="allNanniesBox_SelectionChanged" IsEnabled="False"/>
+                  SelectionChanged="allNanniesBox_SelectionChanged" IsReadOnly="True"  Background="LightGray" />
 
         <Label Content="All nannies in database:" HorizontalAlignment="Left" Height="33" Margin="516,33,0,0" VerticalAlignment="Top" 
                Width="181" FontWeight="Bold" />

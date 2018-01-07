@@ -149,7 +149,7 @@ namespace DAL
             var momExist = DataSource.motherList.Any
                            (c => c._momID == thisMom);
             if(!momExist)
-                throw new Exception("there is no mom with this ID");
+                throw new Exception("Mom's ID doesn't exist");
 
             DataSource.childList.Add(thisKid);
         }
@@ -290,8 +290,17 @@ namespace DAL
             return DataSource.motherList.Where(Predicate);
             }
 
+        public IEnumerable<Child> getAllChildren(Func<Child, bool> Predicate = null)
+        {
+            if (Predicate == null)
+                return DataSource.childList.AsEnumerable();
 
-            public IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null)
+            return DataSource.childList.Where(Predicate);
+
+        }
+
+
+        public IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null)
             {
                 if (Predicate == null)
                     throw new Exception("Please send mother ID");
