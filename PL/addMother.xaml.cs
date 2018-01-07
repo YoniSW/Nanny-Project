@@ -43,6 +43,8 @@ namespace PL
                     addMom._daysRequestMom[0] = true;
                     var start = SunStart.Value;
                     var end = SunEnd.Value;
+                    if(start >= end)
+                    { throw new Exception("the times you declared are not possible!"); }                    
                     addMom._startHour[0] = Convert.ToDateTime(start);
                     addMom._endHour[0] = Convert.ToDateTime(end);
                 }
@@ -51,6 +53,8 @@ namespace PL
                     addMom._daysRequestMom[1] = true;
                     var start = MonStart.Value;
                     var end = MonEnd.Value;
+                    if (start >= end)
+                    { throw new Exception("the times you declared are not possible!"); }
                     addMom._startHour[1] = Convert.ToDateTime(start);
                     addMom._endHour[1] = Convert.ToDateTime(end);
                 }
@@ -59,6 +63,8 @@ namespace PL
                     addMom._daysRequestMom[2] = true;
                     var start = TueStart.Value;
                     var end = TueEnd.Value;
+                    if (start >= end)
+                    { throw new Exception("the times you declared are not possible!"); }
                     addMom._startHour[2] = Convert.ToDateTime(start);
                     addMom._endHour[2] = Convert.ToDateTime(end);
                 }
@@ -67,6 +73,8 @@ namespace PL
                     addMom._daysRequestMom[3] = true;
                     var start = WedStart.Value;
                     var end = WedEnd.Value;
+                    if (start >= end)
+                    { throw new Exception("the times you declared are not possible!"); }
                     addMom._startHour[3] = Convert.ToDateTime(start);
                     addMom._endHour[3] = Convert.ToDateTime(end);
                 }
@@ -75,6 +83,8 @@ namespace PL
                     addMom._daysRequestMom[4] = true;
                     var start =ThuStart.Value;
                     var end = ThuEnd.Value;
+                    if (start >= end)
+                    { throw new Exception("the times you declared are not possible!"); }
                     addMom._startHour[4] = Convert.ToDateTime(start);
                     addMom._endHour[4] = Convert.ToDateTime(end);
                 }
@@ -83,6 +93,8 @@ namespace PL
                     addMom._daysRequestMom[5] = true;
                     var start = FriStart.Value;
                     var end = FriEnd.Value;
+                    if (start >= end)
+                    { throw new Exception("the times you declared are not possible!"); }
                     addMom._startHour[5] = Convert.ToDateTime(start);
                     addMom._endHour[5] = Convert.ToDateTime(end);
                 }
