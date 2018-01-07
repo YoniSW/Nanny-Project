@@ -14,14 +14,33 @@ using System.Windows.Shapes;
 
 namespace PL
 {
-    /// <summary>
-    /// Interaction logic for getAllNannies.xaml
-    /// </summary>
+
     public partial class getAllNannies : Window
     {
+        public BE.Nanny nanny;
+        public IEnumerable<BE.Nanny> nanny_list;
+        public BL.IBL bl; // connect to BL layer
+
         public getAllNannies()
         {
             InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
+            try
+            {
+                allNanniesBox.ItemsSource = nanny_list;
+                nanny_list = bl.getAllNanny();
+                allNanniesBox.ItemsSource = nanny_list;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        private void allNanniesBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

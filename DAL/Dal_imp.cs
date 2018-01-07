@@ -144,6 +144,13 @@ namespace DAL
             if (index != -1)
                 throw new Exception("Child already exists in the system");
 
+            var thisMom = thisKid._momID;
+
+            var momExist = DataSource.motherList.Any
+                           (c => c._momID == thisMom);
+            if(!momExist)
+                throw new Exception("there is no mom with this ID");
+
             DataSource.childList.Add(thisKid);
         }
 

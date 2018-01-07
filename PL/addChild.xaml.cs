@@ -39,6 +39,7 @@ namespace PL
                 bl.addChild(childAdd);
                 childAdd = new BE.Child();
                 thisGrid.DataContext = childAdd;
+               // _momIDTextBox.
                 MessageBox.Show("Child was added successfully!");
                 Close();
             }
