@@ -22,6 +22,7 @@ namespace PL
 
         public BE.Nanny addA_Nanny;
         public BL.IBL bl;
+        public IEnumerable<BE.Nanny> nanny_list;
 
         public updateNanny()
         {
@@ -30,7 +31,6 @@ namespace PL
             addA_Nanny._startHour = new DateTime[6];
             addA_Nanny._endHour = new DateTime[6];
             addA_Nanny._workDays = new bool[6];
-            //updateNannyDeatails.DataContext = addA_Nanny;  --> grid we wnat to update
             bl = BL.FactoryBL.GetBL();
         }
 
