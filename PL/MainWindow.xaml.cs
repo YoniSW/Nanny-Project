@@ -20,10 +20,11 @@ namespace PL
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        
         public MainWindow()
         {
             InitializeComponent();
-            
         }
 
         /// nanny
@@ -45,7 +46,7 @@ namespace PL
 
         private void click_getAllNannies(object sender, RoutedEventArgs e)
         {
-            new getAllNannies().ShowDialog();
+            new getAllNannies().Show();
         }
 
         /// mother
@@ -120,6 +121,11 @@ namespace PL
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 

@@ -113,6 +113,10 @@ namespace PL
                 MessageBox.Show("Nanny is added successfully");
                 this.Close();
             }
+            catch (FormatException)
+            {
+                MessageBox.Show("Check your input and try again");
+            }
             catch (Exception Ex)
             {
                 MessageBox.Show(Ex.Message);

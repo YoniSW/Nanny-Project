@@ -32,6 +32,7 @@ namespace BE
         public double _diff { get; set; }  /* this is the difference between the hours the nanny can take care if a mother's child
                                              and the actual time she did, for example, nanny is open from 8:00 but child comes at 9:00
                                              so diff == 1 */
+
         public double _distance { get; set; } // yes, its a distance from a mother
 
         public Nanny duplicate()

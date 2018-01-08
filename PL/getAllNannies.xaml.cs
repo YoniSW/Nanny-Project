@@ -29,18 +29,19 @@ namespace PL
             {
                 allNanniesBox.ItemsSource = nanny_list;
                 nanny_list = bl.getAllNanny();
-                allNanniesBox.ItemsSource = nanny_list;
+                if (nanny_list != null && nanny_list.GetEnumerator().MoveNext())
+                    allNanniesBox.ItemsSource = nanny_list;
+
+                else
+                    throw new Exception("there is now nannies in database");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
-
         private void allNanniesBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
         }
     }
 }

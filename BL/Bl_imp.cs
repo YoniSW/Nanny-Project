@@ -62,6 +62,13 @@ namespace BL
                 return dal.getAllMothers();
             return dal.getAllMothers(Predicate);
         }
+        public IEnumerable<Child> getAllChildren(Func<Child, bool> Predicate = null)
+        {
+            if (Predicate == null)
+                return dal.getAllChildren();
+
+            return dal.getAllChildren(Predicate);
+        }
 
         public int KidsByNanny(Child child, Nanny nanny)
         {
@@ -98,6 +105,7 @@ namespace BL
             DateTime now = DateTime.Now;
             if (now.Year - 18 < thisNanny._nannyBirth.Year)
                 throw new Exception("Nanny is under 18");
+
 
             dal.addNanny(thisNanny);
         }

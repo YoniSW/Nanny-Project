@@ -45,6 +45,7 @@ namespace DAL
         IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null);
         IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null);
         IEnumerable<Contract> getContracts(Func<Contract, bool> Predicate = null);
+        IEnumerable<Child> getAllChildren(Func<Child, bool> Predicate = null);
 
     }
 }

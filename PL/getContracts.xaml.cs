@@ -19,9 +19,34 @@ namespace PL
     /// </summary>
     public partial class getContracts : Window
     {
+        public BE.Contract nanny;
+        public IEnumerable<BE.Contract> contract_list;
+        public BL.IBL bl; // connect to BL layer
+
         public getContracts()
         {
             InitializeComponent();
+            InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
+            try
+            {
+                allNanniesBox.ItemsSource = contract_list;
+                contract_list = bl.getContracts();
+                if (contract_list != null && contract_list.GetEnumerator().MoveNext())
+                    allNanniesBox.ItemsSource = contract_list;
+
+                else
+                    throw new Exception("there is no contracts in database");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void allNanniesBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
