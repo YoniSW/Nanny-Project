@@ -36,7 +36,7 @@ namespace PL
         {
             try
             {
-                addA_Mother = bl.getMother(Convert.ToInt64(_momIDTextBox.Text));
+                addA_Mother = bl.getMother(Convert.ToInt64(_momIDTextBox.Text)); 
                 thisGrid.DataContext = addA_Mother;
                 MessageBox.Show("Mother was found, you can continue updating...");
 

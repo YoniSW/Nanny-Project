@@ -165,6 +165,7 @@ namespace DAL
 
             var momHasThisID = DataSource.motherList.Any
                (c => c._momID == childID);
+            if(momHasThisID)
             throw new Exception("we have a mom with same ID!");
 
             var thisMom = thisKid._momID;

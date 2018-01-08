@@ -21,9 +21,10 @@ namespace BL
         {
             dal = DAL.factoryDal.getDal();
             initilizeArray();
-            MotherInitilize();
             NannyInitilize();
+            MotherInitilize();
             ChildInitilize();
+
         }
 
         #region mother metods
