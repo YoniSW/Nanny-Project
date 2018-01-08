@@ -65,6 +65,23 @@ namespace DAL
                 throw new Exception("Nanny doesn't exist in the system");
             DataSource.nannyList[index] = thisNany;
         }
+
+        //public long getAllNanniesID()
+        //{
+        //    var thisNannies = DataSource.nannyList;
+
+        //    long allIDs;
+        //    foreach (var item in thisNannies)
+        //    {
+        //        allIDs = item._nannyID;
+
+        //    }
+
+        //    //return allIDs;
+        //}
+
+
+
 #endregion
 
         // Mother functions ================================================================================
@@ -288,7 +305,7 @@ namespace DAL
                 return DataSource.nannyList.Where(Predicate); 
             }
 
-            public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
+        public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
             {
                 if (Predicate == null)
                     return DataSource.motherList.AsEnumerable();
