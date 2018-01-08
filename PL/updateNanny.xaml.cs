@@ -20,6 +20,7 @@ namespace PL
     public partial class updateNanny : Window
     {
 
+        public BE.Nanny getAllNanny;
         public BE.Nanny addA_Nanny;
         public BL.IBL bl;
 
@@ -34,6 +35,8 @@ namespace PL
             bl = BL.FactoryBL.GetBL();
         }
 
+        
+        #region search Click
         private void search_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -89,7 +92,9 @@ namespace PL
                 MessageBox.Show(ex.Message);
             }
         }
+#endregion
 
+        #region button Click
         private void button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -183,6 +188,19 @@ namespace PL
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        #endregion
+
+
+
+        public IEnumerable<BE.Nanny> nanny_list;
+
+        private void GetNannyIDComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e) //combobox that shows all the nanny's
+        {
+            this.GetNannyIDComboBox.ItemsSource = nanny_list;
+          //  var allnannies = bl.getAllNanny();
+            
+           // return bl.getAllNanny();
         }
     }
 }
