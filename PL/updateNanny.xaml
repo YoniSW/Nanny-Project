@@ -273,5 +273,7 @@
                 VerticalAlignment="Top" Width="183" Click="search_Click" Grid.ColumnSpan="2"/>
         <Label Content="Please enter Nanny's ID" HorizontalAlignment="Left" Height="31" Margin="10,23,0,0" 
                VerticalAlignment="Top" Width="148" FontWeight="Bold" Grid.RowSpan="2"/>
+        <ComboBox x:Name="GetNannyIDComboBox" DisplayMemberPath="GetNannyID" SelectedItem="{Binding GetNannyID}" 
+                  Grid.Column="1" HorizontalAlignment="Left" Margin="140,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" SelectionChanged="GetNannyIDComboBox_SelectionChanged"/>
     </Grid>
 </Window>
