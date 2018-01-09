@@ -115,6 +115,9 @@
     <Compile Include="updateNanny.xaml.cs">
       <DependentUpon>updateNanny.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainWindow2.xaml.cs">
+      <DependentUpon>MainWindow2.xaml</DependentUpon>
+    </Compile>
     <Page Include="addChild.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -197,6 +200,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MainWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -248,6 +255,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\mother.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\NannyBackgrownd2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\NannyButton2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\mother button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
