@@ -20,8 +20,5 @@
                 <Image x:Name="MotherButton" Source="images/mother button.png" Stretch="Fill" Width="315" Height="100"/>
             </StackPanel>
         </Button>
-
-
-
     </Grid>
 </Window>
