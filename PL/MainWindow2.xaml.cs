@@ -25,7 +25,7 @@ namespace PL
         }
         private void click_addNanny(object sender, RoutedEventArgs e)
         {
-            new MainWindow();
+            new MainWindow().Show ();
 
             //new MainWindow().Show();
         }
