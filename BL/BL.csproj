@@ -44,11 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bl_imp1.cs" />
-    <Compile Include="BL_imp2.cs" />
+    <Compile Include="Bl_imp1.cs" />
+    <Compile Include="Bl_imp2.cs" />
     <Compile Include="FactoryBL.cs" />
     <Compile Include="IBL.cs" />
-    <Compile Include="Bl_imp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

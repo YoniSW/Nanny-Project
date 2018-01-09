@@ -29,62 +29,70 @@ namespace PL
             addA_Mother._startHour = new DateTime[6];
             addA_Mother._endHour = new DateTime[6];
             addA_Mother._daysRequestMom = new bool[6];
+            thisGrid.DataContext = addA_Mother;
             bl = BL.FactoryBL.GetBL();
+            IdMother.ItemsSource = bl.getAllMothers();
         }
 
-        private void search_Click(object sender, RoutedEventArgs e)
+        private void IdMother_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            try
+            if (sender is ComboBox && ((ComboBox)sender).SelectedIndex > -1)
             {
-                addA_Mother = bl.getMother(Convert.ToInt64(_momIDTextBox.Text)); 
+                addA_Mother = (Mother)IdMother.SelectedItem;
                 thisGrid.DataContext = addA_Mother;
-                MessageBox.Show("Mother was found, you can continue updating...");
 
-                if (addA_Mother._daysRequestMom[0] == true)
+                try
                 {
-                    SunCheck.IsChecked = true;
-                    SunStart.Value = addA_Mother._startHour[0].ToUniversalTime();
-                    SunEnd.Value = addA_Mother._endHour[0].ToUniversalTime();
-                }
-                if (addA_Mother._daysRequestMom[1] == true)
-                {
-                    MonCheck.IsChecked = true;
-                    MonStart.Value = addA_Mother._startHour[1].ToUniversalTime();
-                    MonEnd.Value = addA_Mother._endHour[1].ToUniversalTime();
-                }
-                if (addA_Mother._daysRequestMom[2] == true)
-                {
-                    TueCheck.IsChecked = true;
-                    TueStart.Value = addA_Mother._startHour[2].ToUniversalTime();
-                    TueEnd.Value = addA_Mother._endHour[2].ToUniversalTime();
-                }
-                if (addA_Mother._daysRequestMom[3] == true)
-                {
-                    WedCheck.IsChecked = true;
-                    WedStart.Value = addA_Mother._startHour[3].ToUniversalTime();
-                    WedEnd.Value = addA_Mother._endHour[3].ToUniversalTime();
-                }
-                if (addA_Mother._daysRequestMom[4] == true)
-                {
-                    ThuCheck.IsChecked = true;
-                    ThuStart.Value = addA_Mother._startHour[4].ToUniversalTime();
-                    ThuEnd.Value = addA_Mother._endHour[4].ToUniversalTime();
-                }
-                if (addA_Mother._daysRequestMom[5] == true)
-                {
-                    FriCheck.IsChecked = true;
-                    FriStart.Value = addA_Mother._startHour[5].ToUniversalTime();
-                    FriEnd.Value = addA_Mother._endHour[5].ToUniversalTime();
-                }
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Check your input and try again");
+                    // addA_Mother = bl.getMother(Convert.ToInt64(_momIDTextBox.Text)); 
+                    thisGrid.DataContext = addA_Mother;
+                    MessageBox.Show("Mother was found, you can continue updating...");
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                    if (addA_Mother._daysRequestMom[0] == true)
+                    {
+                        SunCheck.IsChecked = true;
+                        SunStart.Value = addA_Mother._startHour[0].ToUniversalTime();
+                        SunEnd.Value = addA_Mother._endHour[0].ToUniversalTime();
+                    }
+                    if (addA_Mother._daysRequestMom[1] == true)
+                    {
+                        MonCheck.IsChecked = true;
+                        MonStart.Value = addA_Mother._startHour[1].ToUniversalTime();
+                        MonEnd.Value = addA_Mother._endHour[1].ToUniversalTime();
+                    }
+                    if (addA_Mother._daysRequestMom[2] == true)
+                    {
+                        TueCheck.IsChecked = true;
+                        TueStart.Value = addA_Mother._startHour[2].ToUniversalTime();
+                        TueEnd.Value = addA_Mother._endHour[2].ToUniversalTime();
+                    }
+                    if (addA_Mother._daysRequestMom[3] == true)
+                    {
+                        WedCheck.IsChecked = true;
+                        WedStart.Value = addA_Mother._startHour[3].ToUniversalTime();
+                        WedEnd.Value = addA_Mother._endHour[3].ToUniversalTime();
+                    }
+                    if (addA_Mother._daysRequestMom[4] == true)
+                    {
+                        ThuCheck.IsChecked = true;
+                        ThuStart.Value = addA_Mother._startHour[4].ToUniversalTime();
+                        ThuEnd.Value = addA_Mother._endHour[4].ToUniversalTime();
+                    }
+                    if (addA_Mother._daysRequestMom[5] == true)
+                    {
+                        FriCheck.IsChecked = true;
+                        FriStart.Value = addA_Mother._startHour[5].ToUniversalTime();
+                        FriEnd.Value = addA_Mother._endHour[5].ToUniversalTime();
+                    }
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Check your input and try again");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
@@ -178,5 +186,7 @@ namespace PL
                 MessageBox.Show(ex.Message);
             }
         }
+
+
     }
 }

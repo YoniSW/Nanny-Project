@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BE;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,6 +38,64 @@ namespace PL
             IdNanny.ItemsSource = bl.getAllNanny();
         }
 
+
+        #region SelectionChanged
+        private void IdNanny_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (sender is ComboBox && ((ComboBox)sender).SelectedIndex > -1)
+            {
+                try
+                {
+                    addA_Nanny = (Nanny)IdNanny.SelectedItem;
+                    thisGrid.DataContext = addA_Nanny;
+
+                    if (addA_Nanny._workDays[0] == true)
+                    {
+                        SunCheck.IsChecked = true;
+                        SunStart.Value = addA_Nanny._startHour[0].ToUniversalTime();
+                        SunEnd.Value = addA_Nanny._endHour[0].ToUniversalTime();
+                    }
+                    if (addA_Nanny._workDays[1] == true)
+                    {
+                        MonCheck.IsChecked = true;
+                        MonStart.Value = addA_Nanny._startHour[1].ToUniversalTime();
+                        MonEnd.Value = addA_Nanny._endHour[1].ToUniversalTime();
+                    }
+                    if (addA_Nanny._workDays[2] == true)
+                    {
+                        TueCheck.IsChecked = true;
+                        TueStart.Value = addA_Nanny._startHour[2].ToUniversalTime();
+                        TueEnd.Value = addA_Nanny._endHour[2].ToUniversalTime();
+                    }
+                    if (addA_Nanny._workDays[3] == true)
+                    {
+                        WedCheck.IsChecked = true;
+                        WedStart.Value = addA_Nanny._startHour[3].ToUniversalTime();
+                        WedEnd.Value = addA_Nanny._endHour[3].ToUniversalTime();
+                    }
+                    if (addA_Nanny._workDays[4] == true)
+                    {
+                        ThuCheck.IsChecked = true;
+                        ThuStart.Value = addA_Nanny._startHour[4].ToUniversalTime();
+                        ThuEnd.Value = addA_Nanny._endHour[4].ToUniversalTime();
+                    }
+                    if (addA_Nanny._workDays[5] == true)
+                    {
+                        FriCheck.IsChecked = true;
+                        FriStart.Value = addA_Nanny._startHour[5].ToUniversalTime();
+                        FriEnd.Value = addA_Nanny._endHour[5].ToUniversalTime();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
+            }
+
+        }
+        #endregion
 
         #region button Click
         private void button_Click(object sender, RoutedEventArgs e)
@@ -135,63 +194,5 @@ namespace PL
         }
         #endregion
 
-        #region SelectionChanged
-        private void IdNanny_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (sender is ComboBox && ((ComboBox)sender).SelectedIndex > -1)
-            {
-                try
-                {
-                   // addA_Nanny = bl.getNanny(Convert.ToInt64(IdNanny.Text)); // this is not sending the ID!
-                    thisGrid.DataContext = addA_Nanny;
-
-
-                    if (addA_Nanny._workDays[0] == true)
-                    {
-                        SunCheck.IsChecked = true;
-                        SunStart.Value = addA_Nanny._startHour[0].ToUniversalTime();
-                        SunEnd.Value = addA_Nanny._endHour[0].ToUniversalTime();
-                    }
-                    if (addA_Nanny._workDays[1] == true)
-                    {
-                        MonCheck.IsChecked = true;
-                        MonStart.Value = addA_Nanny._startHour[1].ToUniversalTime();
-                        MonEnd.Value = addA_Nanny._endHour[1].ToUniversalTime();
-                    }
-                    if (addA_Nanny._workDays[2] == true)
-                    {
-                        TueCheck.IsChecked = true;
-                        TueStart.Value = addA_Nanny._startHour[2].ToUniversalTime();
-                        TueEnd.Value = addA_Nanny._endHour[2].ToUniversalTime();
-                    }
-                    if (addA_Nanny._workDays[3] == true)
-                    {
-                        WedCheck.IsChecked = true;
-                        WedStart.Value = addA_Nanny._startHour[3].ToUniversalTime();
-                        WedEnd.Value = addA_Nanny._endHour[3].ToUniversalTime();
-                    }
-                    if (addA_Nanny._workDays[4] == true)
-                    {
-                        ThuCheck.IsChecked = true;
-                        ThuStart.Value = addA_Nanny._startHour[4].ToUniversalTime();
-                        ThuEnd.Value = addA_Nanny._endHour[4].ToUniversalTime();
-                    }
-                    if (addA_Nanny._workDays[5] == true)
-                    {
-                        FriCheck.IsChecked = true;
-                        FriStart.Value = addA_Nanny._startHour[5].ToUniversalTime();
-                        FriEnd.Value = addA_Nanny._endHour[5].ToUniversalTime();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
-
-            }
-
-        }
-        #endregion
     }
 }
