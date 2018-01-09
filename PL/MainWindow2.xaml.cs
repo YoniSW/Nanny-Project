@@ -29,7 +29,7 @@ namespace PL
 
             //new MainWindow().Show();
 
-            //TabControl.
+           // TabItem.ts
 
             //new MainWindow().Sample;
             ////.SelectedIndex Show() ;
