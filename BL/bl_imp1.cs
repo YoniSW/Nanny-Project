@@ -8,22 +8,25 @@ using System.Threading.Tasks;
 using GoogleMapsApi;
 using GoogleMapsApi.Entities.Directions.Request;
 using GoogleMapsApi.Entities.Directions.Response;
+using BL;
 
 // LOGIC
 
 namespace BL
 {
-     partial class bl_imp : IBL
+     partial class Bl_imp : IBL
     {
         DAL.Idal dal;
         static Random r = new Random();
-        public bl_imp()
+        public Bl_imp()
         {
+            //initilizeArray();
+            //ChildInitilize();
+            //NannyInitilize();
+            //MotherInitilize();
+            
             dal = DAL.factoryDal.getDal();
-            initilizeArray();
-            NannyInitilize();
-            MotherInitilize();
-            ChildInitilize();
+          
 
         }
 

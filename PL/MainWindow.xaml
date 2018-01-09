@@ -7,7 +7,7 @@
         
         xmlns:local="clr-namespace:PL"
         mc:Ignorable="d"
-        Title="PL test" Height="405" Width="480" >
+        Title="PL test" Height="486" Width="576" >
 
     <Grid>
 
@@ -21,26 +21,38 @@
             <RowDefinition Height="149"/>
         </Grid.RowDefinitions>
 
-        <TabControl Grid.RowSpan="2" Grid.ColumnSpan="2" BorderThickness="0" Margin="0,0,-140,-144" SelectionChanged="TabControl_SelectionChanged">
+        <TabControl Grid.RowSpan="2" Grid.ColumnSpan="2" BorderThickness="0" Margin="0,0,-236,-225" SelectionChanged="TabControl_SelectionChanged">
 
             <TabItem Header="Nanny" FontWeight="Bold">
 
-                <Grid Margin="21,34,5,37">
+                <Grid Margin="21,34,5,-5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="144*"/>
                         <ColumnDefinition Width="145*"/>
 
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
-                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="49*"/>
+                        <RowDefinition Height="109*"/>
+                        <RowDefinition Height="103*"/>
+                        <RowDefinition Height="87*"/>
 
                     </Grid.RowDefinitions>
 
-                    <Label Grid.ColumnSpan="2" Content="Nanny functions:" HorizontalAlignment="Left" Height="45"  VerticalAlignment="Top" Width="289" Margin="0,-23,0,0"/>
-                    <Button x:Name="addNanny" Content="Add Nanny" HorizontalAlignment="Left" Height="45" 
-                                VerticalAlignment="Top" Width="134" Click="click_addNanny" BorderThickness="0.5">
+                    <Label Content="Nanny options" HorizontalAlignment="Left" Height="45"  VerticalAlignment="Top" Width="218" 
+                           RenderTransformOrigin="0.5,0.5" Margin="159,-14,0,0" Grid.ColumnSpan="2" FontSize="25">
+                        <Label.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-0.451"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Label.RenderTransform>
+                    </Label>
+                    <Button x:Name="addNanny" Content="Add Nanny" HorizontalAlignment="Left" Height="70" 
+                                VerticalAlignment="Top" Width="134" Click="click_addNanny" BorderThickness="3" Margin="1,0,0,0" Grid.Row="1"
+                            FontSize="20">
                         <Button.Foreground>
                             <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
                         </Button.Foreground>
@@ -53,8 +65,8 @@
                     </Button>
 
                     <Button x:Name="deleteNanny" Content="Delete Nanny" Grid.Column="1" HorizontalAlignment="Left" 
-                                Height="45" VerticalAlignment="Top" Width="135" Click="click_deleteNanny" BorderThickness="0.5"
-                                 Margin="82,-5,0,0">
+                                Height="70" VerticalAlignment="Top" Width="135" Click="click_deleteNanny" BorderThickness="0.5"
+                                 Margin="120,0,0,0" Grid.Row="1">
                         <Button.Foreground>
                             <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
                         </Button.Foreground>
@@ -65,9 +77,8 @@
                             </LinearGradientBrush>
                         </Button.Background>
                     </Button>
-                    <Button Content="exit" Margin="0,89,148,-21" Grid.Row="2" Background="Red" Click="Button_Click" RenderTransformOrigin="-1.194,3.095"/>
-                    <Button x:Name="updateNanny" Content="Update Nanny" HorizontalAlignment="Left" Height="44" Grid.Row="1" 
-                                VerticalAlignment="Top" Width="134" Margin="1,0,0,0" Click="click_updateNanny" BorderThickness="0.5">
+                    <Button x:Name="updateNanny" Content="Update Nanny" HorizontalAlignment="Left" Height="70" Grid.Row="2" 
+                                VerticalAlignment="Top" Width="134" Margin="1,0,0,0" Click="click_updateNanny" BorderThickness="3">
                         <Button.Foreground>
                             <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
                         </Button.Foreground>
@@ -78,88 +89,91 @@
                             </LinearGradientBrush>
                         </Button.Background>
                     </Button>
-                    <Button x:Name="getAllNanny" Content="Get all Nannies" HorizontalAlignment="Left" Height="44" 
-                                Grid.Row="2" VerticalAlignment="Top" Width="135" Click="click_getAllNannies" BorderThickness="2" />
+                    <Button x:Name="getAllNanny" Content="Get all Nannies" HorizontalAlignment="Left" Height="70" 
+                                Grid.Row="3" VerticalAlignment="Top" Width="135" Click="click_getAllNannies" BorderThickness="2" />
+                    <Button  Content="exit" Margin="201,61,10,10" Grid.Row="3" Background="Red" Click="Button_Click" 
+                            RenderTransformOrigin="-1.194,3.095" Grid.Column="1"/>
                 </Grid>
 
             </TabItem>
             <TabItem Header="Mother" FontWeight="Bold">
 
-                <Grid Height="179" Width="289">
+                <Grid Margin="10,0,-22,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="144*"/>
                         <ColumnDefinition Width="145*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="109"/>
+                        <RowDefinition Height="Auto" MinHeight="116"/>
+                        <RowDefinition Height="Auto" MinHeight="126"/>
+
                     </Grid.RowDefinitions>
-                    <Label Grid.ColumnSpan="2" Content="Mother functions:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="289"/>
-                    <Button x:Name="addMother" Content="Add Mother" HorizontalAlignment="Left" Height="45" 
-                                VerticalAlignment="Top" Width="134" Margin="10,50,0,0" Click="click_addMother" BorderThickness="2" Grid.RowSpan="2"/>
-                    <Button Content="exit" Margin="0,64,108,-39" Grid.Row="3" Background="Red" Click="Button_Click"/>
-                    <Button x:Name="deleteMother" Content="Delete Mother" Grid.Column="1" HorizontalAlignment="Left" Height="45" 
+                    <Label Grid.ColumnSpan="2" Content="Mother functions:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="289" Grid.RowSpan="2"/>
+                    <Button x:Name="addMother" Content="Add Mother" HorizontalAlignment="Left" Height="70" 
+                                VerticalAlignment="Top" Width="134" Click="click_addMother" BorderThickness="2" Grid.Row="1"/>
+                    <Button Content="exit" Margin="165,78,26,10" Grid.Row="3" Background="Red" Click="Button_Click" Grid.Column="1"/>
+                    <Button x:Name="deleteMother" Content="Delete Mother" Grid.Column="1" HorizontalAlignment="Left" Height="70" 
                                 VerticalAlignment="Top" Width="134" Click="click_deleteMother" BorderThickness="2"
-                                 Margin="5,50,0,0" Grid.RowSpan="2"/>
-                    <Button x:Name="updateMother" Content="Update Mother" HorizontalAlignment="Left" Height="44" Grid.Row="2" 
-                                VerticalAlignment="Top" Width="134" Margin="10,3,0,0" Click="click_updateMother" BorderThickness="2" Grid.RowSpan="2"/>
-                    <Button x:Name="getAllMothers" Content="Get all Mothers" Grid.Column="1" HorizontalAlignment="Left" Height="44" 
-                                Grid.Row="2" VerticalAlignment="Top" Width="134" Click="click_getAllMothers" BorderThickness="2" Margin="5,3,0,0" Grid.RowSpan="2"/>
-                    <Image x:Name="mom"  Source="images/mother.png" Stretch="Fill" Grid.Column="1" Margin="77,-26,0,49"/>
+                                 Margin="113,10,0,0" Grid.Row="1" RenderTransformOrigin="1.246,0.614"/>
+                    <Button x:Name="updateMother" Content="Update Mother" HorizontalAlignment="Left" Height="70" Grid.Row="3" 
+                                VerticalAlignment="Top" Width="134" Click="click_updateMother" BorderThickness="2"/>
+                    <Button x:Name="getAllMothers" Content="Get all Mothers" HorizontalAlignment="Left" Height="70" 
+                                Grid.Row="2" VerticalAlignment="Top" Width="134" Click="click_getAllMothers" BorderThickness="2"/>
+                    <Image x:Name="mom"  Source="images/mother.png" Stretch="Fill" Margin="166,0,182,23" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
                 </Grid>
 
             </TabItem>
             <TabItem Header="Child" FontWeight="Bold">
 
-                <Grid Height="179" Width="289">
+                <Grid Margin="10,0,-22,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="144*"/>
                         <ColumnDefinition Width="145*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto" MinHeight="218"/>
+                        <RowDefinition Height="Auto" MinHeight="125"/>
+                        <RowDefinition Height="Auto" MinHeight="50"/>
+
                     </Grid.RowDefinitions>
                     <Label Grid.ColumnSpan="2" Content="Child functions:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="289"/>
                     <Button x:Name="addChild" Content="Add Child" HorizontalAlignment="Left" Height="45" 
-                                VerticalAlignment="Top" Width="134" Margin="10,50,0,0" Click="click_addChild" BorderThickness="2" Grid.RowSpan="2"/>
+                                VerticalAlignment="Top" Width="134" Margin="0,50,0,0" Click="click_addChild" BorderThickness="2"/>
 
-                    <Button x:Name="deleteChild" Content="Delete Child " Grid.Column="1" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="135" Click="click_deleteChild" BorderThickness="2" Margin="5,50,0,0" Grid.RowSpan="2"/>
+                    <Button x:Name="deleteChild" Content="Delete Child " Grid.Column="1" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="135" Click="click_deleteChild" BorderThickness="2" Margin="117,18,0,0"/>
                     <Button x:Name="updateChild" Content="Update Child" HorizontalAlignment="Left" Height="44" Grid.Row="2" 
-                                VerticalAlignment="Top" Width="134" Margin="10,3,0,0" Click="click_updateChild" BorderThickness="2" Grid.RowSpan="2"/>
-                    <Button x:Name="getKidsByMom" Content="Get all kids" Grid.Column="1" HorizontalAlignment="Left" Height="44" 
-                                Grid.Row="2" VerticalAlignment="Top" Width="135" Click="click_getKidsByMom" BorderThickness="2" Margin="5,3,0,0" Grid.RowSpan="2"/>
-                    <Image x:Name="child"  Source="images/child.png" Stretch="Fill" Grid.Column="1" Margin="65,-24,10,45"/>
-                    <Button Content="exit" Margin="0,67,108,-42" Grid.Row="3" Background="Red" Click="Button_Click"/>
+                                VerticalAlignment="Top" Width="134" Click="click_updateChild" BorderThickness="2"/>
+                    <Button x:Name="getKidsByMom" Content="Get all kids" HorizontalAlignment="Left" Height="44" 
+                                Grid.Row="1" VerticalAlignment="Top" Width="135" Click="click_getKidsByMom" BorderThickness="2"/>
+                    <Image x:Name="child"  Source="images/child.png" Stretch="Fill" Margin="160,11,186,10" Grid.ColumnSpan="2"/>
+                    <Button Content="exit" Margin="89,139,21,-114" Grid.Row="2" Background="Red" Click="Button_Click" Grid.Column="1"/>
                 </Grid>
             </TabItem>
 
             <TabItem Header="Contract" FontWeight="Bold">
-                <Grid Height="179" Width="289">
+                <Grid Margin="0,0,-10,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="144*"/>
                         <ColumnDefinition Width="145*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto" MinHeight="142"/>
+                        <RowDefinition Height="Auto" MinHeight="92"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Label Grid.ColumnSpan="2" Content="Contract functions:" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="289"/>
-                    <Button  x:Name="addContract" Content="Add Contract" HorizontalAlignment="Left" Height="45" Grid.Row="1" 
+                    <Button  x:Name="addContract" Content="Add Contract" HorizontalAlignment="Left" Height="70" Grid.Row="1" 
                                  VerticalAlignment="Top" Width="134" Margin="10,0,0,0" Click="click_addContract"/>
                     <Button  x:Name="deleteContract" Content="Delete Contract" Grid.Column="1" HorizontalAlignment="Left" 
-                                 Height="45" Grid.Row="1" VerticalAlignment="Top" Width="135" Click="click_deleteContract"/>
-                    <Button  x:Name="updateContract" Content="Update Contract" HorizontalAlignment="Left" Height="44" 
-                                 Grid.Row="2" VerticalAlignment="Top" Width="134" Margin="10,0,0,0" Click="click_updateContract"/>
-                    <Button  x:Name="getContracts" Content="Get all contracs" Grid.Column="1" HorizontalAlignment="Left" Height="44"
-                                 Grid.Row="2" VerticalAlignment="Top" Width="135" />
-                    <Button Content="exit" Margin="-80,97,188,-109" Grid.Row="3" Background="Red" Click="Button_Click"/>
+                                 Height="70" Grid.Row="1" VerticalAlignment="Top" Width="135" Click="click_deleteContract" Margin="127,0,0,0"/>
+                    <Button  x:Name="updateContract" Content="Update Contract" HorizontalAlignment="Left" Height="70" 
+                                 Grid.Row="1" VerticalAlignment="Top" Width="134" Margin="10,121,0,0" Click="click_updateContract" Grid.RowSpan="2"/>
+                    <Button  x:Name="getContracts" Content="Get all contracs" HorizontalAlignment="Left" Height="70"
+                                 Grid.Row="3" VerticalAlignment="Top" Width="135" Margin="9,0,0,-61" />
+                    <Button Content="exit" Margin="100,106,10,-118" Grid.Row="3" Background="Red" Click="Button_Click" Grid.Column="1"/>
                 </Grid>
             </TabItem>
         </TabControl>
