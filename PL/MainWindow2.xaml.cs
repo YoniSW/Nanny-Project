@@ -25,9 +25,14 @@ namespace PL
         }
         private void click_addNanny(object sender, RoutedEventArgs e)
         {
-            new MainWindow().Show ();
+            new MainWindow().Show();
 
             //new MainWindow().Show();
+
+            //TabControl.
+
+            //new MainWindow().Sample;
+            ////.SelectedIndex Show() ;
         }
     }
 }
