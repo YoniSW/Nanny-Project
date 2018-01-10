@@ -79,9 +79,9 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="nanny ID:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-            <TextBox x:Name="_nannyIDTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" 
-                     Text="{Binding _nannyID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
-                     VerticalAlignment="Center" Width="120"/>
+            <TextBox x:Name="_nannyIDTextBox" Grid.Column="1" HorizontalAlignment="Left" Visibility="Visible" Height="23" Margin="3" Grid.Row="0" 
+                     Text="{Binding _nannyID, Mode=TwoWay , NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
+                     VerticalAlignment="Center" Width="120" />
         </Grid>
         <Grid x:Name="grid2"   HorizontalAlignment="Left" Margin="5,37,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="32" Width="216">
             <Grid.ColumnDefinitions>
@@ -92,7 +92,9 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="nanny Fname:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-            <TextBox x:Name="_nannyFnameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding _nannyFname, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+            <TextBox x:Name="_nannyFnameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" 
+                     Text="{Binding _nannyFname, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
+                     VerticalAlignment="Center" Width="120"/>
         </Grid>
         <Grid x:Name="grid3"   HorizontalAlignment="Left" Margin="6,69,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="32" Width="215">
             <Grid.ColumnDefinitions>
@@ -103,7 +105,8 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="nanny Lname:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-            <TextBox x:Name="_nannyLnameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding _nannyLname, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+            <TextBox x:Name="_nannyLnameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" 
+                     Text="{Binding _nannyLname, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
         </Grid>
         <Grid x:Name="grid4"   HorizontalAlignment="Left" Margin="6,101,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="32" Width="214">
             <Grid.ColumnDefinitions>
@@ -114,7 +117,8 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="nanny Phone:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-            <TextBox x:Name="_nannyPhoneTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding _nannyPhone, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+            <TextBox x:Name="_nannyPhoneTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" 
+                     Text="{Binding _nannyPhone, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
         </Grid>
         <Grid x:Name="grid6"   HorizontalAlignment="Left" Margin="6,133,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="32" Width="211">
             <Grid.ColumnDefinitions>
