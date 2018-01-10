@@ -43,7 +43,7 @@ namespace BE ///
 
         public override string ToString()
         {
-            throw new System.NotImplementedException();
+            return base.ToString();
         }
     }
 }
