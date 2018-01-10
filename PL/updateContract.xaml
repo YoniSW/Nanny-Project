@@ -18,11 +18,9 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <TextBox x:Name="_contractIDTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3,3,-29,3" Grid.Row="0" 
-                         Text="{Binding _contractID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="152"/>
             </Grid>
-            <Button Content="Search" HorizontalAlignment="Left" Height="55" Margin="199,0,0,0" VerticalAlignment="Top" Width="98"
-                    Click="search_Click"/>
+            <ComboBox x:Name="IdContract" HorizontalAlignment="Left" Margin="21,26,0,0" VerticalAlignment="Top" Width="120"
+                      SelectionChanged="IdContract_SelectionChanged"/>
         </Grid>
         <Button Content="Update!" HorizontalAlignment="Left" Margin="10,307,0,0" VerticalAlignment="Top" Width="92" Height="52"
                 Click="Button_Click"/>
