@@ -95,9 +95,9 @@ namespace PL
 
         // contract
 
-        private void click_getContracs(object sender, RoutedEventArgs e)
+        private void click_getContracts(object sender, RoutedEventArgs e)
         {
-            new getContracts().ShowDialog();
+            new getContracts().Show();
         }
 
         private void click_addContract(object sender, RoutedEventArgs e)

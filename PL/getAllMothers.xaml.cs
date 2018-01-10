@@ -19,9 +19,31 @@ namespace PL
     /// </summary>
     public partial class getAllMothers : Window
     {
+        public BE.Mother nanny;
+        public IEnumerable<BE.Mother> mother_list;
+        public BL.IBL bl; // connect to BL layer
+
         public getAllMothers()
         {
             InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
+            try
+            {
+                allNanniesBox.ItemsSource = mother_list;
+                mother_list = bl.getAllMothers();
+                if (mother_list != null && mother_list.GetEnumerator().MoveNext())
+                    allNanniesBox.ItemsSource = mother_list;
+
+                else
+                    throw new Exception("no mother in database");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void allNanniesBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
         }
     }
 }
