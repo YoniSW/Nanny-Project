@@ -26,7 +26,6 @@ namespace PL
         public getContracts()
         {
             InitializeComponent();
-            InitializeComponent();
             bl = BL.FactoryBL.GetBL();
             try
             {
@@ -36,17 +35,15 @@ namespace PL
                     allNanniesBox.ItemsSource = contract_list;
 
                 else
-                    throw new Exception("there is no contracts in database");
+                    throw new Exception("no contracts in database");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void allNanniesBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
         }
     }
 }

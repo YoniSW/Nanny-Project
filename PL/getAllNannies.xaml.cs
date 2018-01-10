@@ -33,7 +33,7 @@ namespace PL
                     allNanniesBox.ItemsSource = nanny_list;
 
                 else
-                    throw new Exception("there is now nannies in database");
+                    throw new Exception("no nannies in database");
             }
             catch (Exception ex)
             {

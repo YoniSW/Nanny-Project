@@ -176,7 +176,7 @@
                     <Button  x:Name="updateContract" Content="Update Contract" HorizontalAlignment="Left" Height="70" 
                                  Grid.Row="2" VerticalAlignment="Top" Width="134" Margin="10,0,0,0" Click="click_updateContract"/>
                     <Button  x:Name="getContracts" Content="Get all contracs" HorizontalAlignment="Left" Height="70"
-                                 Grid.Row="3" VerticalAlignment="Top" Width="135" Margin="9,0,0,0" />
+                                 Grid.Row="3" VerticalAlignment="Top" Width="135" Margin="9,0,0,0" Click="click_getContracts"/>
                     <Button Content="exit" Margin="190,86,44,10" Grid.Row="3" Background="PaleVioletRed" FontSize="8" 
                             Click="Button_Click" Grid.Column="1"/>
                 </Grid>

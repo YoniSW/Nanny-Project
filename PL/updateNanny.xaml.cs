@@ -20,8 +20,6 @@ namespace PL
     /// </summary>
     public partial class updateNanny : Window
     {
-
-        public BE.Nanny getAllNanny;
         public BE.Nanny addA_Nanny;
         public BL.IBL bl;
         public IEnumerable<BE.Nanny> nanny_list;

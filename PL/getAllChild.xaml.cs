@@ -36,7 +36,7 @@ namespace PL
                     allNanniesBox.ItemsSource = child_list;
 
                 else
-                    throw new Exception("there is now children in database");
+                    throw new Exception("no children in database");
             }
             catch (Exception ex)
             {

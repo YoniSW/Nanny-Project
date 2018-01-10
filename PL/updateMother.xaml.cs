@@ -21,9 +21,9 @@ namespace PL
     public partial class updateMother : Window
     {
         public BE.Mother addA_Mother;
-        public BE.Mother getAllMothers;
         public BL.IBL bl;
-        public IEnumerable<BE.Mother> mother_list;
+        public IEnumerable<BE.Mother> mom_list;
+
         public updateMother()
         {
             InitializeComponent();
@@ -42,16 +42,11 @@ namespace PL
             if (temp is ComboBox && ((ComboBox)temp).SelectedIndex > -1)
       
             {
-               
-
                 try
                 {
                     addA_Mother = (Mother)IdMother.SelectedItem;
-                   //    this.DataContext = addA_Mother; 
-
-
-                    // addA_Mother = bl.getMother(Convert.ToInt64(_momIDTextBox.Text)); 
-                    this.DataContext = addA_Mother;
+                    thisGrid.DataContext = addA_Mother;
+  
                     MessageBox.Show("Mother was found, you can continue updating");
 
                     if (addA_Mother._daysRequestMom[0] == true)
@@ -90,11 +85,6 @@ namespace PL
                         FriStart.Value = addA_Mother._startHour[5].ToUniversalTime();
                         FriEnd.Value = addA_Mother._endHour[5].ToUniversalTime();
                     }
-                }
-                catch (FormatException)
-                {
-                    MessageBox.Show("Check your input and try again");
-
                 }
                 catch (Exception ex)
                 {
