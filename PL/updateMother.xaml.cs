@@ -23,30 +23,35 @@ namespace PL
         public BE.Mother addA_Mother;
         public BE.Mother getAllMothers;
         public BL.IBL bl;
+        public IEnumerable<BE.Mother> mother_list;
         public updateMother()
         {
             InitializeComponent();
             addA_Mother = new BE.Mother();
             addA_Mother._startHour = new DateTime[6];
-
             addA_Mother._endHour = new DateTime[6];
             addA_Mother._daysRequestMom = new bool[6];
             this.DataContext = addA_Mother;
             bl = BL.FactoryBL.GetBL();
             IdMother.ItemsSource = bl.getAllMothers();
-                }
+        }
 
-        private void IdMother_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        #region ID ButtonClick
+        private void IdMother_SelectionChanged(object temp, SelectionChangedEventArgs e)
         {
-            if (sender is ComboBox && ((ComboBox)sender).SelectedIndex > -1)
+            if (temp is ComboBox && ((ComboBox)temp).SelectedIndex > -1)
+      
             {
-                addA_Mother = (Mother)IdMother.SelectedItem;
-                this.DataContext = addA_Mother;
+               
 
                 try
                 {
+                    addA_Mother = (Mother)IdMother.SelectedItem;
+                   //    this.DataContext = addA_Mother; 
+
+
                     // addA_Mother = bl.getMother(Convert.ToInt64(_momIDTextBox.Text)); 
-                    thisGrid.DataContext = addA_Mother;
+                    this.DataContext = addA_Mother;
                     MessageBox.Show("Mother was found, you can continue updating");
 
                     if (addA_Mother._daysRequestMom[0] == true)
@@ -98,6 +103,9 @@ namespace PL
             }
         }
 
+        #endregion
+
+        #region Update Click
         private void update_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -189,6 +197,7 @@ namespace PL
             }
         }
 
-
+        #endregion a
     }
+
 }
