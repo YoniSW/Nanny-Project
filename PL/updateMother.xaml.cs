@@ -28,6 +28,7 @@ namespace PL
             InitializeComponent();
             addA_Mother = new BE.Mother();
             addA_Mother._startHour = new DateTime[6];
+
             addA_Mother._endHour = new DateTime[6];
             addA_Mother._daysRequestMom = new bool[6];
             this.DataContext = addA_Mother;
