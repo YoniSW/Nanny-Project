@@ -27,6 +27,11 @@ namespace PL
             InitializeComponent();
         }
 
+        public MainWindow(int tabIndex)
+        {
+            TabIndex = tabIndex;
+        }
+
         /// nanny
 
         private void click_addNanny(object sender, RoutedEventArgs e)

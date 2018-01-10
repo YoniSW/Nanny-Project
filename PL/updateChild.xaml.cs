@@ -24,17 +24,24 @@ namespace PL
     {
         public BE.Child updateKid;
         public BL.IBL bl;
+        public BE.Child getAllChild;
+        public IEnumerable<BE.Child> child_list;
+
 
         public updateChild()
         {
             InitializeComponent();
             this.DataContext = updateKid;
             bl = BL.FactoryBL.GetBL();
+           
+           
+            IdChild.ItemsSource = bl.getAllNanny();
         }
 
-        private void search_Click(object sender, RoutedEventArgs e)
+        private void IdChild_SelectionChanged(object tempo, RoutedEventArgs e)
         {
-            try
+            if (tempo is ComboBox && ((ComboBox)tempo).SelectedIndex > -1)
+                try
             {
                 updateKid = bl.getChild(Convert.ToInt64(_childIDTextBox.Text));
                 this.DataContext = updateKid;

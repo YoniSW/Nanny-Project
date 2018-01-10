@@ -153,5 +153,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
         </Grid>
+        <ComboBox x:Name="IdMother" Grid.Column="1" HorizontalAlignment="Left" Margin="82,19,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120"
+                  DisplayMemberPath="_momID" SelectionChanged="IdMother_SelectionChanged"/>
     </Grid>
 </Window>

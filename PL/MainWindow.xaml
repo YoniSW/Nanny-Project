@@ -23,7 +23,7 @@
 
         <TabControl Name="Sample" Grid.RowSpan="2" Grid.ColumnSpan="2" BorderThickness="0" Margin="10,0,-236,-294" SelectionChanged="TabControl_SelectionChanged">
 
-            <TabItem x:Name="nannyTab" Header="Nanny" FontWeight="Bold">
+            <TabItem x:Name="nannyTab" Header="Nanny" FontWeight="Bold" TabIndex="2">
 
                 <Grid Margin="1,2,5,-5">
                     <Grid.ColumnDefinitions>
@@ -99,8 +99,9 @@
 
                 <Grid Margin="10,0,-22,0">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="144*"/>
-                        <ColumnDefinition Width="145*"/>
+                        <ColumnDefinition Width="115*"/>
+                        <ColumnDefinition Width="168*"/>
+                        <ColumnDefinition Width="284*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"/>
@@ -128,8 +129,9 @@
 
                 <Grid Margin="10,0,-9,2">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="144*"/>
-                        <ColumnDefinition Width="145*"/>
+                        <ColumnDefinition Width="193*"/>
+                        <ColumnDefinition Width="90*"/>
+                        <ColumnDefinition Width="284*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*" />

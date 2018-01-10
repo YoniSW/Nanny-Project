@@ -29,7 +29,6 @@ namespace PL
             InitializeComponent();
             addA_Mother = new BE.Mother();
             addA_Mother._startHour = new DateTime[6];
-
             addA_Mother._endHour = new DateTime[6];
             addA_Mother._daysRequestMom = new bool[6];
             this.DataContext = addA_Mother;
@@ -37,9 +36,11 @@ namespace PL
             IdMother.ItemsSource = bl.getAllMothers();
         }
 
-        private void IdMother_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        #region ID ButtonClick
+        private void IdMother_SelectionChanged(object temp, SelectionChangedEventArgs e)
         {
-            if (sender is ComboBox && ((ComboBox)sender).SelectedIndex > -1)
+            if (temp is ComboBox && ((ComboBox)temp).SelectedIndex > -1)
+      
             {
                 try
                 {
@@ -92,6 +93,9 @@ namespace PL
             }
         }
 
+        #endregion
+
+        #region Update Click
         private void update_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -183,6 +187,7 @@ namespace PL
             }
         }
 
-
+        #endregion a
     }
+
 }
