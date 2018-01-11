@@ -22,11 +22,13 @@ namespace PL
         public addNanny()
         {
             InitializeComponent();
+            
+            _nannyBirthDatePicker.SelectedDate = DateTime.Today;
             nannyAdd = new BE.Nanny();
             nannyAdd._startHour = new DateTime[6];
             nannyAdd._endHour = new DateTime[6];
             nannyAdd._workDays = new bool[6];
-            thisGrid.DataContext = nannyAdd;
+            thisGrid.DataContext = nannyAdd;// conects the object with the wpf
             bl = BL.FactoryBL.GetBL();
         }
 

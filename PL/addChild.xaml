@@ -120,7 +120,8 @@
             </Grid.RowDefinitions>
             <Label Content="birthday:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
             <DatePicker x:Name="_birthdayDatePicker" 
-                        SelectedDate="{Binding _birthday, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="0" 
+                        SelectedDate="{Binding _birthday, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                        Grid.Column="1" HorizontalAlignment="Left" Margin="10,3,-4,5" Grid.Row="0" 
                         
                         VerticalAlignment="Center"/>
         </Grid>

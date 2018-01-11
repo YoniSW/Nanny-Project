@@ -103,6 +103,9 @@
     <Compile Include="getContracts.xaml.cs">
       <DependentUpon>getContracts.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MainWindow2.xaml.cs">
+      <DependentUpon>MainWindow2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="updateChild.xaml.cs">
       <DependentUpon>updateChild.xaml</DependentUpon>
     </Compile>
@@ -181,6 +184,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MainWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="updateChild.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
