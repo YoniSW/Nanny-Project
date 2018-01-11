@@ -32,6 +32,7 @@ namespace PL
             this.DataContext = contract;
             bl = BL.FactoryBL.GetBL();
             IdContract.ItemsSource = bl.getContracts();
+            IdContract.DisplayMemberPath = "_contractID";
         }
 
 
@@ -42,13 +43,7 @@ namespace PL
                 {
                     contract = (Contract)IdContract.SelectedItem;
                     this.DataContext = IdContract;
-                    MessageBox.Show("Contract is found, you can continue updating...");
-                }
-
-                catch (FormatException)
-                {
-                    MessageBox.Show("Check your input and try again");
-
+                    
                 }
                 catch (Exception ex)
                 {

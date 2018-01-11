@@ -39,7 +39,7 @@
                     Text="{Binding _childID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
                     VerticalAlignment="Center" Width="120" />
             </Grid>
-            <Grid x:Name="grid3"   HorizontalAlignment="Left" Margin="6,168,0,0" VerticalAlignment="Top" Width="122">
+            <Grid x:Name="grid3"   HorizontalAlignment="Left" Margin="217,35,0,0" VerticalAlignment="Top" Width="122">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -50,9 +50,9 @@
                 <Label Content="Did Meet?" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
                 <CheckBox x:Name="_didMeetCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" 
                     IsChecked="{Binding _didMeet, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
-                    Margin="21,10,-14,7" Grid.Row="0" VerticalAlignment="Center"/>
+                    Margin="21,10,-12,7" Grid.Row="0" VerticalAlignment="Center"/>
             </Grid>
-            <Grid x:Name="grid4"   HorizontalAlignment="Left" Margin="215,2,0,0" VerticalAlignment="Top">
+            <Grid x:Name="grid4"   HorizontalAlignment="Left" Margin="105,233,0,-55" VerticalAlignment="Top">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -60,10 +60,10 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Label Content="Did Sign?" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+                <Label Content="Signature" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
                 <CheckBox x:Name="_didSignCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding _didSign, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
             </Grid>
-            <Grid x:Name="grid5"   HorizontalAlignment="Left" Margin="6,136,0,0" VerticalAlignment="Top">
+            <Grid x:Name="grid5"   HorizontalAlignment="Left" Margin="217,3,0,0" VerticalAlignment="Top">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>

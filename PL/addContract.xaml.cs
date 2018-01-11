@@ -22,8 +22,7 @@ namespace PL
     public partial class addContract : Window
     {
 
-  
-        public BE.Mother mom;
+        public BE.Mother addMom;
         public BE.Contract addCont; // addCont contians the contracts data
         public BE.Nanny nanny;
         public BE.Child child;
@@ -36,19 +35,34 @@ namespace PL
         public addContract()
         {
             InitializeComponent();
-            addCont = new BE.Contract();
+            addMom = new BE.Mother();
             thisGrid.DataContext = addCont;
             bl = BL.FactoryBL.GetBL();
+            momBox.ItemsSource = bl.getAllMothers();
+           momBox.DisplayMemberPath = "_momID";
+        }
+
+        private void momBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                addMom = (Mother)momBox.SelectedItem;
+                this.DataContext = addMom;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void search_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                mom = bl.getMother(Convert.ToInt64(momID_textBox.Text)); // get thisMom's object
-                child_list = bl.getKidsByMom(a => a._momID == mom._momID); // refine children list to thisMoms kids
+                child_list = bl.getKidsByMom(a => a._momID == addMom._momID); // refine children list to thisMoms kids
                 thisMomsKids_list.ItemsSource = child_list; // update UI window
-                nanny_list = bl.allCompatibleNannies(mom); // refine to relevant nanneis (suitble schedule or 5 nearest)
+                nanny_list = bl.allCompatibleNannies(addMom); // refine to relevant nanneis (suitble schedule or 5 nearest)
                 relevantNannies_list.ItemsSource = nanny_list; // update UI window
             }
             catch (FormatException)
