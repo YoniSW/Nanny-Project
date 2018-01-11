@@ -34,7 +34,7 @@ namespace PL
             addA_Nanny._workDays = new bool[6];
             this.DataContext = addA_Nanny;
             bl = BL.FactoryBL.GetBL();
-            IdNanny.ItemsSource = bl.getAllNanny();
+            IdNanny.ItemsSource = bl.getAllNanny();  
         }
 
 
