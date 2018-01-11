@@ -29,7 +29,7 @@ namespace PL
         {
             InitializeComponent();
             contract = new BE.Contract();
-            thisGrid.DataContext = contract;
+            this.DataContext = contract;
             bl = BL.FactoryBL.GetBL();
             IdContract.ItemsSource = bl.getContracts();
         }
@@ -42,7 +42,7 @@ namespace PL
                 {
                     contract = (Contract)IdContract.SelectedItem;
                     this.DataContext = IdContract;
-                    MessageBox.Show("Child is found, you can continue updating...");
+                    MessageBox.Show("Contract is found, you can continue updating...");
                 }
 
                 catch (FormatException)

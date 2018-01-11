@@ -20,11 +20,11 @@ namespace BL
         static Random r = new Random();
         public Bl_imp()
         {
-            //initilizeArray();
-            //ChildInitilize();
-            //NannyInitilize();
-            //MotherInitilize();
-            
+            initilizeArray();
+            ChildInitilize();
+            NannyInitilize();
+            MotherInitilize();
+
             dal = DAL.factoryDal.getDal();
           
 
