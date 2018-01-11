@@ -21,7 +21,7 @@ namespace PL
     public partial class MainWindow : Window
     {
 
-        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -29,7 +29,10 @@ namespace PL
 
         public MainWindow(int tabIndex)
         {
-            TabIndex = tabIndex;
+            InitializeComponent();         
+
+            Sample.SelectedIndex = tabIndex;
+        
         }
 
         /// nanny

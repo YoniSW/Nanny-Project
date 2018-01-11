@@ -8,7 +8,7 @@ namespace BE
 {
     public class Nanny
     {
-        public long _nannyID { get; set; } 
+        public long _nannyID { get; set; }
         public string _nannyLname { get; set; }
         public string _nannyFname { get; set; }
         public int _amountChildren { get; set; }
@@ -64,6 +64,10 @@ namespace BE
 
             return dupNanny;
         }
+        public Nanny ()
+            {
+                _nannyBirth = DateTime.Now;
+            }
 
         public override string ToString()
         {

@@ -27,6 +27,7 @@ namespace PL
         public updateNanny()
         {
             InitializeComponent();
+            _nannyBirthDatePicker2.SelectedDate = DateTime.Today;
             addA_Nanny = new BE.Nanny();
             addA_Nanny._startHour = new DateTime[6];
             addA_Nanny._endHour = new DateTime[6];

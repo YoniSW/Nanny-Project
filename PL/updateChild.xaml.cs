@@ -22,6 +22,7 @@ namespace PL
     /// </summary>
     public partial class updateChild : Window
     {
+
         public BE.Child updateKid;
         public BL.IBL bl;
         public BE.Child getAllChild;
@@ -31,6 +32,7 @@ namespace PL
         public updateChild()
         {
             InitializeComponent();
+            _birthdayDatePicker.SelectedDate = DateTime.Today;
             this.DataContext = updateKid;
             bl = BL.FactoryBL.GetBL();
             IdChild.ItemsSource = bl.getAllChildren();
