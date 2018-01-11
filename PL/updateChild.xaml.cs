@@ -35,17 +35,15 @@ namespace PL
             _birthdayDatePicker.SelectedDate = DateTime.Today;
             this.DataContext = updateKid;
             bl = BL.FactoryBL.GetBL();
-           
-           
-            IdChild.ItemsSource = bl.getAllNanny();
+            IdChild.ItemsSource = bl.getAllChildren();
         }
 
         private void IdChild_SelectionChanged(object tempo, RoutedEventArgs e)
         {
             if (tempo is ComboBox && ((ComboBox)tempo).SelectedIndex > -1)
-                try
+            try
             {
-                updateKid = bl.getChild(Convert.ToInt64(_childIDTextBox.Text));
+               updateKid = (Child)IdChild.SelectedItem;
                 this.DataContext = updateKid;
                 MessageBox.Show("Child is found, you can continue updating...");
             }

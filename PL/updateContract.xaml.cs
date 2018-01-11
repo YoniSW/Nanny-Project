@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BE;
 
 namespace PL
 {
@@ -30,11 +31,29 @@ namespace PL
             contract = new BE.Contract();
             thisGrid.DataContext = contract;
             bl = BL.FactoryBL.GetBL();
+            IdContract.ItemsSource = bl.getContracts();
         }
 
-        private void search_Click(object sender, RoutedEventArgs e)
-        {
 
+        private void IdContract_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if ((sender is ComboBox && ((ComboBox)sender).SelectedIndex > -1))
+                try
+                {
+                    contract = (Contract)IdContract.SelectedItem;
+                    this.DataContext = IdContract;
+                    MessageBox.Show("Child is found, you can continue updating...");
+                }
+
+                catch (FormatException)
+                {
+                    MessageBox.Show("Check your input and try again");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -46,7 +65,5 @@ namespace PL
         {
             Close();
         }
-
-
     }
 }
