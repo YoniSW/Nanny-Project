@@ -22,14 +22,16 @@ namespace PL
     {
         public BL.IBL bl;
         public BE.Child DelChild;
-       
+        public IEnumerable<BE.Child> child_list;
+
         public deleteChild()
         {
             InitializeComponent();
             DelChild = new BE.Child();
-            this.DataContext = textBox;
+            this.DataContext = DelChild;
             bl = BL.FactoryBL.GetBL();
-            textBox.ItemsSource = bl.getAllChildren();
+            textBox.ItemsSource = bl.getAllChildren(); 
+            textBox.DisplayMemberPath = "_childID";
 
         }
 
@@ -53,7 +55,7 @@ namespace PL
         {
             try
             {
-                bl.deleteChild(long.Parse(textBox.Text));
+                bl.deleteChild(DelChild._childID);
                 MessageBox.Show("Child was deleted successfully!");
                 Close();
             }

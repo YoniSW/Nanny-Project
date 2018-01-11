@@ -20,14 +20,14 @@ namespace BL
         static Random r = new Random();
         public Bl_imp()
         {
+
+            dal = DAL.factoryDal.getDal();
+
             initilizeArray();
             ChildInitilize();
             NannyInitilize();
             MotherInitilize();
-
-            dal = DAL.factoryDal.getDal();
-          
-
+           
         }
 
         #region mother metods
