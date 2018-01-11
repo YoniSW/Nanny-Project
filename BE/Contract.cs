@@ -37,6 +37,12 @@ namespace BE
             return dupContract;
         }
 
+        public Contract()
+        {
+            _beginWork = DateTime.Now;
+            _endWork = DateTime.Now;
+
+        }
         public override string ToString()
         {
             return base.ToString();

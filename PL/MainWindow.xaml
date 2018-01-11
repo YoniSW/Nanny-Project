@@ -152,7 +152,6 @@
                             Click="Button_Click" Grid.Column="1"/>
                 </Grid>
             </TabItem>
-
             <TabItem x:Name="contractTab" Header="Contract" FontWeight="Bold">
                 <Grid Margin="0,0,-10,0">
                     <Grid.ColumnDefinitions>
