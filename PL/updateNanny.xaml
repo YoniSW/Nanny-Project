@@ -265,10 +265,10 @@
             <TextBox x:Name="_minMonthAgeTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding _minMonthAge, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
         </Grid>
 
-        <Label Content="Please enter Nanny's ID" HorizontalAlignment="Left" Height="31" Margin="10,23,0,0" 
-               VerticalAlignment="Top" Width="148" FontWeight="Bold" Grid.RowSpan="2"/>
+        <Label Content="Please enter Nanny's ID" HorizontalAlignment="Left" Height="31" Margin="92,14,0,0" 
+               VerticalAlignment="Top" Width="148" FontWeight="Bold" Grid.Row="1"/>
         <ComboBox x:Name="IdNanny" HorizontalAlignment="Left" 
-                  Margin="41,23,0,0" VerticalAlignment="Top" Width="172"  
+                  Margin="41,14,0,0" VerticalAlignment="Top" Width="172"  
                   DisplayMemberPath="_nannyID" SelectionChanged="IdNanny_SelectionChanged" Grid.Row="1" Grid.Column="1"/>
     </Grid>
 </Window>
