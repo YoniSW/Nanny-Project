@@ -47,6 +47,7 @@ namespace PL
                     addA_Nanny = (Nanny)IdNanny.SelectedItem;
                     thisGrid.DataContext = addA_Nanny;
 
+
                     if (addA_Nanny._workDays[0] == true)
                     {
                         SunCheck.IsChecked = true;
