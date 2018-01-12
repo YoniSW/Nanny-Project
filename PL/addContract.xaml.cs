@@ -117,6 +117,12 @@ namespace PL
                 _ratePerHourTextBox.Text = Convert.ToString(bl.getUpdatedRate(child._childID, nanny._nannyID, false));
                 addCont._nannyID = nanny._nannyID;
             }
+            // add NANNY?
+            nanny = new BE.Nanny();
+            grid1.DataContext = nanny;
+            bl = BL.FactoryBL.GetBL();
+            _nannyIDTextBox.ItemsSource = nanny_list;
+            _nannyIDTextBox.DisplayMemberPath = "_nannyID";
         }
 
         private void thisMomsKids_list_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -128,6 +134,27 @@ namespace PL
                 _childIDTextBox.Text = Convert.ToString(child._childID);
                 addCont._childID = child._childID;
             }
+
+        }
+
+        private void _nannyIDTextBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (sender is ComboBox && ((ComboBox)sender).SelectedIndex > -1)
+            {
+                try
+                {
+                    nanny = (Nanny)_nannyIDTextBox.SelectedItem;
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void _childIDTextBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
         }
     }
