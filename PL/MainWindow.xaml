@@ -1,5 +1,4 @@
 ﻿<Window x:Class="PL.MainWindow"
-        WindowStartupLocation="Manual"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,7 +6,7 @@
         
         xmlns:local="clr-namespace:PL"
         mc:Ignorable="d"
-        Title="PL test" Height="486" Width="576" >
+        Title="PL test" Height="700" Width="576" WindowStyle="None" WindowStartupLocation="CenterScreen"  BorderBrush="CornflowerBlue" >
 
     <Grid>
 
@@ -21,9 +20,10 @@
             <RowDefinition Height="149"/>
         </Grid.RowDefinitions>
 
-        <TabControl Name="Sample" Grid.RowSpan="2" Grid.ColumnSpan="2" BorderThickness="0" Margin="10,0,-236,-294" SelectionChanged="TabControl_SelectionChanged">
+        <TabControl Name="Sample" Grid.RowSpan="2" Grid.ColumnSpan="2" BorderThickness="0" Margin="10,0,-236,-531" 
+                    SelectionChanged="TabControl_SelectionChanged" FontSize="18" BorderBrush="Black" ForceCursor="True">
 
-            <TabItem x:Name="nannyTab" Header="Nanny" FontWeight="Bold" TabIndex="2">
+            <TabItem x:Name="nannyTab" Header="Nanny" FontWeight="Bold" TabIndex="2" >
 
                 <Grid Margin="1,2,5,-5">
                     <Grid.ColumnDefinitions>
@@ -90,8 +90,8 @@
                     </Button>
                     <Button x:Name="getAllNanny" Content="Get all Nannies" HorizontalAlignment="Left" Height="70" 
                                 Grid.Row="3" VerticalAlignment="Top" Width="135" Click="click_getAllNannies" BorderThickness="2" />
-                    <Button Content="exit" Margin="202,78,18,10" Grid.Row="3" Background="PaleVioletRed" FontSize="8" Width="50" 
-                            Click="Button_Click" Grid.Column="1" RenderTransformOrigin="1.14,0.706"/>
+                    <Button Content="exit" Margin="69,55,151,93" Background="PaleVioletRed" FontSize="8" Width="50" 
+                            Click="Button_Click" Grid.Column="1" RenderTransformOrigin="1.14,0.706" Grid.Row="1"/>
                 </Grid>
 
             </TabItem>

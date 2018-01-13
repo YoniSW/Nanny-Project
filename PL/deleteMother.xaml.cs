@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BE;
 
 namespace PL
 {
@@ -20,13 +21,37 @@ namespace PL
     public partial class deleteMother : Window
     {
         public BL.IBL bl;
+        public BE.Mother DelMom;
+        public IEnumerable<BE.Mother> nanny_list;
+
         public deleteMother()
         {
             InitializeComponent();
+            DelMom = new BE.Mother();
+            this.DataContext = DelMom;
             bl = BL.FactoryBL.GetBL();
+            textBox.ItemsSource = bl.getAllMothers();
+            textBox.DisplayMemberPath = "_momID";
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+
+    private void textBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (sender is ComboBox && ((ComboBox)sender).SelectedIndex > -1)
+        {
+            try
+            {
+                DelMom = (Mother)textBox.SelectedItem;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+    }
+
+    private void button_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -43,5 +68,7 @@ namespace PL
                 MessageBox.Show(Exeption.Message);
             }
         }
+
+
     }
 }

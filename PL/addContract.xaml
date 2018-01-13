@@ -25,9 +25,7 @@
         </Grid>
         <Button Content="Add" HorizontalAlignment="Left" Margin="34,363,0,0" VerticalAlignment="Top" Width="132" Height="35" 
                 Click="add_Click" Background="LightSkyBlue"/>
-        <Label Content="Enter mother's ID:" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" VerticalAlignment="Top" Width="105"/>
-        <TextBox x:Name="momID_textBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,45,0,0" TextWrapping="Wrap"  
-                 Text="{Binding _nannyID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Choose mother" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" VerticalAlignment="Top" Width="105"/>
         <Button  FontSize="12" Background="LightSkyBlue" Content="Search for  &#xa;relevant &#xa;nannies" Grid.Column="1" HorizontalAlignment="Left" Height="58" Margin="140,10,0,0" VerticalAlignment="Top" 
                 Width="71" Click="search_Click"/>
         <Label Content="Relevant nannies" Grid.Column="1" HorizontalAlignment="Left" Margin="61,78,0,0" VerticalAlignment="Top" Width="102"/>
@@ -48,7 +46,8 @@
                     <ColumnDefinition Width="21*"/>
                 </Grid.ColumnDefinitions>
                 <Label VerticalAlignment="Center" Grid.Row="0" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="nanny ID:"/>
-                <TextBox x:Name="_nannyIDTextBox" Width="120" VerticalAlignment="Center" Text="{Binding _nannyID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="0" Margin="3" Height="23" HorizontalAlignment="Left" Grid.Column="1"/>
+                <ComboBox x:Name="_nannyIDTextBox" Width="120" VerticalAlignment="Center" Grid.Row="0" Margin="3" Height="23" 
+                          HorizontalAlignment="Left" Grid.Column="1" SelectionChanged="_nannyIDTextBox_SelectionChanged"/>
             </Grid>
             <Grid x:Name="grid2" HorizontalAlignment="Left" Margin="3,42,0,0" VerticalAlignment="Top" Width="176" Height="32">
                 <Grid.ColumnDefinitions>
@@ -70,7 +69,8 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Label Content="child ID:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-                <TextBox x:Name="_childIDTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding _childID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+                <ComboBox x:Name="_childIDTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0"
+                         SelectionChanged="_childIDTextBox_SelectionChanged"  VerticalAlignment="Center" Width="120"/>
             </Grid>
             <Grid x:Name="grid4" HorizontalAlignment="Left" Margin="3,117,0,0" VerticalAlignment="Top" Height="33" Width="192">
                 <Grid.ColumnDefinitions>
@@ -155,6 +155,8 @@
                 <CheckBox x:Name="_isByHourCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding _isByHour, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
             </Grid>
         </Grid>
+        <ComboBox x:Name="momBox" Grid.Column="1" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="120"
+                  SelectionChanged="momBox_SelectionChanged"/>
 
     </Grid>
 </Window>

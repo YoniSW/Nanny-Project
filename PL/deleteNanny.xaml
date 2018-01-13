@@ -8,16 +8,16 @@
         Title="deleteNanny" Height="300" Width="300">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Label  x:Name ="label" Content="Please enter Nannies ID you wish to delete" HorizontalAlignment="Left" Height="43" 
-               Margin="22,21,0,10" VerticalAlignment="Center" Width="243" FontSize="12"/>
-        <TextBox x:Name ="textBox" HorizontalAlignment="Left" Height="40" Margin="22,20,0,0" Grid.Row="1"
-                 TextWrapping="Wrap" Text="valid ID number only." VerticalAlignment="Top" Width="243" />
-        <Button  x:Name ="button" Content="Delete!" HorizontalAlignment="Left" Height="44" Margin="22,10,0,0" Grid.Row="2" 
-                 VerticalAlignment="Center" Width="243" Click="button_Click"/>
+        <Label  x:Name ="label" Content="Please enter Nannies ID you wish to delete" HorizontalAlignment="Left" Height="32" 
+               Margin="22,31,0,27" VerticalAlignment="Center" Width="243" FontSize="12"/>
+        <Button  x:Name ="button" Content="Delete!" HorizontalAlignment="Left" Height="35" Margin="22,26,0,29" Grid.Row="2" 
+                 VerticalAlignment="Center" Width="243" Click="button_Click" RenderTransformOrigin="0.494,0.429"/>
+        <ComboBox x:Name="textBox" HorizontalAlignment="Left" Margin="41,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="205"
+                  SelectionChanged="textBox_SelectionChanged" Height="54"/>
 
     </Grid>
 </Window>

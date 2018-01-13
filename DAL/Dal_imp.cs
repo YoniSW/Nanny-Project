@@ -163,10 +163,12 @@ namespace DAL
 
             var childID = thisKid._childID;
 
-            var momHasThisID = DataSource.motherList.Any
-               (c => c._momID == childID);
-            if(momHasThisID)
-            throw new Exception("we have a mom with same ID!");
+            // add after XML database is added
+
+            //var momHasThisID = DataSource.motherList.Any
+            //   (c => c._momID == childID);
+            //if(momHasThisID)
+            //throw new Exception("we have a mom with same ID!");
 
             var thisMom = thisKid._momID;
 
