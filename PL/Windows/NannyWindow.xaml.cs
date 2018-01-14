@@ -14,12 +14,24 @@ using System.Windows.Shapes;
 
 namespace PL
 {
-    public partial class addNanny : Window
+    public partial class NannyWindow : Window
     {
         public BE.Nanny nannyAdd; // nannydAdd contians the child data
         public BL.IBL bl; // connect to BL layer
 
-        public addNanny()
+        public NannyWindow(int tabIndex)
+        {
+            InitializeComponent();
+
+            NannyTabs.SelectedIndex = tabIndex;
+        }
+
+        //public NannyWindow()
+        //{
+        //    InitializeComponent();
+        //}
+
+        public NannyWindow()
         {
             InitializeComponent();
 
@@ -28,7 +40,7 @@ namespace PL
             nannyAdd._startHour = new DateTime[6];
             nannyAdd._endHour = new DateTime[6];
             nannyAdd._workDays = new bool[6];
-            thisGrid.DataContext = nannyAdd;// conects the object with the wpf
+            this.DataContext = nannyAdd;// conects the object with the wpf
             bl = BL.FactoryBL.GetBL();
         }
 

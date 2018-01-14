@@ -8,6 +8,7 @@
         xmlns:BE="clr-namespace:BE;assembly=BE" 
         x:Class="PL.addNanny"
         mc:Ignorable="d"
+    
         Title="addNanny" Height="500" Width="632">
     <Grid x:Name="thisGrid" Margin ="0,0,34,1">
         <Grid.ColumnDefinitions>
@@ -22,7 +23,7 @@
 
         </Grid.RowDefinitions>
         <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="26,10,0,0" Grid.Row="3" VerticalAlignment="Top" 
-                Width="123" Height="30" Click="button_Click"/>
+                Width="123" Height="30" />
         <Label x:Name="DayLabel" Content="Day" HorizontalAlignment="Left" Margin="5,15,0,0" VerticalAlignment="Top" Height="30" FontSize="10" RenderTransformOrigin="-4.552,0.667" Grid.Row="2" Width="29"/>
         <Label x:Name="StartHourLabel" Content="Begin hour" HorizontalAlignment="Left" Margin="5,59,0,0" VerticalAlignment="Top" Height="36" FontSize="10" Grid.Row="2" Width="63"/>
         <Label x:Name="EndHourLabel" Content="End hour" HorizontalAlignment="Left" Margin="6,93,0,0" VerticalAlignment="Top" Height="40" FontSize="10" Grid.Row="2" Width="62" Grid.RowSpan="2"/>
@@ -163,7 +164,7 @@
             </Grid.RowDefinitions>
             <Label Content="nanny Birth:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
             <DatePicker x:Name="_nannyBirthDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3,4,-13,4" Grid.Row="0" 
-                        SelectedDate="{Binding _nannyBirth, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="109"/>
+                        SelectedDate="{Binding _nannyBirth2, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="109"/>
         </Grid>
         <Grid x:Name="grid10" Grid.Column="1"   HorizontalAlignment="Left" Margin="5,5,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="32" Width="125">
             <Grid.ColumnDefinitions>

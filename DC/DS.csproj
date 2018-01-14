@@ -50,5 +50,11 @@
       <Name>BE</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="xml\Child.xml" />
+    <Content Include="xml\Contract.xml" />
+    <Content Include="xml\Mother.xml" />
+    <Content Include="xml\Nanny.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

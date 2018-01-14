@@ -24,15 +24,26 @@ namespace PL
             InitializeComponent();
         }
 
-        private void OpenTabs_Click(object sender, RoutedEventArgs e)
+        private void NannyButton_Click(object sender, RoutedEventArgs e)
+        {
+            new NannyWindow().Show();
+            //Window Tabs = new NannyWindow(0);
+            //Tabs.ShowDialog();
+        }
+
+        private void Motherbutton_Click(object sender, RoutedEventArgs e)
         {
             Window Tabs = new MainWindow(1);
             Tabs.ShowDialog();
         }
-
-        private void childbutton_Click(object sender, RoutedEventArgs e)
+        private void ChildButton_Click(object sender, RoutedEventArgs e)
         {
             Window Tabs = new MainWindow(2);
+            Tabs.ShowDialog();
+        }
+        private void ContractButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window Tabs = new MainWindow(3);
             Tabs.ShowDialog();
         }
     }
