@@ -337,9 +337,9 @@
                         <CheckBox x:Name="TueCheck1" Content="" HorizontalAlignment="Left" Margin="45,30,0,0" VerticalAlignment="Top" Grid.Row="3" IsChecked="False" Grid.Column="1" Height="15" Width="20"/>
                         <CheckBox x:Name="WedCheck1" Content="" HorizontalAlignment="Left" Margin="250,30,0,0" VerticalAlignment="Top" Grid.Row="3" IsChecked="False" RenderTransformOrigin="2.273,0.675" Height="15" Width="20"/>
                         <CheckBox x:Name="ThuCheck1" Content="" HorizontalAlignment="Left" Margin="171,28,0,0" VerticalAlignment="Top" Grid.Row="3" IsChecked="False" Height="15" Width="20"/>
-
                         <CheckBox x:Name="FriCheck1" Content="" HorizontalAlignment="Left" Margin="90,28,0,0" VerticalAlignment="Top" IsChecked="False" Grid.Row="3" Height="15" Width="20"/>
-                        <xctk:TimePicker x:Name="SunEnd1" Format="ShortTime" Value="00:00" Margin="207,95,12,10" Grid.Row="3" 
+                       
+                            <xctk:TimePicker x:Name="SunEnd1" Format="ShortTime" Value="00:00" Margin="207,95,12,10" Grid.Row="3" 
                          IsEnabled="{Binding IsChecked, ElementName=SunCheck}" Grid.Column="1"/>
                         <xctk:TimePicker Name="SunStart1" Format="ShortTime"   Value="00:00"  Margin="207,61,12,45" Grid.Row="3" 
                          IsEnabled="{Binding IsChecked, ElementName=SunCheck}" RenderTransformOrigin="-2.189,-5.233" Grid.Column="1"/>
