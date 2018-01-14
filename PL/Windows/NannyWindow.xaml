@@ -322,7 +322,7 @@
 
                         </Grid.RowDefinitions>
                         <Button x:Name="button1" Content="Update" HorizontalAlignment="Left" Margin="26,6,0,0" Grid.Row="4" VerticalAlignment="Top" 
-                Width="123" Height="30" Click="button_Click"/>
+                Width="123" Height="30" Click="button_Click1"/>
                         <Label x:Name="DayLabel1" Content="Day" HorizontalAlignment="Left" Margin="5,15,0,0" VerticalAlignment="Top" Height="30" FontSize="10" RenderTransformOrigin="-4.552,0.667" Grid.Row="3" Width="29"/>
                         <Label x:Name="StartHourLabel1" Content="Begin hour" HorizontalAlignment="Left" Margin="8,59,0,0" VerticalAlignment="Top" Height="36" FontSize="10" Grid.Row="3" Width="65"/>
                         <Label x:Name="EndHourLabel1" Content="End hour" HorizontalAlignment="Left" Margin="9,93,0,0" VerticalAlignment="Top" Height="40" FontSize="10" Grid.Row="3" Width="64" Grid.RowSpan="2"/>
