@@ -21,9 +21,9 @@
         </Grid.RowDefinitions>
 
         <TabControl Name="Sample" Grid.RowSpan="2" Height="700" Width="1000" Grid.ColumnSpan="2" BorderThickness="0" Margin="10,0,-584,-531" 
-                    SelectionChanged="TabControl_SelectionChanged" FontSize="18" BorderBrush="Black" ForceCursor="True">
+                    SelectionChanged="TabControl_SelectionChanged" FontSize="18" BorderBrush="Black" ForceCursor="True" >
 
-            <TabItem x:Name="nannyTab" Header="Nanny" FontWeight="Bold" TabIndex="2" >
+            <TabItem x:Name="nannyTab" Header="Nanny" FontWeight="Bold" TabIndex="2" Visibility="Hidden">
 
                 <Grid Margin="1,2,5,-5">
                     <Grid.ColumnDefinitions>
@@ -95,7 +95,7 @@
                 </Grid>
 
             </TabItem>
-            <TabItem x:Name="motherTab" Header="Mother" FontWeight="Bold">
+            <TabItem x:Name="motherTab" Header="Mother" FontWeight="Bold" Visibility="Hidden">
 
                 <Grid Margin="10,1,-6,0">
                     <Grid.ColumnDefinitions>
@@ -124,7 +124,7 @@
                 </Grid>
 
             </TabItem>
-            <TabItem x:Name="childTab" Header="Child" FontWeight="Bold">
+            <TabItem x:Name="childTab" Header="Child" FontWeight="Bold" Visibility="Hidden">
 
                 <Grid Margin="10,0,-9,2">
                     <Grid.ColumnDefinitions>
@@ -152,7 +152,7 @@
                             Click="Button_Click" Grid.Column="1"/>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="contractTab" Header="Contract" FontWeight="Bold">
+            <TabItem x:Name="contractTab" Header="Contract" FontWeight="Bold" Visibility="Hidden">
                 <Grid Margin="0,0,-10,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="144*"/>
