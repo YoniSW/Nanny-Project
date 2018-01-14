@@ -146,13 +146,13 @@ namespace PL
 
 
         #region Update Nanny Tab
-        public partial class updateNanny : Window
-        {
+        //public partial class updateNanny : Window
+        //{
             public BE.Nanny addA_Nanny;
-            public BL.IBL bl;
+            //public BL.IBL bl;
             public IEnumerable<BE.Nanny> nanny_list;
 
-            public updateNanny()
+            public void updateNanny()
             {
                 InitializeComponent();
 
@@ -227,7 +227,7 @@ namespace PL
             #endregion
 
             #region button Click
-            private void button_Click(object sender, RoutedEventArgs e)
+            private void button_Click1(object sender, RoutedEventArgs e)
             {
 
                 try
@@ -321,11 +321,11 @@ namespace PL
                     MessageBox.Show(ex.Message);
                 }
             }
-            #endregion
-
-        }
+        #endregion
         #endregion
     }
+
 }
+
 
 
