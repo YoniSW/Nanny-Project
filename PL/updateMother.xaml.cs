@@ -188,6 +188,11 @@ namespace PL
         }
 
         #endregion a
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 
 }
