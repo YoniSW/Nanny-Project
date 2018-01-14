@@ -26,9 +26,9 @@ namespace PL
 
         private void NannyButton_Click(object sender, RoutedEventArgs e)
         {
-            new NannyWindow().Show();
-            //Window Tabs = new NannyWindow(0);
-            //Tabs.ShowDialog();
+            //new NannyWindow().Show();
+            Window Tabs = new MainWindow(0);
+            Tabs.ShowDialog();
         }
 
         private void Motherbutton_Click(object sender, RoutedEventArgs e)
@@ -45,6 +45,11 @@ namespace PL
         {
             Window Tabs = new MainWindow(3);
             Tabs.ShowDialog();
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }
