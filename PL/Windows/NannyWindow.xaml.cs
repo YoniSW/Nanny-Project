@@ -1,4 +1,5 @@
 ﻿using BE;
+using BL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ using System.Windows.Shapes;
 
 namespace PL
 {
-    public partial class NannyWindow : Window
+    public partial class NannyWindow :Window
     {
         public BE.Nanny nannyAdd; // nannydAdd contians the child data
         public BL.IBL bl; // connect to BL layer
@@ -23,7 +24,7 @@ namespace PL
         public NannyWindow(int tabIndex)
         {
             InitializeComponent();
-
+            
             NannyTabs.SelectedIndex = tabIndex;
         }
 
