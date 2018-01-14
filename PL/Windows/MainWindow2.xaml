@@ -13,7 +13,18 @@
         <Button x:Name="NannyButton" Content="Nanny" HorizontalAlignment="Left" Margin="740,303,0,0" VerticalAlignment="Top" Width="100" Click="NannyButton_Click" Height="45"/>
         <Button x:Name="MotherButton" Content="Mother" HorizontalAlignment="Left" Margin="568,303,0,0" VerticalAlignment="Top" Width="100" Height="45" Click="Motherbutton_Click"/>
         <Button x:Name="Childbutton" Content="child" HorizontalAlignment="Left" Margin="396,303,0,0" VerticalAlignment="Top" Width="100" Height="45" Click="ChildButton_Click"/>
-        <Button x:Name="ContractButton" Content="Contract" HorizontalAlignment="Left" Margin="228,303,0,0" VerticalAlignment="Top" Width="100" Height="45" Click="ContractButton_Click"/>
+        <Button x:Name="ContractButton" Content="Contract" HorizontalAlignment="Left" Margin="228,303,0,0" VerticalAlignment="Top" 
+Width="100" Height="45" Click="ContractButton_Click">
+            <Button.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+            </Button.Foreground>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Gray" Offset="0.003"/>
+                    <GradientStop Color="#FF808080" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
         <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Left" Margin="53,512,0,0" VerticalAlignment="Top" Width="96" Height="50" Click="Exit_Click"/>
 
     </Grid>

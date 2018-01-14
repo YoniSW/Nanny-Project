@@ -12,7 +12,7 @@
             <RowDefinition Height="90*"/>
             <RowDefinition Height="97*"/>
         </Grid.RowDefinitions>
-        <Label x:Name ="label" Content="Please enter Contract ID you wish to delete" HorizontalAlignment="Left" Height="52" Margin="10,10,0,0" VerticalAlignment="Top" Width="272"/>
+        <Label x:Name ="label" Content="Please choose Contract ID you wish to delete" HorizontalAlignment="Left" Height="52" Margin="10,10,0,0" VerticalAlignment="Top" Width="272"/>
         <TextBox x:Name ="textBox" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" 
                  Text="" VerticalAlignment="Top" Width="251"/>
         <Button x:Name ="button" Content="Delete!" HorizontalAlignment="Left" Height="55" Margin="48,10,0,0" Grid.Row="2" 
