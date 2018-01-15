@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace BE
 {
     public class Schedule
     {
         public DateTime begin;
         public DateTime end;
+        
     }
 }
