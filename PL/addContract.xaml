@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PL"
         xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PL.addContract"
         mc:Ignorable="d"
-        Title="Add contract" Height="450" Width="450">
+        Title="Add contract" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
 
     <Grid x:Name="ContractGrid">
         <Grid.ColumnDefinitions>

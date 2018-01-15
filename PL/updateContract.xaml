@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PL"
         xmlns:BE="clr-namespace:BE;assembly=BE" x:Class="PL.updateContract"
         mc:Ignorable="d"
-        Title="updateContract" Height="400" Width="400">
+        Title="updateContract" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid HorizontalAlignment="Left" Height="62" Margin="10,10,0,0" VerticalAlignment="Top" Width="372">
             <Label Content="Enter the wanted contract ID:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="173"/>

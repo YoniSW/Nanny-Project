@@ -18,7 +18,7 @@
     
     
         mc:Ignorable="d"
-        Title="updateNanny" Height="570" Width="600">
+        Title="updateNanny" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid x:Name="thisGrid" Margin ="0,0,2,1" RenderTransformOrigin="0.454,0.498">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="271*"/>

@@ -31,9 +31,10 @@ namespace PL
             addA_Mother._startHour = new DateTime[6];
             addA_Mother._endHour = new DateTime[6];
             addA_Mother._daysRequestMom = new bool[6];
-            this.DataContext = addA_Mother;
+            thisGrid.DataContext = addA_Mother;
             bl = BL.FactoryBL.GetBL();
             IdMother.ItemsSource = bl.getAllMothers();
+            IdMother.DisplayMemberPath = "_momID";
         }
 
         #region ID ButtonClick
