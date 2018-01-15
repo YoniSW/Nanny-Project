@@ -118,15 +118,6 @@
     <Compile Include="updateNanny.xaml.cs">
       <DependentUpon>updateNanny.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\ChildWindow.xaml.cs">
-      <DependentUpon>ChildWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\ContractWindow.xaml.cs">
-      <DependentUpon>ContractWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\MotherWindow.xaml.cs">
-      <DependentUpon>MotherWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Windows\NannyWindow.xaml.cs">
       <DependentUpon>NannyWindow.xaml</DependentUpon>
     </Compile>
@@ -213,18 +204,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="updateNanny.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\ChildWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\ContractWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\MotherWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
