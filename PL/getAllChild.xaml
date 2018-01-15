@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL"
         mc:Ignorable="d"
-        Title="getAllChild" Height="500" Width="550">
+        Title="getAllChild" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0,-1">
-        <DataGrid x:Name ="allNanniesBox" HorizontalAlignment="Left" Height="252" Margin="10,66,0,0" VerticalAlignment="Top" Width="522"
+        <DataGrid x:Name ="allNanniesBox" HorizontalAlignment="Left" Height="252" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
                   SelectionChanged="allNanniesBox_SelectionChanged"  IsReadOnly="True"  Background="LightGray" />
 
-        <Label Content="All children in database:" HorizontalAlignment="Left" Height="33" Margin="193,28,0,0" VerticalAlignment="Top" 
+        <Label Content="All children in database:" HorizontalAlignment="Left" Height="33" Margin="436,28,0,0" VerticalAlignment="Top" 
                Width="181" FontWeight="Bold" />
 
     </Grid>

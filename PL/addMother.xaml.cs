@@ -132,5 +132,11 @@ namespace PL
         {
             Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window Tabs = new MainWindow(1);
+            Tabs.ShowDialog();
+        }
     }
 }

@@ -17,13 +17,14 @@ namespace DAL
     {
         public static int uniqueContractID = 1;
 
-        //CTOR
+        static Dal_imp dal = new Dal_imp();
+
         public Dal_imp()
         {
             new DataSource();
         }
 
-        // Nanny functions ================================================================================
+
         #region Nanny functions
         public Nanny getNanny(long thisID)
         {
@@ -83,8 +84,6 @@ namespace DAL
 
 
 #endregion
-
-        // Mother functions ================================================================================
        
         #region Mother functions
         public Mother getMom(long thisID)
@@ -140,8 +139,6 @@ namespace DAL
 
         }
 #endregion
-
-        // child functions ================================================================================
       
         #region child functions
         public Child getChild(long thisID)
@@ -211,8 +208,6 @@ namespace DAL
 
         }
         #endregion
-
-        // contract functions ============================================================================
 
         #region contract functions
         public Contract getContract(long id)
@@ -298,9 +293,7 @@ namespace DAL
         }
         #endregion
 
-        // get IEnumerable functions =================================================================
-
-        #region IEnumerable functions
+        #region IEnumerable methods
         public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
             {
                 if (Predicate == null)
