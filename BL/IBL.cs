@@ -15,7 +15,7 @@ namespace BL
         void addNanny(Nanny nanny);
         void deleteNanny(long ID);
         Nanny getNanny(long ID);
-        void updateNany(Nanny nanny);
+        void updateNanny(Nanny nanny);
         
 
         // mother function declarations

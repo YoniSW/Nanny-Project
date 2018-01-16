@@ -18,7 +18,7 @@ namespace DAL
       //  nany function declarations
         void addNanny(Nanny nanny);
         void deleteNanny(long ID);
-        void updateNany(Nanny nanny);
+        void updateNanny(Nanny nanny);
 
         // mother function declarations
         void addMother(Mother mom);
