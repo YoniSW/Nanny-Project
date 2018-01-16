@@ -24,9 +24,10 @@ namespace BL
             dal = DAL.factoryDal.getDal();
 
             initilizeArray();
-            ChildInitilize();
             NannyInitilize();
             MotherInitilize();
+            ChildInitilize();
+
 
         }
 

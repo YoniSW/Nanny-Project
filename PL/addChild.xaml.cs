@@ -27,19 +27,26 @@ namespace PL
         {
             InitializeComponent();
             bl = BL.FactoryBL.GetBL();
-            //_birthdayDatePicker.SelectedDate = DateTime.Today;
+ 
+
+            comboBoxMom.ItemsSource = bl.getAllMothers();
+            comboBoxMom.DisplayMemberPath = "_fullName";
+            comboBoxMom.SelectedIndex = -1;
+
             childAdd = new BE.Child(); // create a new child
             thisGrid.DataContext = childAdd;  // activate grid
-           
+
+
         }
 
 
-        //private void comboBoxMom_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-        //    mom = (BE.Mother)comboBoxMom.SelectedItem;
-        //    if (mom != null)
-        //        idMomTextBox.Text = Convert.ToString(mom._momID);
-        //}
+        private void comboBoxMom_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            mom = (BE.Mother)comboBoxMom.SelectedItem;
+            if (mom != null)
+                _momIDTextBox.Text = Convert.ToString(mom._momID);
+        }
+
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
@@ -49,7 +56,7 @@ namespace PL
                 bl.addChild(childAdd);
                 childAdd = new BE.Child();
                 thisGrid.DataContext = childAdd;
-               // _momIDTextBox.
+                comboBoxMom.SelectedIndex = -1;
                 MessageBox.Show("Child was added successfully!");
                 Close();
             }
@@ -62,6 +69,20 @@ namespace PL
                 MessageBox.Show(ex.Message);
             }
         }
+
+        //private void comboBoxChoseMom_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    comboBoxChoseChild.ItemsSource = bl.getAllChildren(a => a._momID == Convert.ToInt64(comboBoxMom.SelectedValue));
+        //    comboBoxChoseChild.DisplayMemberPath = "fullName";
+        //    comboBoxChoseChild.SelectedValuePath = "idChild";
+        //    comboBoxChoseChild.SelectedIndex = -1;
+        //}
+
+        //private void comboBoxChoseChild_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    child = (BE.Child)comboBoxChoseChild.SelectedItem;
+        //    updateChildTab.DataContext = child;
+        //}
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {

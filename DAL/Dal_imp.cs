@@ -174,10 +174,8 @@ namespace DAL
 
             var thisMom = thisKid._momID;
 
-            var momExist = DataSource.motherList.Any
+            var momExist = DataSource.motherList.Exists
                            (c => c._momID == thisMom);
-            if(!momExist)
-                throw new Exception("Mom's ID doesn't exist");
 
             DataSource.childList.Add(thisKid);
         }
