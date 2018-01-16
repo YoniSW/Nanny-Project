@@ -16,6 +16,7 @@ namespace BE
         public string _specialNeeds { get; set; }
         public bool _isAlergic { get; set; }  // alergies
         public string _alergies { get; set; }
+        
 
         public Child duplicate()
         {

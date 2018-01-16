@@ -7,18 +7,22 @@
         mc:Ignorable="d"
         Title="deleteMother" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="82*"/>
-            <RowDefinition Height="90*"/>
-            <RowDefinition Height="97*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Content="Please enter Mother ID you wish to delete" HorizontalAlignment="Left" Height="52" Margin="10,10,0,0" VerticalAlignment="Top" Width="272"/>
-        <Button x:Name="button" Content="Delete!" HorizontalAlignment="Left" Height="55" Margin="48,10,0,0" 
-                Grid.Row="2" VerticalAlignment="Top" Width="179"  Click=" button_Click"/>
-        <ComboBox x:Name="textBox"  HorizontalAlignment="Left" Margin="28,19,0,0" Grid.Row="1" VerticalAlignment="Top" Width="229" 
-                  Height="42" SelectionChanged="textBox_SelectionChanged" />
-        <Button Content="Back" Click="Button_Click_1" HorizontalAlignment="Left" Height="39" Margin="881,201,0,0" Grid.Row="2" VerticalAlignment="Top" Width="101"/>
+        <Label Content="Please enter Mother ID you wish to delete" HorizontalAlignment="Left" Height="52" Margin="200,96,0,0" 
+               VerticalAlignment="Top" Width="606" FontSize="28" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Content="Delete!" HorizontalAlignment="Left" Margin="302,58,0,0" 
+                Grid.Row="2" VerticalAlignment="Top" Height="118"  Width="386"  Click=" button_Click" BorderThickness="2" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="textBox"  HorizontalAlignment="Left" Margin="302,75,0,0" Grid.Row="1" VerticalAlignment="Top" Height="91" Width="386" SelectionChanged="textBox_SelectionChanged" Grid.ColumnSpan="2" />
 
-
+        <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="420,179,0,0" Grid.Row="2"
+                VerticalAlignment="Top" Width="66" Click="Button_Click_2"/>
     </Grid>
 </Window>

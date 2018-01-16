@@ -7,16 +7,22 @@
         mc:Ignorable="d"
         Title="deleteContract" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="82*"/>
             <RowDefinition Height="90*"/>
             <RowDefinition Height="97*"/>
         </Grid.RowDefinitions>
-        <Label x:Name ="label" Content="Please choose Contract ID you wish to delete" HorizontalAlignment="Left" Height="52" Margin="10,10,0,0" VerticalAlignment="Top" Width="272"/>
-        <TextBox x:Name ="textBox" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" 
-                 Text="" VerticalAlignment="Top" Width="251"/>
-        <Button x:Name ="button" Content="Delete!" HorizontalAlignment="Left" Height="55" Margin="48,10,0,0" Grid.Row="2" 
-                VerticalAlignment="Top" Width="179" Click="delete_Click"/>
-
+        <Label x:Name ="label" Content="Please choose Contract ID you wish to delete" HorizontalAlignment="Left" Height="52" 
+               Margin="186,87,0,0" VerticalAlignment="Top" Width="622" Grid.ColumnSpan="2" FontSize="28"/>
+        <TextBox x:Name ="textBox" HorizontalAlignment="Left"  Margin="304,70,0,0" Grid.Row="1" TextWrapping="Wrap" 
+                 Text="" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="91" Width="386"/>
+        <Button x:Name ="button" Content="Delete!" HorizontalAlignment="Left" Margin="304,65,0,0" Grid.Row="2" 
+                VerticalAlignment="Top" Click="delete_Click" Grid.ColumnSpan="2" Height="118"  Width="386" BorderThickness="2"/>
+        <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="420,198,0,0" Grid.Row="2"
+                VerticalAlignment="Top" Width="66" Click="Button_Click"/>
     </Grid>
 </Window>

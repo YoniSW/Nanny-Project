@@ -256,7 +256,7 @@ namespace DAL
                 throw new Exception("Nanny doesn't exist in the system");
 
             // 6. add to thisContract an unique ID
-            thisContract._contractID = ++uniqueContractID;
+            thisContract._contractID = uniqueContractID++;
 
             // 7. add thisContract to our contractLint
             DataSource.contractList.Add(thisContract);

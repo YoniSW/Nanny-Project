@@ -19,6 +19,7 @@ namespace PL
     /// </summary>
     public partial class addChild : Window
     {
+        public BE.Mother mom;
         public BE.Child childAdd; // childAdd contians the child data
         public BL.IBL bl; // connect to BL layer
 
@@ -31,6 +32,15 @@ namespace PL
             thisGrid.DataContext = childAdd;  // activate grid
            
         }
+
+
+        //private void comboBoxMom_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    mom = (BE.Mother)comboBoxMom.SelectedItem;
+        //    if (mom != null)
+        //        idMomTextBox.Text = Convert.ToString(mom._momID);
+        //}
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -55,8 +65,7 @@ namespace PL
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Window Tabs = new MainWindow(2);
-            Tabs.ShowDialog();
+            Close();
         }
     }
 }

@@ -9,6 +9,7 @@ namespace BE ///
 {
     public class Mother
     {
+        public string _fullName { get { return _momFname + " " + _momLname; } }
         public long _momID { get; set; }
         public string _momLname { get; set; }
         public string _momFname { get; set; }
