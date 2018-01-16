@@ -14,20 +14,13 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class DAL_imp_XML:Idal
+    class DAL_imp_XML //:Idal
     {
         public static int uniqueContractID = 1;
 
 
         #region Nanny
-        public Nanny getNanny(long thisID)
-        {
-            var thisNanny = DataSource.nannyList.FirstOrDefault(n => n._nannyID == thisID);
-            if (thisNanny == null)
-                throw new Exception("ID doesn't exist");
-
-            return thisNanny.duplicate();
-        }
+       
 
         public Nanny getNanny(long thisID)
         {
@@ -38,7 +31,7 @@ namespace DAL
                 throw new Exception("ID doesn't exist");
 
 
-            return thisNanny();
+            return thisNanny.toNanny();
         }
 
         public void addNanny(Nanny thisNany)    //XML  
@@ -294,7 +287,7 @@ namespace DAL
             thisMom._isLookingForNanny = true;
 
             // 3. update nanny & mom and then remove thisContract
-            updateNany(thisNanny);
+            updateNanny(thisNanny);
             updateMother(thisMom);
             DataSource.contractList.RemoveAt(index);
         }
