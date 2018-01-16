@@ -97,8 +97,13 @@ namespace DS
 
         public static void SaveNannys()
         {
-            nannyRoot.Save(nannyPath);
+             nannyRoot.Save(nannyPath);
         }
+
+        //public static void Add()
+        //{
+        //    nannyRoot.Add(Nannys);
+        //}
 
         public static XElement Nannys
         {

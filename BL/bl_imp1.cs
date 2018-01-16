@@ -105,9 +105,9 @@ namespace BL
             dal.deleteNanny(thisNany);
         }
 
-        public void updateNany(Nanny thisNany)
+        public void updateNanny(Nanny thisNany)
         {
-            dal.updateNany(thisNany);
+            dal.updateNanny(thisNany);
         }
 
         public void addNanny(Nanny thisNanny)

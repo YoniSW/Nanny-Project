@@ -14,15 +14,15 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class DAL_imp_XML //:Idal
+    class DAL_imp_XML : Idal
     {
         public static int uniqueContractID = 1;
 
 
         #region Nanny
-       
 
-        public Nanny getNanny(long thisID)
+
+        public Nanny getNanny(long thisID)     //is XML 
         {
             var thisNanny = (from n in XML_Source.Nannys.Elements()
                              where Convert.ToInt64(n.Element("id").Value) == thisID
@@ -34,10 +34,10 @@ namespace DAL
             return thisNanny.toNanny();
         }
 
-        public void addNanny(Nanny thisNany)    //XML  
+        public void addNanny(Nanny thisNanny)    //is XML  
         {
             var index = (from n in XML_Source.Nannys.Elements()
-                         where Convert.ToInt32(n.Element("id").Value) == thisNany._nannyID
+                         where Convert.ToInt32(n.Element("id").Value) == thisNanny._nannyID
                          select n).FirstOrDefault();
             // if FindIndex method returns -1 so thisNany doesn't exist
             if (index != null)
@@ -45,17 +45,18 @@ namespace DAL
 
             else
             {
-                XML_Source.Nannys.Add(thisNany);
+                XML_Source.Nannys.Add(thisNanny.toXML());
                 XML_Source.SaveNannys();
+                
             }
 
 
         }
 
-        public void deleteNanny(Nanny nanny)      //is XML   
+        public void deleteNanny(long nanny)      //is XML   
         {
             XElement nannyElement = (from n in XML_Source.Nannys.Elements()
-                                     where Convert.ToInt32(n.Element("id").Value) == nanny._nannyID
+                                     where Convert.ToInt64(n.Element("id").Value) == nanny
                                      select n).FirstOrDefault();
             if (nannyElement != null)
             {
@@ -63,7 +64,7 @@ namespace DAL
                 XML_Source.SaveNannys();
             }
             else
-                throw new Exception("nanny is not in list\n");
+                throw new Exception("the nanny is not in list\n");
         }
 
         public void updateNanny(Nanny nanny)     //is XML   
@@ -85,7 +86,13 @@ namespace DAL
 
         #endregion
 
+
+
+
+
         #region Mother functions
+
+
         public Mother getMom(long thisID)
         {
             var thisMom = DataSource.motherList.FirstOrDefault(m => m._momID == thisID);
@@ -95,49 +102,74 @@ namespace DAL
             return thisMom.duplicate();
         }
 
-        public void addMother(Mother thisMom)
+
+
+        public void addMother(Mother mother)      //is XML  
         {
-            var index = DataSource.motherList.FindIndex(m => m._momID == thisMom._momID);
-            if (index != -1)
-                throw new Exception("Mother already exists in the system");
-
-            DataSource.motherList.Add(thisMom);
-        }
-
-        public void deleteMother(long thisMom)
-        {
-            var index = DataSource.motherList.FindIndex(m => m._momID == thisMom);
-            if (index == -1)
-                throw new Exception("Mother doesn't exist in the system");
-
-            //else
-
-            // 1. delete all children of thisMom
-            var deleteAllKids = DataSource.childList.Where(c => c._momID == thisMom);
-
-            foreach (var child in deleteAllKids)
+            var temp = (from m in XML_Source.Mothers.Elements()
+                        where Convert.ToInt32(m.Element("id").Value) == mother._momID
+                        select m).FirstOrDefault();
+            if (temp == null)
             {
-                DataSource.childList.Remove(child);
+                XML_Source.Mothers.Add(mother.toXML());
+                XML_Source.SaveMothers();
             }
-
-            // 2. delete contractList that refers to thisMom (by her kids)
-            DataSource.contractList.RemoveAll(c => c._childID == thisMom);
-
-            // 3. now we can remove the thisMom
-            DataSource.motherList.RemoveAt(index);
-
+            else
+                throw new Exception("you are trying to add a existing mother.\n");
         }
 
-        public void updateMother(Mother thisMom)
+
+        public void deleteMother(long thisMom)            //is XML  
         {
-            var index = DataSource.motherList.FindIndex
-                (m => m._momID == thisMom._momID);
-            if (index == -1)
-                throw new Exception("Mother doesn't exist in the system");
+            XElement motherElement = (from n in XML_Source.Mothers.Elements()
+                                      where Convert.ToInt32(n.Element("id").Value) == thisMom
+                                      select n).FirstOrDefault();
+            if (motherElement != null)
+            {
+                motherElement.Remove();
+                XML_Source.SaveMothers();
+            }
+            else
+                throw new Exception("you are trying to delete a mother that does not exist\n");
 
-            DataSource.motherList[index] = thisMom;
+            ////else
+
+            //// 1. delete all children of thisMom
+            //var deleteAllKids = DataSource.childList.Where(c => c._momID == thisMom);
+
+            //foreach (var child in deleteAllKids)
+            //{
+            //    DataSource.childList.Remove(child);
+            //}
+
+            //// 2. delete contractList that refers to thisMom (by her kids)
+            //DataSource.contractList.RemoveAll(c => c._childID == thisMom);
+
+            //// 3. now we can remove the thisMom
+            //DataSource.motherList.RemoveAt(index);
+            //XML_Source.Mothers.Remove(motherElement);
 
         }
+
+
+        public void updateMother(Mother mother)           //is XML   
+        {
+            XElement motherElement = (from m in XML_Source.Mothers.Elements()
+                                      where Convert.ToInt32(m.Element("id").Value) == mother._momID
+                                      select m).FirstOrDefault();
+
+            if (motherElement != null)
+            {
+                motherElement.Remove();
+                XML_Source.Mothers.Add(mother.toXML());
+                XML_Source.SaveMothers();
+            }
+            else
+                throw new Exception("Mother doesn't exist in the system");
+        }
+
+
+
         #endregion
 
         #region child functions

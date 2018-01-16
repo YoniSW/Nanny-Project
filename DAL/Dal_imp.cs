@@ -45,10 +45,7 @@ namespace DAL
             DataSource.nannyList.Add(thisNany);
 
         }
-
-        
-
-       
+               
 
 
         public void deleteNanny(long thisNany)
@@ -64,7 +61,7 @@ namespace DAL
             DataSource.nannyList.RemoveAt(index);
         }
 
-        public void updateNany(Nanny thisNany)
+        public void updateNanny(Nanny thisNany)
         {
             var index = DataSource.nannyList.FindIndex(n => n._nannyID == thisNany._nannyID);
             if (index == -1)
@@ -290,7 +287,7 @@ namespace DAL
             thisMom._isLookingForNanny = true;
 
             // 3. update nanny & mom and then remove thisContract
-            updateNany(thisNanny);
+            updateNanny(thisNanny);
             updateMother(thisMom);
             DataSource.contractList.RemoveAt(index);
         }

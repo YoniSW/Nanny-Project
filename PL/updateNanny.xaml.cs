@@ -176,7 +176,7 @@ namespace PL
                     addA_Nanny._endHour[5] = Convert.ToDateTime(end);
                 }
 
-                bl.updateNany(addA_Nanny);
+                bl.updateNanny(addA_Nanny);
                 addA_Nanny = new BE.Nanny();
                 this.DataContext = addA_Nanny;
                 MessageBox.Show("Nanny was updated successfully!");
