@@ -12,8 +12,8 @@ using System.Threading.Tasks;
 // DATA
 
 namespace DAL
-{ 
-    internal class Dal_imp : Idal 
+{
+    internal class Dal_imp : Idal
     {
         public static int uniqueContractID = 1;
 
@@ -45,6 +45,24 @@ namespace DAL
             DataSource.nannyList.Add(thisNany);
 
         }
+
+        //public void addNanny(Nanny nanny)
+        //{
+        //    var temp = (from n in DataSourceXml.Nannys.Elements()
+        //                where Convert.ToInt32(n.Element("id").Value) == nanny.id
+        //                select n).FirstOrDefault();
+        //    if (temp == null)
+        //    {
+        //        DataSourceXml.Nannys.Add(nanny.toXML());
+        //        DataSourceXml.SaveNannys();
+        //    }
+        //    else
+        //        throw new Exception("nanny already in list\n");
+        // }
+    
+
+       
+
 
         public void deleteNanny(long thisNany)
         {

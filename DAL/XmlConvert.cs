@@ -199,9 +199,7 @@ namespace DAL
                 _workDays = (from e in NannyXml.Element("daysOfWork").Elements("Days")
                              select Boolean.Parse(e.Value)).ToArray(),
 
-                //new XElement("hoursOfWork",(from d in nanny.hoursOfWork
-                //   select new XElement("Day", d.Day),
-
+               
                 _startHour = (from d in NannyXml.Element("StartHour").Elements("Day")
                               select DateTime.Parse(d.Value)).ToArray(),
 
@@ -233,10 +231,10 @@ namespace DAL
                 _daysRequestMom = (from e in motherXml.Element("daysOfWork").Elements("Days")
                              select Boolean.Parse(e.Value)).ToArray(),
 
-                //_scheduleMom = (from d in motherXml.Element("motherSchedule").Elements("Day")
-                //                select Schedul (d.Value)).ToArray(),
+                _scheduleMom = (from d in motherXml.Element("motherSchedule").Elements("Day")
+                                select d.toSchedule()).ToArray(),
 
-                                                                     //  needs to be checked how to convert schedule to string' and back
+                //  needs to be checked how to convert schedule to string' and back
 
                 _startHour = (from d in motherXml.Element("StartHour").Elements("Day")
                               select DateTime.Parse(d.Value)).ToArray(),
@@ -249,6 +247,26 @@ namespace DAL
             };
             return mother;
         }
+
+        public static Schedule toSchedule(this XElement ScheduleXml)
+        {
+            Schedule sched = null;
+
+            if (ScheduleXml == null)
+            {
+                return sched;
+            }
+
+            sched = new Schedule
+            {
+                begin = DateTime.Parse(ScheduleXml.Value),
+                end = DateTime.Parse(ScheduleXml.Value)
+            };
+
+            return sched;
+        }
+       
+
 
         public static Child toChild(this XElement childXml)
         {
