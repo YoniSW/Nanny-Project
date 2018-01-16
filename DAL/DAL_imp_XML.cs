@@ -34,10 +34,10 @@ namespace DAL
             return thisNanny.toNanny();
         }
 
-        public void addNanny(Nanny thisNany)    //is XML  
+        public void addNanny(Nanny thisNanny)    //is XML  
         {
             var index = (from n in XML_Source.Nannys.Elements()
-                         where Convert.ToInt32(n.Element("id").Value) == thisNany._nannyID
+                         where Convert.ToInt32(n.Element("id").Value) == thisNanny._nannyID
                          select n).FirstOrDefault();
             // if FindIndex method returns -1 so thisNany doesn't exist
             if (index != null)
@@ -45,8 +45,9 @@ namespace DAL
 
             else
             {
-                XML_Source.Nannys.Add(thisNany);
+                XML_Source.Nannys.Add(thisNanny.toXML());
                 XML_Source.SaveNannys();
+                
             }
 
 
