@@ -27,7 +27,7 @@ namespace BL
             ChildInitilize();
             NannyInitilize();
             MotherInitilize();
-           
+
         }
 
         #region mother metods

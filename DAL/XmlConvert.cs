@@ -41,6 +41,7 @@ namespace DAL
                   new XElement("StartHour",
                     (from d in nanny._startHour
                      select new XElement("Days", d.ToString()))),
+
                   new XElement("EndHour",
                     (from d in nanny._endHour
                      select new XElement("Days", d.ToString()))),

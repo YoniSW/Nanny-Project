@@ -15,7 +15,7 @@ namespace DAL
     public interface Idal
     {
 
-        // nany function declarations
+      //  nany function declarations
         void addNanny(Nanny nanny);
         void deleteNanny(long ID);
         void updateNany(Nanny nanny);

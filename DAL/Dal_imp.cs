@@ -46,20 +46,7 @@ namespace DAL
 
         }
 
-        //public void addNanny(Nanny nanny)
-        //{
-        //    var temp = (from n in DataSourceXml.Nannys.Elements()
-        //                where Convert.ToInt32(n.Element("id").Value) == nanny.id
-        //                select n).FirstOrDefault();
-        //    if (temp == null)
-        //    {
-        //        DataSourceXml.Nannys.Add(nanny.toXML());
-        //        DataSourceXml.SaveNannys();
-        //    }
-        //    else
-        //        throw new Exception("nanny already in list\n");
-        // }
-    
+        
 
        
 
