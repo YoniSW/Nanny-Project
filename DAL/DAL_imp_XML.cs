@@ -1,100 +1,95 @@
 ﻿using BE;
 using DS;
+using static DS.XML_Source;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Xml.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// DATA
 
 namespace DAL
 {
-    internal class Dal_imp : Idal
+    class DAL_imp_XML //:Idal
     {
         public static int uniqueContractID = 1;
 
-        static Dal_imp dal = new Dal_imp();
 
-        public Dal_imp()
-        {
-            new DataSource();
-        }
+        #region Nanny
+       
 
-
-        #region Nanny functions
         public Nanny getNanny(long thisID)
         {
-            var thisNanny = DataSource.nannyList.FirstOrDefault(n => n._nannyID == thisID);
+            var thisNanny = (from n in XML_Source.Nannys.Elements()
+                             where Convert.ToInt64(n.Element("id").Value) == thisID
+                             select n).FirstOrDefault();
             if (thisNanny == null)
                 throw new Exception("ID doesn't exist");
 
-            return thisNanny.duplicate();
+
+            return thisNanny.toNanny();
         }
 
-        public void addNanny(Nanny thisNany)
+        public void addNanny(Nanny thisNany)    //XML  
         {
-            var index = DataSource.nannyList.FindIndex(n => n._nannyID == thisNany._nannyID);
+            var index = (from n in XML_Source.Nannys.Elements()
+                         where Convert.ToInt32(n.Element("id").Value) == thisNany._nannyID
+                         select n).FirstOrDefault();
             // if FindIndex method returns -1 so thisNany doesn't exist
-            if (index != -1)
+            if (index != null)
                 throw new Exception("ID already exist in the system");
 
-            DataSource.nannyList.Add(thisNany);
+            else
+            {
+                XML_Source.Nannys.Add(thisNany);
+                XML_Source.SaveNannys();
+            }
+
 
         }
 
-        
-
-       
-
-
-        public void deleteNanny(long thisNany)
+        public void deleteNanny(Nanny nanny)      //is XML   
         {
-            var index = DataSource.nannyList.FindIndex(n => n._nannyID == thisNany);
-            if (index == -1)
-                throw new Exception("Nanny doesn't exist in the system");
-
-            // delete contractList that refers to thisNany
-            DataSource.contractList.RemoveAll(c => c._nannyID == thisNany);
-
-            // now we can delete thisNany
-            DataSource.nannyList.RemoveAt(index);
+            XElement nannyElement = (from n in XML_Source.Nannys.Elements()
+                                     where Convert.ToInt32(n.Element("id").Value) == nanny._nannyID
+                                     select n).FirstOrDefault();
+            if (nannyElement != null)
+            {
+                nannyElement.Remove();
+                XML_Source.SaveNannys();
+            }
+            else
+                throw new Exception("nanny is not in list\n");
         }
 
-        public void updateNany(Nanny thisNany)
+        public void updateNanny(Nanny nanny)     //is XML   
         {
-            var index = DataSource.nannyList.FindIndex(n => n._nannyID == thisNany._nannyID);
-            if (index == -1)
-                throw new Exception("Nanny doesn't exist in the system");
-            DataSource.nannyList[index] = thisNany;
+            XElement nannyElement = (from n in XML_Source.Nannys.Elements()
+                                     where Convert.ToInt32(n.Element("id").Value) == nanny._nannyID
+                                     select n).FirstOrDefault();
+
+            if (nannyElement != null)
+            {
+                nannyElement.Remove();
+                XML_Source.Nannys.Add(nanny.toXML());
+                XML_Source.SaveNannys();
+            }
+            else
+                throw new Exception("the nanny is not in the system.\n");
         }
 
-        //public long getAllNanniesID()
-        //{
-        //    var thisNannies = DataSource.nannyList;
 
-        //    long allIDs;
-        //    foreach (var item in thisNannies)
-        //    {
-        //        allIDs = item._nannyID;
+        #endregion
 
-        //    }
-
-        //    //return allIDs;
-        //}
-
-
-
-#endregion
-       
         #region Mother functions
         public Mother getMom(long thisID)
         {
             var thisMom = DataSource.motherList.FirstOrDefault(m => m._momID == thisID);
-            if(thisMom == null)
+            if (thisMom == null)
                 throw new Exception("ID doesn't exist");
 
             return thisMom.duplicate();
@@ -112,7 +107,7 @@ namespace DAL
         public void deleteMother(long thisMom)
         {
             var index = DataSource.motherList.FindIndex(m => m._momID == thisMom);
-            if( index == -1 )
+            if (index == -1)
                 throw new Exception("Mother doesn't exist in the system");
 
             //else
@@ -143,8 +138,8 @@ namespace DAL
             DataSource.motherList[index] = thisMom;
 
         }
-#endregion
-      
+        #endregion
+
         #region child functions
         public Child getChild(long thisID)
         {
@@ -176,7 +171,7 @@ namespace DAL
 
             var momExist = DataSource.motherList.Any
                            (c => c._momID == thisMom);
-            if(!momExist)
+            if (!momExist)
                 throw new Exception("Mom's ID doesn't exist");
 
             DataSource.childList.Add(thisKid);
@@ -230,10 +225,10 @@ namespace DAL
         {
 
             var index = DataSource.contractList.FindIndex
-                (c => c._childID == thisContract._childID && 
+                (c => c._childID == thisContract._childID &&
             c._nannyID == thisContract._nannyID);
 
-            if(index != -1)
+            if (index != -1)
                 throw new Exception("Contract already exists in the system");
 
             // else - let's start creating a new contract
@@ -259,13 +254,13 @@ namespace DAL
                 throw new Exception("Nanny doesn't exist in the system");
 
             // 6. add to thisContract an unique ID
-            thisContract._contractID = uniqueContractID++;
+            thisContract._contractID = ++uniqueContractID;
 
             // 7. add thisContract to our contractLint
             DataSource.contractList.Add(thisContract);
         }
 
-        public void updateContract (Contract thisContract)
+        public void updateContract(Contract thisContract)
         {
             var index = DataSource.contractList.FindIndex(c => c._contractID == thisContract._contractID);
             if (index == -1)
@@ -292,7 +287,7 @@ namespace DAL
             thisMom._isLookingForNanny = true;
 
             // 3. update nanny & mom and then remove thisContract
-            updateNany(thisNanny);
+            updateNanny(thisNanny);
             updateMother(thisMom);
             DataSource.contractList.RemoveAt(index);
         }
@@ -300,19 +295,19 @@ namespace DAL
 
         #region IEnumerable methods
         public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
-            {
-                if (Predicate == null)
-                    return DataSource.nannyList.AsEnumerable();
-                return DataSource.nannyList.Where(Predicate); 
-            }
+        {
+            if (Predicate == null)
+                return DataSource.nannyList.AsEnumerable();
+            return DataSource.nannyList.Where(Predicate);
+        }
 
         public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
-            {
-                if (Predicate == null)
-                    return DataSource.motherList.AsEnumerable();
+        {
+            if (Predicate == null)
+                return DataSource.motherList.AsEnumerable();
 
             return DataSource.motherList.Where(Predicate);
-            }
+        }
 
         public IEnumerable<Child> getAllChildren(Func<Child, bool> Predicate = null)
         {
@@ -325,22 +320,22 @@ namespace DAL
 
 
         public IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null)
-            {
-                if (Predicate == null)
-                    throw new Exception("Please send mother ID");
-                return DataSource.childList.Where(Predicate);
-            }
+        {
+            if (Predicate == null)
+                throw new Exception("Please send mother ID");
+            return DataSource.childList.Where(Predicate);
+        }
 
-            public IEnumerable<Contract> getContracts(Func<Contract, bool> Predicate = null)
-            {
-                if (Predicate == null)
-                    return DataSource.contractList.AsEnumerable();
+        public IEnumerable<Contract> getContracts(Func<Contract, bool> Predicate = null)
+        {
+            if (Predicate == null)
+                return DataSource.contractList.AsEnumerable();
 
-                return DataSource.contractList.Where(Predicate);
-            }
+            return DataSource.contractList.Where(Predicate);
+        }
 
 
-#endregion
+        #endregion
 
     }
 }
