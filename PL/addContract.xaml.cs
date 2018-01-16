@@ -160,8 +160,7 @@ namespace PL
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window Tabs = new MainWindow(3);
-            Tabs.ShowDialog();
+            Close();
         }
     }
 }

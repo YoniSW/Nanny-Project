@@ -9,11 +9,13 @@
     <Grid>
         <Grid Margin="0,0,0,-1">
             <DataGrid x:Name ="allNanniesBox" HorizontalAlignment="Left" Height="252" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
-                  SelectionChanged="allNanniesBox_SelectionChanged" IsReadOnly="True"  Background="LightGray" />
+                  SelectionChanged="allNanniesBox_SelectionChanged" IsReadOnly="True"  Background="LightGray" DisplayMemberPath="_momID"/>
 
             <Label Content="All nannies in database:" HorizontalAlignment="Left" Height="33" Margin="427,33,0,0" VerticalAlignment="Top" 
                Width="181" FontWeight="Bold" />
 
         </Grid>
+        <Button Content="Back" HorizontalAlignment="Left" Height="40" Margin="906,643,0,0"
+                VerticalAlignment="Top" Width="76" Click="Button_Click"/>
     </Grid>
 </Window>

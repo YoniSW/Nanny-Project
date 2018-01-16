@@ -62,7 +62,7 @@
             <Label Content="First Name:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="70"/>
             <TextBox x:Name="_childFnameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="0" Text="{Binding _childFname, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
         </Grid>
-        <Grid x:Name="grid7" HorizontalAlignment="Left" Margin="21,0,0,0" Grid.Row="4" VerticalAlignment="Top" Height="32" Width="258">
+        <Grid x:Name="grid7" HorizontalAlignment="Left" Margin="21,0,0,0" Grid.Row="4" VerticalAlignment="Top" Height="89" Width="381">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" MinWidth="121"/>
                 <ColumnDefinition Width="Auto" MinWidth="137"/>
@@ -72,7 +72,10 @@
             </Grid.RowDefinitions>
             <Label Content="mom ID:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="55"/>
             <TextBox x:Name="_momIDTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="0" 
-                     Text="{Binding _momID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+                     Text="{Binding _momID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
+                     VerticalAlignment="Center" Width="120"/>
+
+            <ComboBox x:Name="comboBoxMom"  Margin="118,53,15,-23"  Grid.ColumnSpan="2"/>
         </Grid>
         <Grid x:Name="grid8" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="6" VerticalAlignment="Top" Height="32" Width="217">
             <Grid.ColumnDefinitions>

@@ -8,6 +8,7 @@ namespace BE
 {
     public class Nanny
     {
+        public string _fullName { get { return _nannyFname + " " + _nannyLname; } }
         public long _nannyID { get; set; }
         public string _nannyLname { get; set; }
         public string _nannyFname { get; set; }
@@ -34,6 +35,7 @@ namespace BE
                                              so diff == 1 */
 
         public double _distance { get; set; } // yes, its a distance from a mother
+        
 
         public Nanny duplicate()
         {

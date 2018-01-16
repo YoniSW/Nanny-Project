@@ -12,6 +12,7 @@
 
         <Label Content="All nannies in database:" HorizontalAlignment="Left" Height="33" Margin="423,28,0,0" VerticalAlignment="Top" 
                Width="181" FontWeight="Bold" />
-
+        <Button Content="Back" HorizontalAlignment="Left" Height="40" Margin="906,643,0,0"
+                VerticalAlignment="Top" Width="76" Click="Button_Click"/>
     </Grid>
 </Window>

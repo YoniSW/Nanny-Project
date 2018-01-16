@@ -69,6 +69,9 @@ namespace PL
             }
         }
 
-
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
