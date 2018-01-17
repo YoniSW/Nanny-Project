@@ -101,5 +101,17 @@ namespace PL
             nameCheck.IsChecked = false;
 
         }
+
+        private void _isSpecialNeedCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            _specialNeedsLabel.Visibility = Visibility.Visible;
+            _specialNeedsTextBox.Visibility = Visibility.Visible;
+        }
+
+        private void _isSpecialNeedCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            _specialNeedsLabel.Visibility = Visibility.Hidden;
+            _specialNeedsTextBox.Visibility = Visibility.Hidden;
+        }
     }
 }

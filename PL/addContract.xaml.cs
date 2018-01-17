@@ -175,5 +175,28 @@ namespace PL
             nameCheck.IsChecked = false;
 
         }
+
+        private void _isByHourCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+                _ratePerHourLabel.Visibility = Visibility.Visible;
+                _ratePerHourTextBox.Visibility = Visibility.Visible;
+        }
+
+        private void _isByHourCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            _ratePerHourLabel.Visibility = Visibility.Hidden;
+            _ratePerHourTextBox.Visibility = Visibility.Hidden;
+        }
+
+        //private void _ratePerHourLabel_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        //{
+        //    _ratePerHourLabel.Visibility = Visibility.Visible;
+        //}
+
+        //private void _ratePerHourTextBox_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        //{
+
+        //}
     }
 }
