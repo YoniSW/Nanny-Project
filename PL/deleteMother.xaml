@@ -24,5 +24,8 @@
 
         <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="420,179,0,0" Grid.Row="2"
                 VerticalAlignment="Top" Width="66" Click="Button_Click_2"/>
+        <Label Content="Choose by" HorizontalAlignment="Left" Height="41" Margin="332,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="86"/>
+        <CheckBox  x:Name="IdCheck" Content="Mother ID" HorizontalAlignment="Left" Margin="434,10,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" IsChecked="False" Checked="IdCheck_Checked"/>
+        <CheckBox x:Name="nameCheck" Content="Full name" HorizontalAlignment="Left" Margin="434,36,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" IsChecked="True" Checked="nameCheck_Checked"/>
     </Grid>
 </Window>

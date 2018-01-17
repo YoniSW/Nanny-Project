@@ -31,7 +31,7 @@ namespace PL
             this.DataContext = DelNan;
             bl = BL.FactoryBL.GetBL();
             textBox.ItemsSource = bl.getAllNanny();
-            textBox.DisplayMemberPath = "_nannyID";
+            textBox.DisplayMemberPath = "_fullName";
         }
 
 
@@ -72,6 +72,19 @@ namespace PL
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            nameCheck.IsChecked = false;
+            textBox.DisplayMemberPath = "_nannyID";
+
+        }
+
+        private void CheckBox_Checked_1(object sender, RoutedEventArgs e)
+        {
+            IdCheck.IsChecked = false;
+            textBox.DisplayMemberPath = "_fullName";
         }
     }
 }

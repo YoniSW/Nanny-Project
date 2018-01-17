@@ -39,7 +39,7 @@ namespace PL
             thisGrid.DataContext = addCont;
             bl = BL.FactoryBL.GetBL();
             momBox.ItemsSource = bl.getAllMothers();
-           momBox.DisplayMemberPath = "_momID";
+           momBox.DisplayMemberPath = "_fullName";
         }
 
         private void momBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -161,6 +161,19 @@ namespace PL
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void nameCheck_Checked(object sender, RoutedEventArgs e)
+        {
+            momBox.DisplayMemberPath = "_fullName";
+            IDcheck.IsChecked = false;
+        }
+
+        private void IDcheck_Checked(object sender, RoutedEventArgs e)
+        {
+            momBox.DisplayMemberPath = "_momID";
+            nameCheck.IsChecked = false;
+
         }
     }
 }

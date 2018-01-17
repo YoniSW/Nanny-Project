@@ -57,7 +57,7 @@
             <Label Content="First Name:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="70"/>
             <TextBox x:Name="_childFnameTextBox" HorizontalAlignment="Left" Height="24" Margin="115,5,0,3" Grid.Row="0" Text="{Binding _childFname, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Grid.ColumnSpan="2"/>
         </Grid>
-        <Grid x:Name="grid7" HorizontalAlignment="Left" Margin="21,101,0,0" VerticalAlignment="Top" Height="89" Width="381" Grid.RowSpan="2">
+        <Grid x:Name="grid7" HorizontalAlignment="Left" Margin="52,101,0,0" VerticalAlignment="Top" Height="139" Width="426" Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" MinWidth="121"/>
                 <ColumnDefinition Width="Auto" MinWidth="137"/>
@@ -65,12 +65,12 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Label Content="Select a mom" Grid.Column="0" HorizontalAlignment="Left" Margin="10,57,0,-24" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="86"/>
+            <Label Content="Select mom by:" Grid.Column="1" HorizontalAlignment="Left" Margin="36,44,0,-8" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="102"/>
             <TextBox x:Name="_momIDTextBox" HorizontalAlignment="Left" Height="24" Margin="118,240,0,-206" Grid.Row="0" 
                      Text="{Binding _momID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
                      VerticalAlignment="Center" Width="120" Grid.ColumnSpan="2"/>
 
-            <ComboBox x:Name="comboBoxMom"  Margin="118,54,22,-24"  Grid.ColumnSpan="2" SelectionChanged="comboBoxMom_SelectionChanged"/>
+            <ComboBox x:Name="comboBoxMom"  Margin="148,54,-130,-58" SelectionChanged="comboBoxMom_SelectionChanged" Grid.Column="1"/>
         </Grid>
         <Grid x:Name="grid8" HorizontalAlignment="Left" Margin="21,201,0,0" Grid.Row="2" VerticalAlignment="Top" Height="32" Width="481">
             <Grid.ColumnDefinitions>
@@ -116,6 +116,8 @@
                FontSize="24" Width="308"/>
         <Button Content="Back" Click="Button_Click_1" HorizontalAlignment="Left" Height="39" Margin="881,64,0,0" Grid.Row="6" VerticalAlignment="Top" Width="101"/>
         <Label Content="Mom ID" HorizontalAlignment="Left" Height="26" Margin="21,99,0,0" Grid.Row="2" VerticalAlignment="Top" Width="91"/>
+        <CheckBox x:Name="IDcheck" Content="ID number" HorizontalAlignment="Left" Margin="216,58,0,0" VerticalAlignment="Top" IsChecked="False" Checked="IDcheck_Checked" IsEnabled="True" Grid.Row="1"/>
+        <CheckBox x:Name="nameCheck" Content="Full name" HorizontalAlignment="Left" Margin="216,78,0,0" VerticalAlignment="Top" IsChecked="True" Checked="nameCheck_Checked" IsEnabled="True" Grid.Row="1"/>
 
     </Grid>
 </Window>

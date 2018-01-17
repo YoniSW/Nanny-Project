@@ -88,5 +88,18 @@ namespace PL
         {
             Close();
         }
+
+        private void nameCheck_Checked(object sender, RoutedEventArgs e)
+        {
+            comboBoxMom.DisplayMemberPath = "_fullName";
+            IDcheck.IsChecked = false;
+        }
+
+        private void IDcheck_Checked(object sender, RoutedEventArgs e)
+        {
+            comboBoxMom.DisplayMemberPath = "_momID";
+            nameCheck.IsChecked = false;
+
+        }
     }
 }

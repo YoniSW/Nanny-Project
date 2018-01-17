@@ -34,7 +34,7 @@ namespace PL
             thisGrid.DataContext = addA_Mother;
             bl = BL.FactoryBL.GetBL();
             IdMother.ItemsSource = bl.getAllMothers();
-            IdMother.DisplayMemberPath = "_momID";
+            IdMother.DisplayMemberPath = "_fullName";
         }
 
         #region ID ButtonClick
@@ -45,6 +45,7 @@ namespace PL
             {
                 try
                 {
+
                     addA_Mother = (Mother)IdMother.SelectedItem;
                     thisGrid.DataContext = addA_Mother;
   
@@ -193,6 +194,19 @@ namespace PL
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void nameCheck_Checked(object sender, RoutedEventArgs e)
+        {
+            IdMother.DisplayMemberPath = "_fullName";
+            IDcheck.IsChecked = false;
+        }
+
+        private void IDcheck_Checked(object sender, RoutedEventArgs e)
+        {
+            IdMother.DisplayMemberPath = "_momID";
+            nameCheck.IsChecked = false;
+
         }
     }
 
