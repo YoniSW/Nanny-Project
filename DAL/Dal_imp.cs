@@ -17,7 +17,7 @@ namespace DAL
     {
         public static int uniqueContractID = 1;
 
-        static Dal_imp dal = new Dal_imp();
+        //private static Dal_imp dal = new Dal_imp();
 
         public Dal_imp()
         {
