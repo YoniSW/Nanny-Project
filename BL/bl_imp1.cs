@@ -133,11 +133,11 @@ namespace BL
             return dal.getAllNanny(a => a._isTamatNanny);
         }
 
-        public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
+        public IEnumerable<Nanny> getListOfNanny()
         {
-            if (Predicate == null)
-                return dal.getAllNanny();
-            return dal.getAllNanny(Predicate);
+            //if (Predicate == null)
+            //    return dal.getListOfNanny();
+            return dal.getListOfNanny();
         }
 
         #endregion
@@ -299,7 +299,7 @@ namespace BL
         private IEnumerable<Nanny> fiveNearestNanny(Mother thisMom)
         {
             // copy the list into new one
-            var nannyList = from a in dal.getAllNanny()
+            var nannyList = from a in dal.getListOfNanny()
                             select a.duplicate();
 
             foreach (var a in nannyList)
@@ -361,7 +361,7 @@ namespace BL
             int distanceMeter = (int)(distance * 1000);
 
             // copy this list into new one
-            var nannyList = from a in dal.getAllNanny()
+            var nannyList = from a in dal.getListOfNanny()
                             select a.duplicate();
 
             foreach (var a in nannyList)
@@ -380,19 +380,19 @@ namespace BL
         {
             if (isSort)
                 if (minimumAge)
-                    return from newList in dal.getAllNanny() // take data from all nannies
+                    return from newList in dal.getListOfNanny() // take data from all nannies
                            orderby newList._minMonthAge
                            group newList by newList._minMonthAge / 3; // group together a list 'newList' by min age
                 else
-                    return from newList in dal.getAllNanny()
+                    return from newList in dal.getListOfNanny()
                            orderby newList._maxMonthAge
                            group newList by newList._minMonthAge / 3; //group together a list 'newList' by max age
             else
                     if (minimumAge)
-                return from a in dal.getAllNanny()
+                return from a in dal.getListOfNanny()
                        group a by a._minMonthAge / 3;
             else
-                return from a in dal.getAllNanny()
+                return from a in dal.getListOfNanny()
                        group a by a._minMonthAge / 3;
         }
 
@@ -404,26 +404,26 @@ namespace BL
 
                 // if list is sorted so get all nanny and caculate the distance will moms 
                 // and then return by grouping with order
-                var nannyList = from a in dal.getAllNanny()
+                var nannyList = from a in dal.getListOfNanny()
                                 select a.duplicate();
 
                 foreach (var a in nannyList)
                     a._distance = caculateDistance(addressMom, a._nannyAdress);
 
 
-                return from a in dal.getAllNanny()
+                return from a in dal.getListOfNanny()
                        orderby a._distance
                        group a by (int)(a._distance) / 5000;
             }
             // if not sorted
-            return from a in dal.getAllNanny()
+            return from a in dal.getListOfNanny()
                    group a by caculateDistance(addressMom, a._nannyAdress) / 5000;
         }
 
 
         public IEnumerable<Nanny> allCompatibleNannies(Mother thismMom)
         {
-            var nanny_list = dal.getAllNanny();
+            var nanny_list = dal.getListOfNanny();
 
             var compatibleNannies = from potentialNanny in nanny_list
                                     where checkSchedule(potentialNanny, thismMom)

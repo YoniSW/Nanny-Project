@@ -66,10 +66,10 @@ namespace BE
 
             return dupNanny;
         }
-        public Nanny ()
-            {
-                _nannyBirth = DateTime.Now;
-            }
+        //public Nanny ()
+        //    {
+        //        _nannyBirth = DateTime.Now;
+        //    }
 
         public override string ToString()
         {

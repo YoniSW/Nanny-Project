@@ -174,11 +174,12 @@ namespace DAL
 
             if (NannyXml == null)
             {
+                throw new Exception(" the nanny is declared by NULL!!!");
                 return nanny;
             }
             nanny = new Nanny
             {
-                _nannyID = Int32.Parse(NannyXml.Element("id").Value),
+                _nannyID = Int64.Parse(NannyXml.Element("id").Value),
                 _nannyFname = NannyXml.Element("firstName").Value,
                 _nannyLname = NannyXml.Element("familyName").Value,
                 _nannyPhone = long.Parse(NannyXml.Element("phoneNumber").Value),
