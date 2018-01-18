@@ -45,14 +45,15 @@ namespace PL
         private void momBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
-            if (momBox.SelectedIndex != -1)
+            try
             {
-                _childIDTextBox.ItemsSource = bl.getAllChildren(a => a._momID == Convert.ToInt64(momBox.SelectedValue));
-                _childIDTextBox.DisplayMemberPath = "fullName";
-                _childIDTextBox.SelectedValuePath = "idChild";
-                _childIDTextBox.SelectedIndex = -1;
-                addCont = new BE.Contract();
-                thisGrid.DataContext = addCont;
+                addMom = (Mother)momBox.SelectedItem;
+                this.DataContext = addMom;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -92,36 +93,6 @@ namespace PL
                 nanny_list = bl.allCompatibleNannies(addMom); // refine to relevant nanneis (suitble schedule or 5 nearest)
                 relevantNannies_list.ItemsSource = nanny_list; // update UI window
             }
-            catch (FormatException)
-            {
-                MessageBox.Show("Check your input and try again");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void add_Click(object sender, RoutedEventArgs e)
-        {
-
-            try
-            {
-                if ((bool)(_didSignCheckBox.IsChecked == false))
-                   throw new Exception("contract cannot be made without a signature!");
-
-                if ((bool)((_ratePerHourTextBox.IsEnabled == false)|| (_ratePerMonthTextBox.IsEnabled == false)))
-                    throw new Exception("you didnt choose a pament method!");
-
-                if ((bool)((_endWorkDatePicker.SelectedDate <= _beginWorkDatePicker.SelectedDate)))
-                    throw new Exception("the end work is before the start work!");
-                bl.addContract(addCont);
-                MessageBox.Show("Contract is successfully added!");
-                _contractIDTextBox.Visibility = Visibility.Visible;
-                uniqID.Visibility = Visibility.Visible;
-                this.Close();
-            }
-
             catch (FormatException)
             {
                 MessageBox.Show("Check your input and try again");
@@ -187,8 +158,6 @@ namespace PL
             if (_childIDTextBox.SelectedIndex != -1)
             {
                 addCont._childID = (long)_childIDTextBox.SelectedValue;
-                relevantNannies_list.ItemsSource = bl.allCompatibleNannies((BE.Mother)momBox.SelectedItem);
-                relevantNannies_list.SelectedValuePath = "nannyId";
             }
         }
 
@@ -208,6 +177,36 @@ namespace PL
             momBox.DisplayMemberPath = "_momID";
             nameCheck.IsChecked = false;
 
+        }
+
+        private void add_Click(object sender, RoutedEventArgs e)
+        {
+
+            try
+            {
+                if ((bool)(_didSignCheckBox.IsChecked == false))
+                    throw new Exception("contract cannot be made without a signature!");
+
+                if ((bool)((_ratePerHourTextBox.IsEnabled == false) || (_ratePerMonthTextBox.IsEnabled == false)))
+                    throw new Exception("you didnt choose a pament method!");
+
+                if ((bool)((_endWorkDatePicker.SelectedDate <= _beginWorkDatePicker.SelectedDate)))
+                    throw new Exception("the end work is before the start work!");
+                bl.addContract(addCont);
+                MessageBox.Show("Contract is successfully added!");
+                _contractIDTextBox.Visibility = Visibility.Visible;
+                uniqID.Visibility = Visibility.Visible;
+                this.Close();
+            }
+
+            catch (FormatException)
+            {
+                MessageBox.Show("Check your input and try again");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void _isByHourCheckBox_Checked(object sender, RoutedEventArgs e)
