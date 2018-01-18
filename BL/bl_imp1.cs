@@ -120,6 +120,8 @@ namespace BL
             dal.addNanny(thisNanny);
         }
 
+       
+
         public IEnumerable<Nanny> tamatNannies()
         {
             return dal.getAllNanny(a => a._isTamatNanny);

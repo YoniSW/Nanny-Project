@@ -394,10 +394,10 @@ namespace DAL
                 result.Add(n.toNanny());
             }
             return result.AsEnumerable();
-            if (Predicate == null)
+          //  if (Predicate == null)
                 //return XML_Source.Nannys.AsEnumerable();
                 //return XML_Source.Nannys.Where(Predicate);
-                ;
+            //    ;
         }
 
         public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
