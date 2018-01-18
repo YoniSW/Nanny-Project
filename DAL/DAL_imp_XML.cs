@@ -10,11 +10,12 @@ using System.Linq;
 using System.Xml.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL;
 
 
 namespace DAL
 {
-    class DAL_imp_XML :Idal
+    internal class DAL_imp_XML: Idal
     {
         public static int uniqueContractID = 1;
 

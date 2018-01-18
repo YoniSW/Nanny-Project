@@ -73,7 +73,7 @@ namespace BL
             return dal.getAllMothers(Predicate);
         }
 
-        public IEnumerable<Nanny> getAllNannyies(Func<Nanny, bool> Predicate = null)
+        public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
         {
             if (Predicate == null)
                 return dal.getAllNanny();
