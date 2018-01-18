@@ -34,7 +34,8 @@ namespace PL
             addA_Nanny._workDays = new bool[6];
             this.DataContext = addA_Nanny;
             bl = BL.FactoryBL.GetBL();
-            IdNanny.ItemsSource = bl.getAllNanny();  
+            IdNanny.ItemsSource = bl.getAllNanny();
+            IdNanny.DisplayMemberPath = "_fullName";
         }
 
 
@@ -197,6 +198,18 @@ namespace PL
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+        private void nameCheck_Checked(object sender, RoutedEventArgs e)
+        {
+            IdNanny.DisplayMemberPath = "_fullName";
+            IDcheck.IsChecked = false;
+        }
+
+        private void IDcheck_Checked(object sender, RoutedEventArgs e)
+        {
+            IdNanny.DisplayMemberPath = "_nannyID";
+            nameCheck.IsChecked = false;
+
         }
     }
 }

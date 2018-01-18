@@ -173,15 +173,13 @@ namespace DAL
 
             //var momHasThisID = DataSource.motherList.Any
             //   (c => c._momID == childID);
-            //if(momHasThisID)
-            //throw new Exception("we have a mom with same ID!");
+            //if (momHasThisID)
+            //    throw new Exception("we have a mom with same ID!");
 
             var thisMom = thisKid._momID;
 
-            var momExist = DataSource.motherList.Any
+            var momExist = DataSource.motherList.Exists
                            (c => c._momID == thisMom);
-            if(!momExist)
-                throw new Exception("Mom's ID doesn't exist");
 
             DataSource.childList.Add(thisKid);
         }
@@ -342,7 +340,6 @@ namespace DAL
 
                 return DataSource.contractList.Where(Predicate);
             }
-
 
 #endregion
 

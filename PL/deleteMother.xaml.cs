@@ -31,7 +31,7 @@ namespace PL
             this.DataContext = DelMom;
             bl = BL.FactoryBL.GetBL();
             textBox.ItemsSource = bl.getAllMothers();
-            textBox.DisplayMemberPath = "_momID";
+            textBox.DisplayMemberPath = "_fullName";
         }
 
 
@@ -72,6 +72,18 @@ namespace PL
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void IdCheck_Checked(object sender, RoutedEventArgs e)
+        {
+            textBox.DisplayMemberPath = "_momID";
+            nameCheck.IsChecked = false;
+        }
+
+        private void nameCheck_Checked(object sender, RoutedEventArgs e)
+        {
+            textBox.DisplayMemberPath = "_fullName";
+            IdCheck.IsChecked = false;
         }
     }
 }

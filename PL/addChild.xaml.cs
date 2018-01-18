@@ -27,19 +27,26 @@ namespace PL
         {
             InitializeComponent();
             bl = BL.FactoryBL.GetBL();
-            //_birthdayDatePicker.SelectedDate = DateTime.Today;
+ 
+
+            comboBoxMom.ItemsSource = bl.getAllMothers();
+            comboBoxMom.DisplayMemberPath = "_fullName";
+            comboBoxMom.SelectedIndex = -1;
+
             childAdd = new BE.Child(); // create a new child
             thisGrid.DataContext = childAdd;  // activate grid
-           
+
+
         }
 
 
-        //private void comboBoxMom_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-        //    mom = (BE.Mother)comboBoxMom.SelectedItem;
-        //    if (mom != null)
-        //        idMomTextBox.Text = Convert.ToString(mom._momID);
-        //}
+        private void comboBoxMom_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            mom = (BE.Mother)comboBoxMom.SelectedItem;
+            if (mom != null)
+                _momIDTextBox.Text = Convert.ToString(mom._momID);
+        }
+
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
@@ -49,7 +56,7 @@ namespace PL
                 bl.addChild(childAdd);
                 childAdd = new BE.Child();
                 thisGrid.DataContext = childAdd;
-               // _momIDTextBox.
+                comboBoxMom.SelectedIndex = -1;
                 MessageBox.Show("Child was added successfully!");
                 Close();
             }
@@ -63,9 +70,48 @@ namespace PL
             }
         }
 
+        //private void comboBoxChoseMom_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    comboBoxChoseChild.ItemsSource = bl.getAllChildren(a => a._momID == Convert.ToInt64(comboBoxMom.SelectedValue));
+        //    comboBoxChoseChild.DisplayMemberPath = "fullName";
+        //    comboBoxChoseChild.SelectedValuePath = "idChild";
+        //    comboBoxChoseChild.SelectedIndex = -1;
+        //}
+
+        //private void comboBoxChoseChild_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    child = (BE.Child)comboBoxChoseChild.SelectedItem;
+        //    updateChildTab.DataContext = child;
+        //}
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void nameCheck_Checked(object sender, RoutedEventArgs e)
+        {
+            comboBoxMom.DisplayMemberPath = "_fullName";
+            IDcheck.IsChecked = false;
+        }
+
+        private void IDcheck_Checked(object sender, RoutedEventArgs e)
+        {
+            comboBoxMom.DisplayMemberPath = "_momID";
+            nameCheck.IsChecked = false;
+
+        }
+
+        private void _isSpecialNeedCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            _specialNeedsLabel.Visibility = Visibility.Visible;
+            _specialNeedsTextBox.Visibility = Visibility.Visible;
+        }
+
+        private void _isSpecialNeedCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            _specialNeedsLabel.Visibility = Visibility.Hidden;
+            _specialNeedsTextBox.Visibility = Visibility.Hidden;
         }
     }
 }

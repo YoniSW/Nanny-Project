@@ -39,25 +39,52 @@ namespace PL
             thisGrid.DataContext = addCont;
             bl = BL.FactoryBL.GetBL();
             momBox.ItemsSource = bl.getAllMothers();
-           momBox.DisplayMemberPath = "_momID";
+            momBox.DisplayMemberPath = "_fullName";
         }
 
         private void momBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            try
-            {
-                addMom = (Mother)momBox.SelectedItem;
-                this.DataContext = addMom;
 
-            }
-            catch (Exception ex)
+            if (momBox.SelectedIndex != -1)
             {
-                MessageBox.Show(ex.Message);
+                _childIDTextBox.ItemsSource = bl.getAllChildren(a => a._momID == Convert.ToInt64(momBox.SelectedValue));
+                _childIDTextBox.DisplayMemberPath = "fullName";
+                _childIDTextBox.SelectedValuePath = "idChild";
+                _childIDTextBox.SelectedIndex = -1;
+                addCont = new BE.Contract();
+                thisGrid.DataContext = addCont;
             }
         }
 
         private void search_Click(object sender, RoutedEventArgs e)
         {
+
+            try
+            {
+                child_list = bl.getKidsByMom(a => a._momID == addMom._momID);
+                _childIDTextBox.ItemsSource = child_list;
+                child = (Child)_childIDTextBox.SelectedItem;
+                this.DataContext = child;
+                _childIDTextBox.DisplayMemberPath = "_fullName";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            try
+            {
+                nanny_list = bl.allCompatibleNannies(addMom);
+                _nannyIDTextBox.ItemsSource = nanny_list;
+                nanny = (Nanny)_nannyIDTextBox.SelectedItem;
+                this.DataContext = nanny;
+                _nannyIDTextBox.DisplayMemberPath = "_fullName";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             try
             {
                 child_list = bl.getKidsByMom(a => a._momID == addMom._momID); // refine children list to thisMoms kids
@@ -90,6 +117,8 @@ namespace PL
                     throw new Exception("the end work is before the start work!");
                 bl.addContract(addCont);
                 MessageBox.Show("Contract is successfully added!");
+                _contractIDTextBox.Visibility = Visibility.Visible;
+                uniqID.Visibility = Visibility.Visible;
                 this.Close();
             }
 
@@ -155,12 +184,65 @@ namespace PL
 
         private void _childIDTextBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            if (_childIDTextBox.SelectedIndex != -1)
+            {
+                addCont._childID = (long)_childIDTextBox.SelectedValue;
+                relevantNannies_list.ItemsSource = bl.allCompatibleNannies((BE.Mother)momBox.SelectedItem);
+                relevantNannies_list.SelectedValuePath = "nannyId";
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
+
+        private void nameCheck_Checked(object sender, RoutedEventArgs e)
+        {
+            momBox.DisplayMemberPath = "_fullName";
+            IDcheck.IsChecked = false;
+        }
+
+        private void IDcheck_Checked(object sender, RoutedEventArgs e)
+        {
+            momBox.DisplayMemberPath = "_momID";
+            nameCheck.IsChecked = false;
+
+        }
+
+        private void _isByHourCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+                _ratePerHourLabel.Visibility = Visibility.Visible;
+                _ratePerHourTextBox.Visibility = Visibility.Visible;
+        }
+
+        private void _isByHourCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            _ratePerHourLabel.Visibility = Visibility.Hidden;
+            _ratePerHourTextBox.Visibility = Visibility.Hidden;
+        }
+
+        private void _didSignCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            Addbutton.Visibility = Visibility.Visible;
+
+        }
+
+        private void _didSignCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            Addbutton.Visibility = Visibility.Hidden;
+        }
+
+
+        //private void _ratePerHourLabel_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        //{
+        //    _ratePerHourLabel.Visibility = Visibility.Visible;
+        //}
+
+        //private void _ratePerHourTextBox_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        //{
+
+        //}
     }
 }

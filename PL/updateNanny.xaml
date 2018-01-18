@@ -273,13 +273,14 @@
             <Label Content="min Month Age:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="96"/>
             <TextBox x:Name="_minMonthAgeTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="0" Text="{Binding _minMonthAge, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="47"/>
         </Grid>
-
-        <Label Content="Please enter Nanny's ID" HorizontalAlignment="Left" Height="31" Margin="92,14,0,0" 
-               VerticalAlignment="Top" Width="148" FontWeight="Bold" Grid.Row="1"/>
         <ComboBox x:Name="IdNanny" HorizontalAlignment="Left" 
-                  Margin="260,14,0,0" VerticalAlignment="Top" Width="172"  
-                  DisplayMemberPath="_nannyID" SelectionChanged="IdNanny_SelectionChanged" Grid.Row="1"/>
+                  Margin="371,20,0,0" VerticalAlignment="Top" Width="172"  
+                   SelectionChanged="IdNanny_SelectionChanged" Grid.Row="1" Grid.ColumnSpan="2" Height="30"/>
         <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Height="47" Margin="398,10,0,0" Grid.Row="4" 
                 VerticalAlignment="Top" Width="87" Click="Button_Click_1"/>
+        <Label Content="Please select nanny by:" HorizontalAlignment="Left" Height="45" Margin="90,10,0,0" 
+            VerticalAlignment="Top" Width="148" FontWeight="Bold" Grid.Row="1"/>
+        <CheckBox x:Name="IDcheck" Content="ID number" HorizontalAlignment="Left" Margin="243,20,0,0" VerticalAlignment="Top" IsChecked="False" Checked="IDcheck_Checked" IsEnabled="True" Grid.Row="1"/>
+        <CheckBox x:Name="nameCheck" Content="Full name" HorizontalAlignment="Left" Margin="243,40,0,0" VerticalAlignment="Top" IsChecked="True" Checked="nameCheck_Checked" IsEnabled="True" Grid.Row="1"/>
     </Grid>
 </Window>
