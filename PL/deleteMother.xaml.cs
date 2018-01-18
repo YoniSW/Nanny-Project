@@ -55,7 +55,7 @@ namespace PL
         {
             try
             {
-                bl.deleteMother(long.Parse(textBox.Text));
+                bl.deleteMother(DelMom._momID);
                 MessageBox.Show("Mother was deleted successfully!");
                 Close();
             }

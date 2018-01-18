@@ -16,9 +16,7 @@ using BE;
 
 namespace PL
 {
-    /// <summary>
-    /// Interaction logic for addContract.xaml
-    /// </summary>
+
     public partial class addContract : Window
     {
 
@@ -106,23 +104,21 @@ namespace PL
         private void relevantNannies_list_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             DataGrid helpDataGrid = sender as DataGrid;
-            if ( helpDataGrid.SelectedIndex > 0) // grid in not empty
+            if (helpDataGrid.SelectedIndex > -1) // grid in not empty
             {
-                nanny =  helpDataGrid.SelectedItem as BE.Nanny;
+                nanny = helpDataGrid.SelectedItem as BE.Nanny;
+                addCont._isByHour = nanny._acceptByHour;
+                if (nanny._acceptByHour)
+                    addCont._ratePerHour = bl.getUpdatedRate(addCont._childID, nanny._nannyID, true);
+
+                else
+                    addCont._ratePerHour = bl.getUpdatedRate(addCont._childID, nanny._nannyID, false);
+
+                addCont._nannyID = nanny._nannyID;
+
                 _nannyIDTextBox.Text = Convert.ToString(nanny._nannyID);
                 _isByHourCheckBox.IsChecked = nanny._acceptByHour;
-                if (nanny._acceptByHour)
-                    _ratePerHourTextBox.Text = Convert.ToString(bl.getUpdatedRate(child._childID, nanny._nannyID, true));
-
-                _ratePerHourTextBox.Text = Convert.ToString(bl.getUpdatedRate(child._childID, nanny._nannyID, false));
-                addCont._nannyID = nanny._nannyID;
             }
-            // add NANNY?
-            nanny = new BE.Nanny();
-            grid1.DataContext = nanny;
-            bl = BL.FactoryBL.GetBL();
-            _nannyIDTextBox.ItemsSource = nanny_list;
-            _nannyIDTextBox.DisplayMemberPath = "_nannyID";
         }
 
         private void thisMomsKids_list_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -144,6 +140,7 @@ namespace PL
                 try
                 {
                     nanny = (Nanny)_nannyIDTextBox.SelectedItem;
+                   // _nannyIDTextBox1.Text = nanny._nannyID;
 
                 }
                 catch (Exception ex)
@@ -158,6 +155,8 @@ namespace PL
             if (_childIDTextBox.SelectedIndex != -1)
             {
                 addCont._childID = (long)_childIDTextBox.SelectedValue;
+                relevantNannies_list.ItemsSource = bl.allCompatibleNannies((BE.Mother)momBox.SelectedItem);
+                relevantNannies_list.SelectedValuePath = "_nannyID";
             }
         }
 

@@ -48,14 +48,15 @@ namespace PL
         }
 
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void add_Click(object sender, RoutedEventArgs e)
         {
 
             try
             {
                 bl.addChild(childAdd);
+                childAdd._momID = mom._momID;
                 childAdd = new BE.Child();
-                thisGrid.DataContext = childAdd;
+                this.DataContext = childAdd;
                 comboBoxMom.SelectedIndex = -1;
                 MessageBox.Show("Child was added successfully!");
                 Close();

@@ -35,7 +35,8 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Content="Child ID:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="55"/>
-            <TextBox x:Name="_childIDTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="0" Text="{Binding _childID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+            <TextBox x:Name="_childIDTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="0" 
+                     Text="{Binding _childID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
         </Grid>
         <Grid x:Name="grid5" HorizontalAlignment="Left" Margin="98,24,0,0" Grid.Row="5" VerticalAlignment="Top" Height="0" Width="0">
             <Grid.ColumnDefinitions>
@@ -85,7 +86,7 @@
                      Text="{Binding _specialNeeds, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="351"/>
         </Grid>
         <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Height="72" Margin="10,116,0,0" Grid.Row="4" VerticalAlignment="Top" 
-                Width="220" Click="button_Click"/>
+                Width="220" Click="add_Click"/>
         <Grid x:Name="grid4"  HorizontalAlignment="Left" Margin="21,164,0,0" Grid.Row="2" VerticalAlignment="Top" Height="32" Width="209">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>

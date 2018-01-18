@@ -9,11 +9,7 @@ namespace DAL
 {
     public static class XMLConverter
     {
-        /// <summary>
-        /// turns a nanny class type into a XML type
-        /// </summary>
-        /// <param name="nanny"></param>
-        /// <returns></returns>
+
         public static XElement toXML(this Nanny nanny)
         {
             return new XElement("Nanny",
@@ -174,7 +170,7 @@ namespace DAL
 
             if (NannyXml == null)
             {
-                throw new Exception(" the nanny is declared by NULL!!!");
+                throw new Exception("the nanny is declared by NULL!!!");
                 return nanny;
             }
             nanny = new Nanny

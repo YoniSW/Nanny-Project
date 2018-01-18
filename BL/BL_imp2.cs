@@ -17,17 +17,15 @@ namespace BL
         static long[] idMotherArray = new long[21];
         static long[] idNannyArray = new long[20];
         static long[] _childIDArray = new long[30];
-        //string[] recomandactions = new string[]
-        //{
-        //    "מטפלת מעולה",
-        //    "אחת בדורה",
-        //    "מאוד מרוצה ממנה",
-        //    "עושה מעל ומעבר",
+        string[] recomandactions = new string[]
+        {
+            "מטפלת מעולה",
+            "אחת בדורה",
+            "מאוד מרוצה ממנה",
+            "עושה מעל ומעבר",
 
-        //};
-        /// <summary>
-        /// initilize 3 araays of id 
-        /// </summary>
+        };
+
         void initilizeArray()
         {
 
@@ -89,7 +87,7 @@ namespace BL
                 _maxMonthAge = 14,
                 _minMonthAge = 3,
                 _maxamountChildren = 8,
-                //_recommendation = recomandactions[0],
+                _recommendation = recomandactions[0],
                 _isTamatNanny = false,
                 _acceptByHour = true,
                 _rateByHour = 10,
@@ -117,6 +115,7 @@ namespace BL
             };
             Nanny Moria_schneider = new Nanny
             {
+                _recommendation = "Very good",
                 _nannyID = idNannyArray[1],
                 _nannyFname = "שניידר",
                 _nannyLname = "מוריה",
@@ -156,7 +155,8 @@ namespace BL
             };
             Nanny malki_fishman = new Nanny
             {
-                //v
+
+                _recommendation = "Very bad",
                 _nannyID = idNannyArray[2],
                 _nannyFname = "מלכי",
                 _nannyLname = "פישמן",
@@ -195,6 +195,7 @@ namespace BL
             };
             Nanny Elisheva_Shaked = new Nanny
             {
+                _recommendation = "loves kids!",
                 _nannyID = idNannyArray[3],
                 _nannyFname = "אלישבע",
                 _nannyLname = "שקד",
@@ -234,7 +235,7 @@ namespace BL
             };
             Nanny Yafi_Shtain = new Nanny
             {
-                //v
+                _recommendation = "Very expensive",
                 _nannyID = idNannyArray[4],
                 _nannyFname = "יפי",
                 _nannyLname = "שטיין",
@@ -274,7 +275,7 @@ namespace BL
             };
             Nanny Hila_Sharabi = new Nanny
             {
-                //v
+                _recommendation = "Very cheap",
                 _nannyID = idNannyArray[5],
                 _nannyFname = "הילה",
                 _nannyLname = "שרעבי",
@@ -313,7 +314,7 @@ namespace BL
             };
             Nanny Adi_Shushan = new Nanny
             {
-                //v
+                _recommendation = "kids like her",
                 _nannyID = idNannyArray[6],
                 _nannyFname = "עדי",
                 _nannyLname = "שושן",
@@ -353,6 +354,7 @@ namespace BL
             };
             Nanny Chavi_Horen = new Nanny
             {
+                _recommendation = "stay away",
                 _nannyID = idNannyArray[7],
                 _nannyFname = "חווי",
                 _nannyLname = "הורן",
@@ -392,6 +394,7 @@ namespace BL
             };
             Nanny Diti_Farkash = new Nanny
             {
+                _recommendation = "Diti we love you!",
                 _nannyID = idNannyArray[8],
                 _nannyFname = "דיטי",
                 _nannyLname = "פרקש",
@@ -431,6 +434,7 @@ namespace BL
             };
             Nanny noa_Karlibach = new Nanny
             {
+                _recommendation = "Noa my kids miss you",
                 _nannyID = idNannyArray[9],
                 _nannyFname = "נעה",
                 _nannyLname = "קרליבך",

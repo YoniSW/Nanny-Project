@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BE;
 
 namespace PL
 {
@@ -20,17 +21,40 @@ namespace PL
     public partial class deleteContract : Window
     {
         public BL.IBL bl;
+        public BE.Contract delCont;
+        public IEnumerable<BE.Contract> cont_list;
+
         public deleteContract()
         {
             InitializeComponent();
+            delCont = new BE.Contract();
+            this.DataContext = delCont;
             bl = BL.FactoryBL.GetBL();
+            textBox.ItemsSource = bl.getContracts();
+            textBox.DisplayMemberPath = "_contractID";
+        }
+
+        private void textBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (sender is ComboBox && ((ComboBox)sender).SelectedIndex > -1)
+            {
+                try
+                {
+                    delCont = (Contract)textBox.SelectedItem;
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void delete_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                bl.deleteContract(long.Parse(textBox.Text));
+                bl.deleteContract(delCont._contractID);
                 MessageBox.Show("Contract was deleted successfully!");
                 Close();
             }
@@ -49,5 +73,7 @@ namespace PL
         {
             Close();
         }
+
+
     }
 }

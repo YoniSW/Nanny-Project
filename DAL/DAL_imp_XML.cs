@@ -1,6 +1,5 @@
 ﻿using BE;
 using DS;
-using static DS.XML_Source;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
@@ -10,7 +9,7 @@ using System.Linq;
 using System.Xml.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DAL;
+//using  static DS.XML_Source;
 
 
 namespace DAL
@@ -23,7 +22,7 @@ namespace DAL
         #region Nanny
 
 
-        public Nanny getNanny(long thisID)     //is XML 
+        public Nanny getNanny(long thisID)//is XML 
         {
             var thisNanny = (from n in XML_Source.Nannys.Elements()
                              where Convert.ToInt64(n.Element("id").Value) == thisID
@@ -35,7 +34,7 @@ namespace DAL
             return thisNanny.toNanny();
         }
 
-        public void addNanny(Nanny thisNanny)    //is XML  
+        public void addNanny(Nanny thisNanny)//is XML  
         {
             var index = (from n in XML_Source.Nannys.Elements()
                          where Convert.ToInt32(n.Element("id").Value) == thisNanny._nannyID
@@ -395,10 +394,10 @@ namespace DAL
                 result.Add(n.toNanny());
             }
             return result.AsEnumerable();
-            if (Predicate == null)
+           // if (Predicate == null)
                 //return XML_Source.Nannys.AsEnumerable();
                 //return XML_Source.Nannys.Where(Predicate);
-                ;
+                
         }
 
         public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
