@@ -35,6 +35,12 @@ namespace DAL
             return thisNanny.duplicate();
         }
 
+        public IEnumerable<Nanny> getListOfNanny()
+        {
+            
+          return DataSource.nannyList.AsEnumerable();
+        }
+
         public void addNanny(Nanny thisNany)
         {
             var index = DataSource.nannyList.FindIndex(n => n._nannyID == thisNany._nannyID);
@@ -46,6 +52,7 @@ namespace DAL
 
         }
                
+
 
 
         public void deleteNanny(long thisNany)

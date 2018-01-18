@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class DAL_imp_XML : Idal
+    class DAL_imp_XML :Idal
     {
         public static int uniqueContractID = 1;
 
@@ -86,30 +86,29 @@ namespace DAL
 
         #endregion
 
-
-
-
-
         #region Mother functions
 
 
-        public Mother getMom(long thisID)
+        public Mother getMom(long thisID)           // is XML
         {
-            var thisMom = DataSource.motherList.FirstOrDefault(m => m._momID == thisID);
+            var thisMom = (from n in XML_Source.Mothers.Elements()
+                           where Convert.ToInt64(n.Element("id").Value) == thisID
+                           select n).FirstOrDefault();
             if (thisMom == null)
                 throw new Exception("ID doesn't exist");
 
-            return thisMom.duplicate();
+            return thisMom.toMother();
+
+            
         }
-
-
+       
 
         public void addMother(Mother mother)      //is XML  
         {
             var temp = (from m in XML_Source.Mothers.Elements()
                         where Convert.ToInt32(m.Element("id").Value) == mother._momID
                         select m).FirstOrDefault();
-            if (temp == null)
+            if (temp != null)
             {
                 XML_Source.Mothers.Add(mother.toXML());
                 XML_Source.SaveMothers();
@@ -117,6 +116,25 @@ namespace DAL
             else
                 throw new Exception("you are trying to add a existing mother.\n");
         }
+
+        //public void addNanny(Nanny thisNanny)    //is XML  
+        //{
+        //    var index = (from n in XML_Source.Nannys.Elements()
+        //                 where Convert.ToInt32(n.Element("id").Value) == thisNanny._nannyID
+        //                 select n).FirstOrDefault();
+        //    // if FindIndex method returns -1 so thisNany doesn't exist
+        //    if (index != null)
+        //        throw new Exception("ID already exist in the system");
+
+        //    else
+        //    {
+        //        XML_Source.Nannys.Add(thisNanny.toXML());
+        //        XML_Source.SaveNannys();
+
+        //    }
+        //}
+
+
 
 
         public void deleteMother(long thisMom)            //is XML  
@@ -172,15 +190,19 @@ namespace DAL
 
         #endregion
 
+
+
+
         #region child functions
-        public Child getChild(long thisID)
+        public Child getChild(long thisID)    // is XML
         {
-            var thisChild = DataSource.childList.FirstOrDefault
-                (c => c._childID == thisID);
+            var thisChild = (from n in XML_Source.Nannys.Elements()
+                             where Convert.ToInt64(n.Element("id").Value) == thisID
+                             select n).FirstOrDefault();
             if (thisChild == null)
                 throw new Exception("ID doesn't exist");
 
-            return thisChild.duplicate();
+            return thisChild.toChild();
         }
 
         public void addChild(Child thisKid)
@@ -242,17 +264,19 @@ namespace DAL
         #endregion
 
         #region contract functions
-        public Contract getContract(long id)
+        public Contract getContract(long id)    // is XML
         {
-            var thisContract = DataSource.contractList.FirstOrDefault
-                (c => c._contractID == id);
+            var thisContract = (from n in XML_Source.Nannys.Elements()
+                                where Convert.ToInt64(n.Element("id").Value) == id
+                                select n).FirstOrDefault();
             if (thisContract == null)
                 throw new Exception("ID doesn't exist");
 
-            return thisContract.duplicate();
+            return thisContract.toContract();
 
         }
 
+       
         public void addContract(Contract thisContract)
         {
 
@@ -325,20 +349,66 @@ namespace DAL
         }
         #endregion
 
+        //public IEnumerable<Nanny> getAllNanny()
+        //{
+        //    XElement root = XML_Source.Nannys;
+        //    List<Nanny> result = new List<Nanny>();
+        //    foreach (var n in root.Elements("Nanny"))
+        //    {
+        //        result.Add(n.toNanny());
+        //    }
+        //    return result.AsEnumerable();
+        //}
+
+
         #region IEnumerable methods
+
+        //public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
+        //{
+        //    var nannyList = from nanny in XML_Source.Nannys.Elements()
+        //                    select nanny.toNanny();
+
+
+        //    if (Predicate == null)
+        //        return nannyList.AsEnumerable();
+        //    return nannyList.Where(Predicate);
+        //}
+        public IEnumerable<Nanny> getListOfNanny()
+        {
+            XElement root = XML_Source.Nannys;
+            List<Nanny> result = new List<Nanny>();
+            foreach (var n in root.Elements("Nanny"))
+            {
+                result.Add(n.toNanny());
+            }
+            return result.AsEnumerable();
+        }
+
         public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
         {
+            XElement root = XML_Source.Nannys;
+            List<Nanny> result = new List<Nanny>();
+
+            foreach (var n in root.Elements("Nanny"))
+            {
+                result.Add(n.toNanny());
+            }
+            return result.AsEnumerable();
             if (Predicate == null)
-                return DataSource.nannyList.AsEnumerable();
-            return DataSource.nannyList.Where(Predicate);
+                //return XML_Source.Nannys.AsEnumerable();
+                //return XML_Source.Nannys.Where(Predicate);
+                ;
         }
 
         public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
         {
+            var momList = from mom in XML_Source.Mothers.Elements()
+                                       select mom.toMother();
             if (Predicate == null)
-                return DataSource.motherList.AsEnumerable();
+                return momList.AsEnumerable();
 
-            return DataSource.motherList.Where(Predicate);
+            return momList.Where(Predicate);
+           
         }
 
         public IEnumerable<Child> getAllChildren(Func<Child, bool> Predicate = null)

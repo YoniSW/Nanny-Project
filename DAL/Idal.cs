@@ -42,6 +42,7 @@ namespace DAL
         Contract getContract(long ID);
 
         IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null);
+        IEnumerable<Nanny> getListOfNanny();
         IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null);
         IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null);
         IEnumerable<Contract> getContracts(Func<Contract, bool> Predicate = null);
