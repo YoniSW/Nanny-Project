@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Xml.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,11 +36,11 @@ namespace DAL
             return thisNanny.duplicate();
         }
 
-        public IEnumerable<Nanny> getListOfNanny()
-        {
+        //public IEnumerable<Nanny> getListOfNanny()
+        //{
             
-          return DataSource.nannyList.AsEnumerable();
-        }
+        //  return DataSource.nannyList.AsEnumerable();
+        //}
 
         public void addNanny(Nanny thisNany)
         {
@@ -301,12 +302,25 @@ namespace DAL
         #endregion
 
         #region IEnumerable methods
+
         public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
-            {
-                if (Predicate == null)
-                    return DataSource.nannyList.AsEnumerable();
-                return DataSource.nannyList.Where(Predicate); 
-            }
+        {
+            if (Predicate == null)
+                return DataSource.nannyList.AsEnumerable();
+            return DataSource.nannyList.Where(Predicate);
+        }
+
+
+        //public IEnumerable<Nanny> getListOfNanny()
+        //{
+        //    XElement root = XML_Source.Nannys;
+        //    List<Nanny> result = new List<Nanny>();
+        //    foreach (var n in root.Elements("Nanny"))
+        //    {
+        //        result.Add(n.toNanny());
+        //    }
+        //    return result.AsEnumerable();
+        //}
 
         public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
             {
@@ -315,6 +329,8 @@ namespace DAL
 
             return DataSource.motherList.Where(Predicate);
             }
+
+        
 
         public IEnumerable<Child> getAllChildren(Func<Child, bool> Predicate = null)
         {

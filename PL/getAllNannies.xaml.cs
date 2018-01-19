@@ -29,7 +29,7 @@ namespace PL
             {
                 allNanniesBox.ItemsSource = nanny_list;
                 nanny_list = bl.getAllNanny();
-                if (nanny_list != null && nanny_list.GetEnumerator().MoveNext())
+                if (nanny_list != null /*&& nanny_list.GetEnumerator().MoveNext()*/)
                     allNanniesBox.ItemsSource = nanny_list;
 
                 else

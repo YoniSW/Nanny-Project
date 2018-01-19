@@ -22,19 +22,6 @@ namespace DAL
 
         #region Nanny
 
-
-        public Nanny getNanny(long thisID)     //is XML 
-        {
-            var thisNanny = (from n in XML_Source.Nannys.Elements()
-                             where Convert.ToInt64(n.Element("id").Value) == thisID
-                             select n).FirstOrDefault();
-            if (thisNanny == null)
-                throw new Exception("ID doesn't exist");
-
-
-            return thisNanny.toNanny();
-        }
-
         public void addNanny(Nanny thisNanny)    //is XML  
         {
             var index = (from n in XML_Source.Nannys.Elements()
@@ -48,12 +35,22 @@ namespace DAL
             {
                 XML_Source.Nannys.Add(thisNanny.toXML());
                 XML_Source.SaveNannys();
-                
             }
-
-
+            
         }
 
+        public Nanny getNanny(long thisID)     //is XML 
+        {
+            var thisNanny = (from n in XML_Source.Nannys.Elements()
+                             where Convert.ToInt64(n.Element("id").Value) == thisID
+                             select n).FirstOrDefault();
+            if (thisNanny == null)
+                throw new Exception("ID doesn't exist");
+
+
+            return thisNanny.toNanny();
+        }
+      
         public void deleteNanny(long nanny)      //is XML   
         {
             XElement nannyElement = (from n in XML_Source.Nannys.Elements()
@@ -118,25 +115,7 @@ namespace DAL
                 throw new Exception("you are trying to add a existing mother.\n");
         }
 
-        //public void addNanny(Nanny thisNanny)    //is XML  
-        //{
-        //    var index = (from n in XML_Source.Nannys.Elements()
-        //                 where Convert.ToInt32(n.Element("id").Value) == thisNanny._nannyID
-        //                 select n).FirstOrDefault();
-        //    // if FindIndex method returns -1 so thisNany doesn't exist
-        //    if (index != null)
-        //        throw new Exception("ID already exist in the system");
-
-        //    else
-        //    {
-        //        XML_Source.Nannys.Add(thisNanny.toXML());
-        //        XML_Source.SaveNannys();
-
-        //    }
-        //}
-
-
-
+    
 
         public void deleteMother(long thisMom)            //is XML  
         {
@@ -191,9 +170,7 @@ namespace DAL
 
         #endregion
 
-
-
-
+        
         #region child functions
         public Child getChild(long thisID)    // is XML
         {
@@ -350,7 +327,18 @@ namespace DAL
         }
         #endregion
 
-        //public IEnumerable<Nanny> getAllNanny()
+
+        #region IEnumerable methods
+
+        //public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)     --->  original
+        //{
+        //    if (Predicate == null)
+        //        return nannyList.AsEnumerable();
+        //    return nannyList.Where(Predicate);
+        //}
+
+
+        //public IEnumerable<Nanny> getListOfNanny()
         //{
         //    XElement root = XML_Source.Nannys;
         //    List<Nanny> result = new List<Nanny>();
@@ -360,31 +348,7 @@ namespace DAL
         //    }
         //    return result.AsEnumerable();
         //}
-
-
-        #region IEnumerable methods
-
-        //public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
-        //{
-        //    var nannyList = from nanny in XML_Source.Nannys.Elements()
-        //                    select nanny.toNanny();
-
-
-        //    if (Predicate == null)
-        //        return nannyList.AsEnumerable();
-        //    return nannyList.Where(Predicate);
-        //}
-        public IEnumerable<Nanny> getListOfNanny()
-        {
-            XElement root = XML_Source.Nannys;
-            List<Nanny> result = new List<Nanny>();
-            foreach (var n in root.Elements("Nanny"))
-            {
-                result.Add(n.toNanny());
-            }
-            return result.AsEnumerable();
-        }
-
+        
         public IEnumerable<Nanny> getAllNanny(Func<Nanny, bool> Predicate = null)
         {
             XElement root = XML_Source.Nannys;

@@ -48,7 +48,7 @@ namespace BL
         IEnumerable<Child> allChildWithoutNannies();
         IEnumerable<Nanny> tamatNannies();
         IEnumerable<Contract> contractByTerm(Func<Contract, bool> Predicate = null);
-        IEnumerable<Nanny> getListOfNanny();
+        //IEnumerable<Nanny> getListOfNanny();
         int numOfContractByTerm(Func<Contract, bool> Predicate = null);
 
     }

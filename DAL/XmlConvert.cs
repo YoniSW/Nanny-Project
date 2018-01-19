@@ -17,9 +17,9 @@ namespace DAL
         public static XElement toXML(this Nanny nanny)
         {
             return new XElement("Nanny",
-                 new XElement("id", nanny._nannyID),
-                 new XElement("familyName", nanny._nannyLname),
+                 new XElement("id", nanny._nannyID),                 
                  new XElement("firstName", nanny._nannyFname),
+                 new XElement("familyName", nanny._nannyLname),
                  new XElement("birthday", nanny._nannyBirth),
                  new XElement("phoneNumber", nanny._nannyPhone),
                  new XElement("address", nanny._nannyAdress),
@@ -33,7 +33,7 @@ namespace DAL
                  new XElement("doesWorkPerHour", nanny._acceptByHour),
                  new XElement("hourWage", nanny._rateByHour),
                  new XElement("monthlyWage", nanny._rateByMonth),
-                 new XElement("recomendations", nanny._recommendation),
+                 new XElement("recommendations", nanny._recommendation),   //here was a problem
                 // new XElement("StartHour", nanny._startHour),
                  //new XElement("EndHour", nanny._endHour),
 
@@ -90,8 +90,6 @@ namespace DAL
 
             );
         }
-
-
 
         public static XElement toXML(this Child child)
         {
@@ -170,21 +168,22 @@ namespace DAL
 
         public static Nanny toNanny(this XElement NannyXml)
         {
-            Nanny nanny = null;
+             Nanny nanny = null;
 
             if (NannyXml == null)
             {
-                throw new Exception(" the nanny is declared by NULL!!!");
-                return nanny;
+                throw new Exception(" the NannyXml is NULL!!!");
+                //return nanny;
             }
-            nanny = new Nanny
+         nanny = new Nanny
+         
             {
                 _nannyID = Int64.Parse(NannyXml.Element("id").Value),
                 _nannyFname = NannyXml.Element("firstName").Value,
                 _nannyLname = NannyXml.Element("familyName").Value,
                 _nannyPhone = long.Parse(NannyXml.Element("phoneNumber").Value),
                 _nannyBirth = DateTime.Parse(NannyXml.Element("birthday").Value),
-                _nannyAdress= NannyXml.Element("address").Value,
+                _nannyAdress = NannyXml.Element("address").Value,
                 _isElevator = Boolean.Parse(NannyXml.Element("hasElevator").Value),
                 _floor = Int32.Parse(NannyXml.Element("floorNumber").Value),
                 _yearsOfExp = Int32.Parse(NannyXml.Element("seniority").Value),
@@ -196,17 +195,48 @@ namespace DAL
                 _rateByHour = Int32.Parse(NannyXml.Element("hourWage").Value),
                 _rateByMonth = Int32.Parse(NannyXml.Element("monthlyWage").Value),
                 _recommendation = NannyXml.Element("recommendations").Value,
-              
-                
+
+
                 _workDays = (from e in NannyXml.Element("daysOfWork").Elements("Days")
                              select Boolean.Parse(e.Value)).ToArray(),
 
-               
-                _startHour = (from d in NannyXml.Element("StartHour").Elements("Day")
+
+                _startHour = (from d in NannyXml.Element("StartHour").Elements("Days")
                               select DateTime.Parse(d.Value)).ToArray(),
 
-                _endHour = (from d in NannyXml.Element("EndHour").Elements("Day")
-                               select DateTime.Parse(d.Value)).ToArray(),
+                _endHour = (from d in NannyXml.Element("EndHour").Elements("Days")
+                            select DateTime.Parse(d.Value)).ToArray(),
+
+                //nanny._nannyID = Int64.Parse(NannyXml.Element("id").Value);
+               // nanny._nannyID = long.Parse(NannyXml.Element("id").Value);
+               // nanny._nannyFname = NannyXml.Element("firstName").Value;
+               // nanny._nannyLname = NannyXml.Element("familyName").Value;
+               // nanny._nannyPhone = long.Parse(NannyXml.Element("phoneNumber").Value);
+               // nanny._nannyBirth = DateTime.Parse(NannyXml.Element("birthday").Value);
+               // nanny._nannyAdress = NannyXml.Element("address").Value;
+               // nanny._isElevator = Boolean.Parse(NannyXml.Element("hasElevator").Value);
+               // nanny._floor = Int32.Parse(NannyXml.Element("floorNumber").Value);
+               // nanny._yearsOfExp = Int32.Parse(NannyXml.Element("seniority").Value);
+               // nanny._maxamountChildren = Int32.Parse(NannyXml.Element("maxOfKids").Value);
+               // nanny._minMonthAge = Int32.Parse(NannyXml.Element("minAgeOfKid").Value);
+               // nanny._maxMonthAge = Int32.Parse(NannyXml.Element("maxAgeOfKid").Value);
+               // nanny._acceptByHour = Boolean.Parse(NannyXml.Element("doesWorkPerHour").Value);
+               // nanny._isTamatNanny = Boolean.Parse(NannyXml.Element("IsTamat").Value);
+               // nanny._rateByHour = Int32.Parse(NannyXml.Element("hourWage").Value);
+               // nanny._rateByMonth = Int32.Parse(NannyXml.Element("monthlyWage").Value);
+               // nanny._recommendation = NannyXml.Element("recommendations").Value;
+                
+                
+               // nanny._workDays = (from e in NannyXml.Element("daysOfWork").Elements("Days")
+               //                    select Boolean.Parse(e.Value)).ToArray();
+
+               
+               // nanny._startHour = (from d in NannyXml.Element("StartHour").Elements("Days")
+               //                     select DateTime.Parse(d.Value)).ToArray();
+
+               //nanny._endHour = (from d in NannyXml.Element("EndHour").Elements("Days")
+               //                  select DateTime.Parse(d.Value)).ToArray();
+
             };
             return nanny;
         }
