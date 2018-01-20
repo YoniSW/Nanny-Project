@@ -55,7 +55,7 @@ namespace PL
         {
             try
             {
-                bl.deleteNanny(int.Parse(textBox.Text));
+                bl.deleteNanny(DelNan._nannyID);
                 MessageBox.Show("Nanny was deleted successfully!");
                 Close();
             }

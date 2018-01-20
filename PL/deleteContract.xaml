@@ -18,7 +18,7 @@
         </Grid.RowDefinitions>
         <Label x:Name ="label" Content="Please choose Contract ID you wish to delete" HorizontalAlignment="Left" Height="52" 
                Margin="186,87,0,0" VerticalAlignment="Top" Width="622" Grid.ColumnSpan="2" FontSize="28"/>
-        <TextBox x:Name ="textBox" HorizontalAlignment="Left"  Margin="304,70,0,0" Grid.Row="1" TextWrapping="Wrap" 
+        <ComboBox x:Name ="textBox" HorizontalAlignment="Left"  Margin="304,70,0,0" Grid.Row="1" SelectionChanged="textBox_SelectionChanged" 
                  Text="" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="91" Width="386"/>
         <Button x:Name ="button" Content="Delete!" HorizontalAlignment="Left" Margin="304,65,0,0" Grid.Row="2" 
                 VerticalAlignment="Top" Click="delete_Click" Grid.ColumnSpan="2" Height="118"  Width="386" BorderThickness="2"/>

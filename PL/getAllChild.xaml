@@ -8,7 +8,16 @@
         Title="getAllChild" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0,-1">
         <DataGrid x:Name ="allNanniesBox" HorizontalAlignment="Left" Height="252" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
-                  SelectionChanged="allNanniesBox_SelectionChanged"  IsReadOnly="True"  Background="LightGray" />
+                  SelectionChanged="allNanniesBox_SelectionChanged" AutoGenerateColumns="False"  IsReadOnly="True"  Background="LightGray" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding _fullName}"/>
+                <DataGridTextColumn Header="ID" Binding="{Binding _childID}"/>
+                <DataGridTextColumn Header="Birthday" Binding="{Binding _birthday}"/>
+                <DataGridTextColumn Header="Mom ID" Binding="{Binding _momID }"/>
+                <DataGridTextColumn Header="Special?" Binding="{Binding _isSpecialNeed }"/>
+                <DataGridTextColumn Header="What special needs" Binding="{Binding _specialNeeds}"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
         <Label Content="All children in database:" HorizontalAlignment="Left" Height="33" Margin="436,28,0,0" VerticalAlignment="Top" 
                Width="181" FontWeight="Bold" />
