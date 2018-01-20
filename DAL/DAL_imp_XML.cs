@@ -19,7 +19,7 @@ namespace DAL
         public static int uniqueContractID = 1;
 
 
-        #region Nanny
+        #region   Nanny  //is XML
 
 
         public Nanny getNanny(long thisID)//is XML 
@@ -37,7 +37,7 @@ namespace DAL
         public void addNanny(Nanny thisNanny)//is XML  
         {
             var index = (from n in XML_Source.Nannys.Elements()
-                         where Convert.ToInt32(n.Element("id").Value) == thisNanny._nannyID
+                         where Convert.ToInt64(n.Element("id").Value) == thisNanny._nannyID
                          select n).FirstOrDefault();
             // if FindIndex method returns -1 so thisNany doesn't exist
             if (index != null)
@@ -51,18 +51,7 @@ namespace DAL
             
         }
 
-        public Nanny getNanny(long thisID)     //is XML 
-        {
-            var thisNanny = (from n in XML_Source.Nannys.Elements()
-                             where Convert.ToInt64(n.Element("id").Value) == thisID
-                             select n).FirstOrDefault();
-            if (thisNanny == null)
-                throw new Exception("ID doesn't exist");
-
-
-            return thisNanny.toNanny();
-        }
-      
+            
         public void deleteNanny(long nanny)      //is XML   
         {
             XElement nannyElement = (from n in XML_Source.Nannys.Elements()
@@ -94,10 +83,27 @@ namespace DAL
         }
 
 
-        #endregion
+        #endregion    
 
-        #region Mother functions
+        #region Mother functions  //is XML
+              
 
+        public void addMother(Mother mother)      //is XML  
+        {
+            var temp = (from m in XML_Source.Mothers.Elements()
+                        where Convert.ToInt64(m.Element("id").Value) == mother._momID
+                        select m).FirstOrDefault();
+            if (temp != null)
+            {
+                throw new Exception("you are trying to add a existing mother.\n");
+            }
+            else
+            {     
+               
+                XML_Source.Mothers.Add(mother.toXML());
+                XML_Source.SaveMothers();
+            }
+        }
 
         public Mother getMom(long thisID)           // is XML
         {
@@ -109,25 +115,9 @@ namespace DAL
 
             return thisMom.toMother();
 
-            
-        }
-       
 
-        public void addMother(Mother mother)      //is XML  
-        {
-            var temp = (from m in XML_Source.Mothers.Elements()
-                        where Convert.ToInt32(m.Element("id").Value) == mother._momID
-                        select m).FirstOrDefault();
-            if (temp != null)
-            {
-                XML_Source.Mothers.Add(mother.toXML());
-                XML_Source.SaveMothers();
-            }
-            else
-                throw new Exception("you are trying to add a existing mother.\n");
         }
 
-    
 
         public void deleteMother(long thisMom)            //is XML  
         {
@@ -195,14 +185,37 @@ namespace DAL
             return thisChild.toChild();
         }
 
-        public void addChild(Child thisKid)
+        public void addChild(Child thisKid)   // is XML
         {
-            var index = DataSource.childList.FindIndex
-                (c => c._childID == thisKid._childID);
-            if (index != -1)
+            var index = (from n in XML_Source.Children.Elements()
+                         where Convert.ToInt64(n.Element("id").Value) == thisKid._childID
+                         select n).FirstOrDefault();
+            if (index != null)
                 throw new Exception("Child already exists in the system");
 
-            var childID = thisKid._childID;
+            //var momExist = (from n in XML_Source.Mothers.Elements()
+            //                where Convert.ToInt64(n.Element("id").Value) == thisKid._momID
+            //                select n).FirstOrDefault();
+
+            //if (momExist != null)
+            //{
+            //    throw new Exception("Mom's ID doesn't exist");
+            //}
+            else
+            {
+                XML_Source.Children.Add(thisKid.toXML());
+                XML_Source.SaveChildren();
+            }
+
+
+
+
+            // do not forget to delet a contract with the child in it!!!
+
+
+
+
+            //var childID = thisKid._childID;
 
             // add after XML database is added
 
@@ -211,15 +224,15 @@ namespace DAL
             //if(momHasThisID)
             //throw new Exception("we have a mom with same ID!");
 
-            var thisMom = thisKid._momID;
+            //var thisMom = thisKid._momID;
 
-            var momExist = DataSource.motherList.Any
-                           (c => c._momID == thisMom);
-            if (!momExist)
-                throw new Exception("Mom's ID doesn't exist");
+            //var momExist = DataSource.motherList.Any
+            //               (c => c._momID == thisMom);
 
-            DataSource.childList.Add(thisKid);
+
+
         }
+       
 
         public void deleteChild(long thisKid)
         {

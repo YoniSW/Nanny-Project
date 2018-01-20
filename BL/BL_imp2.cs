@@ -1563,6 +1563,7 @@ namespace BL
                 _birthday = new DateTime(2017, 8, 26),
                 _isSpecialNeed = false,
             };
+
             Child moty = new Child
             {
                 _childID = _childIDArray[1],
@@ -1571,6 +1572,7 @@ namespace BL
                 _birthday = new DateTime(2017, 9, 8),
                 _isSpecialNeed = false,
             };
+
             Child eti = new Child
             {
                 _childID = _childIDArray[2],
@@ -1579,6 +1581,7 @@ namespace BL
                 _birthday = new DateTime(2017, 5, 29),
                 _isSpecialNeed = false,
             };
+
             Child miri = new Child
             {
                 _childID = _childIDArray[3],
@@ -1587,6 +1590,7 @@ namespace BL
                 _birthday = new DateTime(2017, 1, 22),
                 _isSpecialNeed = false,
             };
+
             Child david = new Child
             {
                 _childID = _childIDArray[4],
@@ -1595,6 +1599,7 @@ namespace BL
                 _birthday = new DateTime(2017, 2, 9),
                 _isSpecialNeed = false,
             };
+
             Child yael = new Child
             {
                 _childID = _childIDArray[5],
@@ -1603,6 +1608,7 @@ namespace BL
                 _birthday = new DateTime(2017, 2, 24),
                 _isSpecialNeed = false,
             };
+
             Child naama = new Child
             {
                 _childID = _childIDArray[6],
@@ -1611,6 +1617,7 @@ namespace BL
                 _birthday = new DateTime(2017, 3, 1),
                 _isSpecialNeed = false,
             };
+
             Child hila = new Child
             {
                 _childID = _childIDArray[7],
@@ -1619,6 +1626,7 @@ namespace BL
                 _birthday = new DateTime(2017, 2, 2),
                 _isSpecialNeed = false,
             };
+
             Child michal = new Child
             {
                 _childID = _childIDArray[8],
@@ -1627,6 +1635,7 @@ namespace BL
                 _birthday = new DateTime(2017, 5, 29),
                 _isSpecialNeed = false,
             };
+
             Child adi = new Child
             {
                 _childID = _childIDArray[9],
@@ -1635,6 +1644,7 @@ namespace BL
                 _birthday = new DateTime(2017, 1, 9),
                 _isSpecialNeed = false,
             };
+
             Child reut = new Child
             {
                 _childID = _childIDArray[10],
@@ -1643,6 +1653,7 @@ namespace BL
                 _birthday = new DateTime(2017, 4, 2),
                 _isSpecialNeed = false,
             };
+
             Child efrat = new Child
             {
                 _childID = _childIDArray[11],
@@ -1651,6 +1662,7 @@ namespace BL
                 _birthday = new DateTime(2017, 4, 12),
                 _isSpecialNeed = false,
             };
+
             Child noa = new Child
             {
                 _childID = _childIDArray[12],
@@ -1659,6 +1671,7 @@ namespace BL
                 _birthday = new DateTime(2017, 5, 1),
                 _isSpecialNeed = false,
             };
+
             Child shira = new Child
             {
                 _childID = _childIDArray[13],
@@ -1667,6 +1680,7 @@ namespace BL
                 _birthday = new DateTime(2017, 5, 29),
                 _isSpecialNeed = false,
             };
+
             Child Moriya = new Child
             {
                 _childID = _childIDArray[14],
@@ -1675,6 +1689,7 @@ namespace BL
                 _birthday = new DateTime(2017, 6, 2),
                 _isSpecialNeed = false,
             };
+
             Child sari = new Child
             {
                 _childID = _childIDArray[15],
@@ -1683,6 +1698,7 @@ namespace BL
                 _birthday = new DateTime(2017, 6, 9),
                 _isSpecialNeed = false,
             };
+
             Child yehuda = new Child
             {
                 _childID = _childIDArray[16],
@@ -1691,6 +1707,7 @@ namespace BL
                 _birthday = new DateTime(2017, 6, 29),
                 _isSpecialNeed = false,
             };
+
             Child itsik = new Child
             {
                 _childID = _childIDArray[17],
@@ -1699,6 +1716,7 @@ namespace BL
                 _birthday = new DateTime(2017, 8, 11),
                 _isSpecialNeed = false,
             };
+
             Child pinchas = new Child
             {
                 _childID = _childIDArray[18],
@@ -1707,6 +1725,7 @@ namespace BL
                 _birthday = new DateTime(2017, 7, 3),
                 _isSpecialNeed = false,
             };
+
             Child yanki = new Child
             {
                 _childID = _childIDArray[19],
@@ -1715,6 +1734,7 @@ namespace BL
                 _birthday = new DateTime(2017, 6, 2),
                 _isSpecialNeed = false,
             };
+
             Child eliyau = new Child
             {
                 _childID = _childIDArray[20],
@@ -1723,6 +1743,7 @@ namespace BL
                 _birthday = new DateTime(2017, 6, 2),
                 _isSpecialNeed = false,
             };
+
             Child eli = new Child
             {
                 _childID = _childIDArray[21],
@@ -1731,6 +1752,7 @@ namespace BL
                 _birthday = new DateTime(2017, 9, 9),
                 _isSpecialNeed = false,
             };
+
             Child yosef = new Child
             {
                 _childID = _childIDArray[22],
@@ -1739,6 +1761,7 @@ namespace BL
                 _birthday = new DateTime(2017, 10, 22),
                 _isSpecialNeed = false,
             };
+
             Child ari = new Child
             {
                 _childID = _childIDArray[23],
@@ -1747,6 +1770,7 @@ namespace BL
                 _birthday = new DateTime(2017, 11, 29),
                 _isSpecialNeed = false,
             };
+
             Child shuki = new Child
             {
                 _childID = _childIDArray[24],
@@ -1755,6 +1779,7 @@ namespace BL
                 _birthday = new DateTime(2017, 12, 2),
                 _isSpecialNeed = false,
             };
+
             Child itamar = new Child
             {
                 _childID = _childIDArray[25],
@@ -1763,6 +1788,7 @@ namespace BL
                 _birthday = new DateTime(2017, 5, 2),
                 _isSpecialNeed = false,
             };
+
             Child yoni = new Child
             {
                 _childID = _childIDArray[26],
@@ -1771,6 +1797,7 @@ namespace BL
                 _birthday = new DateTime(2017, 10, 14),
                 _isSpecialNeed = false,
             };
+
             Child moishi = new Child
             {
                 _childID = _childIDArray[27],
@@ -1779,6 +1806,7 @@ namespace BL
                 _birthday = new DateTime(2017, 3, 19),
                 _isSpecialNeed = false,
             };
+
             Child avreimi = new Child
             {
                 _childID = _childIDArray[28],
@@ -1787,6 +1815,7 @@ namespace BL
                 _birthday = new DateTime(2017, 11, 9),
                 _isSpecialNeed = false,
             };
+
             Child yosi = new Child
             {
                 _childID = _childIDArray[29],
@@ -1795,6 +1824,7 @@ namespace BL
                 _birthday = new DateTime(2017, 12, 2),
                 _isSpecialNeed = false,
             };
+
             try
             {
                 dal.addChild(nadav);

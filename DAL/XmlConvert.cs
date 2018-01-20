@@ -64,13 +64,10 @@ namespace DAL
                 new XElement("address", mother._momAdress),
                 new XElement("locationNanny", mother._locationOfNanny),
                 new XElement("isLookingForNanny", mother._isLookingForNanny),
-               // new XElement("StartHour", mother._startHour),
-               //new XElement("EndHour", mother._endHour),
-               //new XElement("motherSchedule", mother._scheduleMom),
-
-                new XElement("motherSchedule",
-                    (from d in mother._scheduleMom
-                     select new XElement("Days", d.ToString()))),
+             
+                //new XElement("motherSchedule",
+                //    (from d in mother._scheduleMom
+                //     select new XElement("Days", d.ToString()))),
 
                 new XElement("StartHour",
                     (from d in mother._startHour
@@ -81,8 +78,7 @@ namespace DAL
 
                 new XElement("daysOfMother",
                     (from d in mother._daysRequestMom
-                     select new XElement("Days", d.ToString())
-                    ))                   
+                     select new XElement("Days", d.ToString())))                   
 
             );
         }
@@ -248,26 +244,24 @@ namespace DAL
 
             mother = new Mother
             {
-                _momID = Int32.Parse(motherXml.Element("id").Value),
+                _momID = Int32.Parse(motherXml.Element("id").Value),               
                 _momLname = motherXml.Element("familyName").Value,
                 _momFname = motherXml.Element("firstName").Value,
                 _momPhone = Int32.Parse(motherXml.Element("phoneNumber").Value),
                 _momAdress = motherXml.Element("address").Value,
-                _locationOfNanny = motherXml.Element("addressRadius").Value,
+                _locationOfNanny = motherXml.Element("locationNanny").Value,
                 _isLookingForNanny=Boolean.Parse(motherXml.Element("isLookingForNanny").Value),
 
-                _daysRequestMom = (from e in motherXml.Element("daysOfWork").Elements("Days")
+                _daysRequestMom = (from e in motherXml.Element("daysOfMother").Elements("Days")
                              select Boolean.Parse(e.Value)).ToArray(),
 
-                _scheduleMom = (from d in motherXml.Element("motherSchedule").Elements("Day")
-                                select d.toSchedule()).ToArray(),
+                //_scheduleMom = (from d in motherXml.Element("motherSchedule").Elements("Days")
+                //                select d.toSchedule()).ToArray(),
 
-                //  needs to be checked how to convert schedule to string' and back
-
-                _startHour = (from d in motherXml.Element("StartHour").Elements("Day")
+               _startHour = (from d in motherXml.Element("StartHour").Elements("Days")
                               select DateTime.Parse(d.Value)).ToArray(),
 
-                _endHour = (from d in motherXml.Element("EndHour").Elements("Day")
+                _endHour = (from d in motherXml.Element("EndHour").Elements("Days")
                             select DateTime.Parse(d.Value)).ToArray(),
 
                 
@@ -276,23 +270,23 @@ namespace DAL
             return mother;
         }
 
-        public static Schedule toSchedule(this XElement ScheduleXml)
-        {
-            Schedule sched = null;
+        //public static Schedule toSchedule(this XElement ScheduleXml)
+        //{
+        //    Schedule sched = null;
 
-            if (ScheduleXml == null)
-            {
-                return sched;
-            }
+        //    if (ScheduleXml == null)
+        //    {
+        //        return sched;
+        //    }
 
-            sched = new Schedule
-            {
-                begin = DateTime.Parse(ScheduleXml.Value),
-                end = DateTime.Parse(ScheduleXml.Value)
-            };
+        //    sched = new Schedule
+        //    {
+        //        begin = DateTime.Parse(ScheduleXml.Value),
+        //        end = DateTime.Parse(ScheduleXml.Value)
+        //    };
 
-            return sched;
-        }
+        //    return sched;
+        //}
        
 
 
