@@ -108,7 +108,7 @@ namespace DAL
                 new XElement("numberOfContract", contract._contractID),
                 new XElement("NannysId", contract._nannyID),
                 new XElement("childId", contract._childID),
-                new XElement("isSingedContract", contract._didSign),
+                new XElement("isSignedContract", contract._didSign),
                 new XElement("moneyPerHour", contract._ratePerHour),
                 new XElement("monthSalary", contract._ratePerMonth),
                 new XElement("isHoureContract", contract._isByHour),
@@ -323,7 +323,7 @@ namespace DAL
                     _contractID = Int32.Parse(contractXml.Element("numberOfContract").Value),
                     _nannyID = Int32.Parse(contractXml.Element("NannysId").Value),
                     _childID = Int32.Parse(contractXml.Element("childId").Value),
-                    _didSign = Boolean.Parse(contractXml.Element("isSingedContract").Value),
+                    _didSign = Boolean.Parse(contractXml.Element("isSignedContract").Value),
                     _ratePerHour = double.Parse(contractXml.Element("moneyPerHour").Value),
                     _ratePerMonth = double.Parse(contractXml.Element("monthSalary").Value),
                     _isByHour = Boolean.Parse(contractXml.Element("isHourContract").Value),
@@ -338,6 +338,3 @@ namespace DAL
         
     }
 }
-
- 
- 
