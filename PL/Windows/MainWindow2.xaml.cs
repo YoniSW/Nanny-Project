@@ -28,27 +28,33 @@ namespace PL
         {
             //new NannyWindow().Show();
             Window Tabs = new MainWindow(0);
-            Tabs.ShowDialog();
             Close();
+            Tabs.ShowDialog();
+           
+            
         }
 
         private void Motherbutton_Click(object sender, RoutedEventArgs e)
         {
             Window Tabs = new MainWindow(1);
-            Tabs.ShowDialog();
             Close();
+            Tabs.ShowDialog();
+            
         }
         private void ChildButton_Click(object sender, RoutedEventArgs e)
         {
             Window Tabs = new MainWindow(2);
-            Tabs.ShowDialog();
             Close();
+            Tabs.ShowDialog();
+            
         }
         private void ContractButton_Click(object sender, RoutedEventArgs e)
         {
             Window Tabs = new MainWindow(3);
             Tabs.ShowDialog();
             Close();
+
+            
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)

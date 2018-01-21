@@ -8,6 +8,7 @@
         mc:Ignorable="d"
         Title="Add contract" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
 
+
     <Grid x:Name="ContractGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="473*"/>
@@ -195,6 +196,32 @@
                 </Grid.RowDefinitions>
                 <Label Content="Nanny ID" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="60"/>
                 <TextBox x:Name="_nannyIDTextBox1" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="18,3,0,5" Grid.Row="0" Text="{Binding _nannyID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="113"/>
+            </Grid>
+            <Grid x:Name="grid14" HorizontalAlignment="Left" Margin="230,55,0,0" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" MinWidth="89"/>
+                    <ColumnDefinition Width="Auto" MinWidth="123"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="Rate Per/hour" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="83"/>
+                <TextBox x:Name="_ratePerHourTextBox1" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="10,3,0,5" 
+                         Grid.Row="0" Text="{Binding _ratePerHour, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                         VerticalAlignment="Center" Width="47"/>
+            </Grid>
+            <Grid x:Name="grid15"  HorizontalAlignment="Left" Margin="230,90,0,0" VerticalAlignment="Top" Width="175">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="Rate Per/month" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+                <TextBox x:Name="_ratePerMonthTextBox1" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="0,3,-4,5" 
+                         Grid.Row="0" Text="{Binding _ratePerMonth, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                         VerticalAlignment="Center" Width="47" RenderTransformOrigin="0.277,0.583"/>
             </Grid>
         </Grid>
         <ComboBox x:Name="momBox" Grid.Column="1" HorizontalAlignment="Left" Margin="23,103,0,0" VerticalAlignment="Top" Width="143"

@@ -233,6 +233,8 @@ namespace PL
         }
 
 
+
+
         //private void _ratePerHourLabel_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         //{
         //    _ratePerHourLabel.Visibility = Visibility.Visible;
