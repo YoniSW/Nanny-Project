@@ -41,6 +41,7 @@ namespace DAL
             var deletecode = (from n in XML_Source.Passwords.Elements()
                         select n).First();
             deletecode.Remove();            // clears the password existing
+            XML_Source.SavePasswords();
             XML_Source.Passwords.Add(code.toXMLPassword());
             XML_Source.SavePasswords();
         }
