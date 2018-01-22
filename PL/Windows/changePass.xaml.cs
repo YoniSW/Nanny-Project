@@ -40,6 +40,7 @@ namespace PL.Windows
                   throw new Exception("New password is not identical");
 
                 bl.changePass(newPass1.Text);
+
                 MessageBox.Show("Password updated successfully");
 
                 Close();

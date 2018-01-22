@@ -16,7 +16,7 @@ namespace DAL
         public static Idal getDal()
         {
           return new Dal_imp();
-        //  return new DAL_imp_XML();
+        //return new DAL_imp_XML();
         }
     } 
 }
