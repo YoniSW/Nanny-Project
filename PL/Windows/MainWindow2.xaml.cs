@@ -20,8 +20,12 @@ namespace PL
     /// <summary>
     /// Interaction logic for MainWindow2.xaml
     /// </summary>
+    /// 
+    
+
     public partial class MainWindow2 : Window
     {
+
         public MainWindow2()
         {
             InitializeComponent();
@@ -59,6 +63,7 @@ namespace PL
 
         private void Admin_Click(object sender, RoutedEventArgs e)
         {
+            
             var pass = new Password();
             pass.ShowDialog();
 

@@ -19,23 +19,31 @@ namespace PL.Windows
     /// </summary>
     public partial class changePass : Window
     {
+        public BL.IBL bl;
+
         public changePass()
         {
             InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //if(oldPass.Text != _password)
-            //    "ERROR"
+           
+
             try
             {
+                if (oldPass.Text != bl.getPass())
+                    throw new Exception("Old password is wrong");
+
                 if (newPass1.Text != newPass2.Text)
                   throw new Exception("New password is not identical");
 
+                bl.changePass(newPass1.Text);
+                MessageBox.Show("Password updated successfully");
+
                 Close();
 
-                
             }
             catch (Exception ex)
             {

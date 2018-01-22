@@ -19,17 +19,18 @@ namespace PL.Windows
     /// </summary>
     public partial class Password : Window
     {
-        public static string _password = "1234";
-
+        public BL.IBL bl;
         public Password()
         {
             InitializeComponent();
+            bl = BL.FactoryBL.GetBL();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             
-            if (password.Text == _password)
+            if (password.Text == bl.getPass())
             {
                 Close();
                 var admin = new Admin();
