@@ -1,21 +1,22 @@
-﻿//using BE;
-//using DS;
-//using System;
-//using System.CodeDom;
-//using System.Collections.Generic;
-//using System.Collections;
-//using System.Diagnostics.CodeAnalysis;
-//using System.Linq;
-//using System.Xml.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-////using  static DS.XML_Source;
+﻿using BE;
+using DS;
+using System;
+using System.CodeDom;
+using System.Collections.Generic;
+using System.Collections;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Xml.Linq;
+using System.Text;
+using System.Threading.Tasks;
+//using  static DS.XML_Source;
 
 
 namespace DAL
 {
     internal class DAL_imp_XML : Idal
     {
+        #region password //is XML
         public static int uniqueContractID = 1;
         public static string _password = "1234";
 
@@ -45,6 +46,8 @@ namespace DAL
             XML_Source.Passwords.Add(code.toXMLPassword());
             XML_Source.SavePasswords();
         }
+
+#endregion
 
         #region   Nanny  //is XML
 
@@ -321,7 +324,6 @@ namespace DAL
 
         #endregion
 
-
         #region contract functions  // is XML
 
         public void addContract(Contract thisContract)
@@ -458,7 +460,6 @@ namespace DAL
             index.Remove();
         }
         #endregion
-
 
         #region IEnumerable methods
 
