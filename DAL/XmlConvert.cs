@@ -9,6 +9,18 @@ namespace DAL
 {
     public static class XMLConverter
     {
+       
+        public static XElement toXMLPassword(this string code)
+        {
+            return new XElement("Kookies",
+                 new XElement("password", code));
+        }
+        public static string toPassword(this XElement KookieXml)
+        {
+            var code = KookieXml.Element("password").Value;
+            return code;
+        }
+
 
         public static XElement toXML(this Nanny nanny)
         {
@@ -244,10 +256,10 @@ namespace DAL
 
             mother = new Mother
             {
-                _momID = Int32.Parse(motherXml.Element("id").Value),               
+                _momID = Int64.Parse(motherXml.Element("id").Value),               
                 _momLname = motherXml.Element("familyName").Value,
                 _momFname = motherXml.Element("firstName").Value,
-                _momPhone = Int32.Parse(motherXml.Element("phoneNumber").Value),
+                _momPhone = Int64.Parse(motherXml.Element("phoneNumber").Value),
                 _momAdress = motherXml.Element("address").Value,
                 _locationOfNanny = motherXml.Element("locationNanny").Value,
                 _isLookingForNanny=Boolean.Parse(motherXml.Element("isLookingForNanny").Value),
@@ -287,8 +299,8 @@ namespace DAL
 
         //    return sched;
         //}
-       
 
+       
 
         public static Child toChild(this XElement childXml)
         {

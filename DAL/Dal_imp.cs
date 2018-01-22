@@ -27,6 +27,11 @@ namespace DAL
             new DataSource();
         }
 
+        public void addPass()
+        {
+            _password = "1234";
+        }
+
         public string getPass()
         {
             return _password;

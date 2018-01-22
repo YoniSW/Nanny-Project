@@ -11,6 +11,7 @@ namespace BL
     // the Bl.imp will inherit those declerations
     public interface IBL
     {
+        void addPass();
         string getPass();
         void changePass(string s);
         // nany function declarations

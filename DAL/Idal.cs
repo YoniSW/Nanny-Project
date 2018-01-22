@@ -14,7 +14,7 @@ namespace DAL
 
     public interface Idal
     {
-
+        void addPass();
         string getPass();
         void changePass(string s);
 

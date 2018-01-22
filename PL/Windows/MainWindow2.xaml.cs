@@ -29,6 +29,7 @@ namespace PL
         public MainWindow2()
         {
             InitializeComponent();
+           
         }
 
         private void NannyButton_Click(object sender, RoutedEventArgs e)
