@@ -111,13 +111,13 @@ namespace PL
                 if (nanny._acceptByHour)
                     addCont._ratePerHour = bl.getUpdatedRate(addCont._childID, nanny._nannyID, true);
 
-                else
+               
                     addCont._ratePerHour = bl.getUpdatedRate(addCont._childID, nanny._nannyID, false);
 
                 addCont._nannyID = nanny._nannyID;
 
-                _nannyIDTextBox.Text = Convert.ToString(nanny._nannyID);
-                _isByHourCheckBox.IsChecked = nanny._acceptByHour;
+                //_nannyIDTextBox.Text = Convert.ToString(nanny._nannyID);
+                //_isByHourCheckBox.IsChecked = nanny._acceptByHour;
             }
         }
 
@@ -231,6 +231,8 @@ namespace PL
         {
             Addbutton.Visibility = Visibility.Hidden;
         }
+
+
 
 
         //private void _ratePerHourLabel_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)

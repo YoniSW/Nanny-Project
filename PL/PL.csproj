@@ -103,6 +103,12 @@
     <Compile Include="getContracts.xaml.cs">
       <DependentUpon>getContracts.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\changePass.xaml.cs">
+      <DependentUpon>changePass.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\MainWindow2.xaml.cs">
       <DependentUpon>MainWindow2.xaml</DependentUpon>
     </Compile>
@@ -117,6 +123,9 @@
     </Compile>
     <Compile Include="updateNanny.xaml.cs">
       <DependentUpon>updateNanny.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Password.xaml.cs">
+      <DependentUpon>Password.xaml</DependentUpon>
     </Compile>
     <Page Include="addChild.xaml">
       <SubType>Designer</SubType>
@@ -166,6 +175,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\changePass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -201,6 +218,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="updateNanny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Password.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

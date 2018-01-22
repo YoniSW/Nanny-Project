@@ -17,6 +17,8 @@ namespace DAL
     internal class Dal_imp : Idal
     {
         public static int uniqueContractID = 1;
+        public static string _password = "1234";
+
 
         //private static Dal_imp dal = new Dal_imp();
 
@@ -25,6 +27,18 @@ namespace DAL
             new DataSource();
         }
 
+        public string getPass()
+        {
+            return _password;
+        }
+
+        public void changePass(string s)
+        {
+            if(s.Length < 4)
+                throw new Exception("Password must be minimum 4 characters!");
+
+            _password = s;
+        }
 
         #region Nanny functions
         public Nanny getNanny(long thisID)

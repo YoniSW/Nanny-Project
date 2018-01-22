@@ -7,8 +7,23 @@
         mc:Ignorable="d"
         Title="getContracts" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0,-1">
-        <DataGrid x:Name ="allNanniesBox" HorizontalAlignment="Left" Height="252" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
-                  SelectionChanged="allNanniesBox_SelectionChanged"  IsReadOnly="True"  Background="LightGray" />
+        <DataGrid x:Name ="allNanniesBox" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="252" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
+                  SelectionChanged="allNanniesBox_SelectionChanged"  IsReadOnly="True"  Background="LightGray" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Contract ID" Binding="{Binding _contractID}"/>
+                <DataGridTextColumn Header="Nanny name" Binding="{Binding _fullName }"/>
+                <DataGridTextColumn Header="Nanny ID" Binding="{Binding _nannyID}"/>
+                <DataGridTextColumn Header="Nanny Phone" Binding="{Binding _nannyPhone}"/>
+                <DataGridTextColumn Header="Nanny name" Binding="{Binding _fullName }"/>
+                <DataGridTextColumn Header="Mom ID" Binding="{Binding _momID}"/>
+                <DataGridTextColumn Header="Nanny Phone" Binding="{Binding _momPhone}"/>
+                <DataGridTextColumn Header="Rate by hour?" Binding="{Binding _isByHour}"/>
+
+                <DataGridTextColumn Header="Child name" Binding="{Binding _fullName}"/>
+                <DataGridTextColumn Header="Child ID" Binding="{Binding _childID}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
 
         <Label Content="All contracts in database:" HorizontalAlignment="Left" Height="33" Margin="416,33,0,0" VerticalAlignment="Top" 
                Width="181" FontWeight="Bold" />

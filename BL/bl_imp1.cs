@@ -17,6 +17,7 @@ namespace BL
      partial class Bl_imp : IBL
     {
         DAL.Idal dal;
+       // public static string _password = "1234";
         static Random r = new Random();
         public Bl_imp()
         {
@@ -29,6 +30,16 @@ namespace BL
             ChildInitilize();
 
 
+        }
+
+        public string getPass()
+        {
+            return dal.getPass();
+        }
+
+        public void changePass(string s)
+        {
+            dal.changePass(s);
         }
 
         #region mother metods

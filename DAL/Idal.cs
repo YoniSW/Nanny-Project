@@ -15,6 +15,9 @@ namespace DAL
     public interface Idal
     {
 
+        string getPass();
+        void changePass(string s);
+
       //  nany function declarations
         void addNanny(Nanny nanny);
         void deleteNanny(long ID);
