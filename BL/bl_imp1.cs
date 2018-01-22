@@ -31,8 +31,11 @@ namespace BL
 
 
         }
-
-        public string getPass()
+        public void addPass()
+        {
+            dal.addPass();
+        }
+            public string getPass()
         {
             return dal.getPass();
         }

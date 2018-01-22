@@ -11,8 +11,11 @@ namespace DS
     public static class XML_Source
     {
         private static string solutionDirectory = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
-
+        
         private static string filePath = System.IO.Path.Combine(solutionDirectory, "DS", "dataSourceXML");
+
+        private static XElement passwordRoot = null;
+        static string passwordPath = Path.Combine(filePath, "KookieXML.xml");
 
         private static XElement motherRoot = null;
         static string motherPath = Path.Combine(filePath, "MothersXML.xml");
@@ -57,7 +60,6 @@ namespace DS
             if (!File.Exists(childPath))
             {
                 CreateFile("Children", childPath);
-
             }
             else
             {
@@ -67,7 +69,14 @@ namespace DS
             if (!File.Exists(nannyPath))
             {
                 CreateFile("Nannys", nannyPath);
-
+            }
+            else
+            {
+                nannyRoot = LoadData(nannyPath);
+            }
+            if (!File.Exists(passwordPath))
+            {
+                CreateFile("Kookies", passwordPath);
             }
             else
             {
@@ -100,10 +109,11 @@ namespace DS
              nannyRoot.Save(nannyPath);
         }
 
-        //public static void Add()
-        //{
-        //    nannyRoot.Add(Nannys);
-        //}
+        public static void SavePasswords()
+        {
+            passwordRoot.Save(passwordPath);
+        }
+        
 
         public static XElement Nannys
         {
@@ -113,6 +123,15 @@ namespace DS
                 return nannyRoot;
             }
         }
+        public static XElement Passwords
+        {
+            get
+            {
+                passwordRoot = LoadData(passwordPath);
+                return passwordRoot;
+            }
+        }
+
 
         public static XElement Mothers
         {
