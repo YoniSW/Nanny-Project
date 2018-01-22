@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BL;
+using BE;
+using PL.Windows;
 
 namespace PL
 {
@@ -26,12 +29,9 @@ namespace PL
 
         private void NannyButton_Click(object sender, RoutedEventArgs e)
         {
-            //new NannyWindow().Show();
             Window Tabs = new MainWindow(0);
             Close();
-            Tabs.ShowDialog();
-           
-            
+            Tabs.ShowDialog();   
         }
 
         private void Motherbutton_Click(object sender, RoutedEventArgs e)
@@ -57,9 +57,19 @@ namespace PL
             
         }
 
+        private void Admin_Click(object sender, RoutedEventArgs e)
+        {
+            var pass = new Password();
+            pass.ShowDialog();
+
+        }
+
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
+
             Close();
         }
+
+
     }
 }
