@@ -17,6 +17,7 @@ namespace DAL
     internal class Dal_imp : Idal
     {
         public static int uniqueContractID = 1;
+        
 
         //private static Dal_imp dal = new Dal_imp();
 

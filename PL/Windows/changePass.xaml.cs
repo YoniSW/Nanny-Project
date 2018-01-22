@@ -15,28 +15,35 @@ using System.Windows.Shapes;
 namespace PL.Windows
 {
     /// <summary>
-    /// Interaction logic for Password.xaml
+    /// Interaction logic for changePass.xaml
     /// </summary>
-    public partial class Password : Window
+    public partial class changePass : Window
     {
-        public static string _password = "1234";
-
-        public Password()
+        public changePass()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-            if (password.Text == _password)
+            //if(oldPass.Text != _password)
+            //    "ERROR"
+            try
             {
+                if (newPass1.Text != newPass2.Text)
+                  throw new Exception("New password is not identical");
+
                 Close();
-                var admin = new Admin();
-                admin.ShowDialog();
+
+                
             }
-            else
-                MessageBox.Show("Password is wrong!");
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
         }
     }
 }

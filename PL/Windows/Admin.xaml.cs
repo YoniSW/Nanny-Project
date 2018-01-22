@@ -73,7 +73,8 @@ namespace PL.Windows
 
         private void changePass_Click(object sender, RoutedEventArgs e)
         {
-
+            var change = new changePass();
+            change.Show();
         }
     }
 }
