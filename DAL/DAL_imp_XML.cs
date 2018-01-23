@@ -326,87 +326,90 @@ namespace DAL
 
         #region contract functions  // is XML
 
-        public void addContract(Contract thisContract)
-        {
-
-            var index = DataSource.contractList.FindIndex
-                (c => c._childID == thisContract._childID &&
-            c._nannyID == thisContract._nannyID);
-
-            if (index != -1)
-                throw new Exception("Contract already exists in the system");
-
-            // else - let's start creating a new contract
-
-            // 1. add a child
-            Child thisChild = getChild(thisContract._childID);
-            // 2. add a mother according to thisChild
-            Mother thisMom = getMom(thisChild._momID);
-
-            // 3. check that mother exists
-            var index2 = DataSource.motherList.FindIndex
-                (m => m._momID == thisMom._momID);
-            if (index2 == -1)
-                throw new Exception("Mother doesn't exist in the system");
-
-            // 4. add a nanny
-            Nanny thisNanny = getNanny(thisContract._nannyID);
-
-            // 5. check nanny exists
-            var index3 = DataSource.nannyList.FindIndex
-                (n => n._nannyID == thisNanny._nannyID);
-            if (index3 == -1)
-                throw new Exception("Nanny doesn't exist in the system");
-
-            // 6. add to thisContract an unique ID
-            thisContract._contractID = uniqueContractID++;
-
-            // 7. add thisContract to our contractLint
-            DataSource.contractList.Add(thisContract);
-        }
-
-        //public void addContract(Contract thisContract)  // is XML
+        //public void addContract(Contract thisContract)
         //{
 
-        //    var index = (from n in XML_Source.Contracts.Elements()
-        //                 where Convert.ToInt64(n.Element("id").Value) == thisContract._nannyID
-        //                 select n).FirstOrDefault();
+        //    var index = DataSource.contractList.FindIndex
+        //        (c => c._childID == thisContract._childID &&
+        //    c._nannyID == thisContract._nannyID);
 
-        //    if (index != null)
+        //    if (index != -1)
         //        throw new Exception("Contract already exists in the system");
 
         //    // else - let's start creating a new contract
 
         //    // 1. add a child
         //    Child thisChild = getChild(thisContract._childID);
-
         //    // 2. add a mother according to thisChild
-        //    Mother thisMother = getMom(thisChild._momID);
+        //    Mother thisMom = getMom(thisChild._momID);
 
-        //    var index2 = (from n in XML_Source.Mothers.Elements()
-        //                 where Convert.ToInt64(n.Element("id").Value) == thisMother._momID
-        //                 select n).FirstOrDefault();
-
-        //    if (index2 == null)
+        //    // 3. check that mother exists
+        //    var index2 = DataSource.motherList.FindIndex
+        //        (m => m._momID == thisMom._momID);
+        //    if (index2 == -1)
         //        throw new Exception("Mother doesn't exist in the system");
 
         //    // 4. add a nanny
         //    Nanny thisNanny = getNanny(thisContract._nannyID);
 
         //    // 5. check nanny exists
-        //    var index3 = (from n in XML_Source.Nannys.Elements()
-        //                  where Convert.ToInt64(n.Element("id").Value) == thisNanny._nannyID
-        //                  select n).FirstOrDefault();
-
-        //    if (index3 == null)
+        //    var index3 = DataSource.nannyList.FindIndex
+        //        (n => n._nannyID == thisNanny._nannyID);
+        //    if (index3 == -1)
         //        throw new Exception("Nanny doesn't exist in the system");
 
         //    // 6. add to thisContract an unique ID
-        //    thisContract._contractID = ++uniqueContractID;
+        //    thisContract._contractID = uniqueContractID++;
 
         //    // 7. add thisContract to our contractLint
-        //    XML_Source.Contracts.Add(thisContract);
+        //    DataSource.contractList.Add(thisContract);
         //}
+
+        public void addContract(Contract thisContract)  // is XML
+        {
+
+            var index = (from n in XML_Source.Contracts.Elements()
+                         where Convert.ToInt64(n.Element("NannysId").Value) == thisContract._nannyID
+                         select n).FirstOrDefault();
+            var temp = (from n in XML_Source.Contracts.Elements()
+                         where Convert.ToInt64(n.Element("childId").Value) == thisContract._childID
+                         select n).FirstOrDefault();
+
+            if ((index != null) && (temp != null))
+                throw new Exception("Contract already exists in the system");
+
+            // else - let's start creating a new contract
+
+            // 1. add a child
+            Child thisChild = getChild(thisContract._childID);
+
+            // 2. add a mother according to thisChild
+            Mother thisMother = getMom(thisChild._momID);
+
+            var index2 = (from n in XML_Source.Mothers.Elements()
+                          where Convert.ToInt64(n.Element("id").Value) == thisMother._momID
+                          select n).FirstOrDefault();
+
+            if (index2 == null)
+                throw new Exception("Mother doesn't exist in the system");
+
+            // 4. add a nanny
+            Nanny thisNanny = getNanny(thisContract._nannyID);
+
+            // 5. check nanny exists
+            var index3 = (from n in XML_Source.Nannys.Elements()
+                          where Convert.ToInt64(n.Element("id").Value) == thisNanny._nannyID
+                          select n).FirstOrDefault();
+
+            if (index3 == null)
+                throw new Exception("Nanny doesn't exist in the system");
+
+            // 6. add to thisContract an unique ID
+            thisContract._contractID = ++uniqueContractID;
+
+            // 7. add thisContract to our contractLint
+            XML_Source.Contracts.Add(thisContract);
+        }
 
         public Contract getContract(long id)    // is XML
         {
@@ -518,6 +521,11 @@ namespace DAL
             XElement root = XML_Source.Children;
             List<Child> result = new List<Child>();
 
+            if (Predicate!=null)
+            {
+                return result.Where(Predicate);
+            }
+
             foreach (var n in root.Elements("Child"))
             {
                 result.Add(n.toChild());
@@ -525,21 +533,60 @@ namespace DAL
             return result.AsEnumerable();
 
         }
-
 
         public IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null) // is XML but needed check
         {
+            //if (Predicate == null)
+            //    throw new Exception("Please send mother ID");
+            //var nothing = Predicate;
+            //return XML_Source.Children.(Predicate);
+
+            //var index = (from n in XML_Source.Children.Elements()
+            //             where Convert.ToInt64(n.Element("momsId").Value) == nothing
+            //             select n).FirstOrDefault();
+
             XElement root = XML_Source.Children;
-            List<Child> result = new List<Child>();
+            List<Child> result = new List<Child>();            
 
             foreach (var n in root.Elements("Child"))
-            {
+            {              
                 result.Add(n.toChild());
-            }
-            return result.AsEnumerable();
+            }          
 
+            if (Predicate == null)
+                return result;            
+            return result.Where(Predicate);
+            // return result.AsEnumerable();
 
         }
+
+        //public IEnumerable<Child> getKids(Func<Child, bool> Predicate = null)
+        //{
+        //    LoadData("child");
+        //    List<Child> kidsList;
+        //    try
+        //    {
+        //        kidsList = (from child in childFile.Elements()
+        //                    select new Child()
+        //                    {
+        //                        idMom = long.Parse(child.Element("idMom").Value),
+        //                        idChild = long.Parse(child.Element("idChild").Value),
+        //                        firstName = child.Element("name").Element("firstName").Value,
+        //                        lastName = child.Element("name").Element("lastName").Value,
+        //                        birthdayKid = DateTime.Parse(child.Element("birthday").Value),
+        //                        isSpecialNeed = bool.Parse(child.Element("isSpecial").Value),
+        //                        specialNeeds = child.Element("needs").Value,
+        //                    }).ToList();
+
+        //    }
+        //    catch
+        //    {
+        //        kidsList = null;
+        //    }
+        //    if (Predicate == null)
+        //        return kidsList;
+        //    return kidsList.Where(Predicate);
+        //}
 
         public IEnumerable<Contract> getContracts(Func<Contract, bool> Predicate = null)
         {

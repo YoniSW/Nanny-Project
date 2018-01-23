@@ -22,6 +22,7 @@ namespace DAL
 
         //private static Dal_imp dal = new Dal_imp();
 
+#region password
         public Dal_imp()
         {
             new DataSource();
@@ -44,6 +45,8 @@ namespace DAL
 
             _password = s;
         }
+
+#endregion
 
         #region Nanny functions
         public Nanny getNanny(long thisID)

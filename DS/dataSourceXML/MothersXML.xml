@@ -15807,4 +15807,5086 @@
       <Days>False</Days>
     </daysOfMother>
   </Mother>
+  <Mother>
+    <id>388719970</id>
+    <familyName>פולק</familyName>
+    <firstName>ברכה</firstName>
+    <phoneNumber>526874352</phoneNumber>
+    <address>HaRav Herzog St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>330499281</id>
+    <familyName>הוכמן</familyName>
+    <firstName>שירי</firstName>
+    <phoneNumber>521818181</phoneNumber>
+    <address>Me'a She'arim St 1, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>462780061</id>
+    <familyName>זקב</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>521313132</phoneNumber>
+    <address>Panim Meirot St 14, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>439217994</id>
+    <familyName>טייב</familyName>
+    <firstName>נינט</firstName>
+    <phoneNumber>521001001</phoneNumber>
+    <address>Ha-Yehudim St 2, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>377970407</id>
+    <familyName>אלבז</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>522020202</phoneNumber>
+    <address>Binyamin Minz St 7, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 15:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>396424521</id>
+    <familyName>חובב</familyName>
+    <firstName>שני</firstName>
+    <phoneNumber>520909091</phoneNumber>
+    <address>Sulam Ya'akov St 32, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 12:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>311745043</id>
+    <familyName>רייכנר</familyName>
+    <firstName>מרב</firstName>
+    <phoneNumber>56754312</phoneNumber>
+    <address>Ha-Amarkalim St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>414477250</id>
+    <familyName>סורוצקין</familyName>
+    <firstName>עליזה</firstName>
+    <phoneNumber>526870003</phoneNumber>
+    <address>Ha-Nevi'im St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>369833936</id>
+    <familyName>שטרן</familyName>
+    <firstName>חני</firstName>
+    <phoneNumber>525555111</phoneNumber>
+    <address>Yafo St 222, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>435869999</id>
+    <familyName>סלמון</familyName>
+    <firstName>רותי</firstName>
+    <phoneNumber>543331234</phoneNumber>
+    <address>Jaffa St 8, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>445196745</id>
+    <familyName>לנדאו</familyName>
+    <firstName>שרה</firstName>
+    <phoneNumber>527616509</phoneNumber>
+    <address>Sderot Sarei Israel St 2 Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>593426465</id>
+    <familyName>קליין</familyName>
+    <firstName>יעל</firstName>
+    <phoneNumber>528989897</phoneNumber>
+    <address>HaRav Reines St 5, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>396709116</id>
+    <familyName>אורבך</familyName>
+    <firstName>מלכי</firstName>
+    <phoneNumber>571114444</phoneNumber>
+    <address>HaRav Kuk St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>523631289</id>
+    <familyName>יודקביץ</familyName>
+    <firstName>שולה</firstName>
+    <phoneNumber>509998881</phoneNumber>
+    <address>HaRav Shalom Shabazi St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>372159326</id>
+    <familyName>פולק</familyName>
+    <firstName>ברכה</firstName>
+    <phoneNumber>526874352</phoneNumber>
+    <address>HaRav Herzog St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>523403495</id>
+    <familyName>הוכמן</familyName>
+    <firstName>שירי</firstName>
+    <phoneNumber>521818181</phoneNumber>
+    <address>Me'a She'arim St 1, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>346488264</id>
+    <familyName>זקב</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>521313132</phoneNumber>
+    <address>Panim Meirot St 14, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>479545164</id>
+    <familyName>טייב</familyName>
+    <firstName>נינט</firstName>
+    <phoneNumber>521001001</phoneNumber>
+    <address>Ha-Yehudim St 2, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>471343989</id>
+    <familyName>אלבז</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>522020202</phoneNumber>
+    <address>Binyamin Minz St 7, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 15:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>431892926</id>
+    <familyName>חובב</familyName>
+    <firstName>שני</firstName>
+    <phoneNumber>520909091</phoneNumber>
+    <address>Sulam Ya'akov St 32, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 12:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>320541340</id>
+    <familyName>רייכנר</familyName>
+    <firstName>מרב</firstName>
+    <phoneNumber>56754312</phoneNumber>
+    <address>Ha-Amarkalim St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>421645636</id>
+    <familyName>סורוצקין</familyName>
+    <firstName>עליזה</firstName>
+    <phoneNumber>526870003</phoneNumber>
+    <address>Ha-Nevi'im St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>309088366</id>
+    <familyName>שטרן</familyName>
+    <firstName>חני</firstName>
+    <phoneNumber>525555111</phoneNumber>
+    <address>Yafo St 222, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>319940754</id>
+    <familyName>סלמון</familyName>
+    <firstName>רותי</firstName>
+    <phoneNumber>543331234</phoneNumber>
+    <address>Jaffa St 8, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>574844353</id>
+    <familyName>לנדאו</familyName>
+    <firstName>שרה</firstName>
+    <phoneNumber>527616509</phoneNumber>
+    <address>Sderot Sarei Israel St 2 Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>418361827</id>
+    <familyName>קליין</familyName>
+    <firstName>יעל</firstName>
+    <phoneNumber>528989897</phoneNumber>
+    <address>HaRav Reines St 5, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>462213487</id>
+    <familyName>אורבך</familyName>
+    <firstName>מלכי</firstName>
+    <phoneNumber>571114444</phoneNumber>
+    <address>HaRav Kuk St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>434562722</id>
+    <familyName>יודקביץ</familyName>
+    <firstName>שולה</firstName>
+    <phoneNumber>509998881</phoneNumber>
+    <address>HaRav Shalom Shabazi St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>478136631</id>
+    <familyName>פולק</familyName>
+    <firstName>ברכה</firstName>
+    <phoneNumber>526874352</phoneNumber>
+    <address>HaRav Herzog St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>376135089</id>
+    <familyName>הוכמן</familyName>
+    <firstName>שירי</firstName>
+    <phoneNumber>521818181</phoneNumber>
+    <address>Me'a She'arim St 1, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>593821945</id>
+    <familyName>זקב</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>521313132</phoneNumber>
+    <address>Panim Meirot St 14, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>531422689</id>
+    <familyName>טייב</familyName>
+    <firstName>נינט</firstName>
+    <phoneNumber>521001001</phoneNumber>
+    <address>Ha-Yehudim St 2, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>441043962</id>
+    <familyName>אלבז</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>522020202</phoneNumber>
+    <address>Binyamin Minz St 7, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 15:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>468114205</id>
+    <familyName>חובב</familyName>
+    <firstName>שני</firstName>
+    <phoneNumber>520909091</phoneNumber>
+    <address>Sulam Ya'akov St 32, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 12:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>485347653</id>
+    <familyName>רייכנר</familyName>
+    <firstName>מרב</firstName>
+    <phoneNumber>56754312</phoneNumber>
+    <address>Ha-Amarkalim St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>394772539</id>
+    <familyName>סורוצקין</familyName>
+    <firstName>עליזה</firstName>
+    <phoneNumber>526870003</phoneNumber>
+    <address>Ha-Nevi'im St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>394616473</id>
+    <familyName>שטרן</familyName>
+    <firstName>חני</firstName>
+    <phoneNumber>525555111</phoneNumber>
+    <address>Yafo St 222, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>488020850</id>
+    <familyName>סלמון</familyName>
+    <firstName>רותי</firstName>
+    <phoneNumber>543331234</phoneNumber>
+    <address>Jaffa St 8, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>467881728</id>
+    <familyName>לנדאו</familyName>
+    <firstName>שרה</firstName>
+    <phoneNumber>527616509</phoneNumber>
+    <address>Sderot Sarei Israel St 2 Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>472704002</id>
+    <familyName>קליין</familyName>
+    <firstName>יעל</firstName>
+    <phoneNumber>528989897</phoneNumber>
+    <address>HaRav Reines St 5, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>372351404</id>
+    <familyName>אורבך</familyName>
+    <firstName>מלכי</firstName>
+    <phoneNumber>571114444</phoneNumber>
+    <address>HaRav Kuk St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>511928490</id>
+    <familyName>יודקביץ</familyName>
+    <firstName>שולה</firstName>
+    <phoneNumber>509998881</phoneNumber>
+    <address>HaRav Shalom Shabazi St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>516633181</id>
+    <familyName>פולק</familyName>
+    <firstName>ברכה</firstName>
+    <phoneNumber>526874352</phoneNumber>
+    <address>HaRav Herzog St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>415231748</id>
+    <familyName>הוכמן</familyName>
+    <firstName>שירי</firstName>
+    <phoneNumber>521818181</phoneNumber>
+    <address>Me'a She'arim St 1, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>327680139</id>
+    <familyName>זקב</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>521313132</phoneNumber>
+    <address>Panim Meirot St 14, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>568657378</id>
+    <familyName>טייב</familyName>
+    <firstName>נינט</firstName>
+    <phoneNumber>521001001</phoneNumber>
+    <address>Ha-Yehudim St 2, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>339820890</id>
+    <familyName>אלבז</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>522020202</phoneNumber>
+    <address>Binyamin Minz St 7, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 15:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>591935323</id>
+    <familyName>חובב</familyName>
+    <firstName>שני</firstName>
+    <phoneNumber>520909091</phoneNumber>
+    <address>Sulam Ya'akov St 32, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 12:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>410000719</id>
+    <familyName>רייכנר</familyName>
+    <firstName>מרב</firstName>
+    <phoneNumber>56754312</phoneNumber>
+    <address>Ha-Amarkalim St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>372489786</id>
+    <familyName>סורוצקין</familyName>
+    <firstName>עליזה</firstName>
+    <phoneNumber>526870003</phoneNumber>
+    <address>Ha-Nevi'im St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>553341062</id>
+    <familyName>שטרן</familyName>
+    <firstName>חני</firstName>
+    <phoneNumber>525555111</phoneNumber>
+    <address>Yafo St 222, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>308724949</id>
+    <familyName>סלמון</familyName>
+    <firstName>רותי</firstName>
+    <phoneNumber>543331234</phoneNumber>
+    <address>Jaffa St 8, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>481554320</id>
+    <familyName>לנדאו</familyName>
+    <firstName>שרה</firstName>
+    <phoneNumber>527616509</phoneNumber>
+    <address>Sderot Sarei Israel St 2 Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>362572228</id>
+    <familyName>קליין</familyName>
+    <firstName>יעל</firstName>
+    <phoneNumber>528989897</phoneNumber>
+    <address>HaRav Reines St 5, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>533206082</id>
+    <familyName>אורבך</familyName>
+    <firstName>מלכי</firstName>
+    <phoneNumber>571114444</phoneNumber>
+    <address>HaRav Kuk St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>469922266</id>
+    <familyName>יודקביץ</familyName>
+    <firstName>שולה</firstName>
+    <phoneNumber>509998881</phoneNumber>
+    <address>HaRav Shalom Shabazi St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>408581520</id>
+    <familyName>פולק</familyName>
+    <firstName>ברכה</firstName>
+    <phoneNumber>526874352</phoneNumber>
+    <address>HaRav Herzog St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>562762312</id>
+    <familyName>הוכמן</familyName>
+    <firstName>שירי</firstName>
+    <phoneNumber>521818181</phoneNumber>
+    <address>Me'a She'arim St 1, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>491220841</id>
+    <familyName>זקב</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>521313132</phoneNumber>
+    <address>Panim Meirot St 14, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>317778130</id>
+    <familyName>טייב</familyName>
+    <firstName>נינט</firstName>
+    <phoneNumber>521001001</phoneNumber>
+    <address>Ha-Yehudim St 2, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>313827669</id>
+    <familyName>אלבז</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>522020202</phoneNumber>
+    <address>Binyamin Minz St 7, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 15:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>596080788</id>
+    <familyName>חובב</familyName>
+    <firstName>שני</firstName>
+    <phoneNumber>520909091</phoneNumber>
+    <address>Sulam Ya'akov St 32, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 12:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>479647254</id>
+    <familyName>רייכנר</familyName>
+    <firstName>מרב</firstName>
+    <phoneNumber>56754312</phoneNumber>
+    <address>Ha-Amarkalim St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>517192286</id>
+    <familyName>סורוצקין</familyName>
+    <firstName>עליזה</firstName>
+    <phoneNumber>526870003</phoneNumber>
+    <address>Ha-Nevi'im St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>380166197</id>
+    <familyName>שטרן</familyName>
+    <firstName>חני</firstName>
+    <phoneNumber>525555111</phoneNumber>
+    <address>Yafo St 222, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>491156245</id>
+    <familyName>סלמון</familyName>
+    <firstName>רותי</firstName>
+    <phoneNumber>543331234</phoneNumber>
+    <address>Jaffa St 8, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>410745503</id>
+    <familyName>לנדאו</familyName>
+    <firstName>שרה</firstName>
+    <phoneNumber>527616509</phoneNumber>
+    <address>Sderot Sarei Israel St 2 Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>513047740</id>
+    <familyName>קליין</familyName>
+    <firstName>יעל</firstName>
+    <phoneNumber>528989897</phoneNumber>
+    <address>HaRav Reines St 5, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>523733674</id>
+    <familyName>אורבך</familyName>
+    <firstName>מלכי</firstName>
+    <phoneNumber>571114444</phoneNumber>
+    <address>HaRav Kuk St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>476953363</id>
+    <familyName>יודקביץ</familyName>
+    <firstName>שולה</firstName>
+    <phoneNumber>509998881</phoneNumber>
+    <address>HaRav Shalom Shabazi St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>456733223</id>
+    <familyName>פולק</familyName>
+    <firstName>ברכה</firstName>
+    <phoneNumber>526874352</phoneNumber>
+    <address>HaRav Herzog St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>309838925</id>
+    <familyName>הוכמן</familyName>
+    <firstName>שירי</firstName>
+    <phoneNumber>521818181</phoneNumber>
+    <address>Me'a She'arim St 1, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>500936609</id>
+    <familyName>זקב</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>521313132</phoneNumber>
+    <address>Panim Meirot St 14, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>476603644</id>
+    <familyName>טייב</familyName>
+    <firstName>נינט</firstName>
+    <phoneNumber>521001001</phoneNumber>
+    <address>Ha-Yehudim St 2, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>406726959</id>
+    <familyName>אלבז</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>522020202</phoneNumber>
+    <address>Binyamin Minz St 7, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 15:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>341031712</id>
+    <familyName>חובב</familyName>
+    <firstName>שני</firstName>
+    <phoneNumber>520909091</phoneNumber>
+    <address>Sulam Ya'akov St 32, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 12:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>408671670</id>
+    <familyName>רייכנר</familyName>
+    <firstName>מרב</firstName>
+    <phoneNumber>56754312</phoneNumber>
+    <address>Ha-Amarkalim St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>348023352</id>
+    <familyName>סורוצקין</familyName>
+    <firstName>עליזה</firstName>
+    <phoneNumber>526870003</phoneNumber>
+    <address>Ha-Nevi'im St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>527920322</id>
+    <familyName>שטרן</familyName>
+    <firstName>חני</firstName>
+    <phoneNumber>525555111</phoneNumber>
+    <address>Yafo St 222, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>333340939</id>
+    <familyName>סלמון</familyName>
+    <firstName>רותי</firstName>
+    <phoneNumber>543331234</phoneNumber>
+    <address>Jaffa St 8, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>377133251</id>
+    <familyName>לנדאו</familyName>
+    <firstName>שרה</firstName>
+    <phoneNumber>527616509</phoneNumber>
+    <address>Sderot Sarei Israel St 2 Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>336072731</id>
+    <familyName>קליין</familyName>
+    <firstName>יעל</firstName>
+    <phoneNumber>528989897</phoneNumber>
+    <address>HaRav Reines St 5, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>598707429</id>
+    <familyName>אורבך</familyName>
+    <firstName>מלכי</firstName>
+    <phoneNumber>571114444</phoneNumber>
+    <address>HaRav Kuk St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>550503511</id>
+    <familyName>יודקביץ</familyName>
+    <firstName>שולה</firstName>
+    <phoneNumber>509998881</phoneNumber>
+    <address>HaRav Shalom Shabazi St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>394725173</id>
+    <familyName>פולק</familyName>
+    <firstName>ברכה</firstName>
+    <phoneNumber>526874352</phoneNumber>
+    <address>HaRav Herzog St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>410480009</id>
+    <familyName>הוכמן</familyName>
+    <firstName>שירי</firstName>
+    <phoneNumber>521818181</phoneNumber>
+    <address>Me'a She'arim St 1, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>555099406</id>
+    <familyName>זקב</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>521313132</phoneNumber>
+    <address>Panim Meirot St 14, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>400955905</id>
+    <familyName>טייב</familyName>
+    <firstName>נינט</firstName>
+    <phoneNumber>521001001</phoneNumber>
+    <address>Ha-Yehudim St 2, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>398499111</id>
+    <familyName>אלבז</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>522020202</phoneNumber>
+    <address>Binyamin Minz St 7, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 15:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>426855875</id>
+    <familyName>חובב</familyName>
+    <firstName>שני</firstName>
+    <phoneNumber>520909091</phoneNumber>
+    <address>Sulam Ya'akov St 32, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 12:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>340250953</id>
+    <familyName>רייכנר</familyName>
+    <firstName>מרב</firstName>
+    <phoneNumber>56754312</phoneNumber>
+    <address>Ha-Amarkalim St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>374040827</id>
+    <familyName>סורוצקין</familyName>
+    <firstName>עליזה</firstName>
+    <phoneNumber>526870003</phoneNumber>
+    <address>Ha-Nevi'im St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>337044857</id>
+    <familyName>שטרן</familyName>
+    <firstName>חני</firstName>
+    <phoneNumber>525555111</phoneNumber>
+    <address>Yafo St 222, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>431663370</id>
+    <familyName>סלמון</familyName>
+    <firstName>רותי</firstName>
+    <phoneNumber>543331234</phoneNumber>
+    <address>Jaffa St 8, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>315851915</id>
+    <familyName>לנדאו</familyName>
+    <firstName>שרה</firstName>
+    <phoneNumber>527616509</phoneNumber>
+    <address>Sderot Sarei Israel St 2 Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>317314451</id>
+    <familyName>קליין</familyName>
+    <firstName>יעל</firstName>
+    <phoneNumber>528989897</phoneNumber>
+    <address>HaRav Reines St 5, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>381115106</id>
+    <familyName>אורבך</familyName>
+    <firstName>מלכי</firstName>
+    <phoneNumber>571114444</phoneNumber>
+    <address>HaRav Kuk St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>333127052</id>
+    <familyName>יודקביץ</familyName>
+    <firstName>שולה</firstName>
+    <phoneNumber>509998881</phoneNumber>
+    <address>HaRav Shalom Shabazi St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>409538135</id>
+    <familyName>פולק</familyName>
+    <firstName>ברכה</firstName>
+    <phoneNumber>526874352</phoneNumber>
+    <address>HaRav Herzog St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>579666100</id>
+    <familyName>הוכמן</familyName>
+    <firstName>שירי</firstName>
+    <phoneNumber>521818181</phoneNumber>
+    <address>Me'a She'arim St 1, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>463764706</id>
+    <familyName>זקב</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>521313132</phoneNumber>
+    <address>Panim Meirot St 14, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>313193698</id>
+    <familyName>טייב</familyName>
+    <firstName>נינט</firstName>
+    <phoneNumber>521001001</phoneNumber>
+    <address>Ha-Yehudim St 2, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>461970551</id>
+    <familyName>אלבז</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>522020202</phoneNumber>
+    <address>Binyamin Minz St 7, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 15:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>416294668</id>
+    <familyName>חובב</familyName>
+    <firstName>שני</firstName>
+    <phoneNumber>520909091</phoneNumber>
+    <address>Sulam Ya'akov St 32, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 12:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>565680419</id>
+    <familyName>רייכנר</familyName>
+    <firstName>מרב</firstName>
+    <phoneNumber>56754312</phoneNumber>
+    <address>Ha-Amarkalim St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>492720340</id>
+    <familyName>סורוצקין</familyName>
+    <firstName>עליזה</firstName>
+    <phoneNumber>526870003</phoneNumber>
+    <address>Ha-Nevi'im St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>335739705</id>
+    <familyName>שטרן</familyName>
+    <firstName>חני</firstName>
+    <phoneNumber>525555111</phoneNumber>
+    <address>Yafo St 222, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>446602356</id>
+    <familyName>סלמון</familyName>
+    <firstName>רותי</firstName>
+    <phoneNumber>543331234</phoneNumber>
+    <address>Jaffa St 8, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>457379244</id>
+    <familyName>לנדאו</familyName>
+    <firstName>שרה</firstName>
+    <phoneNumber>527616509</phoneNumber>
+    <address>Sderot Sarei Israel St 2 Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>517946246</id>
+    <familyName>קליין</familyName>
+    <firstName>יעל</firstName>
+    <phoneNumber>528989897</phoneNumber>
+    <address>HaRav Reines St 5, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>321883291</id>
+    <familyName>אורבך</familyName>
+    <firstName>מלכי</firstName>
+    <phoneNumber>571114444</phoneNumber>
+    <address>HaRav Kuk St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>524021887</id>
+    <familyName>יודקביץ</familyName>
+    <firstName>שולה</firstName>
+    <phoneNumber>509998881</phoneNumber>
+    <address>HaRav Shalom Shabazi St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>375549962</id>
+    <familyName>פולק</familyName>
+    <firstName>ברכה</firstName>
+    <phoneNumber>526874352</phoneNumber>
+    <address>HaRav Herzog St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>390689497</id>
+    <familyName>הוכמן</familyName>
+    <firstName>שירי</firstName>
+    <phoneNumber>521818181</phoneNumber>
+    <address>Me'a She'arim St 1, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>561008237</id>
+    <familyName>זקב</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>521313132</phoneNumber>
+    <address>Panim Meirot St 14, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>474488872</id>
+    <familyName>טייב</familyName>
+    <firstName>נינט</firstName>
+    <phoneNumber>521001001</phoneNumber>
+    <address>Ha-Yehudim St 2, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>422010927</id>
+    <familyName>אלבז</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>522020202</phoneNumber>
+    <address>Binyamin Minz St 7, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 15:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>341080803</id>
+    <familyName>חובב</familyName>
+    <firstName>שני</firstName>
+    <phoneNumber>520909091</phoneNumber>
+    <address>Sulam Ya'akov St 32, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 12:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>434945116</id>
+    <familyName>רייכנר</familyName>
+    <firstName>מרב</firstName>
+    <phoneNumber>56754312</phoneNumber>
+    <address>Ha-Amarkalim St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>331223201</id>
+    <familyName>סורוצקין</familyName>
+    <firstName>עליזה</firstName>
+    <phoneNumber>526870003</phoneNumber>
+    <address>Ha-Nevi'im St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>445299267</id>
+    <familyName>שטרן</familyName>
+    <firstName>חני</firstName>
+    <phoneNumber>525555111</phoneNumber>
+    <address>Yafo St 222, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>384309445</id>
+    <familyName>סלמון</familyName>
+    <firstName>רותי</firstName>
+    <phoneNumber>543331234</phoneNumber>
+    <address>Jaffa St 8, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>368507486</id>
+    <familyName>לנדאו</familyName>
+    <firstName>שרה</firstName>
+    <phoneNumber>527616509</phoneNumber>
+    <address>Sderot Sarei Israel St 2 Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>398134843</id>
+    <familyName>קליין</familyName>
+    <firstName>יעל</firstName>
+    <phoneNumber>528989897</phoneNumber>
+    <address>HaRav Reines St 5, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>529710669</id>
+    <familyName>אורבך</familyName>
+    <firstName>מלכי</firstName>
+    <phoneNumber>571114444</phoneNumber>
+    <address>HaRav Kuk St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>453559788</id>
+    <familyName>יודקביץ</familyName>
+    <firstName>שולה</firstName>
+    <phoneNumber>509998881</phoneNumber>
+    <address>HaRav Shalom Shabazi St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>320876625</id>
+    <familyName>פולק</familyName>
+    <firstName>ברכה</firstName>
+    <phoneNumber>526874352</phoneNumber>
+    <address>HaRav Herzog St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>540181737</id>
+    <familyName>הוכמן</familyName>
+    <firstName>שירי</firstName>
+    <phoneNumber>521818181</phoneNumber>
+    <address>Me'a She'arim St 1, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>357070763</id>
+    <familyName>זקב</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>521313132</phoneNumber>
+    <address>Panim Meirot St 14, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>543194560</id>
+    <familyName>טייב</familyName>
+    <firstName>נינט</firstName>
+    <phoneNumber>521001001</phoneNumber>
+    <address>Ha-Yehudim St 2, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>412416295</id>
+    <familyName>אלבז</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>522020202</phoneNumber>
+    <address>Binyamin Minz St 7, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 15:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>580802598</id>
+    <familyName>חובב</familyName>
+    <firstName>שני</firstName>
+    <phoneNumber>520909091</phoneNumber>
+    <address>Sulam Ya'akov St 32, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 12:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>565573429</id>
+    <familyName>רייכנר</familyName>
+    <firstName>מרב</firstName>
+    <phoneNumber>56754312</phoneNumber>
+    <address>Ha-Amarkalim St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>536648607</id>
+    <familyName>סורוצקין</familyName>
+    <firstName>עליזה</firstName>
+    <phoneNumber>526870003</phoneNumber>
+    <address>Ha-Nevi'im St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>420348273</id>
+    <familyName>שטרן</familyName>
+    <firstName>חני</firstName>
+    <phoneNumber>525555111</phoneNumber>
+    <address>Yafo St 222, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>573438171</id>
+    <familyName>סלמון</familyName>
+    <firstName>רותי</firstName>
+    <phoneNumber>543331234</phoneNumber>
+    <address>Jaffa St 8, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>330753956</id>
+    <familyName>לנדאו</familyName>
+    <firstName>שרה</firstName>
+    <phoneNumber>527616509</phoneNumber>
+    <address>Sderot Sarei Israel St 2 Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>518644472</id>
+    <familyName>קליין</familyName>
+    <firstName>יעל</firstName>
+    <phoneNumber>528989897</phoneNumber>
+    <address>HaRav Reines St 5, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>483222224</id>
+    <familyName>אורבך</familyName>
+    <firstName>מלכי</firstName>
+    <phoneNumber>571114444</phoneNumber>
+    <address>HaRav Kuk St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>561117381</id>
+    <familyName>יודקביץ</familyName>
+    <firstName>שולה</firstName>
+    <phoneNumber>509998881</phoneNumber>
+    <address>HaRav Shalom Shabazi St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>318542523</id>
+    <familyName>פולק</familyName>
+    <firstName>ברכה</firstName>
+    <phoneNumber>526874352</phoneNumber>
+    <address>HaRav Herzog St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>519860740</id>
+    <familyName>הוכמן</familyName>
+    <firstName>שירי</firstName>
+    <phoneNumber>521818181</phoneNumber>
+    <address>Me'a She'arim St 1, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>354813097</id>
+    <familyName>זקב</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>521313132</phoneNumber>
+    <address>Panim Meirot St 14, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>443015094</id>
+    <familyName>טייב</familyName>
+    <firstName>נינט</firstName>
+    <phoneNumber>521001001</phoneNumber>
+    <address>Ha-Yehudim St 2, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>419189111</id>
+    <familyName>אלבז</familyName>
+    <firstName>רחל</firstName>
+    <phoneNumber>522020202</phoneNumber>
+    <address>Binyamin Minz St 7, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 15:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>561674380</id>
+    <familyName>חובב</familyName>
+    <firstName>שני</firstName>
+    <phoneNumber>520909091</phoneNumber>
+    <address>Sulam Ya'akov St 32, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 12:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>588621896</id>
+    <familyName>רייכנר</familyName>
+    <firstName>מרב</firstName>
+    <phoneNumber>56754312</phoneNumber>
+    <address>Ha-Amarkalim St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:15:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>353545384</id>
+    <familyName>סורוצקין</familyName>
+    <firstName>עליזה</firstName>
+    <phoneNumber>526870003</phoneNumber>
+    <address>Ha-Nevi'im St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>331165373</id>
+    <familyName>שטרן</familyName>
+    <firstName>חני</firstName>
+    <phoneNumber>525555111</phoneNumber>
+    <address>Yafo St 222, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>547608173</id>
+    <familyName>סלמון</familyName>
+    <firstName>רותי</firstName>
+    <phoneNumber>543331234</phoneNumber>
+    <address>Jaffa St 8, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>455724094</id>
+    <familyName>לנדאו</familyName>
+    <firstName>שרה</firstName>
+    <phoneNumber>527616509</phoneNumber>
+    <address>Sderot Sarei Israel St 2 Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 07:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>476260481</id>
+    <familyName>קליין</familyName>
+    <firstName>יעל</firstName>
+    <phoneNumber>528989897</phoneNumber>
+    <address>HaRav Reines St 5, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>489060312</id>
+    <familyName>אורבך</familyName>
+    <firstName>מלכי</firstName>
+    <phoneNumber>571114444</phoneNumber>
+    <address>HaRav Kuk St 12, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 08:00:00</Days>
+      <Days>01/01/0001 08:45:00</Days>
+      <Days>01/01/0001 08:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 12:30:00</Days>
+      <Days>01/01/0001 16:00:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
+  <Mother>
+    <id>334816972</id>
+    <familyName>יודקביץ</familyName>
+    <firstName>שולה</firstName>
+    <phoneNumber>509998881</phoneNumber>
+    <address>HaRav Shalom Shabazi St 4, Jerusalem</address>
+    <locationNanny>Shakhal St 23,Jerusalem</locationNanny>
+    <isLookingForNanny>false</isLookingForNanny>
+    <StartHour>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 07:45:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </StartHour>
+    <EndHour>
+      <Days>01/01/0001 14:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 15:30:00</Days>
+      <Days>01/01/0001 13:30:00</Days>
+      <Days>01/01/0001 00:00:00</Days>
+    </EndHour>
+    <daysOfMother>
+      <Days>True</Days>
+      <Days>False</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>True</Days>
+      <Days>False</Days>
+    </daysOfMother>
+  </Mother>
 </Mothers>
