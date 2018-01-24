@@ -34,7 +34,9 @@ namespace PL
         {
             InitializeComponent();
             addMom = new BE.Mother();
-            thisGrid.DataContext = addCont;
+            addCont = new BE.Contract();
+
+            // thisGrid.DataContext = addCont;
             bl = BL.FactoryBL.GetBL();
             momBox.ItemsSource = bl.getAllMothers();
             momBox.DisplayMemberPath = "_fullName";
@@ -46,7 +48,7 @@ namespace PL
             try
             {
                 addMom = (Mother)momBox.SelectedItem;
-                this.DataContext = addMom;
+                // thisGrid.DataContext = addMom;
 
             }
             catch (Exception ex)
@@ -63,7 +65,7 @@ namespace PL
                 child_list = bl.getKidsByMom(a => a._momID == addMom._momID);
                 _childIDTextBox.ItemsSource = child_list;
                 child = (Child)_childIDTextBox.SelectedItem;
-                this.DataContext = child;
+                // thisGrid.DataContext = child;
                 _childIDTextBox.DisplayMemberPath = "_fullName";
             }
             catch (Exception ex)
@@ -76,7 +78,7 @@ namespace PL
                 nanny_list = bl.allCompatibleNannies(addMom);
                 _nannyIDTextBox.ItemsSource = nanny_list;
                 nanny = (Nanny)_nannyIDTextBox.SelectedItem;
-                this.DataContext = nanny;
+                // this.DataContext = nanny;
                 _nannyIDTextBox.DisplayMemberPath = "_fullName";
             }
             catch (Exception ex)
@@ -101,6 +103,18 @@ namespace PL
             }
         }
 
+        private void thisMomsKids_list_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DataGrid helpDataGrid = sender as DataGrid;
+            if (helpDataGrid.SelectedIndex > -1) // grid in not empty
+            {
+                child = helpDataGrid.SelectedItem as BE.Child;
+
+                addCont._childID = child._childID;
+                _childIDTextBox.Text = Convert.ToString(child._childID);
+            }
+        }
+
         private void relevantNannies_list_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             DataGrid helpDataGrid = sender as DataGrid;
@@ -109,28 +123,26 @@ namespace PL
                 nanny = helpDataGrid.SelectedItem as BE.Nanny;
                 addCont._isByHour = nanny._acceptByHour;
                 if (nanny._acceptByHour)
-                    addCont._ratePerHour = bl.getUpdatedRate(addCont._childID, nanny._nannyID, true);
+                    addCont._finalPerHour = bl.getUpdatedRate(addCont._childID, nanny._nannyID, true);
 
-               
-                    addCont._ratePerHour = bl.getUpdatedRate(addCont._childID, nanny._nannyID, false);
 
+                addCont._finalPerMonth = bl.getUpdatedRate(addCont._childID, nanny._nannyID, false);
                 addCont._nannyID = nanny._nannyID;
-
-                //_nannyIDTextBox.Text = Convert.ToString(nanny._nannyID);
-                //_isByHourCheckBox.IsChecked = nanny._acceptByHour;
+                addCont._ratePerHour = nanny._rateByHour;
+                addCont._ratePerMonth = nanny._rateByMonth;
+                addCont._monthHours = bl.getMotherHours(addMom);
+                _nannyIDTextBox1.Text = Convert.ToString(nanny._nannyID);
+                _childIDTextBox.Text = Convert.ToString(addCont._childID);
             }
+            addCont._momID = addMom._momID;
+            thisGrid.DataContext = addCont;
         }
 
-        private void thisMomsKids_list_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void _endWorkDatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
-            DataGrid helpDataGrid = sender as DataGrid;
-            if (helpDataGrid.SelectedIndex > 0) // grid in not empty
-            {
-                child = helpDataGrid.SelectedItem as BE.Child;
-                _childIDTextBox.Text = Convert.ToString(child._childID);
-                addCont._childID = child._childID;
-            }
-
+            //var sumDays = bl.getContractDays(addCont);
+            //var months = sumDays / 30;
+            //addCont._totalPayment = addCont._finalPerMonth * months;
         }
 
         private void _nannyIDTextBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -140,7 +152,8 @@ namespace PL
                 try
                 {
                     nanny = (Nanny)_nannyIDTextBox.SelectedItem;
-                   // _nannyIDTextBox1.Text = nanny._nannyID;
+                    addCont._momID = addMom._momID;
+                    //_nannyIDTextBox1.Text = nanny._nannyID;
 
                 }
                 catch (Exception ex)
@@ -155,8 +168,9 @@ namespace PL
             if (_childIDTextBox.SelectedIndex != -1)
             {
                 addCont._childID = (long)_childIDTextBox.SelectedValue;
-                relevantNannies_list.ItemsSource = bl.allCompatibleNannies((BE.Mother)momBox.SelectedItem);
-                relevantNannies_list.SelectedValuePath = "_nannyID";
+                addCont._momID = addMom._momID;
+
+                this.DataContext = addCont;
             }
         }
 
@@ -192,6 +206,7 @@ namespace PL
                 if ((bool)((_endWorkDatePicker.SelectedDate <= _beginWorkDatePicker.SelectedDate)))
                     throw new Exception("the end work is before the start work!");
                 bl.addContract(addCont);
+                thisGrid.DataContext = addCont;
                 MessageBox.Show("Contract is successfully added!");
                 _contractIDTextBox.Visibility = Visibility.Visible;
                 uniqID.Visibility = Visibility.Visible;
@@ -211,8 +226,8 @@ namespace PL
         private void _isByHourCheckBox_Checked(object sender, RoutedEventArgs e)
         {
 
-                _ratePerHourLabel.Visibility = Visibility.Visible;
-                _ratePerHourTextBox.Visibility = Visibility.Visible;
+            _ratePerHourLabel.Visibility = Visibility.Visible;
+            _ratePerHourTextBox.Visibility = Visibility.Visible;
         }
 
         private void _isByHourCheckBox_Unchecked(object sender, RoutedEventArgs e)
@@ -231,6 +246,8 @@ namespace PL
         {
             Addbutton.Visibility = Visibility.Hidden;
         }
+
+
 
 
 

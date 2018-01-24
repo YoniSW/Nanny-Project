@@ -19,13 +19,14 @@ namespace BL
         void deleteNanny(long ID);
         Nanny getNanny(long ID);
         void updateNanny(Nanny nanny);
-        
+
 
         // mother function declarations
         void addMother(Mother mom);
         void deleteMother(long ID);
         Mother getMother(long ID);
         void updateMother(Mother mom);
+        double getMotherHours(Mother addMom);
 
         // child function declarations
         void addChild(Child kid);
@@ -38,6 +39,7 @@ namespace BL
         void updateContract(Contract con);
         Contract getContract(long ID);
         void deleteContract(long ID);
+        int getContractDays(Contract addMom);
         double getUpdatedRate(long kidID, long nannyID, bool isHour);
 
         // methods
@@ -53,6 +55,8 @@ namespace BL
         IEnumerable<Contract> contractByTerm(Func<Contract, bool> Predicate = null);
         //IEnumerable<Nanny> getListOfNanny();
         int numOfContractByTerm(Func<Contract, bool> Predicate = null);
+
+
 
     }
 }

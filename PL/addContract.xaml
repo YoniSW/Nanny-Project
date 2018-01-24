@@ -24,13 +24,14 @@
             </Grid.RowDefinitions>
 
         </Grid>
-        <Button x:Name="Addbutton" Content="Add contract!"  HorizontalAlignment="Left" Margin="495,545,0,0" VerticalAlignment="Top" Width="406" Height="57" 
+        <Button x:Name="Addbutton" Content="Add contract!"  HorizontalAlignment="Left"  Margin="495,545,0,0" VerticalAlignment="Top" Width="406" Height="57" 
                 Click="add_Click" Background="LightSkyBlue" Visibility="Hidden"/>
-        <Label Content="Choose mother by:" HorizontalAlignment="Left" Height="29" Margin="23,30,0,0" VerticalAlignment="Top" Width="118"/>
-        <Button  FontSize="12" Background="LightSkyBlue" Content="Search for  &#xa;relevant &#xa;nannies" HorizontalAlignment="Left" Height="58" Margin="23,160,0,0" VerticalAlignment="Top" 
+        <Label Content="Choose mother by:" HorizontalAlignment="Left" Height="44" Margin="77,54,0,0" FontSize="18" FontWeight="DemiBold" VerticalAlignment="Top" Width="190"/>
+        <Button  FontSize="12" Background="LightSkyBlue" Content="Search for  &#xa;relevant &#xa;nannies" HorizontalAlignment="Left" Height="58" Margin="191,161,0,0" VerticalAlignment="Top" 
                 Width="76" Click="search_Click"/>
-        <Label Content="Relevant nannies" HorizontalAlignment="Left" Margin="180,224,0,0" VerticalAlignment="Top" Width="102" Height="26"/>
-        <DataGrid x:Name="relevantNannies_list" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="145" Margin="23,250,0,0" 
+        <Label Content="Choose a nanny" FontSize="15" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="171,457,0,0"
+               VerticalAlignment="Top" Width="134" Height="38"/>
+        <DataGrid x:Name="relevantNannies_list" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="145" Margin="23,484,0,0" 
                   VerticalAlignment="Top" Width="425" SelectionChanged="relevantNannies_list_SelectionChanged" IsReadOnly="true"
                   Background="CadetBlue" FontWeight="SemiBold"  >
             <DataGrid.Columns>
@@ -41,8 +42,8 @@
                 <DataGridTextColumn Header="Recommendation" Binding="{Binding _recommendation}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Label Content="Mother's kids" HorizontalAlignment="Left" Margin="180,426,0,0" VerticalAlignment="Top" Width="87" Height="26"/>
-        <DataGrid x:Name="thisMomsKids_list" HorizontalAlignment="Left" Height="145" Margin="23,457,0,0" IsReadOnly="True"
+        <Label Content="Choose a child" FontSize="15" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="180,260,0,0" VerticalAlignment="Top" Width="134" Height="26"/>
+        <DataGrid x:Name="thisMomsKids_list" HorizontalAlignment="Left" Height="145" Margin="23,291,0,0" IsReadOnly="True"
                   VerticalAlignment="Top" Width="425" AutoGenerateColumns="False" SelectionChanged="thisMomsKids_list_SelectionChanged"
                   Background="CadetBlue" FontWeight="SemiBold">
             <DataGrid.Columns>
@@ -62,7 +63,7 @@
                     <ColumnDefinition Width="67*"/>
                     <ColumnDefinition Width="171*"/>
                 </Grid.ColumnDefinitions>
-                <ComboBox x:Name="_nannyIDTextBox" Width="140" VerticalAlignment="Center" Grid.Row="0" Margin="3,5,0,5" Height="23" 
+                <ComboBox x:Name="_nannyIDTextBox" Visibility="Hidden" Width="140" VerticalAlignment="Center" Grid.Row="0" Margin="3,5,0,5" Height="23" 
                           HorizontalAlignment="Left" Grid.Column="1" SelectionChanged="_nannyIDTextBox_SelectionChanged"/>
             </Grid>
             <Grid x:Name="grid2" HorizontalAlignment="Left" Margin="120,586,0,0" VerticalAlignment="Top" Width="175" Height="32">
@@ -85,10 +86,11 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <ComboBox x:Name="_childIDTextBox" HorizontalAlignment="Left" Height="24" Margin="31,9,0,0" Grid.Row="0"
-                         SelectionChanged="_childIDTextBox_SelectionChanged"  VerticalAlignment="Center" Width="143" Grid.ColumnSpan="2"/>
+                <ComboBox x:Name="_childIDTextBox" Visibility="Hidden" HorizontalAlignment="Left" Height="24" Margin="31,9,0,0" Grid.Row="0"
+                         SelectionChanged="_childIDTextBox_SelectionChanged"  VerticalAlignment="Center" Width="143" Grid.ColumnSpan="2"
+                          DisplayMemberPath="_childID"/>
             </Grid>
-            <Grid x:Name="grid4" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Height="33" Width="251">
+            <Grid x:Name="grid4" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Height="33" Width="251">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -101,7 +103,7 @@
                     SelectedDate="{Binding _beginWork, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
                     VerticalAlignment="Center" Width="106"/>
             </Grid>
-            <Grid x:Name="grid5" HorizontalAlignment="Left" Margin="10,194,0,0" VerticalAlignment="Top" Height="33" Width="145">
+            <Grid x:Name="grid5" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top" Height="33" Width="145">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -124,42 +126,44 @@
                 <Label Content="Signature" Grid.Column="0" FontSize="28" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
                 <CheckBox x:Name="_didSignCheckBox" Checked="_didSignCheckBox_Checked" Content="" Unchecked="_didSignCheckBox_Unchecked" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding _didSign, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3,20,-10,10" Grid.Row="0" VerticalAlignment="Center" Height="23" Width="36"/>
             </Grid>
-            <Grid x:Name="grid7" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" Height="32" Width="245">
+            <Grid x:Name="grid7" HorizontalAlignment="Left" Margin="10,174,0,0" VerticalAlignment="Top" Height="32" Width="245">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto" MinWidth="88"/>
+                    <ColumnDefinition Width="Auto" MinWidth="132"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Label Content="End Contract" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
-                <DatePicker x:Name="_endWorkDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="10,4,-5,4" Grid.Row="0" 
+                <Label Content="End Contract" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="78"/>
+                <DatePicker x:Name="_endWorkDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="10,4,0,4" Grid.Row="0" 
                     SelectedDate="{Binding _endWork, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" 
-                    VerticalAlignment="Center" Width="105"/>
+                    VerticalAlignment="Center" Width="105" Height="24" SelectedDateChanged="_endWorkDatePicker_SelectedDateChanged"/>
             </Grid>
-            <Grid x:Name="grid8" HorizontalAlignment="Left" Margin="150,290,0,0" VerticalAlignment="Top" Height="33" Width="145">
+            <Grid x:Name="grid8" HorizontalAlignment="Left" Margin="15,319,0,0" VerticalAlignment="Top" Height="33" Width="222">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" MinWidth="101"/>
-                    <ColumnDefinition Width="Auto" MinWidth="50"/>
+                    <ColumnDefinition Width="147"/>
+                    <ColumnDefinition Width="23"/>
+                    <ColumnDefinition Width="Auto" MinWidth="51"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Label  x:Name="_ratePerHourLabel"  Visibility="Hidden" Content="Rate per hour:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,4,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="85"/>
-                <TextBox x:Name="_ratePerHourTextBox"   Visibility="Hidden" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,5" Grid.Row="0" Text="{Binding _ratePerHour, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="32"/>
+                <Label  x:Name="_ratePerHourLabel"  Visibility="Visible" Content="Total (hourly) month pay " Grid.Column="0" HorizontalAlignment="Left" Margin="3,4,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="145"/>
+                <TextBox x:Name="_ratePerHourTextBox"   Visibility="Visible" HorizontalAlignment="Left" IsReadOnly="True" Height="24" Margin="6,4,0,5" Grid.Row="0" Text="{Binding _finalPerHour, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="32" Grid.Column="1" Grid.ColumnSpan="2"/>
             </Grid>
-            <Grid x:Name="grid9" HorizontalAlignment="Left" Margin="150,249,0,0" VerticalAlignment="Top" Height="32" Width="246">
+            <Grid x:Name="grid9" HorizontalAlignment="Left" Margin="230,320,-18,0" VerticalAlignment="Top" Height="32" Width="246">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" MinWidth="103"/>
-                    <ColumnDefinition Width="Auto" MinWidth="49"/>
+                    <ColumnDefinition Width="Auto" MinWidth="150"/>
+                    <ColumnDefinition Width="Auto" MinWidth="96"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Label Content="Rate per month:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="95"/>
-                <TextBox x:Name="_ratePerMonthTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="0" Text="{Binding _ratePerMonth, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="32"/>
+                <Label Content="Total month pay" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="100"/>
+                <TextBox x:Name="_ratePerMonthTextBox" Grid.Column="1" HorizontalAlignment="Left" IsReadOnly="True" Height="24" Margin="3,4,0,4" Grid.Row="0" 
+                         Text="{Binding _finalPerMonth, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="32"/>
             </Grid>
-            <Grid x:Name="grid11"  HorizontalAlignment="Left" Margin="15,249,0,0" VerticalAlignment="Top" Height="33" Width="135">
+            <Grid x:Name="grid11"  HorizontalAlignment="Left" Margin="10,249,0,0" VerticalAlignment="Top" Height="33" Width="135">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -173,27 +177,29 @@
                           Margin="3" Grid.Row="0" VerticalAlignment="Center" Checked="_isByHourCheckBox_Checked"
                           Unchecked="_isByHourCheckBox_Unchecked"/>
             </Grid>
-            <Grid x:Name="grid12"  HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" Width="225">
+            <Grid x:Name="grid12"  HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" Width="225">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" MinWidth="79"/>
-                    <ColumnDefinition Width="Auto" MinWidth="130"/>
+                    <ColumnDefinition Width="Auto" MinWidth="87"/>
+                    <ColumnDefinition Width="Auto" MinWidth="138"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Label Content="Child ID" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="53"/>
-                <TextBox x:Name="_childIDTextBox1" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="10,3,0,5" Grid.Row="0" Text="{Binding _childID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="111"/>
+                <TextBox x:Name="_childIDTextBox1" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="10,3,0,5" Grid.Row="0" 
+                         Text="{Binding _childID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="111"/>
             </Grid>
-            <Grid x:Name="grid13"  HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="220">
+            <Grid x:Name="grid13"  HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="220">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" MinWidth="72"/>
-                    <ColumnDefinition Width="Auto" MinWidth="140"/>
+                    <ColumnDefinition Width="Auto" MinWidth="79"/>
+                    <ColumnDefinition Width="Auto" MinWidth="141"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Label Content="Nanny ID" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="60"/>
-                <TextBox x:Name="_nannyIDTextBox1" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="18,3,0,5" Grid.Row="0" Text="{Binding _nannyID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="113"/>
+                <TextBox x:Name="_nannyIDTextBox1" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="18,3,0,5" 
+                         Grid.Row="0" Text="{Binding _nannyID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="113"/>
             </Grid>
             <Grid x:Name="grid14" HorizontalAlignment="Left" Margin="230,55,0,0" VerticalAlignment="Top">
                 <Grid.ColumnDefinitions>
@@ -203,7 +209,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Label Content="Rate Per/hour" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="83"/>
+                <Label Content="Rate per/hour" Grid.Column="0" Margin="3,3,118,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2"/>
                 <TextBox x:Name="_ratePerHourTextBox1" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="10,3,0,5" 
                          Grid.Row="0" Text="{Binding _ratePerHour, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
                          VerticalAlignment="Center" Width="47"/>
@@ -216,19 +222,43 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Label Content="Rate Per/month" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+                <Label Content="Rate per/month" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
                 <TextBox x:Name="_ratePerMonthTextBox1" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="0,3,-4,5" 
                          Grid.Row="0" Text="{Binding _ratePerMonth, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
                          VerticalAlignment="Center" Width="47" RenderTransformOrigin="0.277,0.583"/>
             </Grid>
+            <Grid x:Name="grid13_Copy"  HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top" Width="220">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" MinWidth="79"/>
+                    <ColumnDefinition Width="Auto" MinWidth="141"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="Mom ID" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="60"/>
+                <TextBox x:Name="_nannyIDTextBox2" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="18,3,0,5" 
+                    Grid.Row="0" Text="{Binding _momID, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="113"/>
+            </Grid>
+            <Grid x:Name="grid9_Copy" HorizontalAlignment="Left" Margin="15,287,0,0" VerticalAlignment="Top" Height="32" Width="246">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" MinWidth="151"/>
+                    <ColumnDefinition Width="Auto" MinWidth="95"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="Total monthlly hours" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="126"/>
+                <TextBox x:Name="_ratePerMonthTextBox2" IsReadOnly="True" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="0" 
+                    Text="{Binding _monthHours, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="32"/>
+            </Grid>
         </Grid>
-        <ComboBox x:Name="momBox" Grid.Column="1" HorizontalAlignment="Left" Margin="23,103,0,0" VerticalAlignment="Top" Width="143"
+        <ComboBox x:Name="momBox" HorizontalAlignment="Left" Margin="171,103,0,0" VerticalAlignment="Top" Width="143"
                   SelectionChanged="momBox_SelectionChanged" Height="22"/>
         <Button Content="Back" Click="Button_Click" HorizontalAlignment="Left" Height="39" Margin="23,643,0,0" VerticalAlignment="Top" Width="101"/>
-        <CheckBox x:Name="IDcheck" Content="ID number" HorizontalAlignment="Left" Margin="23,59,0,0" VerticalAlignment="Top" IsChecked="False" Checked="IDcheck_Checked" IsEnabled="True" Grid.Column="1" Height="15" Width="76"/>
-        <CheckBox x:Name="nameCheck" Content="Full name" HorizontalAlignment="Left" Margin="23,79,0,0" VerticalAlignment="Top" IsChecked="True" Checked="nameCheck_Checked" IsEnabled="True" Grid.Column="1" Height="15" Width="71"/>
-        <Label Content="Choose child:" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="247,73,0,0" VerticalAlignment="Top" Width="118"/>
-        <Label Content="Choose wanted nanny:" HorizontalAlignment="Left" Height="29" Margin="247,132,0,0" VerticalAlignment="Top" Width="134"/>
+        <CheckBox x:Name="IDcheck" Content="ID number" HorizontalAlignment="Left" Margin="78,93,0,0" VerticalAlignment="Top" IsChecked="False" Checked="IDcheck_Checked" IsEnabled="True" Height="15" Width="76"/>
+        <CheckBox x:Name="nameCheck" Content="Full name" HorizontalAlignment="Left" Margin="78,113,0,0" VerticalAlignment="Top" IsChecked="True" Checked="nameCheck_Checked" IsEnabled="True" Height="15" Width="71"/>
+        <Label Content="Choose child:" Visibility="Hidden" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="247,73,0,0" VerticalAlignment="Top" Width="118"/>
+        <Label Content="Choose wanted nanny:" Visibility="Hidden" HorizontalAlignment="Left" Height="29" Margin="247,132,0,0" VerticalAlignment="Top" Width="134"/>
 
     </Grid>
 </Window>

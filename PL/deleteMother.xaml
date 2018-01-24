@@ -18,8 +18,8 @@
         </Grid.RowDefinitions>
         <Label Content="Please enter Mother ID you wish to delete" HorizontalAlignment="Left" Height="52" Margin="200,96,0,0" 
                VerticalAlignment="Top" Width="606" FontSize="28" Grid.ColumnSpan="2"/>
-        <Button x:Name="button" Content="Delete!" HorizontalAlignment="Left" Margin="302,58,0,0" 
-                Grid.Row="2" VerticalAlignment="Top" Height="118"  Width="386"  Click=" button_Click" BorderThickness="2" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Content="Delete!"  IsDefault="True" HorizontalAlignment="Left" Margin="302,58,0,0" 
+                Grid.Row="2" VerticalAlignment="Top" Height="118"  Width="386"  Click="button_Click" BorderThickness="2" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="textBox"  HorizontalAlignment="Left" Margin="302,75,0,0" Grid.Row="1" VerticalAlignment="Top" Height="91" Width="386" SelectionChanged="textBox_SelectionChanged" Grid.ColumnSpan="2" />
 
         <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="420,179,0,0" Grid.Row="2"

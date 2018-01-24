@@ -21,6 +21,7 @@ namespace BE ///
         public Schedule[] _scheduleMom { get; set; }
         public DateTime[] _startHour { get; set; }
         public DateTime[] _endHour { get; set; }
+        public double _monthHours { get; set; }
 
         // we will use the dublicate function
         public Mother duplicate()
@@ -31,6 +32,7 @@ namespace BE ///
             dupMom._momLname = this._momLname;
             dupMom._momFname = this._momFname;
             dupMom._momPhone = this._momPhone;
+            dupMom._monthHours = this._monthHours;
             dupMom._momAdress = this._momAdress;
             dupMom._locationOfNanny = this._locationOfNanny; // location of nanny
             dupMom._isLookingForNanny = this._isLookingForNanny;

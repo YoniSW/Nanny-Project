@@ -89,7 +89,7 @@ namespace PL
                 if ((bool)(ThuCheck.IsChecked == true))
                 {
                     addMom._daysRequestMom[4] = true;
-                    var start =ThuStart.Value;
+                    var start = ThuStart.Value;
                     var end = ThuEnd.Value;
                     if (start > end)
                     { throw new Exception("the times you declared are not possible!"); }

@@ -7,12 +7,16 @@
         mc:Ignorable="d"
         Title="getAllNannies" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0,-1">
-        <DataGrid x:Name ="allNanniesBox" HorizontalAlignment="Left" Height="252" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
+        <DataGrid x:Name ="allNanniesBox" FontSize="15" FontWeight="Medium" HorizontalAlignment="Left" Height="332" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
                   SelectionChanged="allNanniesBox_SelectionChanged" IsReadOnly="True" AutoGenerateColumns="False" Background="LightGray" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Name" Binding="{Binding _fullName}"/>
+
+                <DataGridTextColumn FontWeight="DemiBold" Header="Name" Binding="{Binding _fullName}"/>
                 <DataGridTextColumn Header="ID" Binding="{Binding _nannyID}"/>
                 <DataGridTextColumn Header="Phone" Binding="{Binding _nannyPhone}"/>
+                <DataGridTextColumn Header="Charge by hour?" Binding="{Binding _acceptByHour}"/>
+                <DataGridTextColumn Header="Rate for hour" Binding="{Binding _rateByHour}"/>
+                <DataGridTextColumn Header="Rate for month" Binding="{Binding _rateByMonth}"/>
                 <DataGridTextColumn Header="Number of kids" Binding="{Binding _amountChildren}"/>
                 <DataGridTextColumn Header="Recommendation" Binding="{Binding _recommendation}"/>
             </DataGrid.Columns>

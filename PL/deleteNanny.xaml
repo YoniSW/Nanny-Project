@@ -18,7 +18,7 @@
         </Grid.RowDefinitions>
         <Label  x:Name ="label" Content="Please enter Nannies ID you wish to delete" HorizontalAlignment="Left" Height="80" 
                Margin="218,81,0,70" VerticalAlignment="Center" Width="558" FontSize="28" Grid.ColumnSpan="2" />
-        <Button  x:Name ="button" Content="Delete!" HorizontalAlignment="Left" Height="118"  Width="386"  Margin="304,63,0,50" Grid.Row="2" 
+        <Button  x:Name ="button" Content="Delete!" IsDefault="True" HorizontalAlignment="Left" Height="118"  Width="386"  Margin="304,63,0,50" Grid.Row="2" 
                  VerticalAlignment="Center" Click="button_Click" RenderTransformOrigin="0.494,0.429" Grid.ColumnSpan="2" BorderThickness="2"/>
         <ComboBox x:Name="textBox" HorizontalAlignment="Left" Margin="304,76,0,0" Grid.Row="1" VerticalAlignment="Top" 
                   SelectionChanged="textBox_SelectionChanged" Height="91" Width="386" Grid.ColumnSpan="2"/>

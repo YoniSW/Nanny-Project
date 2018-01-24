@@ -35,23 +35,23 @@ namespace PL
         }
 
 
-    private void textBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-        if (sender is ComboBox && ((ComboBox)sender).SelectedIndex > -1)
+        private void textBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            try
+            if (sender is ComboBox && ((ComboBox)sender).SelectedIndex > -1)
             {
-                DelMom = (Mother)textBox.SelectedItem;
+                try
+                {
+                    DelMom = (Mother)textBox.SelectedItem;
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
-    }
 
-    private void button_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
             try
             {

@@ -45,18 +45,21 @@
         <CheckBox x:Name="ThuCheck" Content="" HorizontalAlignment="Left" Margin="268,53,0,0" VerticalAlignment="Top" Grid.Row="2" IsChecked="False" Height="15" Width="20"/>
         <CheckBox x:Name="FriCheck" Content="" HorizontalAlignment="Left" Margin="118,51,0,0" VerticalAlignment="Top" IsChecked="False" Grid.Row="2" Height="15" Width="20"/>
 
-        <xctk:TimePicker x:Name="SunEnd" Format="ShortTime" Value="00:00" Margin="433,111,40,20" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=SunCheck}" Grid.Column="1"/>
-        <xctk:TimePicker Name="SunStart" Format="ShortTime" Value="00:00"  Margin="433,71,40,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=SunCheck}" RenderTransformOrigin="-2.189,-5.233" Grid.Column="1"/>
-        <xctk:TimePicker x:Name="MonEnd" Format="ShortTime" Value="00:00" Margin="286,111,181,20" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=MonCheck}" Grid.Column="1"/>
-        <xctk:TimePicker x:Name="MonStart" Format="ShortTime" Value="00:00"  Margin="286,71,181,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=MonCheck}" RenderTransformOrigin="-2.189,-5.233" Grid.Column="1"/>
-        <xctk:TimePicker x:Name="TueEnd" Format="ShortTime" Value="00:00" Margin="134,110,323,21"  Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=TueCheck}" Grid.Column="1"/>
-        <xctk:TimePicker x:Name="TueStart" Format="ShortTime" Value="00:00"  Margin="134,71,323,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=TueCheck}" RenderTransformOrigin="-2.189,-5.233" Grid.Column="1"/>
-        <xctk:TimePicker x:Name="WedEnd" Format="ShortTime" Value="00:00" Margin="383,110,482,21" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=WedCheck}" Grid.ColumnSpan="2"/>
-        <xctk:TimePicker x:Name="WedStart" Format="ShortTime" Value="00:00"  Margin="383,71,482,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=WedCheck}" RenderTransformOrigin="-2.189,-5.233" Grid.ColumnSpan="2"/>
-        <xctk:TimePicker x:Name="ThuEnd" Format="ShortTime" Value="00:00" Margin="223,111,63,20" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=ThuCheck}"/>
-        <xctk:TimePicker x:Name="ThuStart" Format="ShortTime" Value="00:00"  Margin="223,71,63,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=ThuCheck}" RenderTransformOrigin="-2.189,-5.233"/>
-        <xctk:TimePicker x:Name="FriEnd" Format="ShortTime" Value="00:00" Margin="77,111,220,20" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=FriCheck}"/>
-        <xctk:TimePicker x:Name="FriStart" Format="ShortTime" Value="00:00"  Margin="77,71,220,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=FriCheck}" RenderTransformOrigin="-2.189,-5.233"/>
+        <xctk:TimePicker x:Name="SunEnd" Value="{Binding _endHour[0], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Format="ShortTime" Margin="433,111,40,20" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=SunCheck}" Grid.Column="1"/>
+        <xctk:TimePicker Name="SunStart"  Value="{Binding _startHour[0], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Format="ShortTime"  Margin="433,71,40,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=SunCheck}" RenderTransformOrigin="-2.189,-5.233" Grid.Column="1"/>
+        <xctk:TimePicker x:Name="MonEnd" Value="{Binding _endHour[1], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"  Format="ShortTime" Margin="286,111,181,20" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=MonCheck}" Grid.Column="1"/>
+        <xctk:TimePicker x:Name="MonStart" Value="{Binding _startHour[1], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"  Format="ShortTime" Margin="286,71,181,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=MonCheck}" RenderTransformOrigin="-2.189,-5.233" Grid.Column="1"/>
+        <xctk:TimePicker x:Name="TueEnd" Value="{Binding _endHour[2], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"  Format="ShortTime" Margin="134,110,323,21"  Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=TueCheck}" Grid.Column="1"/>
+        <xctk:TimePicker x:Name="TueStart" Value="{Binding _startHour[2], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Format="ShortTime" Margin="134,71,323,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=TueCheck}" RenderTransformOrigin="-2.189,-5.233" Grid.Column="1"/>
+        <xctk:TimePicker x:Name="WedEnd" Value="{Binding _endHour[3], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"  Format="ShortTime" Margin="383,110,482,21" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=WedCheck}" Grid.ColumnSpan="2"/>
+        <xctk:TimePicker x:Name="WedStart" Value="{Binding _startHour[3], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Format="ShortTime" Margin="383,71,482,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=WedCheck}" RenderTransformOrigin="-2.189,-5.233" Grid.ColumnSpan="2"/>
+        <xctk:TimePicker x:Name="ThuEnd" Value="{Binding _endHour[4], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"  Format="ShortTime" Margin="223,111,63,20" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=ThuCheck}"/>
+        <xctk:TimePicker x:Name="ThuStart" Value="{Binding _startHour[4], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Format="ShortTime" Margin="223,71,63,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=ThuCheck}" RenderTransformOrigin="-2.189,-5.233"/>
+        <xctk:TimePicker x:Name="FriEnd" 
+                         Value="{Binding _endHour[5], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"  Format="ShortTime" Margin="77,111,220,20" Grid.Row="2" 
+                         IsEnabled="{Binding IsChecked, ElementName=FriCheck}"/>
+        <xctk:TimePicker x:Name="FriStart" 
+                         Value="{Binding _startHour[5], Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Format="ShortTime" Margin="77,71,220,62" Grid.Row="2" IsEnabled="{Binding IsChecked, ElementName=FriCheck}" RenderTransformOrigin="-2.189,-5.233"/>
 
 
 

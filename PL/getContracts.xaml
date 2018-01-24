@@ -8,19 +8,19 @@
         Title="getContracts" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0,-1">
         <DataGrid x:Name ="allNanniesBox" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="252" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
-                  SelectionChanged="allNanniesBox_SelectionChanged"  IsReadOnly="True"  Background="LightGray" >
+                  SelectionChanged="allNanniesBox_SelectionChanged" FontWeight="Medium"  IsReadOnly="True"  Background="LightGray" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Contract ID" Binding="{Binding _contractID}"/>
-                <DataGridTextColumn Header="Nanny name" Binding="{Binding _fullName }"/>
+                <DataGridTextColumn FontWeight="DemiBold" Header="Contract ID" Binding="{Binding _contractID}"/>
+                <DataGridTextColumn Header="Did meet?" Binding="{Binding _didMeet}"/>
                 <DataGridTextColumn Header="Nanny ID" Binding="{Binding _nannyID}"/>
                 <DataGridTextColumn Header="Nanny Phone" Binding="{Binding _nannyPhone}"/>
-                <DataGridTextColumn Header="Nanny name" Binding="{Binding _fullName }"/>
                 <DataGridTextColumn Header="Mom ID" Binding="{Binding _momID}"/>
                 <DataGridTextColumn Header="Nanny Phone" Binding="{Binding _momPhone}"/>
                 <DataGridTextColumn Header="Rate by hour?" Binding="{Binding _isByHour}"/>
-
-                <DataGridTextColumn Header="Child name" Binding="{Binding _fullName}"/>
+                <DataGridTextColumn Header="hour rate" Binding="{Binding _ratePerHour}"/>
                 <DataGridTextColumn Header="Child ID" Binding="{Binding _childID}"/>
+                <DataGridTextColumn Header="Start" Binding="{Binding _beginWork ,StringFormat='dd/MM/yyyy'}" />
+                <DataGridTextColumn Header="End" Binding="{Binding _endWork , StringFormat='dd/MM/yyyy'}"/>
             </DataGrid.Columns>
 
         </DataGrid>

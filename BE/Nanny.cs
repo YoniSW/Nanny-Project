@@ -35,7 +35,7 @@ namespace BE
                                              so diff == 1 */
 
         public double _distance { get; set; } // yes, its a distance from a mother
-        
+
 
         public Nanny duplicate()
         {

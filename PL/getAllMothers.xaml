@@ -8,18 +8,19 @@
         Title="getAllMothers" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid Margin="0,0,0,-1">
-            <DataGrid x:Name ="allNanniesBox" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="252" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
+            <DataGrid x:Name ="allNanniesBox" FontSize="15" FontWeight="Medium" AutoGenerateColumns="False" HorizontalAlignment="Left" 
+                      Height="332" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
                   SelectionChanged="allNanniesBox_SelectionChanged" IsReadOnly="True"  Background="LightGray" DisplayMemberPath="_momID">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Name" Binding="{Binding _fullName}"/>
+                    <DataGridTextColumn FontWeight="DemiBold" Header="Name" Binding="{Binding _fullName}"/>
                     <DataGridTextColumn Header="ID" Binding="{Binding _momID}"/>
                     <DataGridTextColumn Header="Phone" Binding="{Binding _momPhone}"/>
-                    <DataGridTextColumn Header="Looking for nanny?" Binding="{Binding _isLookingForNanny}"/>
+                    <DataGridTextColumn Header="Monthly hours" Binding="{Binding _monthHours}"/>
                     <DataGridTextColumn Header="Mom's adress" Binding="{Binding _momAdress}"/>
                 </DataGrid.Columns>
             </DataGrid>
 
-            <Label Content="All nannies in database:" HorizontalAlignment="Left" Height="33" Margin="427,33,0,0" VerticalAlignment="Top" 
+            <Label Content="All Mothers in database:" HorizontalAlignment="Left" Height="33" Margin="427,33,0,0" VerticalAlignment="Top" 
                Width="181" FontWeight="Bold" />
 
         </Grid>

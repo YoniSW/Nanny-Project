@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="getAllChild" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,0,-1">
-        <DataGrid x:Name ="allNanniesBox" HorizontalAlignment="Left" Height="252" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
+        <DataGrid x:Name ="allNanniesBox" FontSize="15" HorizontalAlignment="Left" FontWeight="Medium" Height="332" Margin="10,66,0,0" VerticalAlignment="Top" Width="972"
                   SelectionChanged="allNanniesBox_SelectionChanged" AutoGenerateColumns="False"  IsReadOnly="True"  Background="LightGray" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Name" Binding="{Binding _fullName}"/>
+                <DataGridTextColumn FontWeight="DemiBold" Header="Name" Binding="{Binding _fullName}"/>
                 <DataGridTextColumn Header="ID" Binding="{Binding _childID}"/>
                 <DataGridTextColumn Header="Birthday" Binding="{Binding _birthday}"/>
                 <DataGridTextColumn Header="Mom ID" Binding="{Binding _momID }"/>

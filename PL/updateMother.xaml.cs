@@ -41,14 +41,14 @@ namespace PL
         private void IdMother_SelectionChanged(object temp, SelectionChangedEventArgs e)
         {
             if (temp is ComboBox && ((ComboBox)temp).SelectedIndex > -1)
-      
+
             {
                 try
                 {
 
                     addA_Mother = (Mother)IdMother.SelectedItem;
                     thisGrid.DataContext = addA_Mother;
-  
+
                     MessageBox.Show("Mother was found, you can continue updating");
 
                     if (addA_Mother._daysRequestMom[0] == true)
@@ -211,3 +211,4 @@ namespace PL
     }
 
 }
+    

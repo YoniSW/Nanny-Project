@@ -14,10 +14,10 @@ using BL;
 
 namespace BL
 {
-     partial class Bl_imp : IBL
+    partial class Bl_imp : IBL
     {
         DAL.Idal dal;
-       // public static string _password = "1234";
+        // public static string _password = "1234";
         static Random r = new Random();
         public Bl_imp()
         {
@@ -35,7 +35,7 @@ namespace BL
         {
             dal.addPass();
         }
-            public string getPass()
+        public string getPass()
         {
             return dal.getPass();
         }
@@ -48,6 +48,11 @@ namespace BL
         #region mother metods
         public void addMother(Mother thisMom)
         {
+            TimeSpan totalWeeklyHours = new TimeSpan();
+
+            for (int i = 0; i < 6; i++)
+                totalWeeklyHours += thisMom._endHour[i] - thisMom._startHour[i];
+            thisMom._monthHours = (totalWeeklyHours.Days * 24 + totalWeeklyHours.Hours + totalWeeklyHours.Minutes / 60.0) * 4;
             dal.addMother(thisMom);
         }
 
@@ -62,6 +67,11 @@ namespace BL
 
         public void updateMother(Mother thisMom)
         {
+            TimeSpan totalWeeklyHours = new TimeSpan();
+
+            for (int i = 0; i < 6; i++)
+                totalWeeklyHours += thisMom._endHour[i] - thisMom._startHour[i];
+            thisMom._monthHours = (totalWeeklyHours.Days * 24 + totalWeeklyHours.Hours + totalWeeklyHours.Minutes / 60.0) * 4;
             dal.updateMother(thisMom);
         }
 
@@ -72,12 +82,25 @@ namespace BL
 
         public double getMotherHours(Mother thisMom)
         {
-            double totalWeeklyHours = 0;
+            TimeSpan totalWeeklyHours = new TimeSpan();
 
             for (int i = 0; i < 6; i++)
-                totalWeeklyHours += thisMom._scheduleMom[i].end.Hour - thisMom._scheduleMom[i].begin.Hour;
+                totalWeeklyHours += thisMom._endHour[i] - thisMom._startHour[i];
 
-            return totalWeeklyHours;
+
+            thisMom._monthHours = (totalWeeklyHours.Days * 24 + totalWeeklyHours.Hours + totalWeeklyHours.Minutes / 60.0);
+            return thisMom._monthHours;
+        }
+
+        public int getContractDays(Contract thisMom)
+        {
+            int totalDays = 0;
+
+            for (int i = 0; i < 6; i++)
+                totalDays += thisMom._endWork.Day - thisMom._beginWork.Day;
+
+
+            return totalDays;
         }
 
         public IEnumerable<Mother> getAllMothers(Func<Mother, bool> Predicate = null)
@@ -142,7 +165,7 @@ namespace BL
             dal.addNanny(thisNanny);
         }
 
-       
+
 
         public IEnumerable<Nanny> tamatNannies()
         {
@@ -193,33 +216,6 @@ namespace BL
 
         #region contract metods
 
-        public void addContract(Contract thisCon)
-        {
-            // get rest of feilds from dal
-            Child thisKid = dal.getChild(thisCon._childID);
-            Mother thisMom = dal.getMom(thisKid._momID);
-            Nanny thisNannay = dal.getNanny(thisCon._nannyID);
-
-            double discount = 1;
-            for (int i = 0; i < amountOfKidsForMomAndNanny(thisKid, thisNannay); i++)
-                discount -= 0.02;
-
-            if (thisNannay._amountChildren == thisNannay._maxamountChildren)
-                throw new Exception("This nanny reached the maximum children");
-
-            DateTime now = DateTime.Today;
-            if (now.Year - thisKid._birthday.Year < 1 && now.Month - thisKid._birthday.Month < 3)
-                throw new Exception("Child is under 3 months");
-
-            if (thisCon._isByHour)
-                thisCon._ratePerMonth = getMotherHours(thisMom) * 4 * thisNannay._rateByHour * discount;
-
-            else
-                thisCon._ratePerMonth = thisNannay._rateByMonth * discount;
-
-            dal.addContract(thisCon);
-        }
-
         public void updateContract(Contract thisContract)
         {
             dal.updateContract(thisContract);
@@ -252,18 +248,48 @@ namespace BL
             return dal.getContracts(Predicate);
         }
 
-       
+        public void addContract(Contract thisCon)
+        {
+            // get rest of feilds from dal
+            Child thisKid = dal.getChild(thisCon._childID);
+            Mother thisMom = dal.getMom(thisKid._momID);
+            Nanny thisNannay = dal.getNanny(thisCon._nannyID);
+
+            double discount = 1;
+            for (int i = 0; i < amountOfKidsForMomAndNanny(thisKid, thisNannay); i++)
+                discount -= 0.02;
+
+            if (thisNannay._amountChildren == thisNannay._maxamountChildren)
+                throw new Exception("This nanny reached the maximum children");
+
+            DateTime now = DateTime.Today;
+            if (now.Year - thisKid._birthday.Year < 1 && now.Month - thisKid._birthday.Month < 3)
+                throw new Exception("Child is under 3 months");
+
+            if (thisCon._isByHour)
+                thisCon._ratePerMonth = getMotherHours(thisMom) * 4 * thisNannay._rateByHour * discount;
+
+            else
+                thisCon._ratePerMonth = thisNannay._rateByMonth * discount;
+
+            dal.addContract(thisCon);
+
+        }
 
         public double getUpdatedRate(long idChild, long idNanny, bool isByHour)
         {
-
+            double discountRate = 0;
             Child contractChild = dal.getChild(idChild);
             Nanny contractNanny = dal.getNanny(idNanny);
             Mother contractMother = dal.getMom(contractChild._momID);
-            double discountRate = KidsByNanny(contractChild, contractNanny) * 0.02 * contractNanny._rateByMonth;
-            if (isByHour)
-                return (getMotherHours(contractMother) * 4 - getMotherHours(contractMother) * 4 * discountRate);
 
+            if (isByHour)
+            {
+                discountRate = KidsByNanny(contractChild, contractNanny) * 0.02 * contractNanny._rateByHour;
+                return (getMotherHours(contractMother) * 4 - getMotherHours(contractMother) * 4 * discountRate);
+            }
+
+            discountRate = KidsByNanny(contractChild, contractNanny) * 0.02 * contractNanny._rateByMonth;
             return (contractNanny._rateByMonth - contractNanny._rateByMonth * discountRate);
         }
 
@@ -275,7 +301,7 @@ namespace BL
         public IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null)
         {
             if (Predicate == null)
-                return dal.getAllChildren();
+                return dal.getKidsByMom();
             return dal.getKidsByMom(Predicate);
         }
 
