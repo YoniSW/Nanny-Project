@@ -71,6 +71,7 @@ namespace DAL
             return new XElement("Mother",
                 new XElement("id", mother._momID),
                 new XElement("familyName", mother._momLname),
+                new XElement("monthHoures", mother._monthHours),
                 new XElement("firstName", mother._momFname),
                 new XElement("phoneNumber", mother._momPhone),
                 new XElement("address", mother._momAdress),
@@ -118,12 +119,17 @@ namespace DAL
         {
             return new XElement("Contract",
                 new XElement("numberOfContract", contract._contractID),
+                new XElement("momID", contract._momID),
                 new XElement("NannysId", contract._nannyID),
                 new XElement("childId", contract._childID),
                 new XElement("isSignedContract", contract._didSign),
                 new XElement("moneyPerHour", contract._ratePerHour),
+                new XElement("finalPerHour", contract._finalPerHour),
+                new XElement("finalPerMonth", contract._finalPerMonth),
                 new XElement("monthSalary", contract._ratePerMonth),
                 new XElement("isHoureContract", contract._isByHour),
+                new XElement("totalPayment", contract._totalPayment),
+                new XElement("monthHoures", contract._monthHours),
                 new XElement("BeginWork", contract._beginWork),
                 new XElement("EndWork", contract._endWork),
                 new XElement("didMeet", contract._didMeet)
@@ -256,7 +262,8 @@ namespace DAL
 
             mother = new Mother
             {
-                _momID = Int64.Parse(motherXml.Element("id").Value),               
+                _momID = Int64.Parse(motherXml.Element("id").Value),
+                _monthHours = double.Parse(motherXml.Element("monthHoures").Value),
                 _momLname = motherXml.Element("familyName").Value,
                 _momFname = motherXml.Element("firstName").Value,
                 _momPhone = Int64.Parse(motherXml.Element("phoneNumber").Value),
@@ -274,9 +281,7 @@ namespace DAL
                               select DateTime.Parse(d.Value)).ToArray(),
 
                 _endHour = (from d in motherXml.Element("EndHour").Elements("Days")
-                            select DateTime.Parse(d.Value)).ToArray(),
-
-                
+                            select DateTime.Parse(d.Value)).ToArray(),                
                 
             };
             return mother;
@@ -334,10 +339,15 @@ namespace DAL
                 {
                     _contractID = Int32.Parse(contractXml.Element("numberOfContract").Value),
                     _nannyID = Int32.Parse(contractXml.Element("NannysId").Value),
+                    _momID = Int32.Parse(contractXml.Element("momId").Value),
                     _childID = Int32.Parse(contractXml.Element("childId").Value),
                     _didSign = Boolean.Parse(contractXml.Element("isSignedContract").Value),
                     _ratePerHour = double.Parse(contractXml.Element("moneyPerHour").Value),
                     _ratePerMonth = double.Parse(contractXml.Element("monthSalary").Value),
+                    _finalPerHour = double.Parse(contractXml.Element("finalPerHour").Value),
+                    _finalPerMonth = double.Parse(contractXml.Element("finalPerMonth").Value),
+                    _totalPayment = double.Parse(contractXml.Element("totalPayment").Value),
+                    _monthHours = double.Parse(contractXml.Element("monthHoures").Value),
                     _isByHour = Boolean.Parse(contractXml.Element("isHourContract").Value),
                     _beginWork = DateTime.Parse(contractXml.Element("BeginWork").Value),
                     _endWork = DateTime.Parse(contractXml.Element("EndWork").Value),

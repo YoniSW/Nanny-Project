@@ -68,7 +68,7 @@ namespace BE
         }
         public Nanny()
         {
-
+            _nannyBirth= DateTime.Now;
         }
 
         public override string ToString()

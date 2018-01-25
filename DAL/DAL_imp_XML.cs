@@ -124,14 +124,29 @@ namespace DAL
                         select m).FirstOrDefault();
             if (temp != null)
             {
-                throw new Exception("you are trying to add a existing mother.\n");
+                throw new Exception("you are trying to add an existing mother.\n");
             }
-            else
-            {
 
-                XML_Source.Mothers.Add(mother.toXML());
-                XML_Source.SaveMothers();
+           
+            TimeSpan totalWeeklyHours = new TimeSpan();
+
+            for (int i = 0; i < 6; i++)
+            {
+                totalWeeklyHours += (mother._endHour[i] - mother._startHour[i]);
+               // totalWeeklyHours += (endHoure.Value - startHoure.Value);
+
             }
+            mother._monthHours = ((totalWeeklyHours.Days * 24 + totalWeeklyHours.Hours + totalWeeklyHours.Minutes / 60.0) * 4);
+           
+            //dal.addMother(thisMom);
+
+           // DataSource.motherList.Add(mother);
+
+
+
+            XML_Source.Mothers.Add(mother.toXML());
+            XML_Source.SaveMothers();
+
         }
 
         public Mother getMom(long thisID)           // is XML

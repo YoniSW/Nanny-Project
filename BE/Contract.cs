@@ -51,7 +51,7 @@ namespace BE
         {
             _beginWork = DateTime.Now;
             _endWork = DateTime.Now;
-
+            //duplicate();
         }
         public override string ToString()
         {
