@@ -146,5 +146,8 @@
             <TextBox x:Name="_childFnameTextBox1" HorizontalAlignment="Left" Height="24" Margin="115,5,0,3" Grid.Row="0" Text="{Binding _childLname, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120" Grid.ColumnSpan="2"/>
         </Grid>
 
+        <Grid.Background>
+            <ImageBrush ImageSource="images\180.jpg" Stretch="UniformToFill" Opacity="0.5" />
+        </Grid.Background>
     </Grid>
 </Window>

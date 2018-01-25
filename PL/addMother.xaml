@@ -156,6 +156,8 @@
            Text="{Binding _locationOfNanny ,Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true }" 
                   VerticalAlignment="Top" Width="179" Grid.Row="1"/>
         <Button Content="Back" Click="Button_Click_1" HorizontalAlignment="Left" Height="39" Margin="469,280,0,0" Grid.Row="3" VerticalAlignment="Top" Width="101" Grid.Column="1"/>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="images\188.jpg" Stretch="UniformToFill" Opacity="0.5" />
+        </Grid.Background>
     </Grid>
 </Window>
