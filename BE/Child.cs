@@ -35,10 +35,10 @@ namespace BE
             dupChild._alergies = this._alergies;
             return dupChild;
         }
-        public Child ()
-        {
-            _birthday = DateTime.Now;
-        }
+        //public Child ()
+        //{
+        //    _birthday = DateTime.Now;
+        //}
 
 
         public override string ToString()

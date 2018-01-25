@@ -536,8 +536,9 @@ namespace DAL
 
         public IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null) // is XML but needed check
         {
-            //if (Predicate == null)
-            //    throw new Exception("Please send mother ID");
+           
+            if (Predicate == null)
+                throw new Exception("Please send mother ID");
             //var nothing = Predicate;
             //return XML_Source.Children.(Predicate);
 
@@ -546,19 +547,54 @@ namespace DAL
             //             select n).FirstOrDefault();
 
             XElement root = XML_Source.Children;
-            List<Child> result = new List<Child>();            
+            List<Child> result;    //= new List<Child>();  
 
-            foreach (var n in root.Elements("Child"))
-            {              
-                result.Add(n.toChild());
-            }          
+            result = (from child in root.Elements("Child")
+                      select new Child()
+                      {
+                          _childID = Int32.Parse(child.Element("id").Value),
+                          _childFname = child.Element("name").Value,
+                          _momID = Int32.Parse(child.Element("momsId").Value),
+                          _birthday = DateTime.Parse(child.Element("birthday").Value),
+                          _isSpecialNeed = Boolean.Parse(child.Element("hasSpecialNeeds").Value),
+                          _specialNeeds = child.Element("specialNeeds").Value,
+                          _isAlergic = Boolean.Parse(child.Element("isAlergic").Value),
+                          _alergies = child.Element("alergies").Value,
 
-            if (Predicate == null)
-                return result;            
-            return result.Where(Predicate);
-            // return result.AsEnumerable();
-
+                          //idMom = long.Parse(child.Element("idMom").Value),
+                          //idChild = long.Parse(child.Element("idChild").Value),
+                          //firstName = child.Element("name").Element("firstName").Value,
+                          //lastName = child.Element("name").Element("lastName").Value,
+                          //birthdayKid = DateTime.Parse(child.Element("birthday").Value),
+                          //isSpecialNeed = bool.Parse(child.Element("isSpecial").Value),
+                          //specialNeeds = child.Element("needs").Value,
+                      } ).ToList(); 
+        
+                //catch 
+                //{
+                //    result = null;
+                //}
+                if (Predicate == null)
+                    return result;
+                return result.Where(Predicate);
         }
+
+
+
+
+
+        //    foreach (var n in root.Elements("Child"))
+        //    {
+        //        //if (Predicate != null)
+        //            result.Add(n.toChild());
+        //    }          
+
+        //    //if (Predicate == null)
+        //    //    return result;            
+        //    return result.Where(Predicate);
+        //    // return result.AsEnumerable();
+
+        //}
 
         //public IEnumerable<Child> getKids(Func<Child, bool> Predicate = null)
         //{
