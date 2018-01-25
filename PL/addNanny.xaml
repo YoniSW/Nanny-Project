@@ -24,6 +24,15 @@
         </Grid.RowDefinitions>
         <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="10,168,0,0" Grid.Row="3" VerticalAlignment="Top" 
                 Width="123" Height="30" Click="button_Click">
+            <Button.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+            </Button.Foreground>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Gray" Offset="0.003"/>
+                    <GradientStop Color="#A9A9A9" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
             <Button.Style>
                 <Style>
                     <Style.Triggers>
@@ -319,10 +328,10 @@
             <Label Content="Minimum age by month:" Grid.Column="0" HorizontalAlignment="Left" Margin="3,3,0,3" Grid.Row="0" VerticalAlignment="Center" Height="26" Width="141"/>
             <TextBox x:Name="_minMonthAgeTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,0,4" Grid.Row="0" 
                      Text="{Binding _minMonthAge, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
-                     VerticalAlignment="Center" Width="120"/>
+                     VerticalAlignment="Center" Width="120" />
 
         </Grid>
-        <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Height="40" Margin="409,158,0,0" Grid.Row="3"
+        <Button Content="Back" Grid.Column="1" Background="CadetBlue" FontSize="22" FontWeight="Bold" HorizontalAlignment="Left" Height="40" Margin="409,158,0,0" Grid.Row="3"
                 VerticalAlignment="Top" Width="76" Click="Button_Click_1"/>
     </Grid>
 </Window>
