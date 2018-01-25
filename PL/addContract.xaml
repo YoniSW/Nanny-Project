@@ -33,7 +33,7 @@
                VerticalAlignment="Top" Width="134" Height="38"/>
         <DataGrid x:Name="relevantNannies_list" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="145" Margin="23,484,0,0" 
                   VerticalAlignment="Top" Width="425" SelectionChanged="relevantNannies_list_SelectionChanged" IsReadOnly="true"
-                  Background="CadetBlue" FontWeight="SemiBold"  >
+                  Background="Gray" FontWeight="SemiBold"  >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Name" Binding="{Binding _fullName}"/>
                 <DataGridTextColumn Header="ID" Binding="{Binding _nannyID}"/>
@@ -45,7 +45,7 @@
         <Label Content="Choose a child" FontSize="15" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="180,260,0,0" VerticalAlignment="Top" Width="134" Height="26"/>
         <DataGrid x:Name="thisMomsKids_list" HorizontalAlignment="Left" Height="145" Margin="23,291,0,0" IsReadOnly="True"
                   VerticalAlignment="Top" Width="425" AutoGenerateColumns="False" SelectionChanged="thisMomsKids_list_SelectionChanged"
-                  Background="CadetBlue" FontWeight="SemiBold">
+                  Background="Gray" FontWeight="SemiBold">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Name" Binding="{Binding _fullName}" />
                 <DataGridTextColumn Header="ID" Binding="{Binding _childID}"/>
@@ -255,7 +255,7 @@
         </Grid>
         <ComboBox x:Name="momBox" HorizontalAlignment="Left" Margin="171,103,0,0" VerticalAlignment="Top" Width="143"
                   SelectionChanged="momBox_SelectionChanged" Height="22"/>
-        <Button Content="Back" Click="Button_Click" HorizontalAlignment="Left" Height="39" Margin="23,643,0,0" VerticalAlignment="Top" Width="101"/>
+        <Button Content="Back" Click="Button_Click" Background="CadetBlue" FontSize="22" FontWeight="Bold" HorizontalAlignment="Left" Height="39" Margin="23,643,0,0" VerticalAlignment="Top" Width="101"/>
         <CheckBox x:Name="IDcheck" Content="ID number" HorizontalAlignment="Left" Margin="78,93,0,0" VerticalAlignment="Top" IsChecked="False" Checked="IDcheck_Checked" IsEnabled="True" Height="15" Width="76"/>
         <CheckBox x:Name="nameCheck" Content="Full name" HorizontalAlignment="Left" Margin="78,113,0,0" VerticalAlignment="Top" IsChecked="True" Checked="nameCheck_Checked" IsEnabled="True" Height="15" Width="71"/>
         <Label Content="Choose child:" Visibility="Hidden" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="247,73,0,0" VerticalAlignment="Top" Width="118"/>

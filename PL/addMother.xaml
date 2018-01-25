@@ -25,8 +25,17 @@
 
 
         </Grid.RowDefinitions>
-        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="10,289,0,0" Grid.Row="3" VerticalAlignment="Top" 
+        <Button x:Name="button" FontSize="25" FontWeight="DemiBold" Content="Add" HorizontalAlignment="Left" Margin="10,289,0,0" Grid.Row="3" VerticalAlignment="Top" 
                 Width="128" Height="30" Click="button_Click">
+            <Button.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+            </Button.Foreground>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Gray" Offset="0.003"/>
+                    <GradientStop Color="#A9A9A9" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
             <Button.Style>
                 <Style>
                     <Style.Triggers>
