@@ -268,23 +268,5 @@
       <Name>BL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\child.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\nanny.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\mother.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\NannyButton2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\mother button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\BackGrownd.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

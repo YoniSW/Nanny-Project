@@ -282,14 +282,11 @@ namespace BL
             Child contractChild = dal.getChild(idChild);
             Nanny contractNanny = dal.getNanny(idNanny);
             Mother contractMother = dal.getMom(contractChild._momID);
-
+            discountRate = KidsByNanny(contractChild, contractNanny) * 0.02;
             if (isByHour)
-            {
-                discountRate = KidsByNanny(contractChild, contractNanny) * 0.02 * contractNanny._rateByHour;
-                return (getMotherHours(contractMother) * 4 - getMotherHours(contractMother) * 4 * discountRate);
-            }
+                return (getMotherHours(contractMother) * 4 * contractNanny._rateByHour -
+                    getMotherHours(contractMother) * 4 * contractNanny._rateByHour * discountRate);
 
-            discountRate = KidsByNanny(contractChild, contractNanny) * 0.02 * contractNanny._rateByMonth;
             return (contractNanny._rateByMonth - contractNanny._rateByMonth * discountRate);
         }
 
