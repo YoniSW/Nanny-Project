@@ -31,7 +31,6 @@ namespace PL
         {
             InitializeComponent();
             Directory.CreateDirectory(folderPath);
-           
         }
 
         private void NannyButton_Click(object sender, RoutedEventArgs e)
@@ -64,8 +63,6 @@ namespace PL
             Tabs.ShowDialog();
             Close();
             Hide();
-
-
         }
 
         private void Admin_Click(object sender, RoutedEventArgs e)
@@ -78,7 +75,6 @@ namespace PL
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
-
             Close();
         }
 
