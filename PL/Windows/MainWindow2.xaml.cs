@@ -39,7 +39,8 @@ namespace PL
         {
             Window Tabs = new MainWindow(0);
             Close();
-            Tabs.ShowDialog();   
+            Tabs.ShowDialog();
+            Hide();
         }
 
         private void Motherbutton_Click(object sender, RoutedEventArgs e)
@@ -47,22 +48,25 @@ namespace PL
             Window Tabs = new MainWindow(1);
             Close();
             Tabs.ShowDialog();
-            
+            Hide();
+
         }
         private void ChildButton_Click(object sender, RoutedEventArgs e)
         {
             Window Tabs = new MainWindow(2);
             Close();
             Tabs.ShowDialog();
-            
+            Hide();
+
         }
         private void ContractButton_Click(object sender, RoutedEventArgs e)
         {
             Window Tabs = new MainWindow(3);
             Tabs.ShowDialog();
             Close();
+            Hide();
 
-            
+
         }
 
         private void Admin_Click(object sender, RoutedEventArgs e)

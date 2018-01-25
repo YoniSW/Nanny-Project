@@ -122,15 +122,16 @@ namespace PL
             {
                 nanny = helpDataGrid.SelectedItem as BE.Nanny;
                 addCont._isByHour = nanny._acceptByHour;
-                if (nanny._acceptByHour)
-                    addCont._finalPerHour = bl.getUpdatedRate(addCont._childID, nanny._nannyID, true);
-
-
-                addCont._finalPerMonth = bl.getUpdatedRate(addCont._childID, nanny._nannyID, false);
                 addCont._nannyID = nanny._nannyID;
                 addCont._ratePerHour = nanny._rateByHour;
                 addCont._ratePerMonth = nanny._rateByMonth;
                 addCont._monthHours = bl.getMotherHours(addMom);
+
+                if (nanny._acceptByHour)
+                    addCont._finalPerHour = bl.getUpdatedRate(addCont._childID, nanny._nannyID, true);
+                else
+                addCont._finalPerMonth = bl.getUpdatedRate(addCont._childID, nanny._nannyID, false);
+
                 _nannyIDTextBox1.Text = Convert.ToString(nanny._nannyID);
                 _childIDTextBox.Text = Convert.ToString(addCont._childID);
             }

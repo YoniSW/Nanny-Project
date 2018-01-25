@@ -61,22 +61,27 @@ namespace PL
 
         private void click_addMother(object sender, RoutedEventArgs e)
         {
+           
             new addMother().Show();
+        
         }
 
         private void click_deleteMother(object sender, RoutedEventArgs e)
         {
             new deleteMother().Show();
+         
         }
 
         private void click_updateMother(object sender, RoutedEventArgs e)
         {
             new updateMother().Show();
+           
         }
 
         private void click_getAllMothers(object sender, RoutedEventArgs e)
         {
             new getAllMothers().ShowDialog();
+            
         }
 
         /// mother
@@ -84,21 +89,25 @@ namespace PL
         private void click_addChild(object sender, RoutedEventArgs e)
         {
             new addChild().Show();
+           
         }
 
         private void click_deleteChild(object sender, RoutedEventArgs e)
         {
             new deleteChild().Show();
+           
         }
 
         private void click_updateChild(object sender, RoutedEventArgs e)
         {
            new updateChild().Show();
+           
         }
 
         private void click_getKidsByMom(object sender, RoutedEventArgs e)
         {
             new getAllChild().ShowDialog();
+          
         }
 
         // contract
@@ -106,23 +115,27 @@ namespace PL
         private void click_getContracts(object sender, RoutedEventArgs e)
         {
             new getContracts().Show();
+           
         }
 
         private void click_addContract(object sender, RoutedEventArgs e)
         {
             new addContract().Show();
+          
         }
 
         
         private void click_updateContract(object sender, RoutedEventArgs e)
         {
           new updateContract().Show();
+           
         }
 
         
         private void click_deleteContract(object sender, RoutedEventArgs e)
         {
            new deleteContract().Show();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
