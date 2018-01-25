@@ -5,21 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL"
         mc:Ignorable="d"
-        Title="MainWindow2" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen" Opacity="100">
+        Title="MainWindow2" Height="700" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen">
 
 
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="MainWindowImg" Source="images/BackGrownd.jpg" Stretch="fill" Width="1000"  Height="700" Grid.ColumnSpan="2" Margin="-8,-8,0,0" />
+        
+        
+       
+
+
         <Button x:Name="NannyButton" Content="Nanny" HorizontalAlignment="Left" Margin="276,267,0,0" VerticalAlignment="Top" Width="200" Click="NannyButton_Click" Height="100"/>
         <Button x:Name="MotherButton" Content="Mother" HorizontalAlignment="Left" Margin="30,267,0,0" VerticalAlignment="Top" Width="200" Height="100" Click="Motherbutton_Click" Grid.Column="1"/>
         <Button x:Name="Childbutton" Content="child" HorizontalAlignment="Left" Margin="24,267,0,0" VerticalAlignment="Top" Width="200" Height="100" Click="ChildButton_Click"/>
         <Button x:Name="ContractButton" Content="Contracts" HorizontalAlignment="Left" Margin="267,267,0,0" VerticalAlignment="Top" 
-Width="200" Height="100" Click="ContractButton_Click" Grid.Column="1">
+                Width="200" Height="100" Click="ContractButton_Click" Grid.Column="1">
             <Button.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
             </Button.Foreground>
@@ -33,6 +36,9 @@ Width="200" Height="100" Click="ContractButton_Click" Grid.Column="1">
         <Button x:Name="Exit" Content="Exit" HorizontalAlignment="Left" Margin="24,646,0,0" VerticalAlignment="Top" Width="940" Height="36" Click="Exit_Click" Grid.ColumnSpan="2"/>
         <Button x:Name="Admin" Content="Administrator" Click="Admin_Click" HorizontalAlignment="Left"
                 Height="42" Margin="24,36,0,0" VerticalAlignment="Top" Width="154"/>
-
+        <!--<Image Source="images/BackGrownd.jpg" HorizontalAlignment="Left" Height="504" Margin="100,137,0,0" VerticalAlignment="Top" Width="706" Grid.ColumnSpan="2"/>-->
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\אביחי קדוש\Source\Repos\Nanny-Project\PL\images\BackGrownd.jpg" />
+        </Grid.Background>
     </Grid>
 </Window>
