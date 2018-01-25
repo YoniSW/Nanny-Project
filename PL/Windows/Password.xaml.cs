@@ -28,7 +28,7 @@ namespace PL.Windows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            bl.addPass();
+            
             if (password.Text == bl.getPass())
             {
                 Close();
