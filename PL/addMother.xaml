@@ -26,7 +26,23 @@
 
         </Grid.RowDefinitions>
         <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="10,289,0,0" Grid.Row="3" VerticalAlignment="Top" 
-                Width="128" Height="30" Click="button_Click"/>
+                Width="128" Height="30" Click="button_Click">
+            <Button.Style>
+                <Style>
+                    <Style.Triggers>
+                        <DataTrigger  Binding="{Binding ElementName=_momIDTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="false"/>
+                        </DataTrigger>
+                        <DataTrigger  Binding="{Binding ElementName=_momFnameTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="false"/>
+                        </DataTrigger>
+                        <DataTrigger  Binding="{Binding ElementName=_momLnameTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="false"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
 
 
         <Label x:Name="DayLabel" Content="Day" HorizontalAlignment="Left" Margin="5,38,0,0" VerticalAlignment="Top" Height="30" FontSize="10" RenderTransformOrigin="-4.552,0.667" Grid.Row="2" Width="29"/>

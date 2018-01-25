@@ -133,6 +133,13 @@ namespace DAL
             if (index != -1)
                 throw new Exception("Mother already exists in the system");
 
+            TimeSpan totalWeeklyHours = new TimeSpan();
+
+            for (int i = 0; i < 6; i++)
+                totalWeeklyHours += thisMom._endHour[i] - thisMom._startHour[i];
+            thisMom._monthHours = (totalWeeklyHours.Days * 24 + totalWeeklyHours.Hours + totalWeeklyHours.Minutes / 60.0) * 4;
+            //dal.addMother(thisMom);
+
             DataSource.motherList.Add(thisMom);
         }
 

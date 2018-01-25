@@ -12,6 +12,7 @@ using GoogleMapsApi.Entities.Directions.Response;
 
 namespace BL
 {
+
     partial class Bl_imp : IBL
     {
         static long[] idMotherArray = new long[21];
@@ -904,6 +905,8 @@ namespace BL
         /// <summary>
         /// Initilize & addtion to list 21 Mothers
         /// </summary>
+        /// 
+
         void MotherInitilize()
         {
 
@@ -934,7 +937,9 @@ namespace BL
                     new DateTime(01,01,1,13, 30,0),
                     new DateTime(),
                 },
+                
                 // nothMom = "",
+
             };
             Mother Oshrat_Levi = new Mother
             {
@@ -1517,6 +1522,8 @@ namespace BL
                 },
                 // nothMom = "",
             };
+
+
             try
             {
                 dal.addMother(Bracha_Polak);

@@ -23,7 +23,30 @@
 
         </Grid.RowDefinitions>
         <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="10,168,0,0" Grid.Row="3" VerticalAlignment="Top" 
-                Width="123" Height="30" Click="button_Click" />
+                Width="123" Height="30" Click="button_Click">
+            <Button.Style>
+                <Style>
+                    <Style.Triggers>
+                        <DataTrigger  Binding="{Binding ElementName=_nannyIDTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="false"/>
+                        </DataTrigger>
+                        <DataTrigger  Binding="{Binding ElementName=_nannyFnameTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="false"/>
+                        </DataTrigger>
+                        <DataTrigger  Binding="{Binding ElementName=_nannyLnameTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="false"/>
+                        </DataTrigger>
+                        <DataTrigger  Binding="{Binding ElementName=_rateByHourTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="false"/>
+                        </DataTrigger>
+                        <DataTrigger  Binding="{Binding ElementName=_rateByMonthTextBox, Path=Text}" Value="">
+                            <Setter Property="Button.IsEnabled" Value="false"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+        </Button>
         <Label x:Name="DayLabel" Content="Day" HorizontalAlignment="Left" Margin="10,2,0,0" VerticalAlignment="Top" Height="30" FontSize="10" RenderTransformOrigin="-4.552,0.667" Grid.Row="2" Width="29"/>
         <Label x:Name="StartHourLabel" Content="Begin hour" HorizontalAlignment="Left" Margin="5,59,0,0" VerticalAlignment="Top" Height="36" FontSize="10" Grid.Row="2" Width="63"/>
         <Label x:Name="EndHourLabel" Content="End hour" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Height="40" FontSize="10" Grid.Row="2" Width="54" Grid.RowSpan="2"/>
