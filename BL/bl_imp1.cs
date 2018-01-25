@@ -89,6 +89,7 @@ namespace BL
 
 
             thisMom._monthHours = (totalWeeklyHours.Days * 24 + totalWeeklyHours.Hours + totalWeeklyHours.Minutes / 60.0);
+            thisMom._monthHours *= 4;
             return thisMom._monthHours;
         }
 
@@ -283,11 +284,16 @@ namespace BL
             Nanny contractNanny = dal.getNanny(idNanny);
             Mother contractMother = dal.getMom(contractChild._momID);
             discountRate = KidsByNanny(contractChild, contractNanny) * 0.02;
-            if (isByHour)
-                return (getMotherHours(contractMother) * 4 * contractNanny._rateByHour -
-                    getMotherHours(contractMother) * 4 * contractNanny._rateByHour * discountRate);
 
-            return (contractNanny._rateByMonth - contractNanny._rateByMonth * discountRate);
+            double test = (getMotherHours(contractMother) * contractNanny._rateByHour -
+                 getMotherHours(contractMother) * 4 * contractNanny._rateByHour * discountRate);
+
+            if (isByHour)
+                return test;
+
+             test = (contractNanny._rateByMonth - contractNanny._rateByMonth * discountRate);
+
+            return test;
         }
 
         #endregion
