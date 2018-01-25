@@ -29,25 +29,25 @@ namespace DAL
 
         public string getPass()   // שומר את הסיסמא בקובץ נפרד, אם הקובץ קיים- מאחזר את הסיסמא ממנו, אם הקובץ לא קיים- משתמש  בדיפולט
         {
-            var code = (from n in XML_Source.Passwords.Elements()                             
-                         select n).First();
+            var code = (from n in XML_Source.Passwords.Elements()
+                        select n).First();
             return code.Element("password").Value;
-        }        
-        
+        }
+
         public void changePass(string code)
         {
             if (code.Length < 4)
-                throw new Exception("Password must be minimum 4 characters!");           
+                throw new Exception("Password must be minimum 4 characters!");
 
             var deletecode = (from n in XML_Source.Passwords.Elements()
-                        select n).First();
+                              select n).First();
             deletecode.Remove();            // clears the password existing
             XML_Source.SavePasswords();
             XML_Source.Passwords.Add(code.toXMLPassword());
             XML_Source.SavePasswords();
         }
 
-#endregion
+        #endregion
 
         #region   Nanny  //is XML
 
@@ -127,20 +127,20 @@ namespace DAL
                 throw new Exception("you are trying to add an existing mother.\n");
             }
 
-           
+
             TimeSpan totalWeeklyHours = new TimeSpan();
 
             for (int i = 0; i < 6; i++)
             {
                 totalWeeklyHours += (mother._endHour[i] - mother._startHour[i]);
-               // totalWeeklyHours += (endHoure.Value - startHoure.Value);
+                // totalWeeklyHours += (endHoure.Value - startHoure.Value);
 
             }
             mother._monthHours = ((totalWeeklyHours.Days * 24 + totalWeeklyHours.Hours + totalWeeklyHours.Minutes / 60.0) * 4);
-           
+
             //dal.addMother(thisMom);
 
-           // DataSource.motherList.Add(mother);
+            // DataSource.motherList.Add(mother);
 
 
 
@@ -387,8 +387,8 @@ namespace DAL
                          where Convert.ToInt64(n.Element("NannysId").Value) == thisContract._nannyID
                          select n).FirstOrDefault();
             var temp = (from n in XML_Source.Contracts.Elements()
-                         where Convert.ToInt64(n.Element("childId").Value) == thisContract._childID
-                         select n).FirstOrDefault();
+                        where Convert.ToInt64(n.Element("childId").Value) == thisContract._childID
+                        select n).FirstOrDefault();
 
             if ((index != null) && (temp != null))
                 throw new Exception("Contract already exists in the system");
@@ -536,7 +536,7 @@ namespace DAL
             XElement root = XML_Source.Children;
             List<Child> result = new List<Child>();
 
-            if (Predicate!=null)
+            if (Predicate != null)
             {
                 return result.Where(Predicate);
             }
@@ -551,7 +551,7 @@ namespace DAL
 
         public IEnumerable<Child> getKidsByMom(Func<Child, bool> Predicate = null) // is XML but needed check
         {
-           
+
             if (Predicate == null)
                 throw new Exception("Please send mother ID");
             //var nothing = Predicate;
@@ -583,15 +583,15 @@ namespace DAL
                           //birthdayKid = DateTime.Parse(child.Element("birthday").Value),
                           //isSpecialNeed = bool.Parse(child.Element("isSpecial").Value),
                           //specialNeeds = child.Element("needs").Value,
-                      } ).ToList(); 
-        
-                //catch 
-                //{
-                //    result = null;
-                //}
-                if (Predicate == null)
-                    return result;
-                return result.Where(Predicate);
+                      }).ToList();
+
+            //catch 
+            //{
+            //    result = null;
+            //}
+            if (Predicate == null)
+                return result;
+            return result.Where(Predicate);
         }
 
 
