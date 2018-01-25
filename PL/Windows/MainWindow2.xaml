@@ -88,7 +88,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Image Grid.ColumnSpan="2" Margin="236,122,379,336" Source="images\BackGrownd.jpg" />
 
 
     </Grid>
