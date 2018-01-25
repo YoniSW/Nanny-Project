@@ -23,7 +23,6 @@ namespace PL
     /// </summary>
     /// 
 
-    
     public partial class MainWindow2 : Window
     {
         private string folderPath = @"c:\NannyProject";
