@@ -18,16 +18,20 @@
         </Grid.RowDefinitions>
         <Label x:Name="label" Content="Please chosse Child ID you wish to delete" HorizontalAlignment="Left" Height="80" Margin="222,80,0,0" 
                VerticalAlignment="Top" Width="556" Grid.ColumnSpan="2" FontSize="28"/>
-        <ComboBox x:Name="textBox" HorizontalAlignment="Left" Margin="304,73,0,0" Grid.Row="1"
+        <ComboBox x:Name="textBox" HorizontalAlignment="Left" Margin="222,106,0,0" Grid.Row="1"
                    VerticalAlignment="Top"  SelectionChanged="textBox_SelectionChanged" RenderTransformOrigin="1.484,0.767" 
                   Grid.ColumnSpan="2" Height="90" Width="386"/>
         <Button x:Name="button" Content="Delete!" HorizontalAlignment="Left" Height="118"  Width="386"  
-                Margin="304,61,0,0" Grid.Row="2" VerticalAlignment="Top" BorderThickness="2"
+                Margin="222,61,0,0" Grid.Row="2" VerticalAlignment="Top" BorderThickness="2"
                 Click="button_Click" Grid.ColumnSpan="2"/>
         <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="420,179,0,0" Grid.Row="2"
                 VerticalAlignment="Top" Width="66" Click="Button_Click_1"/>
         <Label Content="Choose by" HorizontalAlignment="Left" Height="41" Margin="313,27,0,0" Grid.Row="1" VerticalAlignment="Top" Width="86"/>
         <CheckBox  x:Name="IdCheck" Content="Child ID" HorizontalAlignment="Left" Margin="415,27,0,0" Grid.Row="1" VerticalAlignment="Top" IsChecked="False" Checked="IdCheck_Checked"/>
         <CheckBox x:Name="nameCheck" Content="Full name" HorizontalAlignment="Left" Margin="415,53,0,0" Grid.Row="1" VerticalAlignment="Top" IsChecked="True" Checked="nameCheck_Checked"/>
+      
+        <Grid.Background>
+            <ImageBrush ImageSource="images\180.jpg" Stretch="UniformToFill" Opacity="0.5" />
+        </Grid.Background>
     </Grid>
 </Window>

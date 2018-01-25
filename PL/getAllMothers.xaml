@@ -20,11 +20,15 @@
                 </DataGrid.Columns>
             </DataGrid>
 
-            <Label Content="All Mothers in database:" HorizontalAlignment="Left" Height="33" Margin="427,33,0,0" VerticalAlignment="Top" 
-               Width="181" FontWeight="Bold" />
+            <Label Content="All Mothers in database:" HorizontalAlignment="Left" Height="33" Margin="362,10,0,0" VerticalAlignment="Top" 
+               Width="276" FontWeight="Bold" FontFamily="Segoe UI Black" FontSize="20" />
 
         </Grid>
         <Button Content="Back" HorizontalAlignment="Left" Height="40" Margin="906,643,0,0"
                 VerticalAlignment="Top" Width="76" Click="Button_Click"/>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="images\188.jpg" Stretch="UniformToFill" Opacity="0.5" />
+        </Grid.Background>
     </Grid>
 </Window>

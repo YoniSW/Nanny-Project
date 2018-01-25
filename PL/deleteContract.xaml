@@ -24,5 +24,8 @@
                 VerticalAlignment="Top" Click="delete_Click" Grid.ColumnSpan="2" Height="118"  Width="386" BorderThickness="2"/>
         <Button Content="Back" Grid.Column="1" HorizontalAlignment="Left" Height="42" Margin="420,198,0,0" Grid.Row="2"
                 VerticalAlignment="Top" Width="66" Click="Button_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="images\3706.jpg" Stretch="UniformToFill" Opacity="0.5" />
+        </Grid.Background>
     </Grid>
 </Window>
