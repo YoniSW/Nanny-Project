@@ -12,22 +12,22 @@ namespace DS
     {
         private static string solutionDirectory = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
         
-        private static string filePath = System.IO.Path.Combine(solutionDirectory, "DS", "dataSourceXML");
+        private static string filePath = System.IO.Path.Combine(solutionDirectory, "DS", @"c:\NannyProject\dataSourceXML");
 
         private static XElement passwordRoot = null;
-        static string passwordPath = Path.Combine(filePath, "KookieXML.xml");
+        static string passwordPath = Path.Combine(filePath, @"c:\NannyProject\KookieXML.xml");
 
         private static XElement motherRoot = null;
-        static string motherPath = Path.Combine(filePath, "MothersXML.xml");
+        static string motherPath = Path.Combine(filePath, @"c:\NannyProject\MothersXML.xml");
 
         private static XElement contractRoot = null;
-        static string contractPath = Path.Combine(filePath, "ContractsXML.xml");
+        static string contractPath = Path.Combine(filePath, @"c:\NannyProject\ContractsXML.xml");
 
         private static XElement childRoot = null;
-        static string childPath = Path.Combine(filePath, "ChildrenXML.xml");
+        static string childPath = Path.Combine(filePath, @"c:\NannyProject\ChildrenXML.xml");
 
         private static XElement nannyRoot = null;
-        static string nannyPath = Path.Combine(filePath, "NannysXML.xml");
+        static string nannyPath = Path.Combine(filePath, @"c:\NannyProject\NannysXML.xml");
 
         static XML_Source()
         {

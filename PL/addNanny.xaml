@@ -42,6 +42,9 @@
                         <DataTrigger  Binding="{Binding ElementName=_rateByMonthTextBox, Path=Text}" Value="">
                             <Setter Property="Button.IsEnabled" Value="false"/>
                         </DataTrigger>
+                        <DataTrigger  Binding="{Binding ElementName=_acceptByHourCheckBox, Path=IsChecked}" Value="false">
+                            <Setter Property="Button.IsEnabled" Value="false"/>
+                        </DataTrigger>
                     </Style.Triggers>
                 </Style>
             </Button.Style>

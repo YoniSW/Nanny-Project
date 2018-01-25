@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using BL;
 using BE;
 using PL.Windows;
+using System.IO;
 
 namespace PL
 {
@@ -21,14 +22,16 @@ namespace PL
     /// Interaction logic for MainWindow2.xaml
     /// </summary>
     /// 
-    
 
+    
     public partial class MainWindow2 : Window
     {
+        private string folderPath = @"c:\NannyProject";
 
         public MainWindow2()
         {
             InitializeComponent();
+            Directory.CreateDirectory(folderPath);
            
         }
 
