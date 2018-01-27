@@ -19,13 +19,9 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Label Content="All children in database:" HorizontalAlignment="Left" Height="51"  Margin="336,10,0,0" VerticalAlignment="Top" 
-               Width="299" FontWeight="Bold" FontSize="20" FontFamily="Segoe UI Black" />
+        <Label Content="All children in database:" HorizontalAlignment="Left" Height="33" Margin="436,28,0,0" VerticalAlignment="Top" 
+               Width="181" FontWeight="Bold" />
         <Button Content="Back" HorizontalAlignment="Left" Height="40" Margin="906,643,0,0"
                 VerticalAlignment="Top" Width="76" Click="Button_Click"/>
-
-        <Grid.Background>
-            <ImageBrush ImageSource="images\180.jpg" Stretch="UniformToFill" Opacity="0.5" />
-        </Grid.Background>
     </Grid>
 </Window>
