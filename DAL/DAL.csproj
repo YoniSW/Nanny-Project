@@ -49,10 +49,6 @@
     <Compile Include="XmlConvert.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BE\BE.csproj">
-      <Project>{b9a06cdc-7bb9-4c84-9f20-024937835c15}</Project>
-      <Name>BE</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DC\DS.csproj">
       <Project>{303f4fc9-79f3-4b92-b907-1776cc928c46}</Project>
       <Name>DS</Name>

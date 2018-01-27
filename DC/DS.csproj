@@ -46,12 +46,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BE\BE.csproj">
-      <Project>{b9a06cdc-7bb9-4c84-9f20-024937835c15}</Project>
-      <Name>BE</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="xml\Child.xml" />
     <Content Include="xml\Contract.xml" />
     <Content Include="xml\Mother.xml" />
