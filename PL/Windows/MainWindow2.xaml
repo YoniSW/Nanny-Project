@@ -85,6 +85,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\אביחי קדוש\Source\Repos\Nanny-Project\PL\images\BackGrownd.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
